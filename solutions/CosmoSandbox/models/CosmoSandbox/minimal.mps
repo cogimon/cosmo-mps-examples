@@ -55,6 +55,9 @@
       </concept>
     </language>
     <language id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component">
+      <concept id="7649431283796460216" name="Component.structure.SourceOfDeployment" flags="ng" index="emJY1">
+        <property id="7649431283796460564" name="source" index="emJ$H" />
+      </concept>
       <concept id="5685633502229650428" name="Component.structure.Parameter" flags="ng" index="2D$zpR">
         <child id="5685633502229650435" name="type" index="2D$z68" />
       </concept>
@@ -88,7 +91,6 @@
       <concept id="1695646464731827420" name="Component.structure.Connection" flags="ng" index="3tteA_">
         <reference id="1695646464731834585" name="target" index="3ttcQw" />
         <reference id="1695646464731834588" name="source" index="3ttcQ_" />
-        <child id="612918485291241468" name="connPolicy" index="1SzSBx" />
       </concept>
       <concept id="1695646464731827422" name="Component.structure.IPort" flags="ng" index="3tteAB">
         <child id="6776104396491580446" name="type" index="17RAGi" />
@@ -136,7 +138,6 @@
       <concept id="3573514252219033308" name="OrocosComponent.structure.ActivityDemand" flags="ng" index="12Q0Er">
         <child id="3573514252219033322" name="activity" index="12Q0EH" />
       </concept>
-      <concept id="2884286613854435106" name="OrocosComponent.structure.RTTConnPolicy" flags="ng" index="3xczL6" />
       <concept id="4999798196380344088" name="OrocosComponent.structure.RTTActivity" flags="ng" index="1Qwkrw">
         <property id="4999798196380345506" name="scheduler" index="1QwnPq" />
         <child id="4999798196380345483" name="priority" index="1QwnPN" />
@@ -152,6 +153,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -160,36 +162,38 @@
     </language>
   </registry>
   <node concept="3tteAz" id="6$F6KdawDni">
-    <property role="TrG5h" value="GeneralComponent" />
+    <property role="TrG5h" value="JointPositionController" />
+    <property role="3GE5qa" value="components" />
     <node concept="3tteA$" id="5MCOBE9Xlvr" role="3ttcQl">
       <property role="1T6LxX" value="Input" />
-      <property role="TrG5h" value="in" />
+      <property role="TrG5h" value="in_jntPos" />
       <node concept="2KPMDc" id="1pbAJw9gAkc" role="17RAGi">
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
       </node>
     </node>
     <node concept="3tteAs" id="5MCOBE9XlwE" role="3ttcQl">
       <property role="1T6LxX" value="Output" />
-      <property role="TrG5h" value="out" />
-      <node concept="2KPMDc" id="1pbAJw9gAkv" role="17RAGi">
-        <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+      <property role="TrG5h" value="out_jntTrq" />
+      <node concept="2KPMDc" id="59eaIo$JD3e" role="17RAGi">
+        <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
       </node>
     </node>
     <node concept="3tthn0" id="36nF4tNhiRK" role="3ttZ$n">
-      <ref role="3tthn7" node="36nF4tNhiRJ" resolve="PackageA" />
+      <ref role="3tthn7" node="36nF4tNhiRJ" resolve="cosima-aux-kd" />
     </node>
   </node>
   <node concept="3tteAy" id="6$F6KdawDnj">
     <property role="TrG5h" value="GeneralSystem" />
+    <property role="3GE5qa" value="systems" />
     <node concept="2WYcwU" id="6$F6KdawDnk" role="3ttgI2">
-      <property role="TrG5h" value="inst1" />
-      <ref role="2WYf9R" node="6$F6KdawDni" resolve="GeneralComponent" />
+      <property role="TrG5h" value="JointCtrl" />
+      <ref role="2WYf9R" node="6$F6KdawDni" resolve="JointPositionController" />
       <node concept="2R8en3" id="6PzJeNwhjTV" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12QldH" id="6PzJeNwhjTW" role="2d8dnL" />
         <node concept="12Q0Er" id="6PzJeNwhjTX" role="12QldZ">
           <node concept="1Qwkrw" id="5MCOBE9R2sd" role="12Q0EH">
-            <property role="TrG5h" value="TestActivity" />
+            <property role="TrG5h" value="ActivityRT" />
             <node concept="3b6qkQ" id="5MCOBE9R2tv" role="1QwnPZ">
               <property role="$nhwW" value="0.0" />
             </node>
@@ -200,29 +204,29 @@
         </node>
       </node>
       <node concept="FWJLR" id="5MCOBE9XlxW" role="FWJL0">
-        <ref role="FWJLQ" node="5MCOBE9Xlvr" resolve="in" />
+        <ref role="FWJLQ" node="5MCOBE9Xlvr" resolve="in_jntPos" />
       </node>
       <node concept="FWJLR" id="5MCOBE9XlxX" role="FWJL0">
-        <ref role="FWJLQ" node="5MCOBE9XlwE" resolve="out" />
+        <ref role="FWJLQ" node="5MCOBE9XlwE" resolve="out_jntTrq" />
       </node>
       <node concept="2GY8tY" id="15I6Ez8nZ6I" role="lGtFl">
-        <property role="2GY9xM" value="92.62832260131836" />
-        <property role="2GY9xO" value="114.23292541503906" />
+        <property role="2GY9xM" value="295.62832260131836" />
+        <property role="2GY9xO" value="97.23292541503906" />
       </node>
     </node>
     <node concept="2WYcwU" id="36nF4tNiuxm" role="3ttgI2">
-      <property role="TrG5h" value="inst2" />
-      <ref role="2WYf9R" node="36nF4tNiuwo" resolve="ComplexComponent" />
+      <property role="TrG5h" value="TrajGen" />
+      <ref role="2WYf9R" node="36nF4tNiuwo" resolve="JointPosTrajectory" />
       <node concept="2GY8tY" id="3EN1bLzFGP$" role="lGtFl">
-        <property role="2GY9xM" value="101.0" />
-        <property role="2GY9xO" value="558.0" />
+        <property role="2GY9xM" value="34.0" />
+        <property role="2GY9xO" value="96.0" />
       </node>
       <node concept="2R8en3" id="3EN1bLzFGPM" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12Nga4" id="3EN1bLzFGPO" role="2d8dnL" />
         <node concept="12Q0Er" id="3EN1bLzFGPQ" role="12QldZ">
           <node concept="1Qwkrw" id="3EN1bLzFGQV" role="12Q0EH">
-            <property role="TrG5h" value="newActivity" />
+            <property role="TrG5h" value="ActivityOther" />
             <property role="1QwnPq" value="ORO_SCHED_OTHER" />
             <node concept="3b6qkQ" id="3EN1bLzFGSI" role="1QwnPZ">
               <property role="$nhwW" value="0.0" />
@@ -233,45 +237,52 @@
           </node>
         </node>
       </node>
+      <node concept="FWJLR" id="59eaIo$JEeM" role="FWJL0">
+        <ref role="FWJLQ" node="59eaIo$JEeA" resolve="out_traj" />
+      </node>
     </node>
-    <node concept="2WYcwU" id="36nF4tNiuz3" role="3ttgI2">
-      <property role="TrG5h" value="inst3" />
-      <ref role="2WYf9R" node="6$F6KdawDni" resolve="GeneralComponent" />
-      <node concept="2R8en3" id="6PzJeNwr9Wl" role="lGtFl">
+    <node concept="3tteA_" id="59eaIo$JEeQ" role="3ttgI7">
+      <property role="TrG5h" value="conn_1482496072175" />
+      <ref role="3ttcQ_" node="59eaIo$JEeM" />
+      <ref role="3ttcQw" node="5MCOBE9XlxW" />
+    </node>
+    <node concept="2WYcwU" id="59eaIo$JEi9" role="3ttgI2">
+      <property role="TrG5h" value="kukaSim" />
+      <ref role="2WYf9R" node="59eaIo$JEcX" resolve="RobotSim" />
+      <node concept="emJY1" id="59eaIo$JEia" role="lGtFl">
+        <property role="emJ$H" value="CosmoViz" />
+      </node>
+      <node concept="FWJLR" id="59eaIo$JEiw" role="FWJL0">
+        <ref role="FWJLQ" node="59eaIo$JEcY" resolve="fullarm_JointTorque" />
+      </node>
+      <node concept="2R8en3" id="59eaIo$JEiB" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="6PzJeNwr9Wn" role="2d8dnL" />
-        <node concept="12Q0Er" id="6PzJeNwr9Wp" role="12QldZ">
-          <node concept="1QwnVF" id="5MCOBE9R2ug" role="12Q0EH">
-            <ref role="1QwnVw" node="5MCOBE9R2sd" resolve="TestActivity" />
+        <node concept="12Nga4" id="59eaIo$JEiD" role="2d8dnL" />
+        <node concept="12Q0Er" id="59eaIo$JEiF" role="12QldZ">
+          <node concept="1QwnVF" id="59eaIo$JEiO" role="12Q0EH">
+            <ref role="1QwnVw" node="3EN1bLzFGQV" resolve="ActivityOther" />
           </node>
         </node>
       </node>
-      <node concept="FWJLR" id="5MCOBE9Xlym" role="FWJL0">
-        <ref role="FWJLQ" node="5MCOBE9Xlvr" resolve="in" />
-      </node>
-      <node concept="FWJLR" id="5MCOBE9Xlyn" role="FWJL0">
-        <ref role="FWJLQ" node="5MCOBE9XlwE" resolve="out" />
-      </node>
-      <node concept="2GY8tY" id="15I6Ez8nZ5u" role="lGtFl">
-        <property role="2GY9xM" value="509.0" />
-        <property role="2GY9xO" value="322.0" />
+      <node concept="2GY8tY" id="59eaIo$JEpt" role="lGtFl">
+        <property role="2GY9xM" value="560.0" />
+        <property role="2GY9xO" value="98.0" />
       </node>
     </node>
-    <node concept="3tteA_" id="5MCOBE9Xlz$" role="3ttgI7">
-      <property role="TrG5h" value="first connection" />
+    <node concept="3tteA_" id="59eaIo$JEi$" role="3ttgI7">
+      <property role="TrG5h" value="conn_1482496164091" />
       <ref role="3ttcQ_" node="5MCOBE9XlxX" />
-      <ref role="3ttcQw" node="5MCOBE9Xlym" />
-      <node concept="3xczL6" id="5MCOBE9Xl$L" role="1SzSBx">
-        <property role="TrG5h" value="cp" />
-      </node>
+      <ref role="3ttcQw" node="59eaIo$JEiw" />
     </node>
   </node>
   <node concept="3tthn1" id="36nF4tNhiRJ">
-    <property role="TrG5h" value="PackageA" />
-    <property role="3ttlnV" value="/s/s/s" />
+    <property role="TrG5h" value="cosima-aux-kd" />
+    <property role="3ttlnV" value="/path/to/cosima/aux" />
+    <property role="3GE5qa" value="packages" />
   </node>
   <node concept="3tteAz" id="36nF4tNiuwo">
-    <property role="TrG5h" value="ComplexComponent" />
+    <property role="TrG5h" value="JointPosTrajectory" />
+    <property role="3GE5qa" value="components" />
     <node concept="2D$Ly$" id="Nd1c9jqsuV" role="2WWV5w">
       <property role="TrG5h" value="internalLifeCycle" />
       <ref role="ABQvG" node="4luzaQL2qfw" resolve="configure" />
@@ -279,9 +290,9 @@
         <property role="TrG5h" value="configure" />
         <property role="AyEUC" value="true" />
         <node concept="2D$_L7" id="2NX3x6NbO5X" role="A$mYV">
-          <ref role="2D$zFo" node="2NX3x6NbO4L" resolve="setInitialTorques" />
+          <ref role="2D$zFo" node="2NX3x6NbO4L" resolve="setInitialPosition" />
           <node concept="2D$zpK" id="2NX3x6NbO6b" role="2DASKs">
-            <ref role="2DB_1T" node="2NX3x6NbO4Z" resolve="trq" />
+            <ref role="2DB_1T" node="2NX3x6NbO4Z" resolve="pos" />
             <node concept="2ShNRf" id="1pbAJw9geNn" role="2DB_1W">
               <node concept="qghkx" id="2NX3x6NbQeC" role="2ShVmc">
                 <ref role="qghDu" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
@@ -318,9 +329,9 @@
       </node>
     </node>
     <node concept="3tteAg" id="2NX3x6NbO4L" role="3ttcQt">
-      <property role="TrG5h" value="setInitialTorques" />
+      <property role="TrG5h" value="setInitialPosition" />
       <node concept="2D$zpR" id="2NX3x6NbO4Z" role="3ttcQW">
-        <property role="TrG5h" value="trq" />
+        <property role="TrG5h" value="pos" />
         <node concept="2KPMDc" id="2NX3x6NbO5r" role="2D$z68">
           <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
         </node>
@@ -328,8 +339,34 @@
       <node concept="3cqZAl" id="2NX3x6NbO5J" role="3ttcQV" />
     </node>
     <node concept="3tthn0" id="2NX3x6Nhayw" role="3ttZ$n">
-      <ref role="3tthn7" node="36nF4tNhiRJ" resolve="PackageA" />
+      <ref role="3tthn7" node="36nF4tNhiRJ" resolve="cosima-aux-kd" />
     </node>
+    <node concept="3tteAs" id="59eaIo$JEeA" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_traj" />
+      <node concept="2KPMDc" id="59eaIo$JEeE" role="17RAGi">
+        <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+      </node>
+    </node>
+  </node>
+  <node concept="3tteAz" id="59eaIo$JEcX">
+    <property role="TrG5h" value="RobotSim" />
+    <property role="3GE5qa" value="components" />
+    <node concept="3tteA$" id="59eaIo$JEcY" role="3ttcQl">
+      <property role="1T6LxX" value="Input" />
+      <property role="TrG5h" value="fullarm_JointTorque" />
+      <node concept="2KPMDc" id="59eaIo$JEd2" role="17RAGi">
+        <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+      </node>
+    </node>
+    <node concept="3tthn0" id="59eaIo$JEfG" role="3ttZ$n">
+      <ref role="3tthn7" node="59eaIo$JEfA" resolve="gazebo-robot-sim" />
+    </node>
+  </node>
+  <node concept="3tthn1" id="59eaIo$JEfA">
+    <property role="3GE5qa" value="packages" />
+    <property role="TrG5h" value="gazebo-robot-sim" />
+    <property role="3ttlnV" value="/path/to/gazebo/robot/sim" />
   </node>
 </model>
 
