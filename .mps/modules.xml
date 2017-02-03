@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/solutions/CosmoSandbox/CosmoSandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/PlanSolution/PlanSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RST-RT/RSTRT.msd" folder="" />
     </projectModules>
   </component>

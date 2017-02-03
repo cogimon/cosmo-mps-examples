@@ -5,12 +5,16 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet planModel="r:b88c4af3-5b75-4059-a9aa-aff7ee6a72d5(PlanSolution.plan)" type="generator" />
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">bddf7057-0151-4153-9658-d44eff0e1c02(OrocosComponent)</dependency>
     <dependency reexport="false">10b5a06d-1a49-4cbd-a111-d36c8106bb63(SystemsCoordination)</dependency>
     <dependency reexport="false">3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)</dependency>
     <dependency reexport="false">d6d7f6e1-f407-48f8-a582-7b1489b7163f(ProtoBuf)</dependency>
+    <dependency reexport="false">f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
@@ -39,6 +43,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="bddf7057-0151-4153-9658-d44eff0e1c02(OrocosComponent)" version="0" />
+    <module reference="f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)" version="0" />
     <module reference="d6d7f6e1-f407-48f8-a582-7b1489b7163f(ProtoBuf)" version="0" />
     <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)" version="0" />
     <module reference="10b5a06d-1a49-4cbd-a111-d36c8106bb63(SystemsCoordination)" version="0" />
