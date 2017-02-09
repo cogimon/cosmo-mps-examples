@@ -15,10 +15,13 @@
     <dependency reexport="false">3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)</dependency>
     <dependency reexport="false">d6d7f6e1-f407-48f8-a582-7b1489b7163f(ProtoBuf)</dependency>
     <dependency reexport="false">f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)</dependency>
+    <dependency reexport="false">87c26eb4-21f3-4fd4-b2e0-470c29675cae(RobotRepo)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
     <language slang="l:218e40b4-75d4-4de8-83e6-b31e4da8bcee:Component" version="0" />
+    <language slang="l:d943373f-819f-4ebe-b0e0-94c5169d72a2:HardwarePlatforms" version="0" />
+    <language slang="l:a2e36952-7e06-4722-9fd2-8242e7395d87:LWR4PlusHardwarePlatform" version="0" />
     <language slang="l:14d6bc92-051d-4467-84c8-9af7439a864f:Orocos" version="0" />
     <language slang="l:bddf7057-0151-4153-9658-d44eff0e1c02:OrocosComponent" version="0" />
     <language slang="l:39e764cb-e4fa-4923-82f4-60e672350a27:OrocosProgramScript" version="0" />
@@ -46,6 +49,7 @@
     <module reference="f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)" version="0" />
     <module reference="d6d7f6e1-f407-48f8-a582-7b1489b7163f(ProtoBuf)" version="0" />
     <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)" version="0" />
+    <module reference="87c26eb4-21f3-4fd4-b2e0-470c29675cae(RobotRepo)" version="0" />
     <module reference="10b5a06d-1a49-4cbd-a111-d36c8106bb63(SystemsCoordination)" version="0" />
     <module reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />

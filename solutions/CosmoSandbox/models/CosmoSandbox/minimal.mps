@@ -15,6 +15,8 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="d943373f-819f-4ebe-b0e0-94c5169d72a2" name="HardwarePlatforms" version="0" />
+    <use id="a2e36952-7e06-4722-9fd2-8242e7395d87" name="LWR4PlusHardwarePlatform" version="0" />
   </languages>
   <imports>
     <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
@@ -26,6 +28,8 @@
     <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
     <import index="w0zi" ref="r:2a04f2eb-187e-437f-8774-70cd48c794a7(SystemsCoordination.structure)" />
     <import index="fxt4" ref="r:ed8a5271-c522-41fe-bdbe-e2fa60373a9d(ProtoBuf.structure)" />
+    <import index="xqgf" ref="r:a7f111f0-8e49-47e5-8e30-998de124aab7(RobotRepo.manipulators)" />
+    <import index="vsc9" ref="r:3d04d94a-26c3-46bf-a65d-64c70307a80b(RobotRepo.HardwarePlatforms)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -206,7 +210,6 @@
         <child id="7882351498389317917" name="hidden_demandDescriptor" index="2d8dnL" />
         <child id="3573514252218990392" name="demands" index="12QldZ" />
       </concept>
-      <concept id="3573514252218990378" name="SoftwarePlatforms.structure.IDemand" flags="ng" index="12QldH" />
     </language>
     <language id="bddf7057-0151-4153-9658-d44eff0e1c02" name="OrocosComponent">
       <concept id="3573514252219033308" name="OrocosComponent.structure.ActivityDemand" flags="ng" index="12Q0Er">
@@ -232,6 +235,11 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="d943373f-819f-4ebe-b0e0-94c5169d72a2" name="HardwarePlatforms">
+      <concept id="3195119016065921735" name="HardwarePlatforms.structure.IAmHardwarePlatform" flags="ng" index="zSMkm">
+        <reference id="2663674772907673753" name="hardwareplatform" index="3SCSUe" />
       </concept>
     </language>
   </registry>
@@ -678,21 +686,6 @@
     <node concept="2WYcwU" id="6$F6KdawDnk" role="3ttgI2">
       <property role="TrG5h" value="JointCtrl" />
       <ref role="2WYf9R" node="6$F6KdawDni" resolve="JointPositionController" />
-      <node concept="2R8en3" id="6PzJeNwhjTV" role="lGtFl">
-        <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12QldH" id="6PzJeNwhjTW" role="2d8dnL" />
-        <node concept="12Q0Er" id="6PzJeNwhjTX" role="12QldZ">
-          <node concept="1Qwkrw" id="5MCOBE9R2sd" role="12Q0EH">
-            <property role="TrG5h" value="ActivityRT" />
-            <node concept="3b6qkQ" id="5MCOBE9R2tv" role="1QwnPZ">
-              <property role="$nhwW" value="0.0" />
-            </node>
-            <node concept="3cmrfG" id="5MCOBE9R2tR" role="1QwnPN">
-              <property role="3cmrfH" value="10" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="FWJLR" id="5MCOBE9XlxW" role="FWJL0">
         <ref role="FWJLQ" node="5MCOBE9Xlvr" resolve="in_jntPos" />
       </node>
@@ -760,6 +753,9 @@
       <node concept="2GY8tY" id="59eaIo$JEpt" role="lGtFl">
         <property role="2GY9xM" value="560.0" />
         <property role="2GY9xO" value="98.0" />
+      </node>
+      <node concept="zSMkm" id="5l2$Dw5wN6K" role="lGtFl">
+        <ref role="3SCSUe" to="vsc9:2jRhxvslqxQ" resolve="KUKA-LWR-4+_Normal" />
       </node>
     </node>
     <node concept="3tteA_" id="59eaIo$JEi$" role="3ttgI7">
