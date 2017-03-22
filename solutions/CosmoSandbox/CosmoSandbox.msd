@@ -16,6 +16,7 @@
     <dependency reexport="false">d6d7f6e1-f407-48f8-a582-7b1489b7163f(ProtoBuf)</dependency>
     <dependency reexport="false">f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)</dependency>
     <dependency reexport="false">87c26eb4-21f3-4fd4-b2e0-470c29675cae(RobotRepo)</dependency>
+    <dependency reexport="false">6d4f5997-0eeb-4a8a-86c2-d4b3ba19dd87(CCL)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
@@ -40,6 +41,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="6d4f5997-0eeb-4a8a-86c2-d4b3ba19dd87(CCL)" version="0" />
     <module reference="4cc07462-84b3-4d01-8adb-629ddd3cebd4(Capabilities)" version="0" />
     <module reference="218e40b4-75d4-4de8-83e6-b31e4da8bcee(Component)" version="0" />
     <module reference="0ed971e1-e2a7-4b38-8a14-a0d7f8463e5a(CosmoSandbox)" version="0" />
