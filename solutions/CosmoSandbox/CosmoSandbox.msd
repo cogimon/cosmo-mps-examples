@@ -21,6 +21,7 @@
   <languageVersions>
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
     <language slang="l:218e40b4-75d4-4de8-83e6-b31e4da8bcee:Component" version="0" />
+    <language slang="l:f295eeb7-1621-4398-a13c-2ca07f4fdd22:CosmoExecutionGroupProjectional" version="0" />
     <language slang="l:d943373f-819f-4ebe-b0e0-94c5169d72a2:HardwarePlatforms" version="0" />
     <language slang="l:a2e36952-7e06-4722-9fd2-8242e7395d87:LWR4PlusHardwarePlatform" version="0" />
     <language slang="l:14d6bc92-051d-4467-84c8-9af7439a864f:Orocos" version="0" />

@@ -196,8 +196,8 @@
         <ref role="2WYd3v" to="x1rx:2NJBz9CzWI9" resolve="world_path" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5qS" role="lGtFl">
-        <property role="2GY9xM" value="1020.7557907104492" />
-        <property role="2GY9xO" value="1295.2895755767822" />
+        <property role="2GY9xM" value="722.320426940918" />
+        <property role="2GY9xO" value="738.1375980377197" />
       </node>
       <node concept="2R8en3" id="2Nad5hi473L" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -229,8 +229,8 @@
         <ref role="FWJLQ" to="x1rx:5dAl56bM6B2" resolve="right_arm_JointFeedback" />
       </node>
       <node concept="2GY8tY" id="5dAl56bMJ1b" role="lGtFl">
-        <property role="2GY9xM" value="712.9776306152344" />
-        <property role="2GY9xO" value="266.9761562347412" />
+        <property role="2GY9xM" value="3468.0962829589844" />
+        <property role="2GY9xO" value="624.0822048187256" />
       </node>
       <node concept="FWJLR" id="5dAl56bMS4i" role="FWJL0">
         <ref role="FWJLQ" to="x1rx:5dAl56bMROv" resolve="torso_JointTorqueCtrl" />
@@ -280,8 +280,8 @@
         <ref role="FWJLQ" to="x1rx:4SN5UBHm4X3" resolve="out_CCstr_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5qs" role="lGtFl">
-        <property role="2GY9xM" value="2791.732147216797" />
-        <property role="2GY9xO" value="1212.7752437591553" />
+        <property role="2GY9xM" value="1827.6910095214844" />
+        <property role="2GY9xO" value="1321.8914241790771" />
       </node>
       <node concept="FWJLR" id="5dAl56bMTqo" role="FWJL0">
         <ref role="FWJLQ" to="x1rx:5dAl56bMTnf" resolve="out_MCstrInvP_port" />
@@ -316,8 +316,8 @@
         <ref role="FWJLQ" to="x1rx:4SN5UBHm6Kn" resolve="out_torques_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5qe" role="lGtFl">
-        <property role="2GY9xM" value="1021.7741394042969" />
-        <property role="2GY9xO" value="608.1734867095947" />
+        <property role="2GY9xM" value="2285.036346435547" />
+        <property role="2GY9xO" value="131.07368278503418" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47fe" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -372,8 +372,8 @@
         <ref role="FWJLQ" to="x1rx:4SN5UBHm3Rx" resolve="out_torques_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5q0" role="lGtFl">
-        <property role="2GY9xM" value="3363.5198135375977" />
-        <property role="2GY9xO" value="599.4526958465576" />
+        <property role="2GY9xM" value="2293.0276260375977" />
+        <property role="2GY9xO" value="858.02956199646" />
       </node>
       <node concept="FWJLR" id="5dAl56bMTMh" role="FWJL0">
         <ref role="FWJLQ" to="x1rx:5dAl56bMTGi" resolve="in_constraintMinvP_port" />
@@ -398,8 +398,8 @@
         <ref role="FWJLQ" to="x1rx:4SN5UBHm3Zz" resolve="out_torques_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5pM" role="lGtFl">
-        <property role="2GY9xM" value="3421.190742492676" />
-        <property role="2GY9xO" value="1560.9327449798584" />
+        <property role="2GY9xM" value="2277.855781555176" />
+        <property role="2GY9xO" value="1456.994146347046" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47hJ" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -421,8 +421,8 @@
         <ref role="FWJLQ" to="x1rx:4SN5UBHm40w" resolve="out_torques_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5p$" role="lGtFl">
-        <property role="2GY9xM" value="2821.3220596313477" />
-        <property role="2GY9xO" value="1511.980230331421" />
+        <property role="2GY9xM" value="2281.1853408813477" />
+        <property role="2GY9xO" value="1664.3985347747803" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47iS" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -471,8 +471,8 @@
         <ref role="FWJLQ" to="x1rx:4SN5UBHm6_R" resolve="out_torques_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5pm" role="lGtFl">
-        <property role="2GY9xM" value="3391.6025009155273" />
-        <property role="2GY9xO" value="1092.822759628296" />
+        <property role="2GY9xM" value="2690.0512313842773" />
+        <property role="2GY9xO" value="1112.3575496673584" />
       </node>
       <node concept="FWJLR" id="5dAl56bMUac" role="FWJL0">
         <ref role="FWJLQ" to="x1rx:5dAl56bMU51" resolve="in_constraintMinvP_port" />
@@ -500,8 +500,8 @@
         <ref role="FWJLQ" to="x1rx:4SN5UBHm6Pq" resolve="out_torques_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5p8" role="lGtFl">
-        <property role="2GY9xM" value="1459.783935546875" />
-        <property role="2GY9xO" value="598.0612506866455" />
+        <property role="2GY9xM" value="2936.61279296875" />
+        <property role="2GY9xO" value="622.8523979187012" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47la" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -535,8 +535,8 @@
         <ref role="FWJLQ" to="x1rx:4SN5UBHm74K" resolve="in_torques_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5oU" role="lGtFl">
-        <property role="2GY9xM" value="2257.9154891967773" />
-        <property role="2GY9xO" value="-8.607865333557129" />
+        <property role="2GY9xM" value="1816.7285995483398" />
+        <property role="2GY9xO" value="126.62048625946045" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47mj" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -558,8 +558,8 @@
         <ref role="2WYd3v" to="x1rx:3keJr8m8xZc" resolve="filterCoefficent" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5oG" role="lGtFl">
-        <property role="2GY9xM" value="1382.61474609375" />
-        <property role="2GY9xO" value="81.45637893676758" />
+        <property role="2GY9xM" value="727.3888549804688" />
+        <property role="2GY9xO" value="280.5517692565918" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47ns" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -674,8 +674,8 @@
         <ref role="FWJLQ" to="s37i:5dAl56bIGWI" resolve="out_pAndMuOrientation_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5ou" role="lGtFl">
-        <property role="2GY9xM" value="1822.0504989624023" />
-        <property role="2GY9xO" value="415.8562297821045" />
+        <property role="2GY9xM" value="1069.9616317749023" />
+        <property role="2GY9xO" value="51.25119209289551" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47o_" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -790,8 +790,8 @@
         <ref role="FWJLQ" to="s37i:5dAl56bIGWI" resolve="out_pAndMuOrientation_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5og" role="lGtFl">
-        <property role="2GY9xM" value="2790.9525604248047" />
-        <property role="2GY9xO" value="210.07172870635986" />
+        <property role="2GY9xM" value="1067.9269256591797" />
+        <property role="2GY9xO" value="1065.0479860305786" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47pI" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -906,8 +906,8 @@
         <ref role="FWJLQ" to="s37i:5dAl56bIGWI" resolve="out_pAndMuOrientation_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5o2" role="lGtFl">
-        <property role="2GY9xM" value="1352.397705078125" />
-        <property role="2GY9xO" value="885.0534820556641" />
+        <property role="2GY9xM" value="1448.1181640625" />
+        <property role="2GY9xO" value="905.2865142822266" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47qR" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -1007,8 +1007,8 @@
         <ref role="FWJLQ" to="u03m:5dAl56bIOzp" resolve="out_cartVel2_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5nO" role="lGtFl">
-        <property role="2GY9xM" value="2428.7887573242188" />
-        <property role="2GY9xO" value="470.1434555053711" />
+        <property role="2GY9xM" value="1444.2360229492188" />
+        <property role="2GY9xO" value="164.47127532958984" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47s0" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -1036,8 +1036,8 @@
         <ref role="FWJLQ" to="u03m:5dAl56bIPDy" resolve="out_desiredTaskSpaceAcceleration_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5nA" role="lGtFl">
-        <property role="2GY9xM" value="1874.3768310546875" />
-        <property role="2GY9xO" value="1509.8613891601562" />
+        <property role="2GY9xM" value="1819.6793212890625" />
+        <property role="2GY9xO" value="855.4935302734375" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47zQ" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -1077,8 +1077,8 @@
         <ref role="FWJLQ" to="x1rx:5dAl56bIRP_" resolve="out_pose_port" />
       </node>
       <node concept="2GY8tY" id="5dAl56bM5no" role="lGtFl">
-        <property role="2GY9xM" value="1465.66650390625" />
-        <property role="2GY9xO" value="380.0256652832031" />
+        <property role="2GY9xM" value="725.1791381835938" />
+        <property role="2GY9xO" value="508.2745666503906" />
       </node>
       <node concept="2R8en3" id="2Nad5hi47t9" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -1094,8 +1094,8 @@
       <property role="TrG5h" value="combiner" />
       <ref role="2WYf9R" to="x1rx:5dAl56bIRRw" resolve="FeedbackCombiner" />
       <node concept="2GY8tY" id="5dAl56bM5na" role="lGtFl">
-        <property role="2GY9xM" value="974.763916015625" />
-        <property role="2GY9xO" value="17.005197525024414" />
+        <property role="2GY9xM" value="732.0474243164062" />
+        <property role="2GY9xO" value="49.15434741973877" />
       </node>
       <node concept="FWJLR" id="5dAl56bMOuk" role="FWJL0">
         <ref role="FWJLQ" to="x1rx:5dAl56bMOp8" resolve="in_robotstatus_port_0" />
@@ -1123,8 +1123,8 @@
       <property role="TrG5h" value="seperator" />
       <ref role="2WYf9R" to="x1rx:5dAl56bJdJ4" resolve="TorqueCommandSeperator" />
       <node concept="2GY8tY" id="5dAl56bM5mW" role="lGtFl">
-        <property role="2GY9xM" value="178.04116821289062" />
-        <property role="2GY9xO" value="268.99864196777344" />
+        <property role="2GY9xM" value="3202.3497619628906" />
+        <property role="2GY9xO" value="624.2530326843262" />
       </node>
       <node concept="FWJLR" id="5dAl56bMRCG" role="FWJL0">
         <ref role="FWJLQ" to="x1rx:5dAl56bMRw4" resolve="in_torques_port" />

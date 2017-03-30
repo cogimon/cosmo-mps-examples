@@ -19,6 +19,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="d943373f-819f-4ebe-b0e0-94c5169d72a2" name="HardwarePlatforms" version="0" />
     <use id="a2e36952-7e06-4722-9fd2-8242e7395d87" name="LWR4PlusHardwarePlatform" version="0" />
+    <use id="f295eeb7-1621-4398-a13c-2ca07f4fdd22" name="CosmoExecutionGroupProjectional" version="0" />
   </languages>
   <imports>
     <import index="xqgf" ref="r:a7f111f0-8e49-47e5-8e30-998de124aab7(RobotRepo.manipulators)" />
@@ -1328,8 +1329,8 @@
         <ref role="2WYd3v" node="2NJBz9CzWI9" resolve="world_path" />
       </node>
       <node concept="2GY8tY" id="26kbQrMrgKE" role="lGtFl">
-        <property role="2GY9xM" value="2114.1873321533203" />
-        <property role="2GY9xO" value="417.1283264160156" />
+        <property role="2GY9xM" value="2100.2727813720703" />
+        <property role="2GY9xO" value="472.7864990234375" />
       </node>
       <node concept="2R8en3" id="26kbQrMvnqr" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -1361,8 +1362,8 @@
         <ref role="FWJLQ" node="2NJBz9CzX47" resolve="left_full_arm_JointTorqueCtrl" />
       </node>
       <node concept="2GY8tY" id="26kbQrMrgQT" role="lGtFl">
-        <property role="2GY9xM" value="2398.3411254882812" />
-        <property role="2GY9xO" value="616.0204772949219" />
+        <property role="2GY9xM" value="2399.8855590820312" />
+        <property role="2GY9xO" value="727.2351379394531" />
       </node>
       <node concept="2R8en3" id="26kbQrMvocF" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -1786,8 +1787,8 @@
         <ref role="2WYd3v" node="3keJr8m8xZc" resolve="filterCoefficent" />
       </node>
       <node concept="2GY8tY" id="26kbQrMriKc" role="lGtFl">
-        <property role="2GY9xM" value="2109.228286743164" />
-        <property role="2GY9xO" value="194.6797332763672" />
+        <property role="2GY9xM" value="2101.498062133789" />
+        <property role="2GY9xO" value="197.7718505859375" />
       </node>
       <node concept="2R8en3" id="26kbQrMvoqr" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
