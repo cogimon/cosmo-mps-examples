@@ -108,14 +108,14 @@
     </node>
     <node concept="3tteAs" id="2NJBz9CzX2V" role="3ttcQl">
       <property role="1T6LxX" value="Output" />
-      <property role="TrG5h" value="left_full_arm_JointFeedback" />
+      <property role="TrG5h" value="full_arm_JointFeedback" />
       <node concept="2KPMDc" id="2NJBz9CzX3j" role="17RAGi">
         <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
       </node>
     </node>
     <node concept="3tteA$" id="2NJBz9CzX47" role="3ttcQl">
       <property role="1T6LxX" value="Input" />
-      <property role="TrG5h" value="left_full_arm_JointTorqueCtrl" />
+      <property role="TrG5h" value="full_arm_JointTorqueCtrl" />
       <node concept="2KPMDc" id="2NJBz9CzX4R" role="17RAGi">
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
       </node>

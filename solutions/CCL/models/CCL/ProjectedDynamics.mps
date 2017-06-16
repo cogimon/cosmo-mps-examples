@@ -621,11 +621,9 @@
     </node>
     <node concept="3tteAg" id="3keJr8m8xQW" role="3ttcQt">
       <property role="TrG5h" value="setConstantForce" />
-      <node concept="2D$zpR" id="1cbL_VeRHM4" role="3ttcQW">
-        <property role="TrG5h" value="lambda" />
-        <node concept="2KPMDc" id="1cbL_VeRHMs" role="2D$z68">
-          <ref role="2KPMD3" to="sxll:3xBfiZ$w$pW" resolve="Wrench" />
-        </node>
+      <node concept="2D$zpR" id="mdFCw01uqn" role="3ttcQW">
+        <property role="TrG5h" value="new_force" />
+        <node concept="10P55v" id="mdFCw01uqN" role="2D$z68" />
       </node>
       <node concept="3cqZAl" id="3keJr8m8xR6" role="3ttcQV" />
     </node>
@@ -842,6 +840,14 @@
     <node concept="3tteAg" id="3GmkSgQd5FM" role="3ttcQt">
       <property role="TrG5h" value="computeInitialRobotOrientations" />
     </node>
+    <node concept="3tteAg" id="mdFCvZYyEh" role="3ttcQt">
+      <property role="TrG5h" value="configure" />
+      <node concept="10P_77" id="mdFCvZYyKM" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="mdFCw02eZ4" role="3ttcQt">
+      <property role="TrG5h" value="start" />
+      <node concept="10P_77" id="mdFCw02f5Z" role="3ttcQV" />
+    </node>
     <node concept="3tthn0" id="3GmkSgQd0Bm" role="3ttZ$n">
       <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />
     </node>
@@ -896,6 +902,14 @@
       <property role="TrG5h" value="displayCurrentState" />
       <node concept="3cqZAl" id="3XuVWlUVC4E" role="3ttcQV" />
     </node>
+    <node concept="3tteAg" id="mdFCw02kO0" role="3ttcQt">
+      <property role="TrG5h" value="configure" />
+      <node concept="10P_77" id="mdFCw02kSi" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="mdFCw02kSw" role="3ttcQt">
+      <property role="TrG5h" value="start" />
+      <node concept="10P_77" id="mdFCw02kXc" role="3ttcQV" />
+    </node>
     <node concept="3tthn0" id="3GmkSgQd0B_" role="3ttZ$n">
       <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />
     </node>
@@ -908,6 +922,30 @@
       <property role="1T6LxX" value="Input" />
       <property role="TrG5h" value="in_coriolisAndGravity_port" />
       <node concept="10P55v" id="3XuVWlUVCfi" role="17RAGi" />
+    </node>
+    <node concept="3tteA$" id="mdFCvZW7Dg" role="3ttcQl">
+      <property role="1T6LxX" value="Input" />
+      <property role="TrG5h" value="in_torques0_port" />
+      <node concept="2KPMDc" id="mdFCvZW7EW" role="17RAGi">
+        <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+      </node>
+    </node>
+    <node concept="3tteA$" id="mdFCvZW7H6" role="3ttcQl">
+      <property role="1T6LxX" value="Input" />
+      <property role="TrG5h" value="in_torques1_port" />
+      <node concept="2KPMDc" id="mdFCvZW7Jc" role="17RAGi">
+        <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+      </node>
+    </node>
+    <node concept="3tteA$" id="mdFCvZW7Qb" role="3ttcQl">
+      <property role="1T6LxX" value="Input" />
+      <property role="TrG5h" value="in_jacobian0_port" />
+      <node concept="10P55v" id="mdFCvZW7SF" role="17RAGi" />
+    </node>
+    <node concept="3tteA$" id="mdFCvZW7V$" role="3ttcQl">
+      <property role="1T6LxX" value="Input" />
+      <property role="TrG5h" value="in_jacobian1_port" />
+      <node concept="10P55v" id="mdFCvZW7Yu" role="17RAGi" />
     </node>
     <node concept="3tteAs" id="3XuVWlUVCgz" role="3ttcQl">
       <property role="1T6LxX" value="Output" />
@@ -1028,6 +1066,14 @@
       <property role="TrG5h" value="displayStatus" />
       <node concept="3cqZAl" id="3XuVWlUVCpo" role="3ttcQV" />
     </node>
+    <node concept="3tteAg" id="mdFCvZZu$i" role="3ttcQt">
+      <property role="TrG5h" value="configure" />
+      <node concept="10P_77" id="mdFCvZZuDM" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="mdFCvZZuE0" role="3ttcQt">
+      <property role="TrG5h" value="start" />
+      <node concept="10P_77" id="mdFCvZZuJU" role="3ttcQV" />
+    </node>
     <node concept="3tthn0" id="3GmkSgQd0BO" role="3ttZ$n">
       <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />
     </node>
@@ -1097,6 +1143,14 @@
     <node concept="3tteAg" id="3XuVWlUVDd_" role="3ttcQt">
       <property role="TrG5h" value="displayCurrentState" />
       <node concept="3cqZAl" id="3XuVWlUVDeO" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="mdFCvZYrEB" role="3ttcQt">
+      <property role="TrG5h" value="configure" />
+      <node concept="10P_77" id="mdFCvZYrKV" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="mdFCw02fQi" role="3ttcQt">
+      <property role="TrG5h" value="start" />
+      <node concept="10P_77" id="mdFCw02fX0" role="3ttcQV" />
     </node>
     <node concept="3tthn0" id="3GmkSgQd0C3" role="3ttZ$n">
       <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />

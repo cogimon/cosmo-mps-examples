@@ -122,6 +122,30 @@
       <property role="TrG5h" value="start" />
       <node concept="10P_77" id="2NJBz9CzXZ0" role="3ttcQV" />
     </node>
+    <node concept="3tteAg" id="mdFCvZWAVI" role="3ttcQt">
+      <property role="TrG5h" value="spawn_model_at_position_and_orientation" />
+      <node concept="2D$zpR" id="mdFCvZWB2g" role="3ttcQW">
+        <property role="TrG5h" value="modelName" />
+        <node concept="17QB3L" id="mdFCvZWB2G" role="2D$z68" />
+      </node>
+      <node concept="2D$zpR" id="mdFCvZWB2V" role="3ttcQW">
+        <property role="TrG5h" value="modelURI" />
+        <node concept="17QB3L" id="mdFCvZWB3L" role="2D$z68" />
+      </node>
+      <node concept="2D$zpR" id="mdFCvZWB40" role="3ttcQW">
+        <property role="TrG5h" value="t" />
+        <node concept="2KPMDc" id="mdFCvZWB5g" role="2D$z68">
+          <ref role="2KPMD3" to="sxll:aj6lJ" resolve="Translation" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="mdFCvZWB22" role="3ttcQV" />
+      <node concept="2D$zpR" id="mdFCvZWB5$" role="3ttcQW">
+        <property role="TrG5h" value="r" />
+        <node concept="2KPMDc" id="mdFCvZWB7e" role="2D$z68">
+          <ref role="2KPMD3" to="sxll:1sReu" resolve="Rotation" />
+        </node>
+      </node>
+    </node>
     <node concept="3tthn0" id="2bdHGz6MPNq" role="3ttZ$n">
       <ref role="3tthn7" node="2bdHGz6MPGn" resolve="rtt_gazebo_embedded" />
     </node>

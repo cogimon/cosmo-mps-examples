@@ -244,6 +244,16 @@
       </node>
       <node concept="3cqZAl" id="3GmkSgQd16M" role="3ttcQV" />
     </node>
+    <node concept="3tteAg" id="mdFCw01ok6" role="3ttcQt">
+      <property role="TrG5h" value="getPoseTranslationRSTRT" />
+      <node concept="2D$zpR" id="mdFCw01owI" role="3ttcQW">
+        <property role="TrG5h" value="poseTranslation" />
+        <node concept="2KPMDc" id="mdFCw01oxa" role="2D$z68">
+          <ref role="2KPMD3" to="sxll:aj6lJ" resolve="Translation" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="mdFCw01oww" role="3ttcQV" />
+    </node>
     <node concept="3tteAg" id="3GmkSgQd17F" role="3ttcQt">
       <property role="TrG5h" value="getPoseOrientation" />
       <node concept="2D$zpR" id="3GmkSgQd1dp" role="3ttcQW">

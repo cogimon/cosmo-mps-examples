@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/solutions/CCL/CCL.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/CosmoSandbox/CosmoSandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/DualArmBox/DualArmBox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/PlanSolution/PlanSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RST-RT/RSTRT.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RobotRepo/RobotRepo.msd" folder="" />
