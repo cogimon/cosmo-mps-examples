@@ -56,7 +56,7 @@
     </language>
   </registry>
   <node concept="3tteAz" id="2bdHGz6MPAp">
-    <property role="TrG5h" value="TorqueCommandSeperator" />
+    <property role="TrG5h" value="TorqueCommandSeperatorOLD" />
     <node concept="3tteAg" id="2bdHGz6MQ6g" role="3ttcQt">
       <property role="TrG5h" value="configure" />
       <node concept="10P_77" id="2bdHGz6MQ6u" role="3ttcQV" />

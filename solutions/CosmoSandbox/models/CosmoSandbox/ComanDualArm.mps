@@ -154,6 +154,7 @@
       <concept id="1388645655554741038" name="SystemsCoordination.structure.GlobalComponentInstReference" flags="ng" index="3pvUrN">
         <reference id="1388645655554742676" name="componentInst" index="3pvUL9" />
       </concept>
+      <concept id="539072786486415712" name="SystemsCoordination.structure.TransitionConnectPorts" flags="ng" index="3tSnER" />
     </language>
     <language id="8fb3e629-b68f-443e-b616-d61142df624b" name="SoftwarePlatforms">
       <concept id="3195119016065919877" name="SoftwarePlatforms.structure.IAmSoftwarePlatform" flags="ng" index="zSNLk">
@@ -3484,9 +3485,12 @@
             </node>
           </node>
         </node>
+        <node concept="3tSnER" id="tVaXvqFRaW" role="A$mYT">
+          <ref role="A$mVY" node="5dAl56bJze$" resolve="AfterPortsAreConnected22" />
+        </node>
       </node>
       <node concept="AAcsC" id="5dAl56bJze$" role="AA3t3">
-        <property role="TrG5h" value="AfterPortsAreConnected" />
+        <property role="TrG5h" value="AfterPortsAreConnected22" />
         <property role="AyEUC" value="true" />
         <node concept="2RThQF" id="5dAl56bMKHr" role="A$mYV">
           <node concept="2OqwBi" id="5dAl56bMLh1" role="2RThOI">
@@ -3803,6 +3807,20 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3pkOsz" id="f83v3q_Lym">
+    <node concept="2D$Ly$" id="f83v3q_Lyn" role="20k7j">
+      <ref role="ABQvG" node="f83v3q_L_X" resolve="A" />
+      <node concept="AAcsC" id="f83v3q_L_X" role="AA3t3">
+        <property role="TrG5h" value="A" />
+        <node concept="A$mVN" id="f83v3q_LAp" role="A$mYT">
+          <ref role="A$mVY" node="f83v3q_L_k" resolve="B" />
+        </node>
+      </node>
+      <node concept="AAcsC" id="f83v3q_L_k" role="AA3t3">
+        <property role="TrG5h" value="B" />
       </node>
     </node>
   </node>
