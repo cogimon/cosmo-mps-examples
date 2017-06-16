@@ -9,6 +9,7 @@
     <use id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component" version="0" />
     <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit" version="0" />
   </languages>
   <imports>
     <import index="xqgf" ref="r:a7f111f0-8e49-47e5-8e30-998de124aab7(RobotRepo.manipulators)" />
@@ -133,6 +134,15 @@
         <child id="6168113672289314063" name="onentry" index="A$mYV" />
       </concept>
       <concept id="6168113672288816540" name="coordination.structure.State" flags="ng" index="AAcsC" />
+    </language>
+    <language id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit">
+      <concept id="400167841045635796" name="EigenTypekit.structure.EigenVectorCreator" flags="ng" index="5wGLs">
+        <child id="400167841045636019" name="type" index="5wGOV" />
+        <child id="400167841046895036" name="dim" index="5FNsO" />
+      </concept>
+      <concept id="400167841045343617" name="EigenTypekit.structure.EigenVector" flags="ig" index="5xOc9">
+        <child id="400167841046484621" name="type" index="5$vw5" />
+      </concept>
     </language>
     <language id="10b5a06d-1a49-4cbd-a111-d36c8106bb63" name="SystemsCoordination">
       <concept id="3481832625097717111" name="SystemsCoordination.structure.ILifeCycleWrapper" flags="ng" index="20k4$">
@@ -3869,6 +3879,130 @@
             </node>
           </node>
         </node>
+        <node concept="2RThQF" id="mdFCw08xXK" role="A$mYV">
+          <node concept="37vLTI" id="mdFCw08$iL" role="2RThOI">
+            <node concept="FJ1c_" id="mdFCw08DjS" role="37vLTx">
+              <node concept="2Dc6tP" id="mdFCw08Dr7" role="3uHU7w">
+                <ref role="2Dc6tO" node="mdFCvZWDjI" resolve="numRobotFingers" />
+              </node>
+              <node concept="2Dc6tP" id="mdFCw08CTq" role="3uHU7B">
+                <ref role="2Dc6tO" node="mdFCvZWKYe" resolve="TaskSpaceDimension" />
+              </node>
+            </node>
+            <node concept="AH0OO" id="mdFCw08$7$" role="37vLTJ">
+              <node concept="3cmrfG" id="mdFCw08$9m" role="AHEQo">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2Dc6tP" id="mdFCw08zZ4" role="AHHXb">
+                <ref role="2Dc6tO" node="mdFCw03gLk" resolve="taskdimensions" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2RThQF" id="mdFCw08Aqo" role="A$mYV">
+          <node concept="37vLTI" id="mdFCw08CG9" role="2RThOI">
+            <node concept="2Dc6tP" id="mdFCw08DxN" role="37vLTx">
+              <ref role="2Dc6tO" node="mdFCvZWKYe" resolve="TaskSpaceDimension" />
+            </node>
+            <node concept="AH0OO" id="mdFCw08Cxj" role="37vLTJ">
+              <node concept="3cmrfG" id="mdFCw08Cye" role="AHEQo">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="2Dc6tP" id="mdFCw08Ct0" role="AHHXb">
+                <ref role="2Dc6tO" node="mdFCw03gLk" resolve="taskdimensions" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2RThQF" id="mdFCw08JJ3" role="A$mYV">
+          <node concept="2OqwBi" id="mdFCw08LUt" role="2RThOI">
+            <node concept="2OqwBi" id="mdFCw08LNG" role="2Oq$k0">
+              <node concept="2RT1ic" id="mdFCw08LNr" role="2Oq$k0" />
+              <node concept="3pvUrN" id="mdFCw08LQg" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW6cY" resolve="motiontaskprioritization" />
+              </node>
+            </node>
+            <node concept="2D$_L7" id="mdFCw08LZk" role="2OqNvi">
+              <ref role="2D$zFo" to="73wf:3XuVWlUVBZS" resolve="setNumLevels" />
+              <node concept="2D$zpK" id="mdFCw08LZm" role="2DASKs">
+                <ref role="2DB_1T" to="73wf:3XuVWlUVC9x" resolve="numInputPorts" />
+                <node concept="2Dc6tP" id="mdFCw08M08" role="2DB_1W">
+                  <ref role="2Dc6tO" node="mdFCw00Jlr" resolve="numLevelsTasks" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2RThQF" id="mdFCw08O6z" role="A$mYV">
+          <node concept="2OqwBi" id="mdFCw08QjH" role="2RThOI">
+            <node concept="2OqwBi" id="mdFCw08QcW" role="2Oq$k0">
+              <node concept="2RT1ic" id="mdFCw08QcF" role="2Oq$k0" />
+              <node concept="3pvUrN" id="mdFCw08Qfw" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW6cY" resolve="motiontaskprioritization" />
+              </node>
+            </node>
+            <node concept="2D$_L7" id="mdFCw094is" role="2OqNvi">
+              <ref role="2D$zFo" to="73wf:3XuVWlUVC06" resolve="setTasksize" />
+              <node concept="2D$zpK" id="mdFCw094iu" role="2DASKs">
+                <ref role="2DB_1T" to="73wf:3XuVWlUVC8C" resolve="tasksize" />
+                <node concept="2Dc6tP" id="mdFCw09kAk" role="2DB_1W">
+                  <ref role="2Dc6tO" node="mdFCw03gLk" resolve="taskdimensions" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2RThQF" id="mdFCw08SHo" role="A$mYV">
+          <node concept="2OqwBi" id="mdFCw08UWi" role="2RThOI">
+            <node concept="2OqwBi" id="mdFCw08UPx" role="2Oq$k0">
+              <node concept="2RT1ic" id="mdFCw08UPg" role="2Oq$k0" />
+              <node concept="3pvUrN" id="mdFCw08US5" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW6cY" resolve="motiontaskprioritization" />
+              </node>
+            </node>
+            <node concept="2D$_L7" id="mdFCw08V19" role="2OqNvi">
+              <ref role="2D$zFo" to="73wf:3XuVWlUVC0x" resolve="setDOFsize" />
+              <node concept="2D$zpK" id="mdFCw08V1b" role="2DASKs">
+                <ref role="2DB_1T" to="73wf:3XuVWlUVC7J" resolve="DOFsize" />
+                <node concept="2Dc6tP" id="mdFCw08V1X" role="2DB_1W">
+                  <ref role="2Dc6tO" node="mdFCvZWElE" resolve="DOFsizeAllRobots" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2RThQF" id="mdFCw08XbQ" role="A$mYV">
+          <node concept="2OqwBi" id="mdFCw08Zsw" role="2RThOI">
+            <node concept="2OqwBi" id="mdFCw08ZlJ" role="2Oq$k0">
+              <node concept="2RT1ic" id="mdFCw08Zlu" role="2Oq$k0" />
+              <node concept="3pvUrN" id="mdFCw08Zoj" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW6cY" resolve="motiontaskprioritization" />
+              </node>
+            </node>
+            <node concept="2D$_L7" id="mdFCw0943M" role="2OqNvi">
+              <ref role="2D$zFo" to="73wf:3XuVWlUVC1Y" resolve="preparePorts" />
+              <node concept="2D$zpK" id="mdFCw0943O" role="2DASKs">
+                <ref role="2DB_1T" to="73wf:mdFCw0941s" resolve="prefix" />
+                <node concept="Xl_RD" id="mdFCw0944A" role="2DB_1W">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2RThQF" id="mdFCw091Fl" role="A$mYV">
+          <node concept="2OqwBi" id="mdFCw093Xj" role="2RThOI">
+            <node concept="2OqwBi" id="mdFCw093Qy" role="2Oq$k0">
+              <node concept="2RT1ic" id="mdFCw093Qh" role="2Oq$k0" />
+              <node concept="3pvUrN" id="mdFCw093T6" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW6cY" resolve="motiontaskprioritization" />
+              </node>
+            </node>
+            <node concept="2D$_L7" id="mdFCw0940T" role="2OqNvi">
+              <ref role="2D$zFo" to="73wf:mdFCw02kO0" resolve="configure" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="AAcsC" id="mdFCw02a4v" role="AA3t3">
         <property role="TrG5h" value="AfterPortsAreConnected" />
@@ -4644,6 +4778,20 @@
         <node concept="10Oyi0" id="mdFCw00JTG" role="2D1jJ3" />
         <node concept="3cmrfG" id="mdFCw00JUg" role="2D1jJT">
           <property role="3cmrfH" value="2" />
+        </node>
+      </node>
+      <node concept="2D1jA2" id="mdFCw03gLk" role="3AET3I">
+        <property role="TrG5h" value="taskdimensions" />
+        <node concept="2ShNRf" id="mdFCw03Q7B" role="2D1jJT">
+          <node concept="5wGLs" id="mdFCw08Hwq" role="2ShVmc">
+            <node concept="10P55v" id="mdFCw0apXm" role="5wGOV" />
+            <node concept="2Dc6tP" id="mdFCw08HBq" role="5FNsO">
+              <ref role="2Dc6tO" node="mdFCw00Jlr" resolve="numLevelsTasks" />
+            </node>
+          </node>
+        </node>
+        <node concept="5xOc9" id="mdFCw07lRm" role="2D1jJ3">
+          <node concept="10P55v" id="mdFCw08vUX" role="5$vw5" />
         </node>
       </node>
     </node>

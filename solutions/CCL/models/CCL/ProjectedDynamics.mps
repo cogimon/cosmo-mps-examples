@@ -4,6 +4,7 @@
   <languages>
     <use id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf" version="0" />
     <use id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component" version="0" />
+    <use id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit" version="0" />
   </languages>
   <imports>
     <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
@@ -50,6 +51,11 @@
       <concept id="1695646464731852984" name="Component.structure.Package" flags="ng" index="3tthn1" />
       <concept id="3587304184607912533" name="Component.structure.IOTypeIF" flags="ng" index="1T6LxN">
         <property id="3587304184607912539" name="ioType" index="1T6LxX" />
+      </concept>
+    </language>
+    <language id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit">
+      <concept id="400167841045343617" name="EigenTypekit.structure.EigenVector" flags="ig" index="5xOc9">
+        <child id="400167841046484621" name="type" index="5$vw5" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -874,7 +880,9 @@
       <property role="TrG5h" value="setTasksize" />
       <node concept="2D$zpR" id="3XuVWlUVC8C" role="3ttcQW">
         <property role="TrG5h" value="tasksize" />
-        <node concept="10P55v" id="3XuVWlUVC94" role="2D$z68" />
+        <node concept="5xOc9" id="mdFCw0944U" role="2D$z68">
+          <node concept="10P55v" id="mdFCw0945x" role="5$vw5" />
+        </node>
       </node>
       <node concept="3cqZAl" id="3XuVWlUVC8q" role="3ttcQV" />
     </node>
@@ -896,6 +904,10 @@
     </node>
     <node concept="3tteAg" id="3XuVWlUVC1Y" role="3ttcQt">
       <property role="TrG5h" value="preparePorts" />
+      <node concept="2D$zpR" id="mdFCw0941s" role="3ttcQW">
+        <property role="TrG5h" value="prefix" />
+        <node concept="17QB3L" id="mdFCw0941U" role="2D$z68" />
+      </node>
       <node concept="3cqZAl" id="3XuVWlUVC30" role="3ttcQV" />
     </node>
     <node concept="3tteAg" id="3XuVWlUVC3e" role="3ttcQt">
