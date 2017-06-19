@@ -53,6 +53,10 @@
         <property role="2V$B1T" value="b19d14b8-140d-46f9-8871-ed4f03a1bc9c" />
         <property role="2V$B1Q" value="OrocosProgramScriptProto" />
       </node>
+      <node concept="2V$Bhx" id="4p2rEsguF08" role="1t_9vn">
+        <property role="2V$B1T" value="c283eb95-2e55-40f7-8817-bd284813e741" />
+        <property role="2V$B1Q" value="OrocosProgramScriptEigenTypekit" />
+      </node>
     </node>
     <node concept="2VgMA1" id="1AsQWJG6vA8" role="2VgMA7">
       <property role="TrG5h" value="afterOPSP" />
