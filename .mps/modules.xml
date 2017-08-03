@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/solutions/CCL/CCL.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/CCLnew/CCLnew.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/CosmoSandbox/CosmoSandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DualArmBox/DualArmBox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/PlanSolution/PlanSolution.msd" folder="" />

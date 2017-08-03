@@ -1227,5 +1227,95 @@
       <node concept="10P55v" id="3XuVWlUVEjl" role="17RAGi" />
     </node>
   </node>
+  <node concept="3tteAz" id="5wO0nxMrT1O">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="JointPositionController" />
+    <node concept="3tteAg" id="5wO0nxMrT1X" role="3ttcQt">
+      <property role="TrG5h" value="setDOFsize" />
+      <node concept="2D$zpR" id="5wO0nxMrT1Y" role="3ttcQW">
+        <property role="TrG5h" value="dof" />
+        <node concept="10Oyi0" id="5wO0nxMrT1Z" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="5wO0nxMrT20" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5wO0nxMrT21" role="3ttcQt">
+      <property role="TrG5h" value="setGains" />
+      <node concept="2D$zpR" id="5wO0nxMrT22" role="3ttcQW">
+        <property role="TrG5h" value="gainP" />
+        <node concept="10P55v" id="5wO0nxMrT23" role="2D$z68" />
+      </node>
+      <node concept="2D$zpR" id="5wO0nxMrT24" role="3ttcQW">
+        <property role="TrG5h" value="gainD" />
+        <node concept="10P55v" id="5wO0nxMrT25" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="5wO0nxMrT26" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5wO0nxMrT27" role="3ttcQt">
+      <property role="TrG5h" value="setDesiredJntAng" />
+      <node concept="2D$zpR" id="5wO0nxMrT28" role="3ttcQW">
+        <property role="TrG5h" value="angles" />
+        <node concept="2KPMDc" id="5wO0nxMrT29" role="2D$z68">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5wO0nxMrT2a" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5wO0nxMrT2b" role="3ttcQt">
+      <property role="TrG5h" value="setDesJntVel" />
+      <node concept="2D$zpR" id="5wO0nxMrT2c" role="3ttcQW">
+        <property role="TrG5h" value="desJVel" />
+        <node concept="2KPMDc" id="5wO0nxMrT2d" role="2D$z68">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$p6" resolve="JointVelocities" />
+        </node>
+      </node>
+      <node concept="10P_77" id="5wO0nxMrT2e" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5wO0nxMrT2f" role="3ttcQt">
+      <property role="TrG5h" value="setJointVelocityLimit" />
+      <node concept="2D$zpR" id="5wO0nxMrT2g" role="3ttcQW">
+        <property role="TrG5h" value="jointVelocityLimit" />
+        <node concept="10P55v" id="5wO0nxMrT2h" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="5wO0nxMrT2i" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5wO0nxMrT2v" role="3ttcQt">
+      <property role="TrG5h" value="displayCurrentState" />
+      <node concept="3cqZAl" id="5wO0nxMrT2w" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5wO0nxMrT2x" role="3ttcQt">
+      <property role="TrG5h" value="configure" />
+      <node concept="10P_77" id="5wO0nxMrT2y" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5wO0nxMrT2z" role="3ttcQt">
+      <property role="TrG5h" value="start" />
+      <node concept="10P_77" id="5wO0nxMrT2$" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5wO0nxMrTz0" role="3ttcQt">
+      <property role="TrG5h" value="stop" />
+      <node concept="3cqZAl" id="5wO0nxMrTGh" role="3ttcQV" />
+    </node>
+    <node concept="3tthn0" id="5wO0nxMrT2_" role="3ttZ$n">
+      <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />
+    </node>
+    <node concept="3tteA$" id="5wO0nxMrT2A" role="3ttcQl">
+      <property role="1T6LxX" value="Input" />
+      <property role="TrG5h" value="in_robotstatus_port" />
+      <node concept="2KPMDc" id="5wO0nxMrT2B" role="17RAGi">
+        <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+      </node>
+    </node>
+    <node concept="3tteA$" id="5wO0nxMrT2C" role="3ttcQl">
+      <property role="1T6LxX" value="Input" />
+      <property role="TrG5h" value="in_coriolisAndGravity_port" />
+      <node concept="10P55v" id="5wO0nxMrT2D" role="17RAGi" />
+    </node>
+    <node concept="3tteAs" id="5wO0nxMrT2E" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_torques_port" />
+      <node concept="2KPMDc" id="5wO0nxMrT2F" role="17RAGi">
+        <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -9,7 +9,6 @@
   <languageVersions>
     <language slang="l:d943373f-819f-4ebe-b0e0-94c5169d72a2:HardwarePlatforms" version="0" />
     <language slang="l:d6881f78-a85d-4c9e-931e-30879e67afdd:Kinematics" version="0" />
-    <language slang="l:a2e36952-7e06-4722-9fd2-8242e7395d87:LWR4PlusHardwarePlatform" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
     <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />

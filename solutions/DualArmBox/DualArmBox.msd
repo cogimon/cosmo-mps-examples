@@ -24,6 +24,7 @@
     <language slang="l:dfed0f13-ca0e-4e6d-b469-ef760982a8ea:EigenTypekit" version="0" />
     <language slang="l:14d6bc92-051d-4467-84c8-9af7439a864f:Orocos" version="0" />
     <language slang="l:bddf7057-0151-4153-9658-d44eff0e1c02:OrocosComponent" version="0" />
+    <language slang="l:f851498a-fbd1-49e3-9bcf-42acc68a2d89:OrocosSystemsCoordination" version="0" />
     <language slang="l:d6d7f6e1-f407-48f8-a582-7b1489b7163f:ProtoBuf" version="0" />
     <language slang="l:8fb3e629-b68f-443e-b616-d61142df624b:SoftwarePlatforms" version="0" />
     <language slang="l:10b5a06d-1a49-4cbd-a111-d36c8106bb63:SystemsCoordination" version="0" />
