@@ -127,6 +127,13 @@
         <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
       </node>
     </node>
+    <node concept="3tteA$" id="4td2CtEiAGp" role="3ttcQl">
+      <property role="1T6LxX" value="Input" />
+      <property role="TrG5h" value="in_robotstatus_port_3" />
+      <node concept="2KPMDc" id="4td2CtEiAIX" role="17RAGi">
+        <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+      </node>
+    </node>
     <node concept="3tteAs" id="5dAl56bMO_E" role="3ttcQl">
       <property role="1T6LxX" value="Output" />
       <property role="TrG5h" value="out_robotstatus_port" />
@@ -466,6 +473,13 @@
       <property role="1T6LxX" value="Output" />
       <property role="TrG5h" value="out_torques_port_2" />
       <node concept="2KPMDc" id="5dAl56bMRCo" role="17RAGi">
+        <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+      </node>
+    </node>
+    <node concept="3tteAs" id="4td2CtEiANc" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_torques_port_3" />
+      <node concept="2KPMDc" id="4td2CtEiAPK" role="17RAGi">
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
       </node>
     </node>

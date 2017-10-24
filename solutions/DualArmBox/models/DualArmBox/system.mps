@@ -335,6 +335,9 @@
           </node>
         </node>
       </node>
+      <node concept="FWJLR" id="4td2CtEiXE9" role="FWJL0">
+        <ref role="FWJLQ" to="gw48:4td2CtEiAGp" resolve="in_robotstatus_port_3" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4$7" role="3ttgI2">
       <property role="TrG5h" value="seperator" />
@@ -367,6 +370,9 @@
             <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
           </node>
         </node>
+      </node>
+      <node concept="FWJLR" id="4td2CtEiXFq" role="FWJL0">
+        <ref role="FWJLQ" to="gw48:4td2CtEiANc" resolve="out_torques_port_3" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4Ao" role="3ttgI2">

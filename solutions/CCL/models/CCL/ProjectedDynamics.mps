@@ -1317,5 +1317,128 @@
       </node>
     </node>
   </node>
+  <node concept="3tteAz" id="4td2CtEif5F">
+    <property role="TrG5h" value="TrajectoryGeneratorQuadroKukaArm" />
+    <node concept="3tteAs" id="4td2CtEif5G" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_desiredTaskSpacePosition_port" />
+      <node concept="10P55v" id="4td2CtEif5H" role="17RAGi" />
+    </node>
+    <node concept="3tteAs" id="4td2CtEif5I" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_desiredTaskSpaceVelocity_port" />
+      <node concept="10P55v" id="4td2CtEif5J" role="17RAGi" />
+    </node>
+    <node concept="3tteAs" id="4td2CtEif5K" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_desiredTaskSpaceAcceleration_port" />
+      <node concept="10P55v" id="4td2CtEif5L" role="17RAGi" />
+    </node>
+    <node concept="3tteAs" id="4td2CtEif5M" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_desiredTaskSpaceBoxPosition_port" />
+      <node concept="10P55v" id="4td2CtEif5N" role="17RAGi" />
+    </node>
+    <node concept="3tteAs" id="4td2CtEif5O" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_desiredTaskSpaceBoxVelocity_port" />
+      <node concept="10P55v" id="4td2CtEif5P" role="17RAGi" />
+    </node>
+    <node concept="3tteAs" id="4td2CtEif5Q" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_desiredTaskSpaceBoxAcceleration_port" />
+      <node concept="10P55v" id="4td2CtEif5R" role="17RAGi" />
+    </node>
+    <node concept="3tteAs" id="4td2CtEif5S" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_directionEE_port" />
+      <node concept="10P55v" id="4td2CtEif5T" role="17RAGi" />
+    </node>
+    <node concept="3tteAs" id="4td2CtEif5U" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_incontactstate_port" />
+      <node concept="10P55v" id="4td2CtEif5V" role="17RAGi" />
+    </node>
+    <node concept="3tteAs" id="4td2CtEif5W" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_endeffectorstatus_port" />
+      <node concept="10P55v" id="4td2CtEif5X" role="17RAGi" />
+    </node>
+    <node concept="3tteAj" id="4td2CtEif5Y" role="3ttcQu">
+      <property role="TrG5h" value="factor" />
+      <node concept="10P55v" id="4td2CtEif5Z" role="3ttcR6" />
+    </node>
+    <node concept="3tteAj" id="4td2CtEif60" role="3ttcQu">
+      <property role="TrG5h" value="timescale" />
+      <node concept="10P55v" id="4td2CtEif61" role="3ttcR6" />
+    </node>
+    <node concept="3tteAg" id="4td2CtEif62" role="3ttcQt">
+      <property role="TrG5h" value="preparePorts" />
+      <node concept="3cqZAl" id="4td2CtEif63" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="4td2CtEif64" role="3ttcQt">
+      <property role="TrG5h" value="setWaitTime" />
+      <node concept="2D$zpR" id="4td2CtEif65" role="3ttcQW">
+        <property role="TrG5h" value="wTime" />
+        <node concept="10P55v" id="4td2CtEif66" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="4td2CtEif67" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="4td2CtEif68" role="3ttcQt">
+      <property role="TrG5h" value="setTransitionTime" />
+      <node concept="2D$zpR" id="4td2CtEif69" role="3ttcQW">
+        <property role="TrG5h" value="tTime" />
+        <node concept="10P55v" id="4td2CtEif6a" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="4td2CtEif6b" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="4td2CtEif6c" role="3ttcQt">
+      <property role="TrG5h" value="setReconfigureTransitionTime" />
+      <node concept="2D$zpR" id="4td2CtEif6d" role="3ttcQW">
+        <property role="TrG5h" value="tTime" />
+        <node concept="10P55v" id="4td2CtEif6e" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="4td2CtEif6f" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="4td2CtEif6g" role="3ttcQt">
+      <property role="TrG5h" value="setInitialObjectPose" />
+      <node concept="2D$zpR" id="4td2CtEif6h" role="3ttcQW">
+        <property role="TrG5h" value="t" />
+        <node concept="2KPMDc" id="4td2CtEif6i" role="2D$z68">
+          <ref role="2KPMD3" to="sxll:aj6lJ" resolve="Translation" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4td2CtEif6j" role="3ttcQV" />
+      <node concept="2D$zpR" id="4td2CtEif6k" role="3ttcQW">
+        <property role="TrG5h" value="r" />
+        <node concept="2KPMDc" id="4td2CtEif6l" role="2D$z68">
+          <ref role="2KPMD3" to="sxll:1sReu" resolve="Rotation" />
+        </node>
+      </node>
+    </node>
+    <node concept="3tteAg" id="4td2CtEif6m" role="3ttcQt">
+      <property role="TrG5h" value="setObjectSize" />
+      <node concept="2D$zpR" id="4td2CtEif6n" role="3ttcQW">
+        <property role="TrG5h" value="size" />
+        <node concept="10P55v" id="4td2CtEif6o" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="4td2CtEif6p" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="4td2CtEif6q" role="3ttcQt">
+      <property role="TrG5h" value="displayStatus" />
+      <node concept="3cqZAl" id="4td2CtEif6r" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="4td2CtEif6s" role="3ttcQt">
+      <property role="TrG5h" value="configure" />
+      <node concept="10P_77" id="4td2CtEif6t" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="4td2CtEif6u" role="3ttcQt">
+      <property role="TrG5h" value="start" />
+      <node concept="10P_77" id="4td2CtEif6v" role="3ttcQV" />
+    </node>
+    <node concept="3tthn0" id="4td2CtEif6w" role="3ttZ$n">
+      <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />
+    </node>
+  </node>
 </model>
 
