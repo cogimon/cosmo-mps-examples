@@ -7,11 +7,10 @@
     <use id="bddf7057-0151-4153-9658-d44eff0e1c02" name="OrocosComponent" version="0" />
     <use id="10b5a06d-1a49-4cbd-a111-d36c8106bb63" name="SystemsCoordination" version="0" />
     <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf" version="0" />
   </languages>
   <imports>
-    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
     <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
   </imports>
   <registry>
@@ -194,7 +193,6 @@
     </language>
     <language id="8fb3e629-b68f-443e-b616-d61142df624b" name="SoftwarePlatforms">
       <concept id="3195119016065919877" name="SoftwarePlatforms.structure.IAmSoftwarePlatform" flags="ng" index="zSNLk">
-        <child id="7882351498389317917" name="hidden_demandDescriptor" index="2d8dnL" />
         <child id="3573514252218990392" name="demands" index="12QldZ" />
       </concept>
     </language>
@@ -213,7 +211,6 @@
     </language>
     <language id="14d6bc92-051d-4467-84c8-9af7439a864f" name="Orocos">
       <concept id="6641102591361616477" name="Orocos.structure.IMOrocos" flags="ng" index="2R8en3" />
-      <concept id="3573514252219756227" name="Orocos.structure.IMOrocosDemand" flags="ng" index="12Nga4" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -683,7 +680,6 @@
       </node>
       <node concept="2R8en3" id="2NJBz9C$37y" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2NJBz9C$37$" role="2d8dnL" />
         <node concept="12Q0Er" id="2NJBz9C$37A" role="12QldZ">
           <node concept="1QwnVF" id="2NJBz9C$38x" role="12Q0EH">
             <ref role="1QwnVw" node="3EN1bLzFGQV" resolve="ActivityOther" />
@@ -700,7 +696,6 @@
       </node>
       <node concept="2R8en3" id="3EN1bLzFGPM" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="3EN1bLzFGPO" role="2d8dnL" />
         <node concept="12Q0Er" id="3EN1bLzFGPQ" role="12QldZ">
           <node concept="1Qwkrw" id="3EN1bLzFGQV" role="12Q0EH">
             <property role="TrG5h" value="ActivityOther" />
@@ -734,7 +729,6 @@
       </node>
       <node concept="2R8en3" id="59eaIo$JEiB" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="59eaIo$JEiD" role="2d8dnL" />
         <node concept="12Q0Er" id="59eaIo$JEiF" role="12QldZ">
           <node concept="1QwnVF" id="59eaIo$JEiO" role="12Q0EH">
             <ref role="1QwnVw" node="3EN1bLzFGQV" resolve="ActivityOther" />

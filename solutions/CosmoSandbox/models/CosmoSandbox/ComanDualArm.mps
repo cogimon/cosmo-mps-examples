@@ -156,7 +156,6 @@
     </language>
     <language id="8fb3e629-b68f-443e-b616-d61142df624b" name="SoftwarePlatforms">
       <concept id="3195119016065919877" name="SoftwarePlatforms.structure.IAmSoftwarePlatform" flags="ng" index="zSNLk">
-        <child id="7882351498389317917" name="hidden_demandDescriptor" index="2d8dnL" />
         <child id="3573514252218990392" name="demands" index="12QldZ" />
       </concept>
     </language>
@@ -175,7 +174,6 @@
     </language>
     <language id="14d6bc92-051d-4467-84c8-9af7439a864f" name="Orocos">
       <concept id="6641102591361616477" name="Orocos.structure.IMOrocos" flags="ng" index="2R8en3" />
-      <concept id="3573514252219756227" name="Orocos.structure.IMOrocosDemand" flags="ng" index="12Nga4" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -200,7 +198,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi473L" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi473N" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi4748" role="12QldZ">
           <node concept="1Qwkrw" id="2Nad5hi475d" role="12Q0EH">
             <property role="TrG5h" value="act_gazebo" />
@@ -242,7 +239,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi477l" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi477n" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi477p" role="12QldZ">
           <node concept="1Qwkrw" id="2Nad5hi478u" role="12Q0EH">
             <property role="TrG5h" value="act_coman_gazebo" />
@@ -287,7 +283,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47bw" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47by" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47b$" role="12QldZ">
           <node concept="1Qwkrw" id="2Nad5hi47cD" role="12Q0EH">
             <property role="TrG5h" value="act_core" />
@@ -320,7 +315,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47fe" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47fg" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47fi" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47gn" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -379,7 +373,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47gA" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47gC" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47gE" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47w$" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -402,7 +395,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47hJ" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47hL" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47hN" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47wN" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -425,7 +417,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47iS" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47iU" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47iW" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47x2" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -478,7 +469,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47k1" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47k3" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47k5" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47xh" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -504,7 +494,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47la" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47lc" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47le" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47xw" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -539,7 +528,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47mj" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47ml" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47mn" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47xJ" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -562,7 +550,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47ns" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47nu" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47nw" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47xY" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -678,7 +665,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47o_" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47oB" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47oD" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47yd" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -794,7 +780,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47pI" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47pK" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47pM" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47ys" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -910,7 +895,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47qR" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47qT" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47qV" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47yF" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -1011,7 +995,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47s0" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47s2" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47s4" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47yU" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -1040,7 +1023,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47zQ" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47zS" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47zU" role="12QldZ">
           <node concept="1Qwkrw" id="2Nad5hi47$Z" role="12Q0EH">
             <property role="TrG5h" value="act_trajectorygenerator" />
@@ -1081,7 +1063,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47t9" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47tb" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47td" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47z9" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -1110,7 +1091,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47ui" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47uk" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47um" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47zo" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -1139,7 +1119,6 @@
       </node>
       <node concept="2R8en3" id="2Nad5hi47vr" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="2Nad5hi47vt" role="2d8dnL" />
         <node concept="12Q0Er" id="2Nad5hi47vv" role="12QldZ">
           <node concept="1QwnVF" id="2Nad5hi47zB" role="12Q0EH">
             <ref role="1QwnVw" node="2Nad5hi47cD" resolve="act_core" />
@@ -1688,7 +1667,7 @@
                 <node concept="2Dc6tP" id="26kbQrMtsZm" role="2Oq$k0">
                   <ref role="2Dc6tO" node="26kbQrMrDNY" resolve="desJointAngles" />
                 </node>
-                <node concept="3SZ9tD" id="26kbQrMtsZn" role="2OqNvi">
+                <node concept="3SZ9tD" id="1hD3llt26QB" role="2OqNvi">
                   <ref role="3SZ92p" to="sxll:3xBfiZ$w$pC" resolve="angles" />
                 </node>
               </node>

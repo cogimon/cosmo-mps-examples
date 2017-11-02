@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="bddf7057-0151-4153-9658-d44eff0e1c02" name="OrocosComponent" version="0" />
     <use id="14d6bc92-051d-4467-84c8-9af7439a864f" name="Orocos" version="0" />
     <use id="10b5a06d-1a49-4cbd-a111-d36c8106bb63" name="SystemsCoordination" version="0" />
@@ -182,7 +182,6 @@
     </language>
     <language id="8fb3e629-b68f-443e-b616-d61142df624b" name="SoftwarePlatforms">
       <concept id="3195119016065919877" name="SoftwarePlatforms.structure.IAmSoftwarePlatform" flags="ng" index="zSNLk">
-        <child id="7882351498389317917" name="hidden_demandDescriptor" index="2d8dnL" />
         <child id="3573514252218990392" name="demands" index="12QldZ" />
       </concept>
     </language>
@@ -201,7 +200,6 @@
     </language>
     <language id="14d6bc92-051d-4467-84c8-9af7439a864f" name="Orocos">
       <concept id="6641102591361616477" name="Orocos.structure.IMOrocos" flags="ng" index="2R8en3" />
-      <concept id="3573514252219756227" name="Orocos.structure.IMOrocosDemand" flags="ng" index="12Nga4" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1321,7 +1319,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvnqr" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvnqt" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvnqv" role="12QldZ">
           <node concept="1Qwkrw" id="26kbQrMvosV" role="12Q0EH">
             <property role="TrG5h" value="Act_Idle" />
@@ -1354,7 +1351,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvocF" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvocH" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvocJ" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvovu" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvosV" resolve="Act_Idle" />
@@ -1398,7 +1394,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvodV" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvodX" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvodZ" role="12QldZ">
           <node concept="1Qwkrw" id="26kbQrMvovG" role="12Q0EH">
             <property role="TrG5h" value="Act_HardRunning" />
@@ -1443,7 +1438,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvofb" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvofd" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvoff" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvoyG" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1481,7 +1475,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvogr" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvogt" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvogv" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvoyU" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1513,7 +1506,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvohF" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvohH" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvohJ" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvoz8" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1545,7 +1537,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvoiV" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvoiX" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvoiZ" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvozm" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1604,7 +1595,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvokb" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvokd" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvokf" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvoz$" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1633,7 +1623,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvolr" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvolt" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvolv" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvozM" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1659,7 +1648,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvomF" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvomH" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvomJ" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvo$0" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1712,7 +1700,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvonV" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvonX" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvonZ" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvo$e" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1753,7 +1740,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvopb" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvopd" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvopf" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvo$s" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1779,7 +1765,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvoqr" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvoqt" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvoqv" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvo$E" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />
@@ -1958,7 +1943,6 @@
       </node>
       <node concept="2R8en3" id="26kbQrMvorF" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="26kbQrMvorH" role="2d8dnL" />
         <node concept="12Q0Er" id="26kbQrMvorJ" role="12QldZ">
           <node concept="1QwnVF" id="26kbQrMvo$S" role="12Q0EH">
             <ref role="1QwnVw" node="26kbQrMvovG" resolve="Act_HardRunning" />

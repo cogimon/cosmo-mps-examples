@@ -10,7 +10,7 @@
     <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="0" />
     <use id="f851498a-fbd1-49e3-9bcf-42acc68a2d89" name="OrocosSystemsCoordination" version="0" />
     <use id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="76319903-f9ec-441b-870f-e2615fdff7f8" name="RobotComponent" version="0" />
@@ -29,9 +29,6 @@
     <import index="d49h" ref="r:e838cc20-edef-4424-9d42-7bc017fd2211(RobotRepository.platforms)" />
     <import index="oet6" ref="r:85b31eb0-6551-4bd7-8659-464e8655dad3(RobotRepository.kinematics)" />
     <import index="mz1w" ref="r:f0e63708-fe8e-4a7e-94d7-74a74c6e3725(RobotPlatform.structure)" />
-    <import index="mz1w" ref="r:f0e63708-fe8e-4a7e-94d7-74a74c6e3725(RobotPlatform.structure)" />
-    <import index="mz1w" ref="r:f0e63708-fe8e-4a7e-94d7-74a74c6e3725(RobotPlatform.structure)" />
-    <import index="o5l" ref="r:99677988-a320-476b-8502-531d608695b7(RobotComponent.template)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -112,9 +109,6 @@
         <property id="8922660669739446504" name="x" index="2GY9xM" />
         <property id="8922660669739446510" name="y" index="2GY9xO" />
       </concept>
-      <concept id="7370022581033050625" name="Component.structure.IAutomaticallyGeneratePorts" flags="ng" index="JkFpW">
-        <child id="7370022581033050830" name="autoGenPorts" index="JkFqN" />
-      </concept>
       <concept id="6055303931581434605" name="Component.structure.ComponentInst" flags="ng" index="2WYcwU">
         <reference id="6055303931581444256" name="componentDescription" index="2WYf9R" />
         <child id="3475673830596210351" name="refPorts" index="FWJL0" />
@@ -123,20 +117,14 @@
       <concept id="6055303931581436421" name="Component.structure.PropertyTarget" flags="ng" index="2WYd3i">
         <reference id="6055303931581436424" name="property" index="2WYd3v" />
       </concept>
-      <concept id="1695646464731827429" name="Component.structure.OutputPort" flags="ng" index="3tteAs" />
       <concept id="1695646464731827419" name="Component.structure.System" flags="ng" index="3tteAy">
         <child id="1695646464731852539" name="components" index="3ttgI2" />
         <child id="1695646464731852542" name="connections" index="3ttgI7" />
       </concept>
-      <concept id="1695646464731827421" name="Component.structure.InputPort" flags="ng" index="3tteA$" />
       <concept id="1695646464731827420" name="Component.structure.Connection" flags="ng" index="3tteA_">
         <reference id="1695646464731834585" name="target" index="3ttcQw" />
         <reference id="1695646464731834588" name="source" index="3ttcQ_" />
       </concept>
-      <concept id="1695646464731827422" name="Component.structure.IPort" flags="ng" index="3tteAB">
-        <child id="6776104396491580446" name="type" index="17RAGi" />
-      </concept>
-      <concept id="3432428792015037476" name="Component.structure.IamGenerated_Annotation" flags="ng" index="3vgOJC" />
     </language>
     <language id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination">
       <concept id="3975843521651975716" name="coordination.structure.StateMachine" flags="ng" index="1HUUU">
@@ -155,18 +143,6 @@
         <child id="6168113672289314063" name="onentry" index="A$mYV" />
       </concept>
       <concept id="6168113672288816540" name="coordination.structure.State" flags="ng" index="AAcsC" />
-    </language>
-    <language id="99abc364-3965-4ead-ab2d-0b272a528a90" name="RobotPlatform">
-      <concept id="5835880596697299827" name="RobotPlatform.structure.InterfaceDescriptorInstance" flags="ng" index="3dgoO8">
-        <reference id="5835880596697300016" name="interface" index="3dgoDb" />
-      </concept>
-      <concept id="7327913841034177347" name="RobotPlatform.structure.RemoteControlInterface_Container" flags="ng" index="1qcP6j">
-        <property id="7327913841034180728" name="port" index="1qcOaC" />
-        <property id="7327913841034180714" name="ip" index="1qcOaU" />
-      </concept>
-      <concept id="7327913841033599896" name="RobotPlatform.structure.RemoteInterfaceDescriptorInstance" flags="ng" index="1qM258">
-        <child id="7327913841034181427" name="rciContainer" index="1qcO7z" />
-      </concept>
     </language>
     <language id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit">
       <concept id="400167841045635796" name="EigenTypekit.structure.EigenVectorCreator" flags="ng" index="5wGLs">
@@ -213,7 +189,6 @@
     </language>
     <language id="8fb3e629-b68f-443e-b616-d61142df624b" name="SoftwarePlatforms">
       <concept id="3195119016065919877" name="SoftwarePlatforms.structure.IAmSoftwarePlatform" flags="ng" index="zSNLk">
-        <child id="7882351498389317917" name="hidden_demandDescriptor" index="2d8dnL" />
         <child id="3573514252218990392" name="demands" index="12QldZ" />
       </concept>
     </language>
@@ -232,13 +207,6 @@
     </language>
     <language id="14d6bc92-051d-4467-84c8-9af7439a864f" name="Orocos">
       <concept id="6641102591361616477" name="Orocos.structure.IMOrocos" flags="ng" index="2R8en3" />
-      <concept id="3573514252219756227" name="Orocos.structure.IMOrocosDemand" flags="ng" index="12Nga4" />
-    </language>
-    <language id="76319903-f9ec-441b-870f-e2615fdff7f8" name="RobotComponent">
-      <concept id="7370022581033028361" name="RobotComponent.structure.RobotComponentInst" flags="ng" index="JkPXO">
-        <reference id="7370022581034926102" name="robotPlatform" index="Jt_hF" />
-        <child id="5835880596697303492" name="interfaceInstance" index="3dgvYZ" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -3856,7 +3824,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeKe" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeKg" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeKy" role="12QldZ">
           <node concept="1Qwkrw" id="mdFCvZWgIs" role="12Q0EH">
             <property role="TrG5h" value="act_norun" />
@@ -3889,7 +3856,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeLO" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeLQ" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeLS" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgLK" role="12Q0EH">
             <property role="TrG5h" value="act_norun" />
@@ -3916,7 +3882,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeNa" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeNc" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeNe" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgLZ" role="12Q0EH">
             <property role="TrG5h" value="act_norun" />
@@ -3949,7 +3914,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeOw" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeOy" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeO$" role="12QldZ">
           <node concept="1Qwkrw" id="mdFCvZWgMe" role="12Q0EH">
             <property role="TrG5h" value="act_fast" />
@@ -3991,7 +3955,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWePQ" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWePS" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWePU" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgOF" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4048,7 +4011,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeRc" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeRe" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeRg" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgOU" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4126,7 +4088,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeSy" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeS$" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeSA" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgP9" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4177,7 +4138,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeTS" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeTU" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeTW" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgPo" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4207,7 +4167,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeVe" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeVg" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeVi" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgPB" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4249,7 +4208,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeW$" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeWA" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeWC" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgPQ" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4270,7 +4228,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeXU" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeXW" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeXY" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgQ5" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4372,7 +4329,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWeZg" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWeZi" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWeZk" role="12QldZ">
           <node concept="1Qwkrw" id="5wO0nxMrTUi" role="12Q0EH">
             <property role="TrG5h" value="act_rt" />
@@ -4446,7 +4402,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWf0A" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWf0C" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWf0E" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgQz" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4482,7 +4437,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWgBI" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWgBK" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWgBM" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgQM" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4545,7 +4499,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWgD4" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWgD6" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWgD8" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgR1" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4593,7 +4546,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWgEq" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWgEs" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWgEu" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgRg" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4623,7 +4575,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWgFK" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWgFM" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWgFO" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgRv" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -4665,7 +4616,6 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWgH6" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="mdFCvZWgH8" role="2d8dnL" />
         <node concept="12Q0Er" id="mdFCvZWgHa" role="12QldZ">
           <node concept="1QwnVF" id="mdFCvZWgRI" role="12Q0EH">
             <property role="TrG5h" value="act_global" />
@@ -5005,13 +4955,12 @@
         <property role="2GY9xM" value="2651.6650390625" />
         <property role="2GY9xO" value="1123.17919921875" />
       </node>
-      <node concept="2R8en3" id="4td2CtEiEef" role="lGtFl">
+      <node concept="2R8en3" id="rrzP4k8Sq$" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="4td2CtEiEeh" role="2d8dnL" />
-        <node concept="12Q0Er" id="4td2CtEiEej" role="12QldZ">
-          <node concept="1QwnVF" id="4td2CtEiEhv" role="12Q0EH">
-            <property role="TrG5h" value="act_norun" />
-            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
+        <node concept="12Q0Er" id="rrzP4k8SqC" role="12QldZ">
+          <node concept="1QwnVF" id="rrzP4k8Srg" role="12Q0EH">
+            <property role="TrG5h" value="act_fast" />
+            <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
           </node>
         </node>
       </node>
@@ -5032,99 +4981,12 @@
         <property role="2GY9xM" value="2647.215087890625" />
         <property role="2GY9xO" value="1345.6737060546875" />
       </node>
-      <node concept="2R8en3" id="4td2CtEiEfR" role="lGtFl">
+      <node concept="2R8en3" id="7TsnP7f0ecC" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="4td2CtEiEfT" role="2d8dnL" />
-        <node concept="12Q0Er" id="4td2CtEiEfV" role="12QldZ">
-          <node concept="1QwnVF" id="4td2CtEiEhL" role="12Q0EH">
-            <property role="TrG5h" value="act_norun" />
-            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="JkPXO" id="6bIwLn$1l9i" role="3ttgI2">
-      <property role="TrG5h" value="GazeboLWR" />
-      <ref role="2WYf9R" to="o5l:5A_heWjxpzi" resolve="RoboCompTemplate" />
-      <ref role="Jt_hF" to="d49h:6bIwLn$0JKW" resolve="Kuka LWR 4+" />
-      <node concept="2WYd3i" id="6bIwLn$1maj" role="2WYf99">
-        <ref role="2WYd3v" to="o5l:5$DsDnbjm5q" resolve="testProp" />
-      </node>
-      <node concept="FWJLR" id="6bIwLn$1mak" role="FWJL0">
-        <ref role="FWJLQ" to="o5l:5$DsDnbjm6o" resolve="testPort" />
-      </node>
-      <node concept="3tteA$" id="6bIwLn$1maQ" role="JkFqN">
-        <property role="TrG5h" value="full_arm_JointPositionControl" />
-        <node concept="10P55v" id="6bIwLn$1maP" role="17RAGi" />
-        <node concept="3vgOJC" id="6bIwLn$1maR" role="lGtFl" />
-      </node>
-      <node concept="3tteA$" id="6bIwLn$1maT" role="JkFqN">
-        <property role="TrG5h" value="full_arm_JointTorqueControl" />
-        <node concept="10P55v" id="6bIwLn$1maS" role="17RAGi" />
-        <node concept="3vgOJC" id="6bIwLn$1maU" role="lGtFl" />
-      </node>
-      <node concept="3tteAs" id="6bIwLn$1maV" role="JkFqN">
-        <property role="TrG5h" value="full_arm_JointFeedback" />
-        <node concept="2KPMDc" id="6bIwLn$1maW" role="17RAGi">
-          <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
-        </node>
-        <node concept="3vgOJC" id="6bIwLn$1maX" role="lGtFl" />
-      </node>
-      <node concept="3dgoO8" id="6bIwLn$2$kU" role="3dgvYZ">
-        <ref role="3dgoDb" to="lrob:6bIwLn$0JNr" />
-      </node>
-      <node concept="2R8en3" id="6bIwLn$2Axg" role="lGtFl">
-        <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="6bIwLn$2Axi" role="2d8dnL" />
-        <node concept="12Q0Er" id="6bIwLn$2Axk" role="12QldZ">
-          <node concept="1QwnVF" id="6bIwLn$2Azg" role="12Q0EH">
-            <property role="TrG5h" value="act_rt" />
-            <ref role="1QwnVw" node="5wO0nxMrTUi" resolve="act_rt" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="JkPXO" id="6bIwLn$2_oY" role="3ttgI2">
-      <property role="TrG5h" value="FRILWR" />
-      <ref role="2WYf9R" to="o5l:5A_heWjxpzi" resolve="RoboCompTemplate" />
-      <ref role="Jt_hF" to="d49h:6bIwLn$0JKW" resolve="Kuka LWR 4+" />
-      <node concept="2WYd3i" id="6bIwLn$2AsP" role="2WYf99">
-        <ref role="2WYd3v" to="o5l:5$DsDnbjm5q" resolve="testProp" />
-      </node>
-      <node concept="FWJLR" id="6bIwLn$2AsQ" role="FWJL0">
-        <ref role="FWJLQ" to="o5l:5$DsDnbjm6o" resolve="testPort" />
-      </node>
-      <node concept="3tteA$" id="6bIwLn$2Ato" role="JkFqN">
-        <property role="TrG5h" value="full_arm_JointPositionControl" />
-        <node concept="10P55v" id="6bIwLn$2Atn" role="17RAGi" />
-        <node concept="3vgOJC" id="6bIwLn$2Atp" role="lGtFl" />
-      </node>
-      <node concept="3tteA$" id="6bIwLn$2Atr" role="JkFqN">
-        <property role="TrG5h" value="full_arm_JointTorqueControl" />
-        <node concept="10P55v" id="6bIwLn$2Atq" role="17RAGi" />
-        <node concept="3vgOJC" id="6bIwLn$2Ats" role="lGtFl" />
-      </node>
-      <node concept="3tteAs" id="6bIwLn$2Att" role="JkFqN">
-        <property role="TrG5h" value="full_arm_JointFeedback" />
-        <node concept="2KPMDc" id="6bIwLn$2Atu" role="17RAGi">
-          <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
-        </node>
-        <node concept="3vgOJC" id="6bIwLn$2Atv" role="lGtFl" />
-      </node>
-      <node concept="1qM258" id="6bIwLn$2AwM" role="3dgvYZ">
-        <ref role="3dgoDb" to="lrob:6bIwLn$0JM8" />
-        <node concept="1qcP6j" id="6bIwLn$2AwN" role="1qcO7z">
-          <property role="1qcOaU" value="127.0.0.1" />
-          <property role="1qcOaC" value="1337" />
-        </node>
-      </node>
-      <node concept="2R8en3" id="6bIwLn$2Ayg" role="lGtFl">
-        <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Nga4" id="6bIwLn$2Ayi" role="2d8dnL" />
-        <node concept="12Q0Er" id="6bIwLn$2Ayk" role="12QldZ">
-          <node concept="1QwnVF" id="6bIwLn$2Azw" role="12Q0EH">
-            <property role="TrG5h" value="act_rt" />
-            <ref role="1QwnVw" node="5wO0nxMrTUi" resolve="act_rt" />
+        <node concept="12Q0Er" id="7TsnP7f0ecD" role="12QldZ">
+          <node concept="1QwnVF" id="7TsnP7f0edg" role="12Q0EH">
+            <property role="TrG5h" value="act_fast" />
+            <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
           </node>
         </node>
       </node>

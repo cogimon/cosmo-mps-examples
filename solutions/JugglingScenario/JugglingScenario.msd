@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="CCL" uuid="6d4f5997-0eeb-4a8a-86c2-d4b3ba19dd87" moduleVersion="0" compileInMPS="true">
+<solution name="JugglingScenario" uuid="fddf1289-75d0-43fd-b1cb-717cb1da8f8d" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -12,8 +12,10 @@
   <languageVersions>
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
     <language slang="l:218e40b4-75d4-4de8-83e6-b31e4da8bcee:Component" version="0" />
-    <language slang="l:dfed0f13-ca0e-4e6d-b469-ef760982a8ea:EigenTypekit" version="0" />
+    <language slang="l:14d6bc92-051d-4467-84c8-9af7439a864f:Orocos" version="0" />
+    <language slang="l:bddf7057-0151-4153-9658-d44eff0e1c02:OrocosComponent" version="0" />
     <language slang="l:d6d7f6e1-f407-48f8-a582-7b1489b7163f:ProtoBuf" version="0" />
+    <language slang="l:8fb3e629-b68f-443e-b616-d61142df624b:SoftwarePlatforms" version="0" />
     <language slang="l:10b5a06d-1a49-4cbd-a111-d36c8106bb63:SystemsCoordination" version="0" />
     <language slang="l:05b3ce81-ad9b-4836-b473-d98f0216c2ac:coordination" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
@@ -24,7 +26,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="6d4f5997-0eeb-4a8a-86c2-d4b3ba19dd87(CCL)" version="0" />
+    <module reference="fddf1289-75d0-43fd-b1cb-717cb1da8f8d(JugglingScenario)" version="0" />
     <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)" version="0" />
   </dependencyVersions>
 </solution>
