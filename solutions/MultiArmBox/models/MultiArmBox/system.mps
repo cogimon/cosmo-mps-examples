@@ -5174,5 +5174,118 @@
       <ref role="3ttcQw" node="4td2CtEiEd9" />
     </node>
   </node>
+  <node concept="3pkOsz" id="7Qt88hmJrZw">
+    <ref role="3pqbaY" node="3XuVWlUVKz0" resolve="QuadArmBox_System" />
+    <node concept="2D$Ly$" id="7Qt88hmJrZx" role="20k7j">
+      <property role="TrG5h" value="DummyProto" />
+      <ref role="ABQvG" node="7Qt88hmJrZE" resolve="init" />
+      <node concept="AAcsC" id="7Qt88hmJrZE" role="AA3t3">
+        <property role="TrG5h" value="init" />
+        <node concept="2RThQF" id="7Qt88hmJLYP" role="A$mYV">
+          <node concept="2D1jA2" id="7Qt88hmJM0b" role="2RThOI">
+            <property role="TrG5h" value="jss" />
+            <node concept="2KPMDc" id="7Qt88hmJM0v" role="2D1jJ3">
+              <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+            </node>
+            <node concept="2ShNRf" id="7Qt88hmJM12" role="2D1jJT">
+              <node concept="qghkx" id="7Qt88hmJM4z" role="2ShVmc">
+                <ref role="qghDu" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+                <node concept="3sb0db" id="7Qt88hmJM4_" role="qghDs">
+                  <ref role="3sb0da" to="yzc3:1pbAJw9gA4k" resolve="angles" />
+                  <node concept="3sb0ez" id="7Qt88hmJM4A" role="3sb6Ac">
+                    <node concept="2ShNRf" id="7Qt88hmJM6w" role="3sb0ey">
+                      <node concept="qghkx" id="7Qt88hmJMa9" role="2ShVmc">
+                        <ref role="qghDu" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+                        <node concept="3sb0db" id="7Qt88hmJMab" role="qghDs">
+                          <ref role="3sb0da" to="sxll:3xBfiZ$w$pC" resolve="angles" />
+                          <node concept="3sb0ea" id="7Qt88hmJMac" role="3sb6Ac">
+                            <node concept="3cmrfG" id="7Qt88hmJMkU" role="3sb0e2">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJMVE" role="3sb0e2">
+                              <property role="3cmrfH" value="1" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJMWf" role="3sb0e2">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJMX2" role="3sb0e2">
+                              <property role="3cmrfH" value="3" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJMY3" role="3sb0e2">
+                              <property role="3cmrfH" value="4" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJMZi" role="3sb0e2">
+                              <property role="3cmrfH" value="5" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3sb0db" id="7Qt88hmJM4B" role="qghDs">
+                  <ref role="3sb0da" to="yzc3:1pbAJw9gA8D" resolve="velocities" />
+                  <node concept="3sb0ez" id="7Qt88hmJM4C" role="3sb6Ac">
+                    <node concept="2ShNRf" id="7Qt88hmJMbn" role="3sb0ey">
+                      <node concept="qghkx" id="7Qt88hmJMf0" role="2ShVmc">
+                        <ref role="qghDu" to="sxll:3xBfiZ$w$p6" resolve="JointVelocities" />
+                        <node concept="3sb0db" id="7Qt88hmJMf2" role="qghDs">
+                          <ref role="3sb0da" to="sxll:3xBfiZ$w$p8" resolve="velocities" />
+                          <node concept="3sb0ea" id="7Qt88hmJMf3" role="3sb6Ac">
+                            <node concept="3cmrfG" id="7Qt88hmJNbv" role="3sb0e2">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJNmC" role="3sb0e2">
+                              <property role="3cmrfH" value="1" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJNnd" role="3sb0e2">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJNo0" role="3sb0e2">
+                              <property role="3cmrfH" value="3" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJNp1" role="3sb0e2">
+                              <property role="3cmrfH" value="4" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3sb0db" id="7Qt88hmJM4D" role="qghDs">
+                  <ref role="3sb0da" to="yzc3:1pbAJw9gAb6" resolve="torques" />
+                  <node concept="3sb0ez" id="7Qt88hmJM4E" role="3sb6Ac">
+                    <node concept="2ShNRf" id="7Qt88hmJMge" role="3sb0ey">
+                      <node concept="qghkx" id="7Qt88hmJMjR" role="2ShVmc">
+                        <ref role="qghDu" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+                        <node concept="3sb0db" id="7Qt88hmJMjT" role="qghDs">
+                          <ref role="3sb0da" to="sxll:3xBfiZ$w$rK" resolve="torques" />
+                          <node concept="3sb0ea" id="7Qt88hmJMjU" role="3sb6Ac">
+                            <node concept="3cmrfG" id="7Qt88hmJN_e" role="3sb0e2">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJNFv" role="3sb0e2">
+                              <property role="3cmrfH" value="1" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJNG4" role="3sb0e2">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                            <node concept="3cmrfG" id="7Qt88hmJNGR" role="3sb0e2">
+                              <property role="3cmrfH" value="3" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
