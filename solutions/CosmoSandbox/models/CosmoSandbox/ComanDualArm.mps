@@ -3787,19 +3787,5 @@
       </node>
     </node>
   </node>
-  <node concept="3pkOsz" id="f83v3q_Lym">
-    <node concept="2D$Ly$" id="f83v3q_Lyn" role="20k7j">
-      <ref role="ABQvG" node="f83v3q_L_X" resolve="A" />
-      <node concept="AAcsC" id="f83v3q_L_X" role="AA3t3">
-        <property role="TrG5h" value="A" />
-        <node concept="A$mVN" id="f83v3q_LAp" role="A$mYT">
-          <ref role="A$mVY" node="f83v3q_L_k" resolve="B" />
-        </node>
-      </node>
-      <node concept="AAcsC" id="f83v3q_L_k" role="AA3t3">
-        <property role="TrG5h" value="B" />
-      </node>
-    </node>
-  </node>
 </model>
 

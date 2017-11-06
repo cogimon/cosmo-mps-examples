@@ -138,16 +138,12 @@
       <concept id="3975843521651975716" name="coordination.structure.StateMachine" flags="ng" index="1HUUU">
         <child id="3177877371209483855" name="data" index="3AET3I" />
       </concept>
-      <concept id="6168113672289313863" name="coordination.structure.Transition" flags="ng" index="A$mVN">
-        <reference id="6168113672289313866" name="target" index="A$mVY" />
-      </concept>
       <concept id="6168113672288845302" name="coordination.structure.StateContainer" flags="ng" index="AA3t2">
         <reference id="6168113672289185112" name="initialstate" index="ABQvG" />
         <child id="6168113672288845303" name="states" index="AA3t3" />
       </concept>
       <concept id="6168113672288816999" name="coordination.structure.StateLike" flags="ng" index="AAcnj">
         <child id="6168113672289314066" name="onexit" index="A$mYA" />
-        <child id="6168113672289314061" name="transitions" index="A$mYT" />
         <child id="6168113672289314063" name="onentry" index="A$mYV" />
         <child id="3270764155594845937" name="data" index="2VaVxq" />
       </concept>
@@ -158,9 +154,6 @@
         <child id="3481832625097717120" name="lifecycle" index="20k7j" />
       </concept>
       <concept id="3481832625097636907" name="SystemsCoordination.structure.InternalLifeCycleWrapper" flags="ng" index="27CxS" />
-      <concept id="2157633081304723976" name="SystemsCoordination.structure.StateCallOperation" flags="ng" index="bfs7j">
-        <reference id="2157633081304723985" name="state" index="bfs7a" />
-      </concept>
       <concept id="1345180798849666823" name="SystemsCoordination.structure.PropertyRef" flags="ng" index="CHOn8">
         <reference id="1345180798849666824" name="property" index="CHOn7" />
       </concept>
@@ -186,9 +179,6 @@
       </concept>
       <concept id="1388645655552340734" name="SystemsCoordination.structure.LifeCycleWrapper" flags="ng" index="3pkOsz">
         <reference id="1388645655553886051" name="system" index="3pqbaY" />
-      </concept>
-      <concept id="1388645655554741038" name="SystemsCoordination.structure.GlobalComponentInstReference" flags="ng" index="3pvUrN">
-        <reference id="1388645655554742676" name="componentInst" index="3pvUL9" />
       </concept>
     </language>
     <language id="8fb3e629-b68f-443e-b616-d61142df624b" name="SoftwarePlatforms">
@@ -816,76 +806,13 @@
     <property role="TrG5h" value="gazebo-robot-sim" />
     <property role="3ttlnV" value="/path/to/gazebo/robot/sim" />
   </node>
-  <node concept="3pkOsz" id="31hX5cMkDpg">
+  <node concept="3pkOsz" id="1tJCVaCJy5b">
     <ref role="3pqbaY" node="6$F6KdawDnj" resolve="GeneralSystem" />
-    <node concept="2D$Ly$" id="31hX5cMkDph" role="20k7j">
-      <property role="TrG5h" value="GlobalStateMachine" />
-      <ref role="ABQvG" node="31hX5cMkDpq" resolve="first" />
-      <node concept="AAcsC" id="31hX5cMkDpM" role="AA3t3">
-        <property role="TrG5h" value="second" />
-      </node>
-      <node concept="AAcsC" id="31hX5cMkDpq" role="AA3t3">
-        <property role="TrG5h" value="first" />
-        <node concept="A$mVN" id="31hX5cMkDq2" role="A$mYT">
-          <ref role="A$mVY" node="31hX5cMkDpM" resolve="second" />
-        </node>
-        <node concept="2RThQF" id="31hX5cMoCPC" role="A$mYV">
-          <node concept="37vLTI" id="6r7VLR3w1VI" role="2RThOI">
-            <node concept="3b6qkQ" id="6r7VLR3w1Xo" role="37vLTx">
-              <property role="$nhwW" value="0.0" />
-            </node>
-            <node concept="2OqwBi" id="31hX5cMoCW1" role="37vLTJ">
-              <node concept="2OqwBi" id="31hX5cMoCPU" role="2Oq$k0">
-                <node concept="2RT1ic" id="31hX5cMoCPK" role="2Oq$k0" />
-                <node concept="3pvUrN" id="31hX5cMoCRV" role="2OqNvi">
-                  <ref role="3pvUL9" node="6$F6KdawDnk" resolve="JointCtrl" />
-                </node>
-              </node>
-              <node concept="CHOn8" id="31hX5cMoCYC" role="2OqNvi">
-                <ref role="CHOn7" node="31hX5cMkaqA" resolve="prooop" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="31hX5cMoCZB" role="A$mYV">
-          <node concept="2OqwBi" id="31hX5cMoD6F" role="2RThOI">
-            <node concept="2OqwBi" id="31hX5cMoD0$" role="2Oq$k0">
-              <node concept="2RT1ic" id="31hX5cMoD0q" role="2Oq$k0" />
-              <node concept="3pvUrN" id="31hX5cMoD2_" role="2OqNvi">
-                <ref role="3pvUL9" node="6$F6KdawDnk" resolve="JointCtrl" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="31hX5cMoD9i" role="2OqNvi">
-              <ref role="2D$zFo" node="31hX5cMcCNT" resolve="testBoolean" />
-              <node concept="2D$zpK" id="31hX5cMoD9k" role="2DASKs">
-                <ref role="2DB_1T" node="31hX5cMcCO9" resolve="dd" />
-                <node concept="3clFbT" id="31hX5cMoD9L" role="2DB_1W">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="31hX5cMoDbC" role="A$mYV">
-          <node concept="2OqwBi" id="31hX5cMoDj$" role="2RThOI">
-            <node concept="2OqwBi" id="31hX5cMoDdt" role="2Oq$k0">
-              <node concept="2RT1ic" id="31hX5cMoDdj" role="2Oq$k0" />
-              <node concept="3pvUrN" id="31hX5cMoDfu" role="2OqNvi">
-                <ref role="3pvUL9" node="6$F6KdawDnk" resolve="JointCtrl" />
-              </node>
-            </node>
-            <node concept="bfs7j" id="31hX5cMoDmb" role="2OqNvi">
-              <ref role="bfs7a" node="31hX5cMkDqq" resolve="config" />
-            </node>
-          </node>
-        </node>
-        <node concept="2D1jA2" id="2NJBz9C$6db" role="2VaVxq">
-          <property role="TrG5h" value="a" />
-          <node concept="17QB3L" id="2NJBz9C$6dA" role="2D1jJ3" />
-          <node concept="Xl_RD" id="2NJBz9C$6ea" role="2D1jJT">
-            <property role="Xl_RC" value="aa" />
-          </node>
-        </node>
+    <node concept="2D$Ly$" id="1tJCVaCJy5c" role="20k7j">
+      <property role="TrG5h" value="TestIt" />
+      <ref role="ABQvG" node="1tJCVaCJy5d" resolve="s" />
+      <node concept="AAcsC" id="1tJCVaCJy5d" role="AA3t3">
+        <property role="TrG5h" value="s" />
       </node>
     </node>
   </node>
