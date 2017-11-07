@@ -29,6 +29,7 @@
     <import index="d49h" ref="r:e838cc20-edef-4424-9d42-7bc017fd2211(RobotRepository.platforms)" />
     <import index="oet6" ref="r:85b31eb0-6551-4bd7-8659-464e8655dad3(RobotRepository.kinematics)" />
     <import index="mz1w" ref="r:f0e63708-fe8e-4a7e-94d7-74a74c6e3725(RobotPlatform.structure)" />
+    <import index="o5l" ref="r:99677988-a320-476b-8502-531d608695b7(RobotComponent.template)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -109,21 +110,35 @@
         <property id="8922660669739446504" name="x" index="2GY9xM" />
         <property id="8922660669739446510" name="y" index="2GY9xO" />
       </concept>
-      <concept id="6055303931581434605" name="Component.structure.ComponentInst" flags="ng" index="2WYcwU">
+      <concept id="7370022581033050625" name="Component.structure.IAutomaticallyGeneratePorts" flags="ng" index="JkFpW">
+        <child id="7370022581033050830" name="autoGenPorts" index="JkFqN" />
+      </concept>
+      <concept id="6055303931581434606" name="Component.structure.IComponentInst" flags="ng" index="2WYcwT">
         <reference id="6055303931581444256" name="componentDescription" index="2WYf9R" />
-        <child id="3475673830596210351" name="refPorts" index="FWJL0" />
+        <child id="494146162517828036" name="refPorts" index="l9eUl" />
+      </concept>
+      <concept id="6055303931581434605" name="Component.structure.ComponentInst" flags="ng" index="2WYcwU">
         <child id="6055303931581444254" name="mutableProperties" index="2WYf99" />
       </concept>
       <concept id="6055303931581436421" name="Component.structure.PropertyTarget" flags="ng" index="2WYd3i">
         <reference id="6055303931581436424" name="property" index="2WYd3v" />
       </concept>
+      <concept id="1695646464731827429" name="Component.structure.OutputPort" flags="ng" index="3tteAs" />
       <concept id="1695646464731827419" name="Component.structure.System" flags="ng" index="3tteAy">
         <child id="1695646464731852539" name="components" index="3ttgI2" />
         <child id="1695646464731852542" name="connections" index="3ttgI7" />
       </concept>
+      <concept id="1695646464731827421" name="Component.structure.InputPort" flags="ng" index="3tteA$" />
       <concept id="1695646464731827420" name="Component.structure.Connection" flags="ng" index="3tteA_">
         <reference id="1695646464731834585" name="target" index="3ttcQw" />
         <reference id="1695646464731834588" name="source" index="3ttcQ_" />
+      </concept>
+      <concept id="1695646464731827422" name="Component.structure.IPort" flags="ng" index="3tteAB">
+        <child id="6776104396491580446" name="type" index="17RAGi" />
+      </concept>
+      <concept id="3432428792015037476" name="Component.structure.IamGenerated_Annotation" flags="ng" index="3vgOJC" />
+      <concept id="3587304184607912533" name="Component.structure.IOTypeIF" flags="ng" index="1T6LxN">
+        <property id="3587304184607912539" name="ioType" index="1T6LxX" />
       </concept>
     </language>
     <language id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination">
@@ -143,6 +158,12 @@
         <child id="6168113672289314063" name="onentry" index="A$mYV" />
       </concept>
       <concept id="6168113672288816540" name="coordination.structure.State" flags="ng" index="AAcsC" />
+    </language>
+    <language id="99abc364-3965-4ead-ab2d-0b272a528a90" name="RobotPlatform">
+      <concept id="494146162519755188" name="RobotPlatform.structure.InterfaceDescriptorInstance" flags="ng" index="iLOr_" />
+      <concept id="494146162518333130" name="RobotPlatform.structure.IInterfaceDescriptorInstance" flags="ng" index="iR9Ar">
+        <reference id="5835880596697300016" name="interface" index="3dgoDb" />
+      </concept>
     </language>
     <language id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit">
       <concept id="400167841045635796" name="EigenTypekit.structure.EigenVectorCreator" flags="ng" index="5wGLs">
@@ -207,6 +228,12 @@
     </language>
     <language id="14d6bc92-051d-4467-84c8-9af7439a864f" name="Orocos">
       <concept id="6641102591361616477" name="Orocos.structure.IMOrocos" flags="ng" index="2R8en3" />
+    </language>
+    <language id="76319903-f9ec-441b-870f-e2615fdff7f8" name="RobotComponent">
+      <concept id="7370022581033028361" name="RobotComponent.structure.RobotComponentInst" flags="ng" index="JkPXO">
+        <reference id="7370022581034926102" name="robotPlatform" index="Jt_hF" />
+        <child id="5835880596697303492" name="interfaceInstance" index="3dgvYZ" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -946,117 +973,60 @@
             </node>
           </node>
         </node>
-        <node concept="2RThQF" id="mdFCvZWC0L" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZWCkV" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZWCeg" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZWCe0" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWCgJ" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4vK" resolve="robot_gazebo1" />
+        <node concept="2RThQF" id="2L96D05Wo_E" role="A$mYV">
+          <node concept="2OqwBi" id="2L96D05WoQW" role="2RThOI">
+            <node concept="2OqwBi" id="2L96D05WoKr" role="2Oq$k0">
+              <node concept="2RT1ic" id="2L96D05WoKi" role="2Oq$k0" />
+              <node concept="3pvUrN" id="2L96D05WoMB" role="2OqNvi">
+                <ref role="3pvUL9" node="4OphnvishzC" resolve="rKUKA1" />
               </node>
             </node>
-            <node concept="2D$_L7" id="mdFCvZWCoo" role="2OqNvi">
-              <ref role="2D$zFo" to="1hke:2NJBz9CzWZq" resolve="getModel" />
-              <node concept="2D$zpK" id="mdFCvZWCoq" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzWZA" resolve="modelName" />
-                <node concept="Xl_RD" id="mdFCvZWCp9" role="2DB_1W">
+            <node concept="2D$_L7" id="2L96D05WoVf" role="2OqNvi">
+              <ref role="2D$zFo" to="o5l:2NJBz9CzWZq" resolve="getModel" />
+              <node concept="2D$zpK" id="2L96D05WoVh" role="2DASKs">
+                <ref role="2DB_1T" to="o5l:2NJBz9CzWZA" resolve="modelName" />
+                <node concept="Xl_RD" id="2L96D05WoVH" role="2DB_1W">
                   <property role="Xl_RC" value="robotmodel1" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="2RThQF" id="mdFCvZWCCn" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZWCZI" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZWCRu" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZWCRe" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWCVy" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4wN" resolve="robot_gazebo2" />
+        <node concept="2RThQF" id="2L96D05Wp7g" role="A$mYV">
+          <node concept="2OqwBi" id="2L96D05WpqQ" role="2RThOI">
+            <node concept="2OqwBi" id="2L96D05WpiO" role="2Oq$k0">
+              <node concept="2RT1ic" id="2L96D05WpiC" role="2Oq$k0" />
+              <node concept="3pvUrN" id="2L96D05Wpmx" role="2OqNvi">
+                <ref role="3pvUL9" node="4OphnvishzC" resolve="rKUKA1" />
               </node>
             </node>
-            <node concept="2D$_L7" id="mdFCvZWD3b" role="2OqNvi">
-              <ref role="2D$zFo" to="1hke:2NJBz9CzWZq" resolve="getModel" />
-              <node concept="2D$zpK" id="mdFCvZWD3d" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzWZA" resolve="modelName" />
-                <node concept="Xl_RD" id="mdFCvZWD3W" role="2DB_1W">
-                  <property role="Xl_RC" value="robotmodel2" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="mdFCvZWGp0" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZWGKq" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZWGDJ" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZWGDv" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWGGe" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4vK" resolve="robot_gazebo1" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="mdFCvZWGNR" role="2OqNvi">
-              <ref role="2D$zFo" to="1hke:2NJBz9CzX0n" resolve="loadURDFAndSRDF" />
-              <node concept="2D$zpK" id="mdFCvZWGNT" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzX1r" resolve="urdf" />
-                <node concept="2Dc6tP" id="mdFCvZWGP6" role="2DB_1W">
+            <node concept="2D$_L7" id="2L96D05Wpv9" role="2OqNvi">
+              <ref role="2D$zFo" to="o5l:2NJBz9CzX0n" resolve="loadURDFAndSRDF" />
+              <node concept="2D$zpK" id="2L96D05Wpvb" role="2DASKs">
+                <ref role="2DB_1T" to="o5l:2NJBz9CzX1r" resolve="urdf" />
+                <node concept="2Dc6tP" id="2L96D05WpvT" role="2DB_1W">
                   <ref role="2Dc6tO" node="mdFCvZWFf9" resolve="path_model_urdf" />
                 </node>
               </node>
-              <node concept="2D$zpK" id="mdFCvZWGNV" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzX20" resolve="srdf" />
-                <node concept="2Dc6tP" id="mdFCvZWGPp" role="2DB_1W">
+              <node concept="2D$zpK" id="2L96D05Wpvd" role="2DASKs">
+                <ref role="2DB_1T" to="o5l:2NJBz9CzX20" resolve="srdf" />
+                <node concept="2Dc6tP" id="2L96D05Wpw5" role="2DB_1W">
                   <ref role="2Dc6tO" node="mdFCvZWFOj" resolve="path_model_srdf" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="2RThQF" id="mdFCvZWH8c" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZWHzd" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZWHqX" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZWHqH" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWHv1" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4wN" resolve="robot_gazebo2" />
+        <node concept="2RThQF" id="2L96D05WpG$" role="A$mYV">
+          <node concept="2OqwBi" id="2L96D05WpZy" role="2RThOI">
+            <node concept="2OqwBi" id="2L96D05WpT1" role="2Oq$k0">
+              <node concept="2RT1ic" id="2L96D05WpSS" role="2Oq$k0" />
+              <node concept="3pvUrN" id="2L96D05WpVd" role="2OqNvi">
+                <ref role="3pvUL9" node="4OphnvishzC" resolve="rKUKA1" />
               </node>
             </node>
-            <node concept="2D$_L7" id="mdFCvZWHBV" role="2OqNvi">
-              <ref role="2D$zFo" to="1hke:2NJBz9CzX0n" resolve="loadURDFAndSRDF" />
-              <node concept="2D$zpK" id="mdFCvZWHBX" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzX1r" resolve="urdf" />
-                <node concept="2Dc6tP" id="mdFCvZWHDa" role="2DB_1W">
-                  <ref role="2Dc6tO" node="mdFCvZWFf9" resolve="path_model_urdf" />
-                </node>
-              </node>
-              <node concept="2D$zpK" id="mdFCvZWHBZ" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzX20" resolve="srdf" />
-                <node concept="2Dc6tP" id="mdFCvZWHDt" role="2DB_1W">
-                  <ref role="2Dc6tO" node="mdFCvZWFOj" resolve="path_model_srdf" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="mdFCvZWHYi" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZWIpK" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZWIj5" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZWIiP" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWIl$" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4vK" resolve="robot_gazebo1" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="mdFCvZWItd" role="2OqNvi">
-              <ref role="2D$zFo" to="1hke:1cbL_VeRwUh" resolve="configure" />
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="mdFCvZWINg" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZWJhx" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZWJ9h" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZWJ91" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWJdl" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4wN" resolve="robot_gazebo2" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="mdFCvZWJmf" role="2OqNvi">
-              <ref role="2D$zFo" to="1hke:1cbL_VeRwUh" resolve="configure" />
+            <node concept="2D$_L7" id="2L96D05Wq3P" role="2OqNvi">
+              <ref role="2D$zFo" to="o5l:1cbL_VeRwUh" resolve="configure" />
             </node>
           </node>
         </node>
@@ -1147,7 +1117,7 @@
             <node concept="2OqwBi" id="mdFCvZYkNj" role="2Oq$k0">
               <node concept="2RT1ic" id="mdFCvZYkN3" role="2Oq$k0" />
               <node concept="3pvUrN" id="mdFCvZYkPM" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="seperator" />
+                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="separator" />
               </node>
             </node>
             <node concept="2D$_L7" id="mdFCvZYkXr" role="2OqNvi">
@@ -1166,7 +1136,7 @@
             <node concept="2OqwBi" id="mdFCvZYlrs" role="2Oq$k0">
               <node concept="2RT1ic" id="mdFCvZYlrc" role="2Oq$k0" />
               <node concept="3pvUrN" id="mdFCvZYlTM" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="seperator" />
+                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="separator" />
               </node>
             </node>
             <node concept="2D$_L7" id="mdFCvZYm1r" role="2OqNvi">
@@ -1185,7 +1155,7 @@
             <node concept="2OqwBi" id="mdFCvZYmmG" role="2Oq$k0">
               <node concept="2RT1ic" id="mdFCvZYmms" role="2Oq$k0" />
               <node concept="3pvUrN" id="mdFCvZYmpb" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="seperator" />
+                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="separator" />
               </node>
             </node>
             <node concept="2D$_L7" id="mdFCvZYmwO" role="2OqNvi">
@@ -1204,7 +1174,7 @@
             <node concept="2OqwBi" id="mdFCvZYmTl" role="2Oq$k0">
               <node concept="2RT1ic" id="mdFCvZYmT5" role="2Oq$k0" />
               <node concept="3pvUrN" id="mdFCvZYmVO" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="seperator" />
+                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="separator" />
               </node>
             </node>
             <node concept="2D$_L7" id="mdFCvZYn3t" role="2OqNvi">
@@ -2693,25 +2663,25 @@
       <node concept="AAcsC" id="mdFCw02a4v" role="AA3t3">
         <property role="TrG5h" value="AfterPortsAreConnected" />
         <property role="AyEUC" value="true" />
-        <node concept="2RThQF" id="mdFCw02do_" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCw02dvI" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCw02dp3" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCw02doN" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCw02dry" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4vK" resolve="robot_gazebo1" />
+        <node concept="2RThQF" id="4OphnvisBC8" role="A$mYV">
+          <node concept="2OqwBi" id="1suZ3qyJL78" role="2RThOI">
+            <node concept="2OqwBi" id="4OphnvisBL_" role="2Oq$k0">
+              <node concept="2RT1ic" id="4OphnvisBLt" role="2Oq$k0" />
+              <node concept="3pvUrN" id="1suZ3qyJL2P" role="2OqNvi">
+                <ref role="3pvUL9" node="4OphnvishzC" resolve="rKUKA1" />
               </node>
             </node>
-            <node concept="2D$_L7" id="mdFCw02d$s" role="2OqNvi">
-              <ref role="2D$zFo" to="1hke:2NJBz9CzX59" resolve="setControlMode" />
-              <node concept="2D$zpK" id="mdFCw02d$u" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzX7f" resolve="kinematicChain" />
-                <node concept="Xl_RD" id="mdFCw02d_F" role="2DB_1W">
+            <node concept="2D$_L7" id="1suZ3qyNA7K" role="2OqNvi">
+              <ref role="2D$zFo" to="o5l:2NJBz9CzX59" resolve="setControlMode" />
+              <node concept="2D$zpK" id="1suZ3qyNA7M" role="2DASKs">
+                <ref role="2DB_1T" to="o5l:2NJBz9CzX7f" resolve="kinematicChain" />
+                <node concept="Xl_RD" id="1suZ3qyNA8m" role="2DB_1W">
                   <property role="Xl_RC" value="full_arm" />
                 </node>
               </node>
-              <node concept="2D$zpK" id="mdFCw02d$w" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzX7O" resolve="controlMode" />
-                <node concept="Xl_RD" id="mdFCw02dA8" role="2DB_1W">
+              <node concept="2D$zpK" id="1suZ3qyNA7O" role="2DASKs">
+                <ref role="2DB_1T" to="o5l:2NJBz9CzX7O" resolve="controlMode" />
+                <node concept="Xl_RD" id="1suZ3qyNA8G" role="2DB_1W">
                   <property role="Xl_RC" value="JointTorqueCtrl" />
                 </node>
               </node>
@@ -2722,21 +2692,21 @@
           <node concept="2OqwBi" id="mdFCw02dLW" role="2RThOI">
             <node concept="2OqwBi" id="mdFCw02dFh" role="2Oq$k0">
               <node concept="2RT1ic" id="mdFCw02dF1" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCw02dHK" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4wN" resolve="robot_gazebo2" />
+              <node concept="3pvUrN" id="4OphnvisBus" role="2OqNvi">
+                <ref role="3pvUL9" node="4Ophnvisj4j" resolve="rKUKA2" />
               </node>
             </node>
             <node concept="2D$_L7" id="mdFCw02dPp" role="2OqNvi">
-              <ref role="2D$zFo" to="1hke:2NJBz9CzX59" resolve="setControlMode" />
-              <node concept="2D$zpK" id="mdFCw02dPr" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzX7f" resolve="kinematicChain" />
-                <node concept="Xl_RD" id="mdFCw02dQC" role="2DB_1W">
+              <ref role="2D$zFo" to="o5l:2NJBz9CzX59" resolve="setControlMode" />
+              <node concept="2D$zpK" id="1suZ3qyNAg$" role="2DASKs">
+                <ref role="2DB_1T" to="o5l:2NJBz9CzX7f" resolve="kinematicChain" />
+                <node concept="Xl_RD" id="1suZ3qyNAh0" role="2DB_1W">
                   <property role="Xl_RC" value="full_arm" />
                 </node>
               </node>
-              <node concept="2D$zpK" id="mdFCw02dPt" role="2DASKs">
-                <ref role="2DB_1T" to="1hke:2NJBz9CzX7O" resolve="controlMode" />
-                <node concept="Xl_RD" id="mdFCw02dRa" role="2DB_1W">
+              <node concept="2D$zpK" id="1suZ3qyNAgA" role="2DASKs">
+                <ref role="2DB_1T" to="o5l:2NJBz9CzX7O" resolve="controlMode" />
+                <node concept="Xl_RD" id="1suZ3qyNAha" role="2DB_1W">
                   <property role="Xl_RC" value="JointTorqueCtrl" />
                 </node>
               </node>
@@ -2936,7 +2906,7 @@
             <node concept="2OqwBi" id="mdFCw02nfQ" role="2Oq$k0">
               <node concept="2RT1ic" id="mdFCw02nfA" role="2Oq$k0" />
               <node concept="3pvUrN" id="mdFCw02nil" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="seperator" />
+                <ref role="3pvUL9" node="mdFCvZW4$7" resolve="separator" />
               </node>
             </node>
             <node concept="2D$_L7" id="mdFCw02npY" role="2OqNvi">
@@ -3558,58 +3528,6 @@
         </node>
       </node>
     </node>
-    <node concept="2WYcwU" id="mdFCvZW4vK" role="3ttgI2">
-      <property role="TrG5h" value="robot_gazebo1" />
-      <ref role="2WYf9R" to="1hke:2NJBz9CzWZd" resolve="cogimon::robotSim" />
-      <node concept="emJY1" id="mdFCvZW4vL" role="lGtFl">
-        <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7sG" role="FWJL0">
-        <ref role="FWJLQ" to="1hke:2NJBz9CzX2V" resolve="full_arm_JointFeedback" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7sH" role="FWJL0">
-        <ref role="FWJLQ" to="1hke:2NJBz9CzX47" resolve="full_arm_JointTorqueCtrl" />
-      </node>
-      <node concept="2GY8tY" id="mdFCvZW7tB" role="lGtFl">
-        <property role="2GY9xM" value="2643.02734375" />
-        <property role="2GY9xO" value="696.2652282714844" />
-      </node>
-      <node concept="2R8en3" id="mdFCvZWeLO" role="lGtFl">
-        <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Q0Er" id="mdFCvZWeLS" role="12QldZ">
-          <node concept="1QwnVF" id="mdFCvZWgLK" role="12Q0EH">
-            <property role="TrG5h" value="act_norun" />
-            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2WYcwU" id="mdFCvZW4wN" role="3ttgI2">
-      <property role="TrG5h" value="robot_gazebo2" />
-      <ref role="2WYf9R" to="1hke:2NJBz9CzWZd" resolve="cogimon::robotSim" />
-      <node concept="emJY1" id="mdFCvZW4wO" role="lGtFl">
-        <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="2GY8tY" id="mdFCvZW7rL" role="lGtFl">
-        <property role="2GY9xM" value="2646.7252807617188" />
-        <property role="2GY9xO" value="899.28076171875" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7sc" role="FWJL0">
-        <ref role="FWJLQ" to="1hke:2NJBz9CzX2V" resolve="full_arm_JointFeedback" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7sd" role="FWJL0">
-        <ref role="FWJLQ" to="1hke:2NJBz9CzX47" resolve="full_arm_JointTorqueCtrl" />
-      </node>
-      <node concept="2R8en3" id="mdFCvZWeNa" role="lGtFl">
-        <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Q0Er" id="mdFCvZWeNe" role="12QldZ">
-          <node concept="1QwnVF" id="mdFCvZWgLZ" role="12Q0EH">
-            <property role="TrG5h" value="act_norun" />
-            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2WYcwU" id="mdFCvZW4yg" role="3ttgI2">
       <property role="TrG5h" value="combiner" />
       <ref role="2WYf9R" to="gw48:5dAl56bIRRw" resolve="FeedbackCombiner" />
@@ -3619,18 +3537,6 @@
       <node concept="2GY8tY" id="mdFCvZW7pV" role="lGtFl">
         <property role="2GY9xM" value="1215.1849365234375" />
         <property role="2GY9xO" value="379.88140869140625" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7qm" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bMOp8" resolve="in_robotstatus_port_0" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7qn" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bMOqw" resolve="in_robotstatus_port_1" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7qo" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bMOsq" resolve="in_robotstatus_port_2" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7qp" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bMO_E" resolve="out_robotstatus_port" />
       </node>
       <node concept="2R8en3" id="mdFCvZWeOw" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -3647,12 +3553,24 @@
           </node>
         </node>
       </node>
-      <node concept="FWJLR" id="4td2CtEiAJk" role="FWJL0">
+      <node concept="FWJLR" id="1suZ3qyFuYn" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bMOp8" resolve="in_robotstatus_port_0" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYo" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bMOqw" resolve="in_robotstatus_port_1" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYp" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bMOsq" resolve="in_robotstatus_port_2" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYq" role="l9eUl">
         <ref role="FWJLQ" to="gw48:4td2CtEiAGp" resolve="in_robotstatus_port_3" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYr" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bMO_E" resolve="out_robotstatus_port" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4$7" role="3ttgI2">
-      <property role="TrG5h" value="seperator" />
+      <property role="TrG5h" value="separator" />
       <ref role="2WYf9R" to="gw48:5dAl56bJdJ4" resolve="TorqueCommandSeperator" />
       <node concept="emJY1" id="mdFCvZW4$8" role="lGtFl">
         <property role="emJ$H" value="CosmoViz" />
@@ -3660,18 +3578,6 @@
       <node concept="2GY8tY" id="mdFCvZW7u2" role="lGtFl">
         <property role="2GY9xM" value="2347.6334228515625" />
         <property role="2GY9xO" value="800.1817016601562" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7ut" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bMRw4" resolve="in_torques_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7uu" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bMRxs" resolve="out_torques_port_0" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7uv" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bMRzm" resolve="out_torques_port_1" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7uw" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bMRA4" resolve="out_torques_port_2" />
       </node>
       <node concept="2R8en3" id="mdFCvZWePQ" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -3682,7 +3588,19 @@
           </node>
         </node>
       </node>
-      <node concept="FWJLR" id="4td2CtEiAQ7" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvitVQp" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bMRw4" resolve="in_torques_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvitVQq" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bMRxs" resolve="out_torques_port_0" />
+      </node>
+      <node concept="FWJLR" id="4OphnvitVQr" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bMRzm" resolve="out_torques_port_1" />
+      </node>
+      <node concept="FWJLR" id="4OphnvitVQs" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bMRA4" resolve="out_torques_port_2" />
+      </node>
+      <node concept="FWJLR" id="4OphnvitVQt" role="l9eUl">
         <ref role="FWJLQ" to="gw48:4td2CtEiANc" resolve="out_torques_port_3" />
       </node>
     </node>
@@ -3696,39 +3614,6 @@
         <property role="2GY9xM" value="328.9983139038086" />
         <property role="2GY9xO" value="978.0440902709961" />
       </node>
-      <node concept="FWJLR" id="mdFCvZW7ml" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVDsP" resolve="in_robotstatus_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7mm" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVDud" resolve="out_robotstatus_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7mn" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVDwr" resolve="out_inertia_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7mo" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVDzo" resolve="out_gravity_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7mp" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVDB9" resolve="out_coriolis_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7mq" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVDFI" resolve="out_coriolisAndGravity_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7mr" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVDL7" resolve="out_cartPos_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7ms" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVDRk" resolve="out_cartVel_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7mt" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVDYl" resolve="out_cartAcc_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7mu" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVE6a" resolve="out_jacobian_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7mv" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVEeN" resolve="out_jacobianDot_port" />
-      </node>
       <node concept="2R8en3" id="mdFCvZWeRc" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12Q0Er" id="mdFCvZWeRg" role="12QldZ">
@@ -3737,6 +3622,39 @@
             <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
           </node>
         </node>
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYU" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVDsP" resolve="in_robotstatus_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYV" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVDud" resolve="out_robotstatus_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYW" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVDwr" resolve="out_inertia_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYX" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVDzo" resolve="out_gravity_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYY" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVDB9" resolve="out_coriolis_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuYZ" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVDFI" resolve="out_coriolisAndGravity_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuZ0" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVDL7" resolve="out_cartPos_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuZ1" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVDRk" resolve="out_cartVel_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuZ2" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVDYl" resolve="out_cartAcc_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuZ3" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVE6a" resolve="out_jacobian_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFuZ4" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVEeN" resolve="out_jacobianDot_port" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4D3" role="3ttgI2">
@@ -3749,63 +3667,6 @@
         <property role="2GY9xM" value="634.5564270019531" />
         <property role="2GY9xO" value="1055.4130554199219" />
       </node>
-      <node concept="FWJLR" id="mdFCvZW86_" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd5RM" resolve="in_robotstatus_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86A" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd5Tc" resolve="in_jacobian_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86B" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd5Vl" resolve="in_jacobianDot_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86C" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd5Yi" resolve="in_cartPos_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86D" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd623" resolve="in_cartVel_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86E" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd66C" resolve="in_cartPosBox_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86F" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd6c1" resolve="in_incontactstate_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86G" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd6ie" resolve="out_jacobianTask_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86H" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd6pf" resolve="out_jacobianDotTask_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86I" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd6x4" resolve="out_jacobianTaskBox_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86J" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd6DH" resolve="out_jacobianDotTaskBox_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86K" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd6Na" resolve="out_jacobianCstr_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86L" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd6Xr" resolve="out_jacobianDotCstr_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86M" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd78w" resolve="out_cartPosTask_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86N" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd7kp" resolve="out_cartVelTask_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86O" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd7x6" resolve="out_cartPosTaskBox_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86P" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd7IB" resolve="out_cartVelTaskBox_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86Q" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd7WW" resolve="out_directionEE_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW86R" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd8c5" resolve="out_incontactstateEE_port" />
-      </node>
       <node concept="2R8en3" id="mdFCvZWeSy" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12Q0Er" id="mdFCvZWeSA" role="12QldZ">
@@ -3814,6 +3675,63 @@
             <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
           </node>
         </node>
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv07" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd5RM" resolve="in_robotstatus_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv08" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd5Tc" resolve="in_jacobian_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv09" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd5Vl" resolve="in_jacobianDot_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0a" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd5Yi" resolve="in_cartPos_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0b" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd623" resolve="in_cartVel_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0c" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd66C" resolve="in_cartPosBox_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0d" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd6c1" resolve="in_incontactstate_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0e" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd6ie" resolve="out_jacobianTask_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0f" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd6pf" resolve="out_jacobianDotTask_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0g" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd6x4" resolve="out_jacobianTaskBox_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0h" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd6DH" resolve="out_jacobianDotTaskBox_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0i" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd6Na" resolve="out_jacobianCstr_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0j" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd6Xr" resolve="out_jacobianDotCstr_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0k" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd78w" resolve="out_cartPosTask_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0l" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd7kp" resolve="out_cartVelTask_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0m" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd7x6" resolve="out_cartPosTaskBox_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0n" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd7IB" resolve="out_cartVelTaskBox_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0o" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd7WW" resolve="out_directionEE_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv0p" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd8c5" resolve="out_incontactstateEE_port" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4G8" role="3ttgI2">
@@ -3826,36 +3744,6 @@
         <property role="2GY9xM" value="925.815788269043" />
         <property role="2GY9xO" value="1050.0417671203613" />
       </node>
-      <node concept="FWJLR" id="mdFCvZW84b" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm4hM" resolve="in_jacobianCstr_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW84c" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm4iT" resolve="in_jacobianDotCstr_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW84d" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm4kI" resolve="in_inertia_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW84e" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd30v" resolve="in_activation_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW84f" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm4Qn" resolve="out_MCstr_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW84g" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm4Tn" resolve="out_P_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW84h" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd37w" resolve="out_Pdot_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW84i" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:5dAl56bMTnf" resolve="out_MCstrInvP_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW84j" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd3ib" resolve="out_rankQR_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW84k" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd3q0" resolve="out_rankSVD_port" />
-      </node>
       <node concept="2R8en3" id="mdFCvZWeTS" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12Q0Er" id="mdFCvZWeTW" role="12QldZ">
@@ -3864,6 +3752,36 @@
             <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
           </node>
         </node>
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2c" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm4hM" resolve="in_jacobianCstr_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2d" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm4iT" resolve="in_jacobianDotCstr_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2e" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm4kI" resolve="in_inertia_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2f" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd30v" resolve="in_activation_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2g" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm4Qn" resolve="out_MCstr_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2h" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm4Tn" resolve="out_P_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2i" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd37w" resolve="out_Pdot_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2j" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:5dAl56bMTnf" resolve="out_MCstrInvP_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2k" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd3ib" resolve="out_rankQR_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv2l" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd3q0" resolve="out_rankSVD_port" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4Kt" role="3ttgI2">
@@ -3876,15 +3794,6 @@
         <property role="2GY9xM" value="1802.3491821289062" />
         <property role="2GY9xO" value="710.8364906311035" />
       </node>
-      <node concept="FWJLR" id="mdFCvZW8aJ" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm6HP" resolve="in_robotstatus_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW8aK" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm6IJ" resolve="in_coriolisAndGravity_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW8aL" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm6Kn" resolve="out_torques_port" />
-      </node>
       <node concept="2R8en3" id="mdFCvZWeVe" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12Q0Er" id="mdFCvZWeVi" role="12QldZ">
@@ -3893,6 +3802,15 @@
             <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
           </node>
         </node>
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv3i" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm6HP" resolve="in_robotstatus_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv3j" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm6IJ" resolve="in_coriolisAndGravity_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv3k" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm6Kn" resolve="out_torques_port" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4Pb" role="3ttgI2">
@@ -3907,21 +3825,6 @@
       <node concept="2WYd3i" id="mdFCvZW53d" role="2WYf99">
         <ref role="2WYd3v" to="gw48:5dAl56bIRFG" resolve="linkname" />
       </node>
-      <node concept="FWJLR" id="mdFCvZW53e" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bIRJ2" resolve="in_pose_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW53f" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bIRKl" resolve="in_poseTranslation_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW53g" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bIRMz" resolve="in_poseOrientation_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW53h" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:5dAl56bIRP_" resolve="out_pose_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW53i" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:3GmkSgQd2Cs" resolve="out_poseVel_port" />
-      </node>
       <node concept="2GY8tY" id="mdFCvZW54W" role="lGtFl">
         <property role="2GY9xM" value="324.99021911621094" />
         <property role="2GY9xO" value="1396.2760620117188" />
@@ -3934,6 +3837,21 @@
             <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
           </node>
         </node>
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyw5" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bIRJ2" resolve="in_pose_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyw6" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bIRKl" resolve="in_poseTranslation_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyw7" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bIRMz" resolve="in_poseOrientation_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyw8" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:5dAl56bIRP_" resolve="out_pose_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyw9" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:3GmkSgQd2Cs" resolve="out_poseVel_port" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4U9" role="3ttgI2">
@@ -3961,31 +3879,31 @@
       <node concept="2WYd3i" id="4td2CtEiXGM" role="2WYf99">
         <ref role="2WYd3v" to="73wf:4td2CtEif60" resolve="timescale" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiXGN" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvilypH" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5G" resolve="out_desiredTaskSpacePosition_port" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiXGO" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvilypI" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5I" resolve="out_desiredTaskSpaceVelocity_port" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiXGP" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvilypJ" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5K" resolve="out_desiredTaskSpaceAcceleration_port" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiXGQ" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvilypK" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5M" resolve="out_desiredTaskSpaceBoxPosition_port" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiXGR" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvilypL" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5O" resolve="out_desiredTaskSpaceBoxVelocity_port" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiXGS" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvilypM" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5Q" resolve="out_desiredTaskSpaceBoxAcceleration_port" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiXGT" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvilypN" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5S" resolve="out_directionEE_port" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiXGU" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvilypO" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5U" resolve="out_incontactstate_port" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiXGV" role="FWJL0">
+      <node concept="FWJLR" id="4OphnvilypP" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5W" resolve="out_endeffectorstatus_port" />
       </node>
     </node>
@@ -3997,51 +3915,6 @@
       </node>
       <node concept="2WYd3i" id="mdFCvZW5fa" role="2WYf99">
         <ref role="2WYd3v" to="73wf:3GmkSgQd4EM" resolve="impedanceCTRL" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fb" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3LP" resolve="in_desiredTaskSpacePosition_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fc" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3MJ" resolve="in_desiredTaskSpaceVelocity_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fd" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3On" resolve="in_desiredTaskSpaceAcceleration_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fe" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm52P" resolve="in_jacobian_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5ff" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm56x" resolve="in_jacobianDot_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fg" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5aT" resolve="in_currentTaskSpacePosition_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fh" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5fX" resolve="in_currentTaskSpaceVelocity_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fi" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5lH" resolve="in_robotstatus_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fj" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5s9" resolve="in_h_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fk" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5zh" resolve="in_constraintM_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fl" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5F5" resolve="in_P_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fm" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5N_" resolve="in_constraintC_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fn" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:5dAl56bMTGi" resolve="in_constraintMinvP_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fo" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3Rx" resolve="out_torques_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5fp" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd4Ln" resolve="out_force_port" />
       </node>
       <node concept="2GY8tY" id="mdFCvZW7vt" role="lGtFl">
         <property role="2GY9xM" value="1213.5872955322266" />
@@ -4061,6 +3934,51 @@
           </node>
         </node>
       </node>
+      <node concept="FWJLR" id="4Ophnvilyoj" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3LP" resolve="in_desiredTaskSpacePosition_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyok" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3MJ" resolve="in_desiredTaskSpaceVelocity_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyol" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3On" resolve="in_desiredTaskSpaceAcceleration_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyom" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm52P" resolve="in_jacobian_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyon" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm56x" resolve="in_jacobianDot_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyoo" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5aT" resolve="in_currentTaskSpacePosition_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyop" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5fX" resolve="in_currentTaskSpaceVelocity_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyoq" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5lH" resolve="in_robotstatus_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyor" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5s9" resolve="in_h_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyos" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5zh" resolve="in_constraintM_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyot" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5F5" resolve="in_P_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyou" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5N_" resolve="in_constraintC_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyov" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:5dAl56bMTGi" resolve="in_constraintMinvP_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyow" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3Rx" resolve="out_torques_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyox" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd4Ln" resolve="out_force_port" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW5ja" role="3ttgI2">
       <property role="TrG5h" value="positioncontrollerBox" />
@@ -4070,51 +3988,6 @@
       </node>
       <node concept="2WYd3i" id="mdFCvZW5wB" role="2WYf99">
         <ref role="2WYd3v" to="73wf:3GmkSgQd4EM" resolve="impedanceCTRL" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wC" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3LP" resolve="in_desiredTaskSpacePosition_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wD" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3MJ" resolve="in_desiredTaskSpaceVelocity_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wE" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3On" resolve="in_desiredTaskSpaceAcceleration_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wF" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm52P" resolve="in_jacobian_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wG" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm56x" resolve="in_jacobianDot_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wH" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5aT" resolve="in_currentTaskSpacePosition_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wI" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5fX" resolve="in_currentTaskSpaceVelocity_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wJ" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5lH" resolve="in_robotstatus_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wK" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5s9" resolve="in_h_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wL" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5zh" resolve="in_constraintM_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wM" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5F5" resolve="in_P_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wN" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5N_" resolve="in_constraintC_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wO" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:5dAl56bMTGi" resolve="in_constraintMinvP_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wP" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3Rx" resolve="out_torques_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5wQ" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd4Ln" resolve="out_force_port" />
       </node>
       <node concept="2GY8tY" id="mdFCvZW7rm" role="lGtFl">
         <property role="2GY9xM" value="1214.7702331542969" />
@@ -4129,27 +4002,57 @@
           </node>
         </node>
       </node>
+      <node concept="FWJLR" id="4Ophnvilyl_" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3LP" resolve="in_desiredTaskSpacePosition_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylA" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3MJ" resolve="in_desiredTaskSpaceVelocity_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylB" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3On" resolve="in_desiredTaskSpaceAcceleration_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylC" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm52P" resolve="in_jacobian_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylD" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm56x" resolve="in_jacobianDot_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylE" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5aT" resolve="in_currentTaskSpacePosition_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylF" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5fX" resolve="in_currentTaskSpaceVelocity_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylG" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5lH" resolve="in_robotstatus_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylH" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5s9" resolve="in_h_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylI" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5zh" resolve="in_constraintM_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylJ" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5F5" resolve="in_P_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylK" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5N_" resolve="in_constraintC_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylL" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:5dAl56bMTGi" resolve="in_constraintMinvP_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylM" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3Rx" resolve="out_torques_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilylN" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd4Ln" resolve="out_force_port" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW5$B" role="3ttgI2">
       <property role="TrG5h" value="forcecontroller" />
       <ref role="2WYf9R" to="73wf:3keJr8m8xQx" resolve="SimpleTaskController" />
       <node concept="emJY1" id="mdFCvZW5$C" role="lGtFl">
         <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5PH" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd5sx" resolve="in_force_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5PI" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd5vu" resolve="in_direction_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5PJ" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm5Xx" resolve="in_jacobian_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5PK" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm40w" resolve="out_torques_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW5PL" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd5zf" resolve="out_force_port" />
       </node>
       <node concept="2GY8tY" id="mdFCvZW7p5" role="lGtFl">
         <property role="2GY9xM" value="1482.6893615722656" />
@@ -4164,54 +4067,27 @@
           </node>
         </node>
       </node>
+      <node concept="FWJLR" id="1suZ3qyFv3B" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd5sx" resolve="in_force_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv3C" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd5vu" resolve="in_direction_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv3D" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm5Xx" resolve="in_jacobian_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv3E" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm40w" resolve="out_torques_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv3F" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd5zf" resolve="out_force_port" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW5QX" role="3ttgI2">
       <property role="TrG5h" value="projcombiner" />
       <ref role="2WYf9R" to="73wf:3keJr8m8xTM" resolve="ProjectionCombiner" />
       <node concept="emJY1" id="mdFCvZW5QY" role="lGtFl">
         <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69u" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3Tf" resolve="in_torquesA_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69v" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3U9" resolve="in_torquesB_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69w" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm3VL" resolve="in_torquesC_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69x" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm62r" resolve="in_robotstatus_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69y" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm65r" resolve="in_projection_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69z" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm697" resolve="in_inertia_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69$" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm6dv" resolve="in_inertia_c_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69_" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm6iz" resolve="in_h_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69A" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm6oj" resolve="in_Pdot_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69B" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm6uJ" resolve="in_torquesTask_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69C" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:5dAl56bMU51" resolve="in_torquesCstr_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69D" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:4SN5UBHm6_R" resolve="out_torques_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69E" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd561" resolve="out_torquesMotion_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW69F" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3GmkSgQd5hb" resolve="out_torquesForce_port" />
       </node>
       <node concept="2GY8tY" id="mdFCvZW7tc" role="lGtFl">
         <property role="2GY9xM" value="1806.2674560546875" />
@@ -4226,6 +4102,48 @@
           </node>
         </node>
       </node>
+      <node concept="FWJLR" id="1suZ3qyFv4a" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3Tf" resolve="in_torquesA_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4b" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3U9" resolve="in_torquesB_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4c" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm3VL" resolve="in_torquesC_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4d" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm62r" resolve="in_robotstatus_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4e" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm65r" resolve="in_projection_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4f" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm697" resolve="in_inertia_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4g" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm6dv" resolve="in_inertia_c_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4h" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm6iz" resolve="in_h_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4i" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm6oj" resolve="in_Pdot_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4j" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm6uJ" resolve="in_torquesTask_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4k" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:5dAl56bMU51" resolve="in_torquesCstr_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4l" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:4SN5UBHm6_R" resolve="out_torques_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4m" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd561" resolve="out_torquesMotion_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv4n" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3GmkSgQd5hb" resolve="out_torquesForce_port" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW6cY" role="3ttgI2">
       <property role="TrG5h" value="motiontaskprioritization" />
@@ -4239,30 +4157,9 @@
       <node concept="2WYd3i" id="mdFCvZW6yM" role="2WYf99">
         <ref role="2WYd3v" to="73wf:3XuVWlUVC5k" resolve="deactivateIrrelevantTasks" />
       </node>
-      <node concept="FWJLR" id="mdFCvZW6yN" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVCd7" resolve="in_inertiaInv_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW6yO" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVCeq" resolve="in_coriolisAndGravity_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW6yP" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:3XuVWlUVCgz" resolve="out_torques_port" />
-      </node>
       <node concept="2GY8tY" id="mdFCvZW7wj" role="lGtFl">
         <property role="2GY9xM" value="1486.6546630859375" />
         <property role="2GY9xO" value="865.7847900390625" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7Jw" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:mdFCvZW7Dg" resolve="in_torques0_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7Jx" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:mdFCvZW7H6" resolve="in_torques1_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7YH" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:mdFCvZW7Qb" resolve="in_jacobian0_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7YI" role="FWJL0">
-        <ref role="FWJLQ" to="73wf:mdFCvZW7V$" resolve="in_jacobian1_port" />
       </node>
       <node concept="2R8en3" id="mdFCvZWgEq" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -4273,21 +4170,33 @@
           </node>
         </node>
       </node>
+      <node concept="FWJLR" id="4Ophnvilyqz" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVCd7" resolve="in_inertiaInv_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyq$" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVCeq" resolve="in_coriolisAndGravity_port" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvilyq_" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:mdFCvZW7Dg" resolve="in_torques0_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilyqA" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:mdFCvZW7H6" resolve="in_torques1_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilyqB" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:mdFCvZW7Qb" resolve="in_jacobian0_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilyqC" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:mdFCvZW7V$" resolve="in_jacobian1_port" />
+      </node>
+      <node concept="FWJLR" id="4OphnvilyqD" role="l9eUl">
+        <ref role="FWJLQ" to="73wf:3XuVWlUVCgz" resolve="out_torques_port" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW6$1" role="3ttgI2">
       <property role="TrG5h" value="transition" />
       <ref role="2WYf9R" to="gw48:3keJr8m8xVE" resolve="TorqueTransition" />
       <node concept="emJY1" id="mdFCvZW6$2" role="lGtFl">
         <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW6Vd" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:4SN5UBHm6MS" resolve="in_torquesA_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW6Ve" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:4SN5UBHm6NM" resolve="in_torquesB_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW6Vf" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:4SN5UBHm6Pq" resolve="out_torques_port" />
       </node>
       <node concept="2GY8tY" id="mdFCvZW7vS" role="lGtFl">
         <property role="2GY9xM" value="2084.6618041992188" />
@@ -4302,33 +4211,21 @@
           </node>
         </node>
       </node>
+      <node concept="FWJLR" id="1suZ3qyFv5G" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:4SN5UBHm6MS" resolve="in_torquesA_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv5H" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:4SN5UBHm6NM" resolve="in_torquesB_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv5I" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:4SN5UBHm6Pq" resolve="out_torques_port" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW6VX" role="3ttgI2">
       <property role="TrG5h" value="forceestimator" />
       <ref role="2WYf9R" to="gw48:3keJr8m8xWO" resolve="ForceEstimator" />
       <node concept="emJY1" id="mdFCvZW6VY" role="lGtFl">
         <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7ka" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:4SN5UBHm6S0" resolve="in_robotstatus_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7kb" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:4SN5UBHm6U8" resolve="in_jacobianCstr_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7kc" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:4SN5UBHm6VK" resolve="in_jacobianDotCstr_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7kd" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:4SN5UBHm6Y4" resolve="in_inertia_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7ke" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:4SN5UBHm714" resolve="in_h_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7kf" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:4SN5UBHm74K" resolve="in_torques_port" />
-      </node>
-      <node concept="FWJLR" id="mdFCvZW7kg" role="FWJL0">
-        <ref role="FWJLQ" to="gw48:3GmkSgQd0L$" resolve="out_force_port" />
       </node>
       <node concept="2GY8tY" id="mdFCvZW7pw" role="lGtFl">
         <property role="2GY9xM" value="632.8753662109375" />
@@ -4343,393 +4240,562 @@
           </node>
         </node>
       </node>
+      <node concept="FWJLR" id="1suZ3qyFv61" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:4SN5UBHm6S0" resolve="in_robotstatus_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv62" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:4SN5UBHm6U8" resolve="in_jacobianCstr_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv63" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:4SN5UBHm6VK" resolve="in_jacobianDotCstr_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv64" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:4SN5UBHm6Y4" resolve="in_inertia_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv65" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:4SN5UBHm714" resolve="in_h_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv66" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:4SN5UBHm74K" resolve="in_torques_port" />
+      </node>
+      <node concept="FWJLR" id="1suZ3qyFv67" role="l9eUl">
+        <ref role="FWJLQ" to="gw48:3GmkSgQd0L$" resolve="out_force_port" />
+      </node>
     </node>
     <node concept="3tteA_" id="mdFCvZW7wI" role="3ttgI7">
       <property role="TrG5h" value="conn_1497604775079" />
-      <ref role="3ttcQw" node="mdFCvZW5fb" />
-      <ref role="3ttcQ_" node="4td2CtEiXGN" />
+      <ref role="3ttcQ_" node="4OphnvilypH" />
+      <ref role="3ttcQw" node="4Ophnvilyoj" />
     </node>
     <node concept="3tteA_" id="mdFCvZW7wW" role="3ttgI7">
       <property role="TrG5h" value="conn_1497604788355" />
-      <ref role="3ttcQw" node="mdFCvZW5fc" />
-      <ref role="3ttcQ_" node="4td2CtEiXGO" />
+      <ref role="3ttcQ_" node="4OphnvilypI" />
+      <ref role="3ttcQw" node="4Ophnvilyok" />
     </node>
     <node concept="3tteA_" id="mdFCvZW7xn" role="3ttgI7">
       <property role="TrG5h" value="conn_1497604796607" />
-      <ref role="3ttcQw" node="mdFCvZW5fd" />
-      <ref role="3ttcQ_" node="4td2CtEiXGP" />
+      <ref role="3ttcQ_" node="4OphnvilypJ" />
+      <ref role="3ttcQw" node="4Ophnvilyol" />
     </node>
     <node concept="3tteA_" id="mdFCvZW7xZ" role="3ttgI7">
       <property role="TrG5h" value="conn_1497604835029" />
-      <ref role="3ttcQw" node="mdFCvZW5wC" />
-      <ref role="3ttcQ_" node="4td2CtEiXGQ" />
+      <ref role="3ttcQ_" node="4OphnvilypK" />
+      <ref role="3ttcQw" node="4Ophnvilyl_" />
     </node>
     <node concept="3tteA_" id="mdFCvZW7yO" role="3ttgI7">
       <property role="TrG5h" value="conn_1497604838150" />
-      <ref role="3ttcQw" node="mdFCvZW5wD" />
-      <ref role="3ttcQ_" node="4td2CtEiXGR" />
+      <ref role="3ttcQ_" node="4OphnvilypL" />
+      <ref role="3ttcQw" node="4OphnvilylA" />
     </node>
     <node concept="3tteA_" id="mdFCvZW7zQ" role="3ttgI7">
       <property role="TrG5h" value="conn_1497604841481" />
-      <ref role="3ttcQw" node="mdFCvZW5wE" />
-      <ref role="3ttcQ_" node="4td2CtEiXGS" />
+      <ref role="3ttcQ_" node="4OphnvilypM" />
+      <ref role="3ttcQw" node="4OphnvilylB" />
     </node>
     <node concept="3tteA_" id="mdFCvZW7KB" role="3ttgI7">
       <property role="TrG5h" value="conn_1497604985347" />
-      <ref role="3ttcQw" node="mdFCvZW7Jw" />
-      <ref role="3ttcQ_" node="mdFCvZW5wP" />
+      <ref role="3ttcQ_" node="4OphnvilylM" />
+      <ref role="3ttcQw" node="4Ophnvilyq_" />
     </node>
     <node concept="3tteA_" id="mdFCvZW7M3" role="3ttgI7">
       <property role="TrG5h" value="conn_1497604989245" />
-      <ref role="3ttcQ_" node="mdFCvZW5fo" />
-      <ref role="3ttcQw" node="mdFCvZW7Jx" />
+      <ref role="3ttcQ_" node="4Ophnvilyow" />
+      <ref role="3ttcQw" node="4OphnvilyqA" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8cr" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605227732" />
-      <ref role="3ttcQ_" node="mdFCvZW84f" />
-      <ref role="3ttcQw" node="mdFCvZW6yN" />
+      <ref role="3ttcQw" node="4Ophnvilyqz" />
+      <ref role="3ttcQ_" node="1suZ3qyFv2g" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8eh" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605244808" />
-      <ref role="3ttcQw" node="mdFCvZW7YH" />
-      <ref role="3ttcQ_" node="mdFCvZW86I" />
+      <ref role="3ttcQw" node="4OphnvilyqB" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0g" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8gk" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605259885" />
-      <ref role="3ttcQ_" node="mdFCvZW86G" />
-      <ref role="3ttcQw" node="mdFCvZW7YI" />
+      <ref role="3ttcQw" node="4OphnvilyqC" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0e" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8i$" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605276519" />
-      <ref role="3ttcQw" node="mdFCvZW69B" />
-      <ref role="3ttcQ_" node="mdFCvZW6yP" />
+      <ref role="3ttcQ_" node="4OphnvilyqD" />
+      <ref role="3ttcQw" node="1suZ3qyFv4j" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8l1" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605338977" />
-      <ref role="3ttcQw" node="mdFCvZW69C" />
-      <ref role="3ttcQ_" node="mdFCvZW5PK" />
+      <ref role="3ttcQ_" node="1suZ3qyFv3E" />
+      <ref role="3ttcQw" node="1suZ3qyFv4k" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8nX" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605422223" />
-      <ref role="3ttcQw" node="mdFCvZW7qm" />
-      <ref role="3ttcQ_" node="mdFCvZW7sG" />
+      <ref role="3ttcQ_" node="4OphnvishUS" />
+      <ref role="3ttcQw" node="1suZ3qyFuYn" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8qO" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605429162" />
-      <ref role="3ttcQ_" node="mdFCvZW7sc" />
-      <ref role="3ttcQw" node="mdFCvZW7qn" />
+      <ref role="3ttcQ_" node="4Ophnvisjs$" />
+      <ref role="3ttcQw" node="1suZ3qyFuYo" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8tS" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605452208" />
-      <ref role="3ttcQw" node="mdFCvZW7ml" />
-      <ref role="3ttcQ_" node="mdFCvZW7qp" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYr" />
+      <ref role="3ttcQw" node="1suZ3qyFuYU" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8x9" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605467244" />
-      <ref role="3ttcQw" node="mdFCvZW86_" />
-      <ref role="3ttcQ_" node="mdFCvZW7qp" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYr" />
+      <ref role="3ttcQw" node="1suZ3qyFv07" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8$B" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605488862" />
-      <ref role="3ttcQw" node="mdFCvZW86A" />
-      <ref role="3ttcQ_" node="mdFCvZW7mu" />
+      <ref role="3ttcQ_" node="1suZ3qyFuZ3" />
+      <ref role="3ttcQw" node="1suZ3qyFv08" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8Ci" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605509464" />
-      <ref role="3ttcQ_" node="mdFCvZW7mv" />
-      <ref role="3ttcQw" node="mdFCvZW86B" />
+      <ref role="3ttcQ_" node="1suZ3qyFuZ4" />
+      <ref role="3ttcQw" node="1suZ3qyFv09" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8Ga" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605554834" />
-      <ref role="3ttcQ_" node="mdFCvZW7mr" />
-      <ref role="3ttcQw" node="mdFCvZW86C" />
+      <ref role="3ttcQ_" node="1suZ3qyFuZ0" />
+      <ref role="3ttcQw" node="1suZ3qyFv0a" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8Kf" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605559479" />
-      <ref role="3ttcQ_" node="mdFCvZW7ms" />
-      <ref role="3ttcQw" node="mdFCvZW86D" />
+      <ref role="3ttcQ_" node="1suZ3qyFuZ1" />
+      <ref role="3ttcQw" node="1suZ3qyFv0b" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8Ox" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605575712" />
-      <ref role="3ttcQ_" node="mdFCvZW53h" />
-      <ref role="3ttcQw" node="mdFCvZW86E" />
+      <ref role="3ttcQ_" node="4Ophnvilyw8" />
+      <ref role="3ttcQw" node="1suZ3qyFv0c" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8T0" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605609192" />
-      <ref role="3ttcQw" node="mdFCvZW86F" />
-      <ref role="3ttcQ_" node="4td2CtEiXGU" />
+      <ref role="3ttcQ_" node="4OphnvilypO" />
+      <ref role="3ttcQw" node="1suZ3qyFv0d" />
     </node>
     <node concept="3tteA_" id="mdFCvZW8XG" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605626967" />
-      <ref role="3ttcQw" node="mdFCvZW84b" />
-      <ref role="3ttcQ_" node="mdFCvZW86K" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0i" />
+      <ref role="3ttcQw" node="1suZ3qyFv2c" />
     </node>
     <node concept="3tteA_" id="mdFCvZW92_" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605641197" />
-      <ref role="3ttcQw" node="mdFCvZW84c" />
-      <ref role="3ttcQ_" node="mdFCvZW86L" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0j" />
+      <ref role="3ttcQw" node="1suZ3qyFv2d" />
     </node>
     <node concept="3tteA_" id="mdFCvZW97F" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605653617" />
-      <ref role="3ttcQw" node="mdFCvZW84d" />
-      <ref role="3ttcQ_" node="mdFCvZW7mn" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYW" />
+      <ref role="3ttcQw" node="1suZ3qyFv2e" />
     </node>
     <node concept="3tteA_" id="mdFCvZW9cY" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605668366" />
-      <ref role="3ttcQw" node="mdFCvZW84e" />
-      <ref role="3ttcQ_" node="mdFCvZW86R" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0p" />
+      <ref role="3ttcQw" node="1suZ3qyFv2f" />
     </node>
     <node concept="3tteA_" id="mdFCvZW9iu" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605695167" />
-      <ref role="3ttcQw" node="mdFCvZW5fe" />
-      <ref role="3ttcQ_" node="mdFCvZW86G" />
+      <ref role="3ttcQw" node="4Ophnvilyom" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0e" />
     </node>
     <node concept="3tteA_" id="mdFCvZW9ob" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605721128" />
-      <ref role="3ttcQw" node="mdFCvZW5ff" />
-      <ref role="3ttcQ_" node="mdFCvZW86H" />
+      <ref role="3ttcQw" node="4Ophnvilyon" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0f" />
     </node>
     <node concept="3tteA_" id="mdFCvZW9u5" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605736857" />
-      <ref role="3ttcQw" node="mdFCvZW5fg" />
-      <ref role="3ttcQ_" node="mdFCvZW86M" />
+      <ref role="3ttcQw" node="4Ophnvilyoo" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0k" />
     </node>
     <node concept="3tteA_" id="mdFCvZW9$c" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605754773" />
-      <ref role="3ttcQw" node="mdFCvZW5fh" />
-      <ref role="3ttcQ_" node="mdFCvZW86N" />
+      <ref role="3ttcQw" node="4Ophnvilyop" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0l" />
     </node>
     <node concept="3tteA_" id="mdFCvZW9Ew" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605767914" />
-      <ref role="3ttcQw" node="mdFCvZW5fi" />
-      <ref role="3ttcQ_" node="mdFCvZW7mm" />
+      <ref role="3ttcQw" node="4Ophnvilyoq" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYV" />
     </node>
     <node concept="3tteA_" id="mdFCvZW9L1" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605782510" />
-      <ref role="3ttcQ_" node="mdFCvZW7mq" />
-      <ref role="3ttcQw" node="mdFCvZW5fj" />
+      <ref role="3ttcQw" node="4Ophnvilyor" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYZ" />
     </node>
     <node concept="3tteA_" id="mdFCvZW9YE" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605820222" />
-      <ref role="3ttcQ_" node="mdFCvZW84h" />
-      <ref role="3ttcQw" node="mdFCvZW5fm" />
+      <ref role="3ttcQw" node="4Ophnvilyou" />
+      <ref role="3ttcQ_" node="1suZ3qyFv2i" />
     </node>
     <node concept="3tteA_" id="mdFCvZWa5M" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605869410" />
-      <ref role="3ttcQw" node="mdFCvZW5wF" />
-      <ref role="3ttcQ_" node="mdFCvZW86I" />
+      <ref role="3ttcQw" node="4OphnvilylC" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0g" />
     </node>
     <node concept="3tteA_" id="mdFCvZWad7" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605885395" />
-      <ref role="3ttcQw" node="mdFCvZW5wG" />
-      <ref role="3ttcQ_" node="mdFCvZW86J" />
+      <ref role="3ttcQw" node="4OphnvilylD" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0h" />
     </node>
     <node concept="3tteA_" id="mdFCvZWakD" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605896576" />
-      <ref role="3ttcQ_" node="mdFCvZW86O" />
-      <ref role="3ttcQw" node="mdFCvZW5wH" />
+      <ref role="3ttcQw" node="4OphnvilylE" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0m" />
     </node>
     <node concept="3tteA_" id="mdFCvZWaso" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605904093" />
-      <ref role="3ttcQ_" node="mdFCvZW86P" />
-      <ref role="3ttcQw" node="mdFCvZW5wI" />
+      <ref role="3ttcQw" node="4OphnvilylF" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0n" />
     </node>
     <node concept="3tteA_" id="mdFCvZWa$k" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605915176" />
-      <ref role="3ttcQw" node="mdFCvZW5wJ" />
-      <ref role="3ttcQ_" node="mdFCvZW7mm" />
+      <ref role="3ttcQw" node="4OphnvilylG" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYV" />
     </node>
     <node concept="3tteA_" id="mdFCvZWaGt" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605926483" />
-      <ref role="3ttcQw" node="mdFCvZW5wK" />
-      <ref role="3ttcQ_" node="mdFCvZW7mq" />
+      <ref role="3ttcQw" node="4OphnvilylH" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYZ" />
     </node>
     <node concept="3tteA_" id="mdFCvZWaWV" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605987139" />
-      <ref role="3ttcQ_" node="mdFCvZW84i" />
-      <ref role="3ttcQw" node="mdFCvZW5fn" />
+      <ref role="3ttcQw" node="4Ophnvilyov" />
+      <ref role="3ttcQ_" node="1suZ3qyFv2j" />
     </node>
     <node concept="3tteA_" id="mdFCvZWb5h" role="3ttgI7">
       <property role="TrG5h" value="conn_1497605991515" />
-      <ref role="3ttcQw" node="mdFCvZW5wO" />
-      <ref role="3ttcQ_" node="mdFCvZW84i" />
+      <ref role="3ttcQw" node="4OphnvilylL" />
+      <ref role="3ttcQ_" node="1suZ3qyFv2j" />
     </node>
     <node concept="3tteA_" id="mdFCvZWbdO" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606033387" />
-      <ref role="3ttcQw" node="mdFCvZW5wN" />
-      <ref role="3ttcQ_" node="mdFCvZW84h" />
+      <ref role="3ttcQw" node="4OphnvilylK" />
+      <ref role="3ttcQ_" node="1suZ3qyFv2i" />
     </node>
     <node concept="3tteA_" id="mdFCvZWbm$" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606049615" />
-      <ref role="3ttcQw" node="mdFCvZW5PI" />
-      <ref role="3ttcQ_" node="4td2CtEiXGT" />
+      <ref role="3ttcQ_" node="4OphnvilypN" />
+      <ref role="3ttcQw" node="1suZ3qyFv3C" />
     </node>
     <node concept="3tteA_" id="mdFCvZWbvx" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606077784" />
-      <ref role="3ttcQ_" node="mdFCvZW86K" />
-      <ref role="3ttcQw" node="mdFCvZW5PJ" />
+      <ref role="3ttcQ_" node="1suZ3qyFv0i" />
+      <ref role="3ttcQw" node="1suZ3qyFv3D" />
     </node>
     <node concept="3tteA_" id="mdFCvZWbCF" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606094047" />
-      <ref role="3ttcQw" node="mdFCvZW69x" />
-      <ref role="3ttcQ_" node="mdFCvZW7mm" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYV" />
+      <ref role="3ttcQw" node="1suZ3qyFv4d" />
     </node>
     <node concept="3tteA_" id="mdFCvZWbM2" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606110967" />
-      <ref role="3ttcQw" node="mdFCvZW69y" />
-      <ref role="3ttcQ_" node="mdFCvZW84g" />
+      <ref role="3ttcQ_" node="1suZ3qyFv2h" />
+      <ref role="3ttcQw" node="1suZ3qyFv4e" />
     </node>
     <node concept="3tteA_" id="mdFCvZWbVA" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606129004" />
-      <ref role="3ttcQ_" node="mdFCvZW7mn" />
-      <ref role="3ttcQw" node="mdFCvZW69z" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYW" />
+      <ref role="3ttcQw" node="1suZ3qyFv4f" />
     </node>
     <node concept="3tteA_" id="mdFCvZWc5n" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606146901" />
-      <ref role="3ttcQ_" node="mdFCvZW84f" />
-      <ref role="3ttcQw" node="mdFCvZW69$" />
+      <ref role="3ttcQ_" node="1suZ3qyFv2g" />
+      <ref role="3ttcQw" node="1suZ3qyFv4g" />
     </node>
     <node concept="3tteA_" id="mdFCvZWcfl" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606156325" />
-      <ref role="3ttcQ_" node="mdFCvZW7mq" />
-      <ref role="3ttcQw" node="mdFCvZW69_" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYZ" />
+      <ref role="3ttcQw" node="1suZ3qyFv4h" />
     </node>
     <node concept="3tteA_" id="mdFCvZWcpw" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606171687" />
-      <ref role="3ttcQ_" node="mdFCvZW84h" />
-      <ref role="3ttcQw" node="mdFCvZW69A" />
+      <ref role="3ttcQ_" node="1suZ3qyFv2i" />
+      <ref role="3ttcQw" node="1suZ3qyFv4i" />
     </node>
     <node concept="3tteA_" id="mdFCvZWczS" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606194865" />
-      <ref role="3ttcQ_" node="mdFCvZW8aL" />
-      <ref role="3ttcQw" node="mdFCvZW6Vd" />
+      <ref role="3ttcQ_" node="1suZ3qyFv3k" />
+      <ref role="3ttcQw" node="1suZ3qyFv5G" />
     </node>
     <node concept="3tteA_" id="mdFCvZWcIt" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606210879" />
-      <ref role="3ttcQ_" node="mdFCvZW7mm" />
-      <ref role="3ttcQw" node="mdFCvZW8aJ" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYV" />
+      <ref role="3ttcQw" node="1suZ3qyFv3i" />
     </node>
     <node concept="3tteA_" id="mdFCvZWcTf" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606222684" />
-      <ref role="3ttcQ_" node="mdFCvZW7mq" />
-      <ref role="3ttcQw" node="mdFCvZW8aK" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYZ" />
+      <ref role="3ttcQw" node="1suZ3qyFv3j" />
     </node>
     <node concept="3tteA_" id="mdFCvZWd4e" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606240786" />
-      <ref role="3ttcQ_" node="mdFCvZW69D" />
-      <ref role="3ttcQw" node="mdFCvZW6Ve" />
+      <ref role="3ttcQ_" node="1suZ3qyFv4l" />
+      <ref role="3ttcQw" node="1suZ3qyFv5H" />
     </node>
     <node concept="3tteA_" id="mdFCvZWdfq" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606255621" />
-      <ref role="3ttcQw" node="mdFCvZW7ut" />
-      <ref role="3ttcQ_" node="mdFCvZW6Vf" />
+      <ref role="3ttcQ_" node="1suZ3qyFv5I" />
+      <ref role="3ttcQw" node="4OphnvitVQp" />
     </node>
     <node concept="3tteA_" id="mdFCvZWdqN" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606271755" />
-      <ref role="3ttcQ_" node="mdFCvZW7uu" />
-      <ref role="3ttcQw" node="mdFCvZW7sH" />
+      <ref role="3ttcQw" node="4OphnvishUR" />
+      <ref role="3ttcQ_" node="4OphnvitVQq" />
     </node>
     <node concept="3tteA_" id="mdFCvZWdAp" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606280212" />
-      <ref role="3ttcQw" node="mdFCvZW7sd" />
-      <ref role="3ttcQ_" node="mdFCvZW7uv" />
+      <ref role="3ttcQw" node="4Ophnvisjsz" />
+      <ref role="3ttcQ_" node="4OphnvitVQs" />
     </node>
     <node concept="3tteA_" id="mdFCvZWdMc" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606293460" />
-      <ref role="3ttcQ_" node="mdFCvZW7mm" />
-      <ref role="3ttcQw" node="mdFCvZW7ka" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYV" />
+      <ref role="3ttcQw" node="1suZ3qyFv61" />
     </node>
     <node concept="3tteA_" id="mdFCvZWdYc" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606307344" />
-      <ref role="3ttcQw" node="mdFCvZW7kb" />
-      <ref role="3ttcQ_" node="mdFCvZW7mu" />
+      <ref role="3ttcQw" node="1suZ3qyFv62" />
+      <ref role="3ttcQ_" node="1suZ3qyFuZ3" />
     </node>
     <node concept="3tteA_" id="mdFCvZWeap" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606322459" />
-      <ref role="3ttcQ_" node="mdFCvZW7mv" />
-      <ref role="3ttcQw" node="mdFCvZW7kc" />
+      <ref role="3ttcQ_" node="1suZ3qyFuZ4" />
+      <ref role="3ttcQw" node="1suZ3qyFv63" />
     </node>
     <node concept="3tteA_" id="mdFCvZWemN" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606332160" />
-      <ref role="3ttcQw" node="mdFCvZW7kd" />
-      <ref role="3ttcQ_" node="mdFCvZW7mn" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYW" />
+      <ref role="3ttcQw" node="1suZ3qyFv64" />
     </node>
     <node concept="3tteA_" id="mdFCvZWezq" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606344671" />
-      <ref role="3ttcQw" node="mdFCvZW7ke" />
-      <ref role="3ttcQ_" node="mdFCvZW7mq" />
+      <ref role="3ttcQ_" node="1suZ3qyFuYZ" />
+      <ref role="3ttcQw" node="1suZ3qyFv65" />
     </node>
-    <node concept="2WYcwU" id="4td2CtEiBYH" role="3ttgI2">
-      <property role="TrG5h" value="robot_gazebo3" />
-      <ref role="2WYf9R" to="1hke:2NJBz9CzWZd" resolve="cogimon::robotSim" />
-      <node concept="emJY1" id="4td2CtEiBYI" role="lGtFl">
-        <property role="emJ$H" value="CosmoViz" />
+    <node concept="JkPXO" id="4OphnvishzC" role="3ttgI2">
+      <property role="TrG5h" value="rKUKA1" />
+      <ref role="Jt_hF" to="d49h:6bIwLn$0JKW" resolve="Kuka LWR 4+" />
+      <ref role="2WYf9R" to="o5l:5A_heWjxpzi" resolve="cogimon::robotSim" />
+      <node concept="3tteA$" id="4OphnvishUI" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointPositionControl" />
+        <property role="1T6LxX" value="Input" />
+        <node concept="2KPMDc" id="4OphnvishUH" role="17RAGi">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+        </node>
+        <node concept="3vgOJC" id="4OphnvishUJ" role="lGtFl" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiD4J" role="FWJL0">
-        <ref role="FWJLQ" to="1hke:2NJBz9CzX2V" resolve="full_arm_JointFeedback" />
+      <node concept="3tteA$" id="4OphnvishUL" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointTorqueControl" />
+        <property role="1T6LxX" value="Input" />
+        <node concept="2KPMDc" id="4OphnvishUK" role="17RAGi">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+        </node>
+        <node concept="3vgOJC" id="4OphnvishUM" role="lGtFl" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiD4K" role="FWJL0">
-        <ref role="FWJLQ" to="1hke:2NJBz9CzX47" resolve="full_arm_JointTorqueCtrl" />
+      <node concept="3tteAs" id="4OphnvishUN" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointFeedback" />
+        <property role="1T6LxX" value="Output" />
+        <node concept="2KPMDc" id="4OphnvishUO" role="17RAGi">
+          <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+        </node>
+        <node concept="3vgOJC" id="4OphnvishUP" role="lGtFl" />
       </node>
-      <node concept="2GY8tY" id="4td2CtEiD5l" role="lGtFl">
-        <property role="2GY9xM" value="2651.6650390625" />
-        <property role="2GY9xO" value="1123.17919921875" />
+      <node concept="FWJLR" id="4OphnvishUQ" role="l9eUl">
+        <ref role="FWJLQ" node="4OphnvishUI" resolve="full_arm_JointPositionControl" />
       </node>
-      <node concept="2R8en3" id="rrzP4k8Sq$" role="lGtFl">
+      <node concept="FWJLR" id="4OphnvishUR" role="l9eUl">
+        <ref role="FWJLQ" node="4OphnvishUL" resolve="full_arm_JointTorqueControl" />
+      </node>
+      <node concept="FWJLR" id="4OphnvishUS" role="l9eUl">
+        <ref role="FWJLQ" node="4OphnvishUN" resolve="full_arm_JointFeedback" />
+      </node>
+      <node concept="iLOr_" id="4OphnvisjtQ" role="3dgvYZ">
+        <ref role="3dgoDb" to="lrob:6bIwLn$0JNr" />
+      </node>
+      <node concept="2R8en3" id="4Ophnvisju2" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Q0Er" id="rrzP4k8SqC" role="12QldZ">
-          <node concept="1QwnVF" id="rrzP4k8Srg" role="12Q0EH">
-            <property role="TrG5h" value="act_fast" />
-            <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
+        <node concept="12Q0Er" id="4Ophnvisju3" role="12QldZ">
+          <node concept="1QwnVF" id="4OphnvisjuE" role="12Q0EH">
+            <property role="TrG5h" value="act_norun" />
+            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2WYcwU" id="4td2CtEiD5Q" role="3ttgI2">
-      <property role="TrG5h" value="robot_gazebo4" />
-      <ref role="2WYf9R" to="1hke:2NJBz9CzWZd" resolve="cogimon::robotSim" />
-      <node concept="emJY1" id="4td2CtEiD5R" role="lGtFl">
-        <property role="emJ$H" value="CosmoViz" />
+    <node concept="JkPXO" id="4Ophnvisj4j" role="3ttgI2">
+      <property role="TrG5h" value="rKUKA2" />
+      <ref role="Jt_hF" to="d49h:6bIwLn$0JKW" resolve="Kuka LWR 4+" />
+      <ref role="2WYf9R" to="o5l:5A_heWjxpzi" resolve="cogimon::robotSim" />
+      <node concept="3tteA$" id="4Ophnvisjsq" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointPositionControl" />
+        <property role="1T6LxX" value="Input" />
+        <node concept="2KPMDc" id="4Ophnvisjsp" role="17RAGi">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+        </node>
+        <node concept="3vgOJC" id="4Ophnvisjsr" role="lGtFl" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiEd8" role="FWJL0">
-        <ref role="FWJLQ" to="1hke:2NJBz9CzX2V" resolve="full_arm_JointFeedback" />
+      <node concept="3tteA$" id="4Ophnvisjst" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointTorqueControl" />
+        <property role="1T6LxX" value="Input" />
+        <node concept="2KPMDc" id="4Ophnvisjss" role="17RAGi">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+        </node>
+        <node concept="3vgOJC" id="4Ophnvisjsu" role="lGtFl" />
       </node>
-      <node concept="FWJLR" id="4td2CtEiEd9" role="FWJL0">
-        <ref role="FWJLQ" to="1hke:2NJBz9CzX47" resolve="full_arm_JointTorqueCtrl" />
+      <node concept="3tteAs" id="4Ophnvisjsv" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointFeedback" />
+        <property role="1T6LxX" value="Output" />
+        <node concept="2KPMDc" id="4Ophnvisjsw" role="17RAGi">
+          <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+        </node>
+        <node concept="3vgOJC" id="4Ophnvisjsx" role="lGtFl" />
       </node>
-      <node concept="2GY8tY" id="4td2CtEiEdI" role="lGtFl">
-        <property role="2GY9xM" value="2647.215087890625" />
-        <property role="2GY9xO" value="1345.6737060546875" />
+      <node concept="FWJLR" id="4Ophnvisjsy" role="l9eUl">
+        <ref role="FWJLQ" node="4Ophnvisjsq" resolve="full_arm_JointPositionControl" />
       </node>
-      <node concept="2R8en3" id="7TsnP7f0ecC" role="lGtFl">
+      <node concept="FWJLR" id="4Ophnvisjsz" role="l9eUl">
+        <ref role="FWJLQ" node="4Ophnvisjst" resolve="full_arm_JointTorqueControl" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvisjs$" role="l9eUl">
+        <ref role="FWJLQ" node="4Ophnvisjsv" resolve="full_arm_JointFeedback" />
+      </node>
+      <node concept="iLOr_" id="4OphnvisjtW" role="3dgvYZ">
+        <ref role="3dgoDb" to="lrob:6bIwLn$0JNr" />
+      </node>
+      <node concept="2R8en3" id="4Ophnvisjum" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Q0Er" id="7TsnP7f0ecD" role="12QldZ">
-          <node concept="1QwnVF" id="7TsnP7f0edg" role="12Q0EH">
-            <property role="TrG5h" value="act_fast" />
-            <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
+        <node concept="12Q0Er" id="4Ophnvisjun" role="12QldZ">
+          <node concept="1QwnVF" id="4OphnvisjuL" role="12Q0EH">
+            <property role="TrG5h" value="act_norun" />
+            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="JkPXO" id="4Ophnvimx5J" role="3ttgI2">
+      <property role="TrG5h" value="rKUKA3" />
+      <ref role="Jt_hF" to="d49h:6bIwLn$0JKW" resolve="Kuka LWR 4+" />
+      <ref role="2WYf9R" to="o5l:5A_heWjxpzi" resolve="cogimon::robotSim" />
+      <node concept="iLOr_" id="4Ophnvimxt4" role="3dgvYZ">
+        <ref role="3dgoDb" to="lrob:6bIwLn$0JNr" />
+      </node>
+      <node concept="2R8en3" id="4OphnviqH8k" role="lGtFl">
+        <property role="TrG5h" value="Orocos (Software Platform)" />
+        <node concept="12Q0Er" id="4OphnviqH8l" role="12QldZ">
+          <node concept="1QwnVF" id="4OphnviqH8C" role="12Q0EH">
+            <property role="TrG5h" value="act_norun" />
+            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
+          </node>
+        </node>
+      </node>
+      <node concept="3tteA$" id="4OphnvirlxT" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointPositionControl" />
+        <property role="1T6LxX" value="Input" />
+        <node concept="2KPMDc" id="4OphnvirlxS" role="17RAGi">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+        </node>
+        <node concept="3vgOJC" id="4OphnvirlxU" role="lGtFl" />
+      </node>
+      <node concept="3tteA$" id="4OphnvirlxW" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointTorqueControl" />
+        <property role="1T6LxX" value="Input" />
+        <node concept="2KPMDc" id="4OphnvirlxV" role="17RAGi">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+        </node>
+        <node concept="3vgOJC" id="4OphnvirlxX" role="lGtFl" />
+      </node>
+      <node concept="3tteAs" id="4OphnvirlxY" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointFeedback" />
+        <property role="1T6LxX" value="Output" />
+        <node concept="2KPMDc" id="4OphnvirlxZ" role="17RAGi">
+          <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+        </node>
+        <node concept="3vgOJC" id="4Ophnvirly0" role="lGtFl" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvirly1" role="l9eUl">
+        <ref role="FWJLQ" node="4OphnvirlxT" resolve="full_arm_JointPositionControl" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvirly2" role="l9eUl">
+        <ref role="FWJLQ" node="4OphnvirlxW" resolve="full_arm_JointTorqueControl" />
+      </node>
+      <node concept="FWJLR" id="4Ophnvirly3" role="l9eUl">
+        <ref role="FWJLQ" node="4OphnvirlxY" resolve="full_arm_JointFeedback" />
+      </node>
+    </node>
+    <node concept="JkPXO" id="4OphnviqHvI" role="3ttgI2">
+      <property role="TrG5h" value="rKUKA4" />
+      <ref role="Jt_hF" to="d49h:6bIwLn$0JKW" resolve="Kuka LWR 4+" />
+      <ref role="2WYf9R" to="o5l:5A_heWjxpzi" resolve="cogimon::robotSim" />
+      <node concept="iLOr_" id="4OphnviqI0M" role="3dgvYZ">
+        <ref role="3dgoDb" to="lrob:6bIwLn$0JNr" />
+      </node>
+      <node concept="2R8en3" id="4OphnviqI0S" role="lGtFl">
+        <property role="TrG5h" value="Orocos (Software Platform)" />
+        <node concept="12Q0Er" id="4OphnviqI0T" role="12QldZ">
+          <node concept="1QwnVF" id="4OphnviqI1c" role="12Q0EH">
+            <property role="TrG5h" value="act_norun" />
+            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
+          </node>
+        </node>
+      </node>
+      <node concept="3tteA$" id="4OphnvirlzF" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointPositionControl" />
+        <property role="1T6LxX" value="Input" />
+        <node concept="2KPMDc" id="4OphnvirlzE" role="17RAGi">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+        </node>
+        <node concept="3vgOJC" id="4OphnvirlzG" role="lGtFl" />
+      </node>
+      <node concept="3tteA$" id="4OphnvirlzI" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointTorqueControl" />
+        <property role="1T6LxX" value="Input" />
+        <node concept="2KPMDc" id="4OphnvirlzH" role="17RAGi">
+          <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+        </node>
+        <node concept="3vgOJC" id="4OphnvirlzJ" role="lGtFl" />
+      </node>
+      <node concept="3tteAs" id="4OphnvirlzK" role="JkFqN">
+        <property role="TrG5h" value="full_arm_JointFeedback" />
+        <property role="1T6LxX" value="Output" />
+        <node concept="2KPMDc" id="4OphnvirlzL" role="17RAGi">
+          <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+        </node>
+        <node concept="3vgOJC" id="4OphnvirlzM" role="lGtFl" />
+      </node>
+      <node concept="FWJLR" id="4OphnvirlzN" role="l9eUl">
+        <ref role="FWJLQ" node="4OphnvirlzF" resolve="full_arm_JointPositionControl" />
+      </node>
+      <node concept="FWJLR" id="4OphnvirlzO" role="l9eUl">
+        <ref role="FWJLQ" node="4OphnvirlzI" resolve="full_arm_JointTorqueControl" />
+      </node>
+      <node concept="FWJLR" id="4OphnvirlzP" role="l9eUl">
+        <ref role="FWJLQ" node="4OphnvirlzK" resolve="full_arm_JointFeedback" />
       </node>
     </node>
     <node concept="3tteA_" id="4td2CtEiWyX" role="3ttgI7">
       <property role="TrG5h" value="conn_1501751981925" />
-      <ref role="3ttcQ_" node="4td2CtEiD4J" />
-      <ref role="3ttcQw" node="mdFCvZW7qo" />
+      <ref role="3ttcQ_" node="4Ophnvirly3" />
+      <ref role="3ttcQw" node="1suZ3qyFuYp" />
     </node>
     <node concept="3tteA_" id="4td2CtEiWMY" role="3ttgI7">
       <property role="TrG5h" value="conn_1501751987207" />
-      <ref role="3ttcQ_" node="4td2CtEiEd8" />
-      <ref role="3ttcQw" node="4td2CtEiAJk" />
+      <ref role="3ttcQ_" node="4OphnvirlzP" />
+      <ref role="3ttcQw" node="1suZ3qyFuYq" />
     </node>
     <node concept="3tteA_" id="4td2CtEiX3f" role="3ttgI7">
       <property role="TrG5h" value="conn_1501751995941" />
-      <ref role="3ttcQ_" node="mdFCvZW7uw" />
-      <ref role="3ttcQw" node="4td2CtEiD4K" />
+      <ref role="3ttcQw" node="4Ophnvirly2" />
+      <ref role="3ttcQ_" node="4OphnvitVQs" />
     </node>
     <node concept="3tteA_" id="4td2CtEiXjK" role="3ttgI7">
       <property role="TrG5h" value="conn_1501751999583" />
-      <ref role="3ttcQ_" node="4td2CtEiAQ7" />
-      <ref role="3ttcQw" node="4td2CtEiEd9" />
+      <ref role="3ttcQw" node="4OphnvirlzO" />
+      <ref role="3ttcQ_" node="4OphnvitVQt" />
     </node>
   </node>
   <node concept="3pkOsz" id="7Qt88hmJrZw">
@@ -4970,13 +5036,8 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="5VdqowR0TFK" role="37vLTJ">
-              <node concept="2Dc6tP" id="5VdqowR0TFz" role="2Oq$k0">
-                <ref role="2Dc6tO" node="5VdqowR0RZD" resolve="jaaaaa" />
-              </node>
-              <node concept="3SZ9tD" id="5VdqowR0TGZ" role="2OqNvi">
-                <ref role="3SZ92p" to="sxll:3xBfiZ$w$pC" resolve="angles" />
-              </node>
+            <node concept="2Dc6tP" id="5VdqowR0TFz" role="37vLTJ">
+              <ref role="2Dc6tO" node="5VdqowR0RZD" resolve="jaaaaa" />
             </node>
           </node>
         </node>

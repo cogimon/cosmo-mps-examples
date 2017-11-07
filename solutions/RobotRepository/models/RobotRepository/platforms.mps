@@ -7,14 +7,21 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="99abc364-3965-4ead-ab2d-0b272a528a90" name="RobotPlatform" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
     <import index="oet6" ref="r:85b31eb0-6551-4bd7-8659-464e8655dad3(RobotRepository.kinematics)" />
     <import index="lrob" ref="r:d01e7c48-4315-4a97-a560-4b91cd1fec15(RobotRepository.interfaces)" />
+    <import index="yzc3" ref="r:fb46aa12-7f49-4ac6-ac4c-bc9fd1f3fb28(RSTRT.sandbox)" />
+    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
   </imports>
   <registry>
-    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
+    <language id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf">
+      <concept id="6986025422972810071" name="ProtoBuf.structure.MessageReference" flags="ig" index="2KPMDc">
+        <reference id="6986025422972810072" name="message" index="2KPMD3" />
+      </concept>
     </language>
     <language id="99abc364-3965-4ead-ab2d-0b272a528a90" name="RobotPlatform">
       <concept id="1159789896052060945" name="RobotPlatform.structure.RobotPlatform" flags="ng" index="gnlnl">
@@ -48,11 +55,15 @@
   </registry>
   <node concept="1EzEfe" id="6yo9VC28WUQ">
     <property role="TrG5h" value="JointPositionControl" />
-    <node concept="10P55v" id="6yo9VC28WY4" role="17RAGi" />
+    <node concept="2KPMDc" id="4OphnvimvEE" role="17RAGi">
+      <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+    </node>
   </node>
   <node concept="1EzEfe" id="6yo9VC28WYm">
     <property role="TrG5h" value="JointTorqueControl" />
-    <node concept="10P55v" id="6yo9VC28X1$" role="17RAGi" />
+    <node concept="2KPMDc" id="4OphnvimvEQ" role="17RAGi">
+      <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+    </node>
   </node>
   <node concept="gnlnl" id="6bIwLn$0JKW">
     <property role="TrG5h" value="Kuka LWR 4+" />

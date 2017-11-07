@@ -62,7 +62,7 @@
   </node>
   <node concept="3tteAz" id="2NJBz9CzWZd">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="cogimon::robotSim" />
+    <property role="TrG5h" value="cogimon::robotSimOLD" />
     <node concept="3tteAg" id="2NJBz9CzWZq" role="3ttcQt">
       <property role="TrG5h" value="getModel" />
       <node concept="2D$zpR" id="2NJBz9CzWZA" role="3ttcQW">
