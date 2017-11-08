@@ -18,6 +18,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -62,6 +65,9 @@
         <child id="6177913345443970966" name="ixx" index="3XUmjy" />
         <child id="6177913345443970971" name="ixy" index="3XUmjJ" />
         <child id="6177913345443970959" name="mass" index="3XUmjV" />
+      </concept>
+      <concept id="5348064168300937344" name="Kinematics.structure.FileSystemPathAnnotation" flags="ng" index="3hEEi6">
+        <property id="5348064168300939836" name="path" index="3hEESU" />
       </concept>
       <concept id="6177913345444492894" name="Kinematics.structure.RobotLinkMaterialRef" flags="ng" index="3XSmOE">
         <reference id="6177913345444492897" name="material" index="3XSmOl" />
@@ -1987,6 +1993,14 @@
     </node>
     <node concept="3XTgP4" id="2jRhxvsk09q" role="QWIaI">
       <ref role="3XTgP7" node="2jRhxvsk02Z" resolve="lwr_arm_7_link" />
+    </node>
+    <node concept="3hEEi6" id="6FY3E16lD7L" role="lGtFl">
+      <property role="TrG5h" value="urdf" />
+      <property role="3hEESU" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus/model.urdf" />
+    </node>
+    <node concept="3hEEi6" id="6FY3E16lD7M" role="lGtFl">
+      <property role="TrG5h" value="srdf" />
+      <property role="3hEESU" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus/model.srdf" />
     </node>
   </node>
 </model>

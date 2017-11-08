@@ -70,6 +70,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -116,6 +117,7 @@
       <concept id="6055303931581434606" name="Component.structure.IComponentInst" flags="ng" index="2WYcwT">
         <reference id="6055303931581444256" name="componentDescription" index="2WYf9R" />
         <child id="494146162517828036" name="refPorts" index="l9eUl" />
+        <child id="4860546585293159094" name="internalLifeCycle" index="2PPHJF" />
       </concept>
       <concept id="6055303931581434605" name="Component.structure.ComponentInst" flags="ng" index="2WYcwU">
         <child id="6055303931581444254" name="mutableProperties" index="2WYf99" />
@@ -197,6 +199,15 @@
         <child id="5685633502230143383" name="parameterAssignments" index="2DASKs" />
       </concept>
       <concept id="5685633502229591343" name="SystemsCoordination.structure.LifeCycle" flags="ng" index="2D$Ly$" />
+      <concept id="4860546585295518260" name="SystemsCoordination.structure.MetaLifeStateRef" flags="ng" index="2PGHHD">
+        <reference id="4860546585295519763" name="metaLS" index="2PGM5e" />
+      </concept>
+      <concept id="4860546585293725336" name="SystemsCoordination.structure.MetaLifeState" flags="ng" index="2PRVZ5">
+        <child id="4860546585293725344" name="exps" index="2PRVZX" />
+      </concept>
+      <concept id="4860546585293725321" name="SystemsCoordination.structure.InternalComponentMetaLifeCycle" flags="ng" index="2PRVZk">
+        <child id="4860546585293725329" name="states" index="2PRVZc" />
+      </concept>
       <concept id="8101035457271872607" name="SystemsCoordination.structure.LocalThisExpression" flags="ng" index="2RT1ic" />
       <concept id="8101035457271936376" name="SystemsCoordination.structure.ExpressionActionWrapper" flags="ng" index="2RThQF">
         <child id="8101035457271936509" name="exp" index="2RThOI" />
@@ -817,85 +828,16 @@
       </node>
       <node concept="AAcsC" id="mdFCvZWrRf" role="AA3t3">
         <property role="TrG5h" value="ConfigureSimulationAndRobot" />
-        <node concept="2RThQF" id="mdFCvZWs40" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZWseX" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZWs5H" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZWs5t" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWs8c" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4uQ" resolve="gazebo" />
+        <node concept="2RThQF" id="4dO8lRQLJlv" role="A$mYV">
+          <node concept="2OqwBi" id="4dO8lRQLJ$x" role="2RThOI">
+            <node concept="2OqwBi" id="4dO8lRQLJu0" role="2Oq$k0">
+              <node concept="2RT1ic" id="4dO8lRQLJtR" role="2Oq$k0" />
+              <node concept="3pvUrN" id="4dO8lRQLJwc" role="2OqNvi">
+                <ref role="3pvUL9" node="4dO8lRQBlTu" resolve="gazebo" />
               </node>
             </node>
-            <node concept="2D$_L7" id="mdFCvZWsiq" role="2OqNvi">
-              <ref role="2D$zFo" to="ty59:2NJBz9CzWHc" resolve="add_plugin" />
-              <node concept="2D$zpK" id="mdFCvZWsis" role="2DASKs">
-                <ref role="2DB_1T" to="ty59:2NJBz9CzWH$" resolve="pluginName" />
-                <node concept="Xl_RD" id="mdFCvZWsjb" role="2DB_1W">
-                  <property role="Xl_RC" value="libRTTGazeboClockPlugin.so" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="mdFCvZWsmB" role="A$mYV">
-          <node concept="37vLTI" id="mdFCvZWsEA" role="2RThOI">
-            <node concept="Xl_RD" id="mdFCvZWsHo" role="37vLTx">
-              <property role="Xl_RC" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/etc/cogimon-scenarios/scenario-projected-dynamics/scn-MultiKukaArm.world" />
-            </node>
-            <node concept="2OqwBi" id="mdFCvZWswB" role="37vLTJ">
-              <node concept="2OqwBi" id="mdFCvZWspW" role="2Oq$k0">
-                <node concept="2RT1ic" id="mdFCvZWspG" role="2Oq$k0" />
-                <node concept="3pvUrN" id="mdFCvZWssr" role="2OqNvi">
-                  <ref role="3pvUL9" node="mdFCvZW4uQ" resolve="gazebo" />
-                </node>
-              </node>
-              <node concept="CHOn8" id="mdFCvZWs$4" role="2OqNvi">
-                <ref role="CHOn7" to="ty59:2NJBz9CzWI9" resolve="world_path" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="mdFCvZWrRF" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZWrYO" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZWrS9" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZWrRT" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWrUC" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4uQ" resolve="gazebo" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="mdFCvZWs2h" role="2OqNvi">
-              <ref role="2D$zFo" to="ty59:2NJBz9CzXOY" resolve="configure" />
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="26kbQrMrolo" role="A$mYV">
-          <node concept="2OqwBi" id="26kbQrMroty" role="2RThOI">
-            <node concept="2OqwBi" id="26kbQrMromX" role="2Oq$k0">
-              <node concept="2RT1ic" id="26kbQrMromI" role="2Oq$k0" />
-              <node concept="3pvUrN" id="26kbQrMropn" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4uQ" resolve="gazebo" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="26kbQrMrowQ" role="2OqNvi">
-              <ref role="2D$zFo" to="ty59:2NJBz9CzXTO" resolve="start" />
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="26kbQrMroz_" role="A$mYV">
-          <node concept="2OqwBi" id="26kbQrMroGR" role="2RThOI">
-            <node concept="2OqwBi" id="26kbQrMroAi" role="2Oq$k0">
-              <node concept="2RT1ic" id="26kbQrMroA3" role="2Oq$k0" />
-              <node concept="3pvUrN" id="26kbQrMroCG" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4uQ" resolve="gazebo" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="26kbQrMroKb" role="2OqNvi">
-              <ref role="2D$zFo" to="ty59:2NJBz9CzWII" resolve="toggleDynamicsSimulation" />
-              <node concept="2D$zpK" id="mdFCvZWt2s" role="2DASKs">
-                <ref role="2DB_1T" to="ty59:2NJBz9CzWKn" resolve="active" />
-                <node concept="3clFbT" id="mdFCvZWt2Y" role="2DB_1W">
-                  <property role="3clFbU" value="false" />
-                </node>
-              </node>
+            <node concept="2PGHHD" id="4dO8lRQOgR9" role="2OqNvi">
+              <ref role="2PGM5e" node="4dO8lRQFCxu" resolve="metaConfigure" />
             </node>
           </node>
         </node>
@@ -903,8 +845,8 @@
           <node concept="2OqwBi" id="mdFCvZWASc" role="2RThOI">
             <node concept="2OqwBi" id="mdFCvZWAKg" role="2Oq$k0">
               <node concept="2RT1ic" id="mdFCvZWAK0" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWAO0" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4uQ" resolve="gazebo" />
+              <node concept="3pvUrN" id="4dO8lRQCIq1" role="2OqNvi">
+                <ref role="3pvUL9" node="4dO8lRQBlTu" resolve="gazebo" />
               </node>
             </node>
             <node concept="2D$_L7" id="mdFCvZWBc7" role="2OqNvi">
@@ -940,8 +882,8 @@
           <node concept="2OqwBi" id="mdFCvZWBFk" role="2RThOI">
             <node concept="2OqwBi" id="mdFCvZWB$D" role="2Oq$k0">
               <node concept="2RT1ic" id="mdFCvZWB$p" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZWBB8" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4uQ" resolve="gazebo" />
+              <node concept="3pvUrN" id="4dO8lRQCIrL" role="2OqNvi">
+                <ref role="3pvUL9" node="4dO8lRQBlTu" resolve="gazebo" />
               </node>
             </node>
             <node concept="2D$_L7" id="mdFCvZWBK2" role="2OqNvi">
@@ -2717,8 +2659,8 @@
           <node concept="2OqwBi" id="mdFCw02e8j" role="2RThOI">
             <node concept="2OqwBi" id="mdFCw02e0n" role="2Oq$k0">
               <node concept="2RT1ic" id="mdFCw02e07" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCw02e47" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4uQ" resolve="gazebo" />
+              <node concept="3pvUrN" id="4dO8lRQCItx" role="2OqNvi">
+                <ref role="3pvUL9" node="4dO8lRQBlTu" resolve="gazebo" />
               </node>
             </node>
             <node concept="2D$_L7" id="mdFCw02ebK" role="2OqNvi">
@@ -3499,30 +3441,127 @@
   </node>
   <node concept="3tteAy" id="3XuVWlUVKz0">
     <property role="TrG5h" value="QuadArmBox_System" />
-    <node concept="2WYcwU" id="mdFCvZW4uQ" role="3ttgI2">
+    <node concept="2WYcwU" id="4dO8lRQBlTu" role="3ttgI2">
       <property role="TrG5h" value="gazebo" />
       <ref role="2WYf9R" to="ty59:2NJBz9CzWGY" resolve="RTTGazeboEmbedded" />
-      <node concept="emJY1" id="mdFCvZW4uR" role="lGtFl">
-        <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="2GY8tY" id="mdFCvZW4vk" role="lGtFl">
-        <property role="2GY9xM" value="2082.146141052246" />
-        <property role="2GY9xO" value="1116.9181823730469" />
-      </node>
-      <node concept="2WYd3i" id="mdFCvZW86n" role="2WYf99">
-        <ref role="2WYd3v" to="ty59:2NJBz9CzWI9" resolve="world_path" />
-      </node>
-      <node concept="2R8en3" id="mdFCvZWeKe" role="lGtFl">
+      <node concept="2R8en3" id="4dO8lRQBlTw" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Q0Er" id="mdFCvZWeKy" role="12QldZ">
-          <node concept="1Qwkrw" id="mdFCvZWgIs" role="12Q0EH">
-            <property role="TrG5h" value="act_norun" />
+        <node concept="12Q0Er" id="4dO8lRQBlTx" role="12QldZ">
+          <node concept="1Qwkrw" id="4dO8lRQCsTo" role="12Q0EH">
+            <property role="TrG5h" value="act_no_run_gz" />
             <property role="1QwnPq" value="ORO_SCHED_OTHER" />
-            <node concept="3cmrfG" id="mdFCvZWgK5" role="1QwnPZ">
+            <node concept="3cmrfG" id="4dO8lRQCsVM" role="1QwnPZ">
               <property role="3cmrfH" value="0" />
             </node>
-            <node concept="3cmrfG" id="mdFCvZWgLa" role="1QwnPN">
+            <node concept="3cmrfG" id="4dO8lRQCsW4" role="1QwnPN">
               <property role="3cmrfH" value="10" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WYd3i" id="4dO8lRQBmmE" role="2WYf99">
+        <ref role="2WYd3v" to="ty59:2NJBz9CzWI9" resolve="world_path" />
+      </node>
+      <node concept="2PRVZk" id="4dO8lRQFCxn" role="2PPHJF">
+        <node concept="2PRVZ5" id="4dO8lRQFCxu" role="2PRVZc">
+          <property role="TrG5h" value="metaConfigure" />
+          <node concept="2OqwBi" id="4dO8lRQGiWx" role="2PRVZX">
+            <node concept="2RT1ic" id="4dO8lRQGiWl" role="2Oq$k0" />
+            <node concept="2D$_L7" id="4dO8lRQJzgl" role="2OqNvi">
+              <ref role="2D$zFo" to="ty59:2NJBz9CzWHc" resolve="add_plugin" />
+              <node concept="2D$zpK" id="4dO8lRQJzgn" role="2DASKs">
+                <ref role="2DB_1T" to="ty59:2NJBz9CzWH$" resolve="pluginName" />
+                <node concept="Xl_RD" id="4dO8lRQJzgZ" role="2DB_1W">
+                  <property role="Xl_RC" value="libRTTGazeboClockPlugin.so" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTI" id="4dO8lRQL3BU" role="2PRVZX">
+            <node concept="2OqwBi" id="4dO8lRQKnCp" role="37vLTJ">
+              <node concept="2RT1ic" id="4dO8lRQKnBI" role="2Oq$k0" />
+              <node concept="CHOn8" id="4dO8lRQL3xm" role="2OqNvi">
+                <ref role="CHOn7" to="ty59:2NJBz9CzWI9" resolve="world_path" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4dO8lRQL3Dp" role="37vLTx">
+              <property role="Xl_RC" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/etc/cogimon-scenarios/scenario-projected-dynamics/scn-MultiKukaArm.world" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4dO8lRQL3FQ" role="2PRVZX">
+            <node concept="2RT1ic" id="4dO8lRQL3EK" role="2Oq$k0" />
+            <node concept="2D$_L7" id="4dO8lRQL3IY" role="2OqNvi">
+              <ref role="2D$zFo" to="ty59:2NJBz9CzXOY" resolve="configure" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4dO8lRQL3LR" role="2PRVZX">
+            <node concept="2RT1ic" id="4dO8lRQL3Kv" role="2Oq$k0" />
+            <node concept="2D$_L7" id="4dO8lRQL3Ph" role="2OqNvi">
+              <ref role="2D$zFo" to="ty59:2NJBz9CzXTO" resolve="start" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4dO8lRQQn1_" role="2PRVZX">
+            <node concept="2RT1ic" id="4dO8lRQQmZV" role="2Oq$k0" />
+            <node concept="2D$_L7" id="4dO8lRQQn5h" role="2OqNvi">
+              <ref role="2D$zFo" to="ty59:2NJBz9CzWII" resolve="toggleDynamicsSimulation" />
+              <node concept="2D$zpK" id="4dO8lRQQn5j" role="2DASKs">
+                <ref role="2DB_1T" to="ty59:2NJBz9CzWKn" resolve="active" />
+                <node concept="3clFbT" id="4dO8lRQQn5J" role="2DB_1W">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2D1jA2" id="4dO8lRQQnkY" role="2PRVZX">
+            <property role="TrG5h" value="a" />
+            <node concept="2KPMDc" id="4dO8lRQQnng" role="2D1jJ3">
+              <ref role="2KPMD3" to="sxll:1XLbW8" resolve="Forces" />
+            </node>
+            <node concept="2ShNRf" id="4dO8lRQQnnT" role="2D1jJT">
+              <node concept="qghkx" id="4dO8lRQQoq_" role="2ShVmc">
+                <ref role="qghDu" to="sxll:1XLbW8" resolve="Forces" />
+                <node concept="3sb0db" id="4dO8lRQQoqB" role="qghDs">
+                  <ref role="3sb0da" to="sxll:1cwKfY" resolve="z" />
+                  <node concept="3sb0ez" id="4dO8lRQQoqC" role="3sb6Ac">
+                    <node concept="3b6qkQ" id="4dO8lRQQoS3" role="3sb0ey">
+                      <property role="$nhwW" value="0.0" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3sb0db" id="4dO8lRQQoqD" role="qghDs">
+                  <ref role="3sb0da" to="sxll:1Y_G31" resolve="y" />
+                  <node concept="3sb0ez" id="4dO8lRQQoqE" role="3sb6Ac">
+                    <node concept="3b6qkQ" id="4dO8lRQQoSF" role="3sb0ey">
+                      <property role="$nhwW" value="1.0" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3sb0db" id="4dO8lRQQoqF" role="qghDs">
+                  <ref role="3sb0da" to="sxll:19G8m0" resolve="x" />
+                  <node concept="3sb0ez" id="4dO8lRQQoqG" role="3sb6Ac">
+                    <node concept="3b6qkQ" id="4dO8lRQQoTj" role="3sb0ey">
+                      <property role="$nhwW" value="2.0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4dO8lRQQp0t" role="2PRVZX">
+            <node concept="2RT1ic" id="4dO8lRQQoX7" role="2Oq$k0" />
+            <node concept="2D$_L7" id="4dO8lRQQp7m" role="2OqNvi">
+              <ref role="2D$zFo" to="ty59:2NJBz9CzWHc" resolve="add_plugin" />
+              <node concept="2D$zpK" id="4dO8lRQQp7o" role="2DASKs">
+                <ref role="2DB_1T" to="ty59:2NJBz9CzWH$" resolve="pluginName" />
+                <node concept="3cpWs3" id="4dO8lRQQphy" role="2DB_1W">
+                  <node concept="2Dc6tP" id="4dO8lRQRi_R" role="3uHU7w">
+                    <ref role="2Dc6tO" node="4dO8lRQQnkY" resolve="a" />
+                  </node>
+                  <node concept="Xl_RD" id="4dO8lRQQp7M" role="3uHU7B">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -4620,9 +4659,15 @@
       <node concept="2R8en3" id="4Ophnvisju2" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12Q0Er" id="4Ophnvisju3" role="12QldZ">
-          <node concept="1QwnVF" id="4OphnvisjuE" role="12Q0EH">
-            <property role="TrG5h" value="act_norun" />
-            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
+          <node concept="1Qwkrw" id="4dO8lRQCsWz" role="12Q0EH">
+            <property role="TrG5h" value="act_no_run" />
+            <property role="1QwnPq" value="ORO_SCHED_OTHER" />
+            <node concept="3cmrfG" id="4dO8lRQCsY1" role="1QwnPZ">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="3cmrfG" id="4dO8lRQCsYj" role="1QwnPN">
+              <property role="3cmrfH" value="20" />
+            </node>
           </node>
         </node>
       </node>
@@ -4667,12 +4712,12 @@
       <node concept="iLOr_" id="4OphnvisjtW" role="3dgvYZ">
         <ref role="3dgoDb" to="lrob:6bIwLn$0JNr" />
       </node>
-      <node concept="2R8en3" id="4Ophnvisjum" role="lGtFl">
+      <node concept="2R8en3" id="4dO8lRQALMj" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Q0Er" id="4Ophnvisjun" role="12QldZ">
-          <node concept="1QwnVF" id="4OphnvisjuL" role="12Q0EH">
-            <property role="TrG5h" value="act_norun" />
-            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
+        <node concept="12Q0Er" id="4dO8lRQALMk" role="12QldZ">
+          <node concept="1QwnVF" id="4dO8lRQCsYM" role="12Q0EH">
+            <property role="TrG5h" value="act_no_run" />
+            <ref role="1QwnVw" node="4dO8lRQCsWz" resolve="act_no_run" />
           </node>
         </node>
       </node>
@@ -4687,9 +4732,9 @@
       <node concept="2R8en3" id="4OphnviqH8k" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12Q0Er" id="4OphnviqH8l" role="12QldZ">
-          <node concept="1QwnVF" id="4OphnviqH8C" role="12Q0EH">
-            <property role="TrG5h" value="act_norun" />
-            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
+          <node concept="1QwnVF" id="4dO8lRQCsYU" role="12Q0EH">
+            <property role="TrG5h" value="act_no_run" />
+            <ref role="1QwnVw" node="4dO8lRQCsWz" resolve="act_no_run" />
           </node>
         </node>
       </node>
@@ -4737,9 +4782,9 @@
       <node concept="2R8en3" id="4OphnviqI0S" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12Q0Er" id="4OphnviqI0T" role="12QldZ">
-          <node concept="1QwnVF" id="4OphnviqI1c" role="12Q0EH">
-            <property role="TrG5h" value="act_norun" />
-            <ref role="1QwnVw" node="mdFCvZWgIs" resolve="act_norun" />
+          <node concept="1QwnVF" id="4dO8lRQCsZ2" role="12Q0EH">
+            <property role="TrG5h" value="act_no_run" />
+            <ref role="1QwnVw" node="4dO8lRQCsWz" resolve="act_no_run" />
           </node>
         </node>
       </node>
