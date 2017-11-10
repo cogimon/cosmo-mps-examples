@@ -141,7 +141,7 @@
     </language>
   </registry>
   <node concept="u5KEY" id="2jRhxvsjZVf">
-    <property role="TrG5h" value="kuka-lwr" />
+    <property role="TrG5h" value="kuka-lwr-4plus" />
     <node concept="3XSvEU" id="2jRhxvsjZVg" role="3XSAsd">
       <property role="TrG5h" value="DarkGrey" />
       <node concept="3XVKdd" id="2jRhxvsjZVh" role="RFCRI">
@@ -1994,13 +1994,13 @@
     <node concept="3XTgP4" id="2jRhxvsk09q" role="QWIaI">
       <ref role="3XTgP7" node="2jRhxvsk02Z" resolve="lwr_arm_7_link" />
     </node>
-    <node concept="3hEEi6" id="6FY3E16lD7L" role="lGtFl">
+    <node concept="3hEEi6" id="7GcFNlt30UT" role="lGtFl">
       <property role="TrG5h" value="urdf" />
-      <property role="3hEESU" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus/model.urdf" />
+      <property role="3hEESU" value="~/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus/model.urdf" />
     </node>
-    <node concept="3hEEi6" id="6FY3E16lD7M" role="lGtFl">
+    <node concept="3hEEi6" id="7GcFNlt30UU" role="lGtFl">
       <property role="TrG5h" value="srdf" />
-      <property role="3hEESU" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus/model.srdf" />
+      <property role="3hEESU" value="~/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus/model.srdf" />
     </node>
   </node>
 </model>

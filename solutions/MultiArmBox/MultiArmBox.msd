@@ -16,6 +16,7 @@
     <dependency reexport="false">f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)</dependency>
     <dependency reexport="false">864bc811-810b-4e2f-97d7-4ee5ae8cdcfe(RobotRepository)</dependency>
     <dependency reexport="false">99abc364-3965-4ead-ab2d-0b272a528a90(RobotPlatform)</dependency>
+    <dependency reexport="false">10b5a06d-1a49-4cbd-a111-d36c8106bb63(SystemsCoordination)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
@@ -52,9 +53,19 @@
     <module reference="99abc364-3965-4ead-ab2d-0b272a528a90(RobotPlatform)" version="0" />
     <module reference="87c26eb4-21f3-4fd4-b2e0-470c29675cae(RobotRepo)" version="0" />
     <module reference="864bc811-810b-4e2f-97d7-4ee5ae8cdcfe(RobotRepository)" version="0" />
+    <module reference="10b5a06d-1a49-4cbd-a111-d36c8106bb63(SystemsCoordination)" version="0" />
+    <module reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" version="0" />
+    <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
+    <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
+    <module reference="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" version="0" />
+    <module reference="cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)" version="0" />
+    <module reference="cf8c9de5-1b4a-4dc8-8e6d-847159af31dd(jetbrains.mps.debugger.java.api)" version="0" />
+    <module reference="fcffe3cf-3ebc-4d3d-989b-2f30533bc904(jetbrains.mps.debugger.java.runtime)" version="0" />
+    <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+    <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
 </solution>
 

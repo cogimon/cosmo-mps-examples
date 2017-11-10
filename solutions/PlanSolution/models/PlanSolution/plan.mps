@@ -64,6 +64,10 @@
         <property role="2V$B1T" value="c283eb95-2e55-40f7-8817-bd284813e741" />
         <property role="2V$B1Q" value="OrocosProgramScriptEigenTypekit" />
       </node>
+      <node concept="2V$Bhx" id="7GcFNlthJb_" role="1t_9vn">
+        <property role="2V$B1T" value="d270ce12-fc1e-4096-ab2d-4e2aa601ae76" />
+        <property role="2V$B1Q" value="OrocosRobotComponent" />
+      </node>
     </node>
     <node concept="2VgMA1" id="1AsQWJG6vA8" role="2VgMA7">
       <node concept="3ps74r" id="1hD3llt235C" role="3ps6aC">
