@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/RST-RT/RSTRT.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RobotRepo/RobotRepo.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RobotRepository/RobotRepository.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/TestOrocosDevKit/TestOrocosDevKit.msd" folder="" />
     </projectModules>
   </component>
 </project>

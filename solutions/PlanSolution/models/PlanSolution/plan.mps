@@ -45,6 +45,10 @@
       </node>
     </node>
     <node concept="2VgMA2" id="1AsQWJG6gNk" role="2VgMA7">
+      <node concept="2V$Bhx" id="13cJ32S9loZ" role="1t_9vn">
+        <property role="2V$B1T" value="d270ce12-fc1e-4096-ab2d-4e2aa601ae76" />
+        <property role="2V$B1Q" value="OrocosRobotComponent" />
+      </node>
       <node concept="2V$Bhx" id="1AsQWJG6gOm" role="1t_9vn">
         <property role="2V$B1T" value="39e764cb-e4fa-4923-82f4-60e672350a27" />
         <property role="2V$B1Q" value="OrocosProgramScript" />
@@ -63,10 +67,6 @@
       <node concept="2V$Bhx" id="4p2rEsguF08" role="1t_9vn">
         <property role="2V$B1T" value="c283eb95-2e55-40f7-8817-bd284813e741" />
         <property role="2V$B1Q" value="OrocosProgramScriptEigenTypekit" />
-      </node>
-      <node concept="2V$Bhx" id="7GcFNlthJb_" role="1t_9vn">
-        <property role="2V$B1T" value="d270ce12-fc1e-4096-ab2d-4e2aa601ae76" />
-        <property role="2V$B1Q" value="OrocosRobotComponent" />
       </node>
     </node>
     <node concept="2VgMA1" id="1AsQWJG6vA8" role="2VgMA7">

@@ -30,6 +30,7 @@
     <import index="oet6" ref="r:85b31eb0-6551-4bd7-8659-464e8655dad3(RobotRepository.kinematics)" />
     <import index="mz1w" ref="r:f0e63708-fe8e-4a7e-94d7-74a74c6e3725(RobotPlatform.structure)" />
     <import index="w0zi" ref="r:2a04f2eb-187e-437f-8774-70cd48c794a7(SystemsCoordination.structure)" />
+    <import index="jqgq" ref="r:c60989df-11ab-45b2-973e-36de106ece09(Orocos.RunConfiguration.plugin)" />
     <import index="o5l" ref="r:99677988-a320-476b-8502-531d608695b7(RobotComponent.template)" implicit="true" />
   </imports>
   <registry>
@@ -71,7 +72,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -1293,99 +1293,6 @@
             </node>
             <node concept="2D$_L7" id="mdFCvZYrMq" role="2OqNvi">
               <ref role="2D$zFo" to="73wf:mdFCvZYrEB" resolve="configure" />
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="mdFCvZYsbH" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZYsFD" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZYs$Y" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZYs$I" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZYsBt" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4D3" resolve="task" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="mdFCvZYsJ6" role="2OqNvi">
-              <ref role="2D$zFo" to="73wf:3GmkSgQd5BQ" resolve="loadModel" />
-              <node concept="2D$zpK" id="mdFCvZYsJ8" role="2DASKs">
-                <ref role="2DB_1T" to="73wf:3GmkSgQd5Jr" resolve="modelname" />
-                <node concept="2Dc6tP" id="mdFCvZYsJR" role="2DB_1W">
-                  <ref role="2Dc6tO" node="mdFCvZWFf9" resolve="path_model_urdf" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="mdFCvZYtaM" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZYtGm" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZYt_F" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZYt_r" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZYtCa" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4D3" resolve="task" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="mdFCvZYtJN" role="2OqNvi">
-              <ref role="2D$zFo" to="73wf:3GmkSgQd5Dj" resolve="addChainWithWorldOffset" />
-              <node concept="2D$zpK" id="mdFCvZYtJP" role="2DASKs">
-                <ref role="2DB_1T" to="73wf:3GmkSgQd5Mi" resolve="chain_root_link_name" />
-                <node concept="Xl_RD" id="mdFCvZYtLY" role="2DB_1W">
-                  <property role="Xl_RC" value="world" />
-                </node>
-              </node>
-              <node concept="2D$zpK" id="mdFCvZYtJR" role="2DASKs">
-                <ref role="2DB_1T" to="73wf:3GmkSgQd5MI" resolve="chain_tip_link_name" />
-                <node concept="Xl_RD" id="mdFCvZYtMh" role="2DB_1W">
-                  <property role="Xl_RC" value="lwr_tool_link" />
-                </node>
-              </node>
-              <node concept="2D$zpK" id="mdFCvZYtJT" role="2DASKs">
-                <ref role="2DB_1T" to="73wf:3GmkSgQd5N$" resolve="worldOffsetTranslation" />
-                <node concept="2Dc6tP" id="mdFCvZYtM$" role="2DB_1W">
-                  <ref role="2Dc6tO" node="mdFCvZWtGI" resolve="t1" />
-                </node>
-              </node>
-              <node concept="2D$zpK" id="mdFCvZYtJV" role="2DASKs">
-                <ref role="2DB_1T" to="73wf:3GmkSgQd5PA" resolve="worldOffsetRotation" />
-                <node concept="2Dc6tP" id="mdFCvZYtMR" role="2DB_1W">
-                  <ref role="2Dc6tO" node="mdFCvZWuXH" resolve="r1" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2RThQF" id="mdFCvZYugC" role="A$mYV">
-          <node concept="2OqwBi" id="mdFCvZYuP2" role="2RThOI">
-            <node concept="2OqwBi" id="mdFCvZYuIn" role="2Oq$k0">
-              <node concept="2RT1ic" id="mdFCvZYuI7" role="2Oq$k0" />
-              <node concept="3pvUrN" id="mdFCvZYuKQ" role="2OqNvi">
-                <ref role="3pvUL9" node="mdFCvZW4D3" resolve="task" />
-              </node>
-            </node>
-            <node concept="2D$_L7" id="mdFCvZYuSv" role="2OqNvi">
-              <ref role="2D$zFo" to="73wf:3GmkSgQd5Dj" resolve="addChainWithWorldOffset" />
-              <node concept="2D$zpK" id="mdFCvZYuSx" role="2DASKs">
-                <ref role="2DB_1T" to="73wf:3GmkSgQd5Mi" resolve="chain_root_link_name" />
-                <node concept="Xl_RD" id="mdFCvZYuUE" role="2DB_1W">
-                  <property role="Xl_RC" value="world" />
-                </node>
-              </node>
-              <node concept="2D$zpK" id="mdFCvZYuSz" role="2DASKs">
-                <ref role="2DB_1T" to="73wf:3GmkSgQd5MI" resolve="chain_tip_link_name" />
-                <node concept="Xl_RD" id="mdFCvZYuUX" role="2DB_1W">
-                  <property role="Xl_RC" value="lwr_tool_link" />
-                </node>
-              </node>
-              <node concept="2D$zpK" id="mdFCvZYuS_" role="2DASKs">
-                <ref role="2DB_1T" to="73wf:3GmkSgQd5N$" resolve="worldOffsetTranslation" />
-                <node concept="2Dc6tP" id="mdFCvZYuVg" role="2DB_1W">
-                  <ref role="2Dc6tO" node="mdFCvZWvmK" resolve="t2" />
-                </node>
-              </node>
-              <node concept="2D$zpK" id="mdFCvZYuSB" role="2DASKs">
-                <ref role="2DB_1T" to="73wf:3GmkSgQd5PA" resolve="worldOffsetRotation" />
-                <node concept="2Dc6tP" id="mdFCvZYuVz" role="2DB_1W">
-                  <ref role="2Dc6tO" node="mdFCvZWwmf" resolve="r2" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -3564,23 +3471,6 @@
                     <node concept="3b6qkQ" id="4dO8lRQQoTj" role="3sb0ey">
                       <property role="$nhwW" value="2.0" />
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="4dO8lRQQp0t" role="2PRVZX">
-            <node concept="2RT1ic" id="4dO8lRQQoX7" role="2Oq$k0" />
-            <node concept="2D$_L7" id="4dO8lRQQp7m" role="2OqNvi">
-              <ref role="2D$zFo" to="ty59:2NJBz9CzWHc" resolve="add_plugin" />
-              <node concept="2D$zpK" id="4dO8lRQQp7o" role="2DASKs">
-                <ref role="2DB_1T" to="ty59:2NJBz9CzWH$" resolve="pluginName" />
-                <node concept="3cpWs3" id="4dO8lRQQphy" role="2DB_1W">
-                  <node concept="2Dc6tP" id="4dO8lRQRi_R" role="3uHU7w">
-                    <ref role="2Dc6tO" node="4dO8lRQQnkY" resolve="a" />
-                  </node>
-                  <node concept="Xl_RD" id="4dO8lRQQp7M" role="3uHU7B">
-                    <property role="Xl_RC" value="" />
                   </node>
                 </node>
               </node>

@@ -17,6 +17,7 @@
     <dependency reexport="false">864bc811-810b-4e2f-97d7-4ee5ae8cdcfe(RobotRepository)</dependency>
     <dependency reexport="false">99abc364-3965-4ead-ab2d-0b272a528a90(RobotPlatform)</dependency>
     <dependency reexport="false">10b5a06d-1a49-4cbd-a111-d36c8106bb63(SystemsCoordination)</dependency>
+    <dependency reexport="false">07a9ca18-f71d-4cd8-b7b5-8abc9e03ec63(Orocos.RunConfiguration)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
@@ -48,6 +49,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="508bfef5-1766-41ca-a911-1831b229f1a7(MultiArmBox)" version="0" />
+    <module reference="07a9ca18-f71d-4cd8-b7b5-8abc9e03ec63(Orocos.RunConfiguration)" version="0" />
     <module reference="f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)" version="0" />
     <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)" version="0" />
     <module reference="99abc364-3965-4ead-ab2d-0b272a528a90(RobotPlatform)" version="0" />
