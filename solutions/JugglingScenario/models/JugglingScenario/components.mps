@@ -7,8 +7,8 @@
     <use id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component" version="0" />
   </languages>
   <imports>
-    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
-    <import index="yzc3" ref="r:fb46aa12-7f49-4ac6-ac4c-bc9fd1f3fb28(RSTRT.sandbox)" />
+    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRTa.stable)" />
+    <import index="yzc3" ref="r:fb46aa12-7f49-4ac6-ac4c-bc9fd1f3fb28(RSTRTa.sandbox)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -17,7 +17,7 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf">
-      <concept id="6986025422972848389" name="ProtoBuf.structure.double" flags="ig" index="2KP_0u" />
+      <concept id="6986025422972848389" name="ProtoBuf.structure.double_type" flags="ig" index="2KP_0u" />
       <concept id="6986025422972810071" name="ProtoBuf.structure.MessageReference" flags="ig" index="2KPMDc">
         <reference id="6986025422972810072" name="message" index="2KPMD3" />
       </concept>

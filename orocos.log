@@ -1,0 +1,67 @@
+0.000 [ Info   ][Logger] No ORO_LOGLEVEL environment variable set.
+0.000 [ Info   ][Logger]  OROCOS version '2.8.3' compiled with GCC 5.4.0. Running in GNU/Linux.
+0.000 [ Info   ][Logger] Orocos Logging Activated at level : [ Warning] ( 4 ) 
+0.000 [ Info   ][Logger] Reference System Time is : 1510331294306835782 ticks ( 1.51033e+09 seconds ).
+0.000 [ Info   ][Logger] Logging is relative to this time.
+0.001 [ Info   ][Logger] RTT_COMPONENT_PATH was set to: /home/dwigand/code/cogimon/CoSimA/prototypes/gazebo-trajectory-visualization-plugin/build/orocos:/home/dwigand/code/cogimon/CoSimA/component-repositories/cosima-utilities/build/orocos:/home/dwigand/code/cogimon/CoSimA/component-repositories/cosima-projected-dynamics/build/orocos/:/home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos:/home/dwigand/code/cogimon/CoSimA/sandbox/omnirob/rtt-gazebo-omnirob-sim/build/orocos . Searching in: /home/dwigand/code/cogimon/CoSimA/prototypes/gazebo-trajectory-visualization-plugin/build/orocos:/home/dwigand/code/cogimon/CoSimA/component-repositories/cosima-utilities/build/orocos:/home/dwigand/code/cogimon/CoSimA/component-repositories/cosima-projected-dynamics/build/orocos/:/home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos:/home/dwigand/code/cogimon/CoSimA/sandbox/omnirob/rtt-gazebo-omnirob-sim/build/orocos
+0.001 [ Info   ][Logger] plugin 'rtt' not loaded before.
+0.001 [ Info   ][Logger] Loading plugin libraries from directory /home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/./plugins ...
+0.001 [ Info   ][Logger] Loaded RTT Service 'marshalling' from 'rtt-marshalling'
+0.001 [ Info   ][Logger] Loaded RTT Service 'scripting' from 'rtt-scripting'
+0.001 [ Info   ][Logger] typekit 'rtt' not loaded before.
+0.001 [ Info   ][Logger] Loading typekit libraries from directory /home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/./types ...
+0.025 [ Info   ][TypekitRepository::Import] Loading Transport CORBA://rtt-types.
+0.025 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-corba-types' from 'rtt-transport-corba'
+0.029 [ Info   ][TypekitRepository::Import] Loading Transport mqueue://rtt-types.
+0.029 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-mqueue-transport' from 'rtt-transport-mqueue'
+0.060 [ Info   ][TypekitRepository::Import] Loading Typekit rtt-types.
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for int
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for int
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for uint
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for uint
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for double
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for double
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for float
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for float
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for char
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for char
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for bool
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for bool
+0.062 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for void
+0.063 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for ConnPolicy
+0.064 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for TaskContext
+0.064 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for string
+0.064 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for array
+0.064 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for array
+0.064 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for rt_string
+0.065 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-types' from 'rtt-typekit'
+0.065 [ Info   ][Logger] RTT_COMPONENT_PATH was set to: /home/dwigand/code/cogimon/CoSimA/prototypes/gazebo-trajectory-visualization-plugin/build/orocos:/home/dwigand/code/cogimon/CoSimA/component-repositories/cosima-utilities/build/orocos:/home/dwigand/code/cogimon/CoSimA/component-repositories/cosima-projected-dynamics/build/orocos/:/home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos:/home/dwigand/code/cogimon/CoSimA/sandbox/omnirob/rtt-gazebo-omnirob-sim/build/orocos . Searching in: /home/dwigand/code/cogimon/CoSimA/prototypes/gazebo-trajectory-visualization-plugin/build/orocos:/home/dwigand/code/cogimon/CoSimA/component-repositories/cosima-utilities/build/orocos:/home/dwigand/code/cogimon/CoSimA/component-repositories/cosima-projected-dynamics/build/orocos/:/home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos:/home/dwigand/code/cogimon/CoSimA/sandbox/omnirob/rtt-gazebo-omnirob-sim/build/orocos
+0.065 [ Info   ][Logger] OCL factory set for real-time logging
+0.065 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='Deployer'
+0.065 [ Info   ][Deployer] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 5136 ).
+0.066 [ Info   ][Logger] No site file was found. Importing 'ocl' by default.
+0.066 [ Info   ][ComponentLoader::import(path_list)] Importing directory /home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl ...
+0.068 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-common-gnulinux.so'
+0.070 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::HelloWorld'
+0.073 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-logging-gnulinux.so'
+0.075 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-timer-gnulinux.so'
+0.092 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-reporting-netcdf-gnulinux.so'
+0.092 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::NetcdfReporting'
+0.092 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/liborocos-ocl-reporting-gnulinux.so'
+0.092 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/types ...
+0.096 [ Info   ][TypekitRepository::Import] Loading Typekit OCLTypekit.
+0.096 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'OCLTypekit' from 'ocl'
+0.096 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /home/dwigand/citk/systems/cogimon-minimal-nightly/lib/orocos/gnulinux/ocl/plugins ...
+0.098 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'print' from 'print'
+0.100 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'os' from 'os'
+0.100 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='TaskBrowser'
+0.100 [ Info   ][TaskBrowser] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 5137 ).
+0.100 [ Info   ][Logger] Entering Task Deployer
+3.892 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='GlobalEngine'
+3.892 [ Info   ][GlobalEngine] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 255 and period 0 (PID= 5138 ).
+487.549 [ Info   ][Logger] Ignoring deployment shutdown function due to missing peer.
+487.550 [ Info   ][stopComponentsGroup] Stopping group 0
+487.550 [ Info   ][cleanupComponentsGroup] Cleaning up group 0
+487.550 [ Info   ][Logger] Unloading group 0
+487.550 [ Info   ][Logger] Kick-out of group 0 successful.
+487.553 [ Info   ][Logger] Orocos Logging Deactivated.

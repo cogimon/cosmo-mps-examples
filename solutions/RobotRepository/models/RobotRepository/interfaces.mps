@@ -13,7 +13,7 @@
   </languages>
   <imports>
     <import index="d49h" ref="r:e838cc20-edef-4424-9d42-7bc017fd2211(RobotRepository.platforms)" />
-    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
+    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRTa.stable)" />
   </imports>
   <registry>
     <language id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf">

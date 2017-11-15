@@ -7,8 +7,8 @@
     <use id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit" version="0" />
   </languages>
   <imports>
-    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
-    <import index="yzc3" ref="r:fb46aa12-7f49-4ac6-ac4c-bc9fd1f3fb28(RSTRT.sandbox)" />
+    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRTa.stable)" />
+    <import index="yzc3" ref="r:fb46aa12-7f49-4ac6-ac4c-bc9fd1f3fb28(RSTRTa.sandbox)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -100,6 +100,14 @@
     <node concept="3tteAg" id="3keJr8m8xHg" role="3ttcQt">
       <property role="TrG5h" value="preparePorts" />
       <node concept="3cqZAl" id="3keJr8m8xHu" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5q0w9toExyc" role="3ttcQt">
+      <property role="TrG5h" value="setMethod" />
+      <node concept="2D$zpR" id="5q0w9toEx$C" role="3ttcQW">
+        <property role="TrG5h" value="method" />
+        <node concept="10Oyi0" id="5q0w9toEx$S" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="5q0w9toEx$w" role="3ttcQV" />
     </node>
     <node concept="3tteAg" id="3GmkSgQd2Tl" role="3ttcQt">
       <property role="TrG5h" value="displayCurrentState" />
@@ -682,6 +690,10 @@
   </node>
   <node concept="3tteAz" id="3GmkSgQd0nz">
     <property role="TrG5h" value="TaskDescriberGrasping" />
+    <node concept="3tteAj" id="5q0w9to_dCn" role="3ttcQu">
+      <property role="TrG5h" value="useExternalSensing" />
+      <node concept="10P_77" id="5q0w9to_dD8" role="3ttcR6" />
+    </node>
     <node concept="3tteA$" id="3GmkSgQd5RM" role="3ttcQl">
       <property role="1T6LxX" value="Input" />
       <property role="TrG5h" value="in_robotstatus_port" />
@@ -779,14 +791,6 @@
       <property role="TrG5h" value="out_incontactstateEE_port" />
       <node concept="10P55v" id="3GmkSgQd8jR" role="17RAGi" />
     </node>
-    <node concept="3tteAg" id="3GmkSgQd5Bd" role="3ttcQt">
-      <property role="TrG5h" value="setNumFingers" />
-      <node concept="2D$zpR" id="3GmkSgQd5Hr" role="3ttcQW">
-        <property role="TrG5h" value="n" />
-        <node concept="10Oyi0" id="3GmkSgQd5HR" role="2D$z68" />
-      </node>
-      <node concept="3cqZAl" id="3GmkSgQd5I6" role="3ttcQV" />
-    </node>
     <node concept="3tteAg" id="3GmkSgQd5Br" role="3ttcQt">
       <property role="TrG5h" value="setDOFsize" />
       <node concept="2D$zpR" id="3GmkSgQd5Iy" role="3ttcQW">
@@ -795,49 +799,65 @@
       </node>
       <node concept="3cqZAl" id="3GmkSgQd5Ik" role="3ttcQV" />
     </node>
-    <node concept="3tteAg" id="3GmkSgQd5BQ" role="3ttcQt">
-      <property role="TrG5h" value="loadModel" />
-      <node concept="2D$zpR" id="3GmkSgQd5Jr" role="3ttcQW">
-        <property role="TrG5h" value="modelname" />
-        <node concept="17QB3L" id="3GmkSgQd5JR" role="2D$z68" />
+    <node concept="3tteAg" id="5q0w9to_dbG" role="3ttcQt">
+      <property role="TrG5h" value="setNumObjects" />
+      <node concept="3cqZAl" id="5q0w9to_dd1" role="3ttcQV" />
+      <node concept="2D$zpR" id="5q0w9to_dd9" role="3ttcQW">
+        <property role="TrG5h" value="objects" />
+        <node concept="10Oyi0" id="5q0w9to_ddp" role="2D$z68" />
       </node>
-      <node concept="3cqZAl" id="3GmkSgQd5Jd" role="3ttcQV" />
     </node>
-    <node concept="3tteAg" id="3GmkSgQd5Cu" role="3ttcQt">
-      <property role="TrG5h" value="addChain" />
-      <node concept="2D$zpR" id="3GmkSgQd5Kk" role="3ttcQW">
-        <property role="TrG5h" value="chain_root_link_name" />
-        <node concept="17QB3L" id="3GmkSgQd5LA" role="2D$z68" />
+    <node concept="3tteAg" id="5q0w9to_ddy" role="3ttcQt">
+      <property role="TrG5h" value="setNumManipulators" />
+      <node concept="2D$zpR" id="5q0w9to_dfr" role="3ttcQW">
+        <property role="TrG5h" value="manipulators" />
+        <node concept="10Oyi0" id="5q0w9to_dfF" role="2D$z68" />
       </node>
-      <node concept="2D$zpR" id="3GmkSgQd5KK" role="3ttcQW">
-        <property role="TrG5h" value="chain_tip_link_name" />
-        <node concept="17QB3L" id="3GmkSgQd5LP" role="2D$z68" />
-      </node>
-      <node concept="3cqZAl" id="3GmkSgQd5K6" role="3ttcQV" />
+      <node concept="3cqZAl" id="5q0w9to_dfj" role="3ttcQV" />
     </node>
-    <node concept="3tteAg" id="3GmkSgQd5Dj" role="3ttcQt">
-      <property role="TrG5h" value="addChainWithWorldOffset" />
-      <node concept="2D$zpR" id="3GmkSgQd5Mi" role="3ttcQW">
-        <property role="TrG5h" value="chain_root_link_name" />
-        <node concept="17QB3L" id="3GmkSgQd5OO" role="2D$z68" />
+    <node concept="3tteAg" id="5q0w9to_dfO" role="3ttcQt">
+      <property role="TrG5h" value="setCurrentObjectPose" />
+      <node concept="2D$zpR" id="5q0w9to_di9" role="3ttcQW">
+        <property role="TrG5h" value="objectID" />
+        <node concept="10Oyi0" id="5q0w9to_dip" role="2D$z68" />
       </node>
-      <node concept="2D$zpR" id="3GmkSgQd5MI" role="3ttcQW">
-        <property role="TrG5h" value="chain_tip_link_name" />
-        <node concept="17QB3L" id="3GmkSgQd5P3" role="2D$z68" />
-      </node>
-      <node concept="2D$zpR" id="3GmkSgQd5N$" role="3ttcQW">
+      <node concept="2D$zpR" id="5q0w9to_diy" role="3ttcQW">
         <property role="TrG5h" value="worldOffsetTranslation" />
-        <node concept="2KPMDc" id="3GmkSgQd5Pi" role="2D$z68">
+        <node concept="5xOc9" id="5q0w9to_dj0" role="2D$z68">
+          <node concept="10P55v" id="5q0w9to_djl" role="5$vw5" />
+        </node>
+      </node>
+      <node concept="2D$zpR" id="5q0w9to_djx" role="3ttcQW">
+        <property role="TrG5h" value="worldOffsetRotation" />
+        <node concept="5xOc9" id="5q0w9to_dkk" role="2D$z68">
+          <node concept="10P55v" id="5q0w9to_dkD" role="5$vw5" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5q0w9to_di1" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="5q0w9to_dkP" role="3ttcQt">
+      <property role="TrG5h" value="setCurrentObjectPoseRSTRT" />
+      <node concept="2D$zpR" id="5q0w9to_dog" role="3ttcQW">
+        <property role="TrG5h" value="objectID" />
+        <node concept="10Oyi0" id="5q0w9to_dow" role="2D$z68" />
+      </node>
+      <node concept="2D$zpR" id="5q0w9to_doD" role="3ttcQW">
+        <property role="TrG5h" value="worldOffsetTranslation" />
+        <node concept="2KPMDc" id="5q0w9to_dp7" role="2D$z68">
           <ref role="2KPMD3" to="sxll:aj6lJ" resolve="Translation" />
         </node>
       </node>
-      <node concept="3cqZAl" id="3GmkSgQd5M4" role="3ttcQV" />
-      <node concept="2D$zpR" id="3GmkSgQd5PA" role="3ttcQW">
+      <node concept="3cqZAl" id="5q0w9to_do8" role="3ttcQV" />
+      <node concept="2D$zpR" id="5q0w9to_dpl" role="3ttcQW">
         <property role="TrG5h" value="worldOffsetRotation" />
-        <node concept="2KPMDc" id="3GmkSgQd5Rg" role="2D$z68">
+        <node concept="2KPMDc" id="5q0w9to_dq1" role="2D$z68">
           <ref role="2KPMD3" to="sxll:1sReu" resolve="Rotation" />
         </node>
       </node>
+    </node>
+    <node concept="3tteAg" id="5q0w9to_dqf" role="3ttcQt">
+      <property role="TrG5h" value="preparePorts" />
+      <node concept="3cqZAl" id="5q0w9to_duq" role="3ttcQV" />
     </node>
     <node concept="3tteAg" id="3GmkSgQd5El" role="3ttcQt">
       <property role="TrG5h" value="displayCurrentState" />
@@ -845,6 +865,11 @@
     </node>
     <node concept="3tteAg" id="3GmkSgQd5FM" role="3ttcQt">
       <property role="TrG5h" value="computeInitialRobotOrientations" />
+      <node concept="2D$zpR" id="5q0w9to_duy" role="3ttcQW">
+        <property role="TrG5h" value="N" />
+        <node concept="10Oyi0" id="5q0w9to_duM" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="5q0w9to_duV" role="3ttcQV" />
     </node>
     <node concept="3tteAg" id="mdFCvZYyEh" role="3ttcQt">
       <property role="TrG5h" value="configure" />
@@ -1151,6 +1176,18 @@
           <ref role="2KPMD3" to="sxll:1sReu" resolve="Rotation" />
         </node>
       </node>
+    </node>
+    <node concept="3tteAg" id="5q0w9toElpU" role="3ttcQt">
+      <property role="TrG5h" value="addCubeObject" />
+      <node concept="2D$zpR" id="5q0w9toEltS" role="3ttcQW">
+        <property role="TrG5h" value="mass" />
+        <node concept="10P55v" id="5q0w9toElu8" role="2D$z68" />
+      </node>
+      <node concept="2D$zpR" id="5q0w9toEluh" role="3ttcQW">
+        <property role="TrG5h" value="inertia" />
+        <node concept="10P55v" id="5q0w9toEluJ" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="5q0w9toEltK" role="3ttcQV" />
     </node>
     <node concept="3tteAg" id="3XuVWlUVDd_" role="3ttcQt">
       <property role="TrG5h" value="displayCurrentState" />

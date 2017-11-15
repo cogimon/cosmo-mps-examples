@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)">
+<model ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRTa.stable)">
   <persistence version="9" />
   <languages>
     <use id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf" version="0" />
@@ -23,8 +23,8 @@
       </concept>
       <concept id="6986025422972975524" name="ProtoBuf.structure.RepeatedAnnotation" flags="ng" index="2KPq2Z" />
       <concept id="6986025422972848391" name="ProtoBuf.structure.string" flags="ig" index="2KP_0s" />
-      <concept id="6986025422972848390" name="ProtoBuf.structure.float" flags="ig" index="2KP_0t" />
-      <concept id="6986025422972848389" name="ProtoBuf.structure.double" flags="ig" index="2KP_0u" />
+      <concept id="6986025422972848390" name="ProtoBuf.structure.float_type" flags="ig" index="2KP_0t" />
+      <concept id="6986025422972848389" name="ProtoBuf.structure.double_type" flags="ig" index="2KP_0u" />
       <concept id="6986025422972894955" name="ProtoBuf.structure.RequiredAnnotation" flags="ng" index="2KPIvK" />
       <concept id="6986025422972810071" name="ProtoBuf.structure.MessageReference" flags="ig" index="2KPMDc">
         <reference id="6986025422972810072" name="message" index="2KPMD3" />

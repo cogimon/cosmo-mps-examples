@@ -14,8 +14,8 @@
   <imports>
     <import index="oet6" ref="r:85b31eb0-6551-4bd7-8659-464e8655dad3(RobotRepository.kinematics)" />
     <import index="lrob" ref="r:d01e7c48-4315-4a97-a560-4b91cd1fec15(RobotRepository.interfaces)" />
-    <import index="yzc3" ref="r:fb46aa12-7f49-4ac6-ac4c-bc9fd1f3fb28(RSTRT.sandbox)" />
-    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRT.stable)" />
+    <import index="yzc3" ref="r:fb46aa12-7f49-4ac6-ac4c-bc9fd1f3fb28(RSTRTa.sandbox)" />
+    <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRTa.stable)" />
   </imports>
   <registry>
     <language id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf">
@@ -67,7 +67,7 @@
   </node>
   <node concept="gnlnl" id="6bIwLn$0JKW">
     <property role="TrG5h" value="Kuka LWR 4+" />
-    <ref role="gnvdb" to="oet6:2jRhxvsjZVf" resolve="kuka-lwr" />
+    <ref role="gnvdb" to="oet6:2jRhxvsjZVf" resolve="kuka-lwr-4plus" />
     <node concept="u53jr" id="6bIwLn$0JLd" role="gntW4">
       <property role="TrG5h" value="full_arm" />
       <ref role="u53jA" to="oet6:2jRhxvsjZWk" resolve="lwr_arm_base_link" />

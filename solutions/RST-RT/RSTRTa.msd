@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="RSTRT" uuid="3385964e-5b3d-433b-a45e-c97c2abf2862" moduleVersion="0" compileInMPS="true">
+<solution name="RSTRTa" uuid="3385964e-5b3d-433b-a45e-c97c2abf2862" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

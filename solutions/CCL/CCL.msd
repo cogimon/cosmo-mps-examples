@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)</dependency>
+    <dependency reexport="false">3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRTa)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />

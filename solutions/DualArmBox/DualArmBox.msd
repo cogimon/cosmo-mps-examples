@@ -11,7 +11,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">bddf7057-0151-4153-9658-d44eff0e1c02(OrocosComponent)</dependency>
-    <dependency reexport="false">3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)</dependency>
+    <dependency reexport="false">3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRTa)</dependency>
     <dependency reexport="false">d6d7f6e1-f407-48f8-a582-7b1489b7163f(ProtoBuf)</dependency>
     <dependency reexport="false">10b5a06d-1a49-4cbd-a111-d36c8106bb63(SystemsCoordination)</dependency>
     <dependency reexport="false">f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)</dependency>
