@@ -307,6 +307,7 @@
       </node>
       <node concept="AAcsC" id="mdFCvZWrRf" role="AA3t3">
         <property role="TrG5h" value="ConfigureSimulationAndRobot" />
+        <property role="AyEUC" value="true" />
         <node concept="2RThQF" id="4c0$OGc0NSt" role="A$mYV">
           <node concept="2OqwBi" id="4c0$OGc0NSo" role="2RThOI">
             <node concept="2OqwBi" id="4c0$OGc0NSp" role="2Oq$k0">

@@ -23,6 +23,19 @@
       <concept id="5685633502229650428" name="Component.structure.Parameter" flags="ng" index="2D$zpR">
         <child id="5685633502229650435" name="type" index="2D$z68" />
       </concept>
+      <concept id="7409071499858616521" name="Component.structure.ILineComment" flags="ng" index="1mmmYf">
+        <property id="7409071499858616577" name="line" index="1mmmT7" />
+      </concept>
+      <concept id="7409071499858616502" name="Component.structure.ParameterRefLineComment" flags="ng" index="1mmmZK">
+        <reference id="7409071499858616866" name="parameter" index="1mmmP$" />
+      </concept>
+      <concept id="7409071499858934193" name="Component.structure.Author" flags="ng" index="1mnrrR" />
+      <concept id="7409071499857455693" name="Component.structure.ComponentComment" flags="ng" index="1mEMkb">
+        <child id="7409071499858934276" name="params" index="1mnrl2" />
+        <child id="7409071499858934259" name="authors" index="1mnrqP" />
+        <child id="7409071499857457719" name="lines" index="1mENPL" />
+      </concept>
+      <concept id="7409071499857457637" name="Component.structure.SingleLineComment" flags="ng" index="1mENUz" />
       <concept id="1695646464731827433" name="Component.structure.Operation" flags="ng" index="3tteAg">
         <child id="1695646464731834562" name="returnType" index="3ttcQV" />
         <child id="1695646464731834565" name="inputParameters" index="3ttcQW" />
@@ -50,6 +63,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -67,6 +83,24 @@
         <node concept="10P_77" id="5dAl56bIJwN" role="2D$z68" />
       </node>
       <node concept="3cqZAl" id="5dAl56bIJvv" role="3ttcQV" />
+      <node concept="1mEMkb" id="6rijOoKC64C" role="lGtFl">
+        <node concept="1mmmZK" id="6rijOoKD4i8" role="1mnrl2">
+          <property role="1mmmT7" value="uses the constrained version of something!" />
+          <ref role="1mmmP$" node="5dAl56bIJwn" resolve="useConstrainedVersion" />
+        </node>
+        <node concept="1mENUz" id="6rijOoKC67Z" role="1mENPL">
+          <property role="1mmmT7" value="fkjhfdglkjdfjhg" />
+        </node>
+        <node concept="1mENUz" id="6rijOoKC688" role="1mENPL">
+          <property role="1mmmT7" value="dfkjghdfkjg" />
+        </node>
+        <node concept="1mENUz" id="6rijOoKC68p" role="1mENPL">
+          <property role="1mmmT7" value="dfkjghdfkjg" />
+        </node>
+        <node concept="1mnrrR" id="6rijOoKC64U" role="1mnrqP">
+          <property role="TrG5h" value="Dennis Leroy Wigand" />
+        </node>
+      </node>
     </node>
     <node concept="3tteAg" id="5dAl56bIJtB" role="3ttcQt">
       <property role="TrG5h" value="setTranslationOnly" />
@@ -75,6 +109,17 @@
         <node concept="10P_77" id="5dAl56bIJxu" role="2D$z68" />
       </node>
       <node concept="3cqZAl" id="5dAl56bIJvH" role="3ttcQV" />
+      <node concept="1mEMkb" id="6WBegv3Uz2p" role="lGtFl">
+        <node concept="1mnrrR" id="6WBegv3Uz2F" role="1mnrqP">
+          <property role="TrG5h" value="Dennis Leroy Wigand" />
+        </node>
+        <node concept="1mENUz" id="6WBegv3Uz2q" role="1mENPL">
+          <property role="1mmmT7" value="This function is used to set solely the translation" />
+        </node>
+        <node concept="1mENUz" id="6WBegv3WP1S" role="1mENPL">
+          <property role="1mmmT7" value="for etc...." />
+        </node>
+      </node>
     </node>
     <node concept="3tteAg" id="5dAl56bIJu2" role="3ttcQt">
       <property role="TrG5h" value="setDOFsize" />
@@ -87,6 +132,12 @@
     <node concept="3tteAg" id="5dAl56bIJuE" role="3ttcQt">
       <property role="TrG5h" value="displayCurrentState" />
       <node concept="3cqZAl" id="5dAl56bIJw9" role="3ttcQV" />
+      <node concept="1mEMkb" id="6WBegv3ViE7" role="lGtFl">
+        <node concept="1mnrrR" id="6WBegv3WBKg" role="1mnrqP">
+          <property role="TrG5h" value="Dennis Leroy Wigand" />
+        </node>
+        <node concept="1mENUz" id="6WBegv3ViE8" role="1mENPL" />
+      </node>
     </node>
     <node concept="3tteAg" id="5dAl56bKqNA" role="3ttcQt">
       <property role="TrG5h" value="configure" />
@@ -238,6 +289,28 @@
       <property role="1T6LxX" value="Output" />
       <property role="TrG5h" value="out_cartVel2_port" />
       <node concept="10P55v" id="5dAl56bIOIP" role="17RAGi" />
+    </node>
+    <node concept="1mEMkb" id="6rijOoKvGZO" role="lGtFl">
+      <node concept="1mENUz" id="6rijOoKz3cY" role="1mENPL">
+        <property role="1mmmT7" value="sjdlk" />
+      </node>
+      <node concept="1mENUz" id="6rijOoKzZu$" role="1mENPL" />
+      <node concept="1mENUz" id="6rijOoKz3er" role="1mENPL">
+        <property role="1mmmT7" value="dsfkldsjfds" />
+      </node>
+      <node concept="1mENUz" id="6rijOoKz3eW" role="1mENPL">
+        <property role="1mmmT7" value="dsfkjsdf" />
+      </node>
+      <node concept="1mENUz" id="6rijOoKz3f_" role="1mENPL">
+        <property role="1mmmT7" value="sdjkf;" />
+      </node>
+      <node concept="1mENUz" id="6rijOoKzfjY" role="1mENPL" />
+      <node concept="1mENUz" id="6rijOoKz3hf" role="1mENPL">
+        <property role="1mmmT7" value="dsf;lksd;lf" />
+      </node>
+      <node concept="1mnrrR" id="6rijOoK_ef1" role="1mnrqP">
+        <property role="TrG5h" value="Dennis Leroy Wigand" />
+      </node>
     </node>
   </node>
   <node concept="3tteAz" id="5dAl56bIPgA">
