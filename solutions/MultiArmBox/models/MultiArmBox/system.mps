@@ -1207,6 +1207,14 @@
               </node>
             </node>
             <node concept="2x3sx2" id="3TykQIvsptP" role="2OqNvi">
+              <node concept="37vLTI" id="1JPxF0RUH_" role="2x3sxo">
+                <node concept="CHOn8" id="1JPxF0RUH$" role="37vLTJ">
+                  <ref role="CHOn7" to="73wf:5q0w9to_dCn" resolve="useExternalSensing" />
+                </node>
+                <node concept="2Dc6tP" id="1JPxF0RUIN" role="37vLTx">
+                  <ref role="2Dc6tO" node="5q0w9toDvQ1" resolve="useExternalSensing" />
+                </node>
+              </node>
               <node concept="2D$_L7" id="3TykQIvtb0T" role="2x3sxo">
                 <ref role="2D$zFo" to="73wf:3GmkSgQd5Br" resolve="setDOFsize" />
                 <node concept="2D$zpK" id="3TykQIvtb0U" role="2DASKs">
@@ -1216,8 +1224,374 @@
                   </node>
                 </node>
               </node>
+              <node concept="2D$_L7" id="1JPxF0RUKl" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:5q0w9to_dbG" resolve="setNumObjects" />
+                <node concept="2D$zpK" id="1JPxF0RUKn" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:5q0w9to_dd9" resolve="objects" />
+                  <node concept="2Dc6tP" id="1JPxF0RULX" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toDwGw" resolve="numObjects" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0RUNR" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:5q0w9to_ddy" resolve="setNumManipulators" />
+                <node concept="2D$zpK" id="1JPxF0RUNT" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:5q0w9to_dfr" resolve="manipulators" />
+                  <node concept="2Dc6tP" id="1JPxF0RUPU" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toDxoU" resolve="numManipulators" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0RUSf" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:5q0w9to_dkP" resolve="setCurrentObjectPoseRSTRT" />
+                <node concept="2D$zpK" id="1JPxF0RUSh" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:5q0w9to_dog" resolve="objectID" />
+                  <node concept="3cmrfG" id="1JPxF0RUVD" role="2DB_1W">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+                <node concept="2D$zpK" id="1JPxF0RUSj" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:5q0w9to_doD" resolve="worldOffsetTranslation" />
+                  <node concept="2Dc6tP" id="1JPxF0RUVV" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toEhQI" resolve="tBox" />
+                  </node>
+                </node>
+                <node concept="2D$zpK" id="1JPxF0RUSl" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:5q0w9to_dpl" resolve="worldOffsetRotation" />
+                  <node concept="2Dc6tP" id="1JPxF0RUWf" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toEj5m" resolve="rBox" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0RUZ_" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:5q0w9to_dqf" resolve="preparePorts" />
+              </node>
               <node concept="2D$_L7" id="3$qirNo0Xhu" role="2x3sxo">
                 <ref role="2D$zFo" to="73wf:mdFCvZYyEh" resolve="configure" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1f4lqS" id="1JPxF0RW7k" role="A$mYV">
+          <property role="1f4lhh" value="caux" />
+        </node>
+        <node concept="2RThQF" id="1JPxF0T3Da" role="A$mYV">
+          <node concept="2OqwBi" id="1JPxF0T4k8" role="2RThOI">
+            <node concept="2OqwBi" id="1JPxF0T4bO" role="2Oq$k0">
+              <node concept="2RT1ic" id="1JPxF0T4bC" role="2Oq$k0" />
+              <node concept="3pvUrN" id="1JPxF0T4fK" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW4G8" resolve="caux" />
+              </node>
+            </node>
+            <node concept="2x3sx2" id="1JPxF0T4oQ" role="2OqNvi">
+              <node concept="2D$_L7" id="1JPxF0T4p_" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:5q0w9toExyc" resolve="setMethod" />
+                <node concept="2D$zpK" id="1JPxF0T4pB" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:5q0w9toEx$C" resolve="method" />
+                  <node concept="3cmrfG" id="1JPxF0T4qe" role="2DB_1W">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0T5dI" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3GmkSgQd2KU" resolve="setNumRobots" />
+                <node concept="2D$zpK" id="1JPxF0T5dK" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3GmkSgQd2P0" resolve="n" />
+                  <node concept="2Dc6tP" id="1JPxF0T5eM" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toDxoU" resolve="numManipulators" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0T5g8" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3keJr8m8xGs" resolve="setDOFsize" />
+                <node concept="2D$zpK" id="1JPxF0T5ga" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3keJr8m8xGw" resolve="dof" />
+                  <node concept="2Dc6tP" id="1JPxF0T83M" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toDzBq" resolve="DOFsize" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0T85z" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3keJr8m8xGB" resolve="setCstrSpaceDimension" />
+                <node concept="2D$zpK" id="1JPxF0T85_" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3keJr8m8xGR" resolve="dims" />
+                  <node concept="17qRlL" id="1JPxF0T8oL" role="2DB_1W">
+                    <node concept="1eOMI4" id="1JPxF0T8px" role="3uHU7w">
+                      <node concept="3cpWs3" id="1JPxF0T8JE" role="1eOMHV">
+                        <node concept="2Dc6tP" id="1JPxF0T8Y$" role="3uHU7w">
+                          <ref role="2Dc6tO" node="5q0w9toDwGw" resolve="numObjects" />
+                        </node>
+                        <node concept="2Dc6tP" id="1JPxF0T8pY" role="3uHU7B">
+                          <ref role="2Dc6tO" node="5q0w9toDxoU" resolve="numManipulators" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cmrfG" id="1JPxF0T87t" role="3uHU7B">
+                      <property role="3cmrfH" value="6" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0T9fO" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3keJr8m8xHg" resolve="preparePorts" />
+              </node>
+              <node concept="2D$_L7" id="1JPxF0T9le" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:1cbL_VeT8Hu" resolve="configure" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1f4lqS" id="1JPxF0TazZ" role="A$mYV">
+          <property role="1f4lhh" value="jointposcontroller" />
+        </node>
+        <node concept="2RThQF" id="1JPxF0Tb9Z" role="A$mYV">
+          <node concept="2OqwBi" id="1JPxF0TbSB" role="2RThOI">
+            <node concept="2OqwBi" id="1JPxF0TbKj" role="2Oq$k0">
+              <node concept="2RT1ic" id="1JPxF0TbK7" role="2Oq$k0" />
+              <node concept="3pvUrN" id="1JPxF0TbOf" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW4Kt" resolve="jointposcontroller" />
+              </node>
+            </node>
+            <node concept="2x3sx2" id="1JPxF0TbXl" role="2OqNvi">
+              <node concept="2D$_L7" id="1JPxF0TdMO" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3keJr8m8xI8" resolve="setDOFsize" />
+                <node concept="2D$zpK" id="1JPxF0TdMQ" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3keJr8m8xIc" resolve="dof" />
+                  <node concept="2Dc6tP" id="1JPxF0TdNt" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toDzBq" resolve="DOFsize" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0TdOo" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3keJr8m8xIj" resolve="setGains" />
+                <node concept="2D$zpK" id="1JPxF0TdOq" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3keJr8m8xIp" resolve="gainP" />
+                  <node concept="3cmrfG" id="1JPxF0TdPO" role="2DB_1W">
+                    <property role="3cmrfH" value="30" />
+                  </node>
+                </node>
+                <node concept="2D$zpK" id="1JPxF0TdOs" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3keJr8m8xIw" resolve="gainD" />
+                  <node concept="3cmrfG" id="1JPxF0TdRC" role="2DB_1W">
+                    <property role="3cmrfH" value="3" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0TdTg" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3keJr8m8xIF" resolve="setDesiredJointAngles" />
+                <node concept="2D$zpK" id="1JPxF0TdTi" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3keJr8m8xIT" resolve="angles" />
+                  <node concept="2Dc6tP" id="1JPxF0TdV7" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toEcXb" resolve="desJointAngles_start" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0TdXc" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:1cbL_VeT8Vt" resolve="configure" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1f4lqS" id="1JPxF0Tfgk" role="A$mYV">
+          <property role="1f4lhh" value="trajectorygenerator" />
+        </node>
+        <node concept="2RThQF" id="1JPxF0TfSZ" role="A$mYV">
+          <node concept="2OqwBi" id="1JPxF0TgCL" role="2RThOI">
+            <node concept="2OqwBi" id="1JPxF0TgxY" role="2Oq$k0">
+              <node concept="2RT1ic" id="1JPxF0TgxM" role="2Oq$k0" />
+              <node concept="3pvUrN" id="1JPxF0Tg$p" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW4U9" resolve="trajectorygenerator" />
+              </node>
+            </node>
+            <node concept="2x3sx2" id="1JPxF0TgHv" role="2OqNvi">
+              <node concept="2D$_L7" id="1JPxF0TgVZ" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:1JPxF0TgQY" resolve="setTrajectorytype" />
+                <node concept="2D$zpK" id="1JPxF0TgW1" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:1JPxF0TgVw" resolve="type" />
+                  <node concept="3cmrfG" id="1JPxF0TgWC" role="2DB_1W">
+                    <property role="3cmrfH" value="3" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTI" id="1JPxF0Th4q" role="2x3sxo">
+                <node concept="CHOn8" id="1JPxF0Th4p" role="37vLTJ">
+                  <ref role="CHOn7" to="73wf:1JPxF0TgXz" resolve="numObjects" />
+                </node>
+                <node concept="2Dc6tP" id="1JPxF0Th5w" role="37vLTx">
+                  <ref role="2Dc6tO" node="5q0w9toDwGw" resolve="numObjects" />
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0Th6T" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:1JPxF0TgYA" resolve="init" />
+              </node>
+              <node concept="2D$_L7" id="1JPxF0Th9d" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:4td2CtEif6m" resolve="setObjectSize" />
+                <node concept="2D$zpK" id="1JPxF0Th9f" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:4td2CtEif6n" resolve="size" />
+                  <node concept="3b6qkQ" id="1JPxF0ThAa" role="2DB_1W">
+                    <property role="$nhwW" value="0.3" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0ThC4" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:4td2CtEif6g" resolve="setInitialObjectPose" />
+                <node concept="2D$zpK" id="1JPxF0ThC6" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:4td2CtEif6h" resolve="t" />
+                  <node concept="2Dc6tP" id="1JPxF0ThEF" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toEhQI" resolve="tBox" />
+                  </node>
+                </node>
+                <node concept="2D$zpK" id="1JPxF0ThC8" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:4td2CtEif6k" resolve="r" />
+                  <node concept="2Dc6tP" id="1JPxF0ThEZ" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toEj5m" resolve="rBox" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0ThHC" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:4td2CtEif64" resolve="setWaitTime" />
+                <node concept="2D$zpK" id="1JPxF0ThHE" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:4td2CtEif65" resolve="wTime" />
+                  <node concept="3cmrfG" id="1JPxF0ThKo" role="2DB_1W">
+                    <property role="3cmrfH" value="10" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0ThNq" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:4td2CtEif68" resolve="setTransitionTime" />
+                <node concept="2D$zpK" id="1JPxF0ThNs" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:4td2CtEif69" resolve="tTime" />
+                  <node concept="3b6qkQ" id="1JPxF0ThQJ" role="2DB_1W">
+                    <property role="$nhwW" value="2.5" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0ThUh" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:4td2CtEif6c" resolve="setReconfigureTransitionTime" />
+                <node concept="2D$zpK" id="1JPxF0ThUj" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:4td2CtEif6d" resolve="tTime" />
+                  <node concept="3b6qkQ" id="1JPxF0ThY1" role="2DB_1W">
+                    <property role="$nhwW" value="2.5" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTI" id="1JPxF0Ti5D" role="2x3sxo">
+                <node concept="CHOn8" id="1JPxF0Ti5C" role="37vLTJ">
+                  <ref role="CHOn7" to="73wf:4td2CtEif5Y" resolve="factor" />
+                </node>
+                <node concept="3b6qkQ" id="1JPxF0TiJb" role="37vLTx">
+                  <property role="$nhwW" value="0.2" />
+                </node>
+              </node>
+              <node concept="37vLTI" id="1JPxF0Tj8M" role="2x3sxo">
+                <node concept="CHOn8" id="1JPxF0Tj8L" role="37vLTJ">
+                  <ref role="CHOn7" to="73wf:4td2CtEif60" resolve="timescale" />
+                </node>
+                <node concept="3b6qkQ" id="1JPxF0Tjix" role="37vLTx">
+                  <property role="$nhwW" value="2.0" />
+                </node>
+              </node>
+              <node concept="37vLTI" id="1JPxF0Tjt8" role="2x3sxo">
+                <node concept="CHOn8" id="1JPxF0Tjt7" role="37vLTJ">
+                  <ref role="CHOn7" to="73wf:1JPxF0Tjni" resolve="go" />
+                </node>
+                <node concept="3clFbT" id="1JPxF0Tjy0" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2RThQF" id="1JPxF0TxNg" role="A$mYV">
+          <node concept="37vLTI" id="1JPxF0TySQ" role="2RThOI">
+            <node concept="3b6qkQ" id="1JPxF0Tznh" role="37vLTx">
+              <property role="$nhwW" value="0.4" />
+            </node>
+            <node concept="2OqwBi" id="1JPxF0TyE2" role="37vLTJ">
+              <node concept="2OqwBi" id="1JPxF0TyxI" role="2Oq$k0">
+                <node concept="2RT1ic" id="1JPxF0Tyxy" role="2Oq$k0" />
+                <node concept="3pvUrN" id="1JPxF0Ty_E" role="2OqNvi">
+                  <ref role="3pvUL9" node="mdFCvZW4U9" resolve="trajectorygenerator" />
+                </node>
+              </node>
+              <node concept="CHOn8" id="1JPxF0TyKn" role="2OqNvi">
+                <ref role="CHOn7" to="73wf:1JPxF0TyHd" resolve="initialDistance" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1f4lqS" id="1JPxF0TNss" role="A$mYV">
+          <property role="1f4lhh" value="0.3 choose duration of the  nullspace-shaping transition" />
+        </node>
+        <node concept="2RThQF" id="1JPxF0TFHW" role="A$mYV">
+          <node concept="37vLTI" id="1JPxF0TGZB" role="2RThOI">
+            <node concept="3b6qkQ" id="1JPxF0TH6X" role="37vLTx">
+              <property role="$nhwW" value="0.0" />
+            </node>
+            <node concept="2OqwBi" id="1JPxF0TG_Q" role="37vLTJ">
+              <node concept="2OqwBi" id="1JPxF0TGty" role="2Oq$k0">
+                <node concept="2RT1ic" id="1JPxF0TGtm" role="2Oq$k0" />
+                <node concept="3pvUrN" id="1JPxF0TGxu" role="2OqNvi">
+                  <ref role="3pvUL9" node="mdFCvZW4U9" resolve="trajectorygenerator" />
+                </node>
+              </node>
+              <node concept="CHOn8" id="1JPxF0TGR8" role="2OqNvi">
+                <ref role="CHOn7" to="73wf:1JPxF0TGNG" resolve="updateCSTR_time" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2RThQF" id="1JPxF0TH7k" role="A$mYV">
+          <node concept="2OqwBi" id="1JPxF0TI0m" role="2RThOI">
+            <node concept="2OqwBi" id="1JPxF0THS2" role="2Oq$k0">
+              <node concept="2RT1ic" id="1JPxF0THRQ" role="2Oq$k0" />
+              <node concept="3pvUrN" id="1JPxF0THVY" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW4U9" resolve="trajectorygenerator" />
+              </node>
+            </node>
+            <node concept="2D$_L7" id="1JPxF0TI3x" role="2OqNvi">
+              <ref role="2D$zFo" to="73wf:4td2CtEif6s" resolve="configure" />
+            </node>
+          </node>
+        </node>
+        <node concept="1f4lqS" id="1JPxF0TRl7" role="A$mYV">
+          <property role="1f4lhh" value="positioncontrollerEEall" />
+        </node>
+        <node concept="2RThQF" id="1JPxF0TS6D" role="A$mYV">
+          <node concept="2OqwBi" id="1JPxF0TSZi" role="2RThOI">
+            <node concept="2OqwBi" id="1JPxF0TSSv" role="2Oq$k0">
+              <node concept="2RT1ic" id="1JPxF0TSSj" role="2Oq$k0" />
+              <node concept="3pvUrN" id="1JPxF0TSUU" role="2OqNvi">
+                <ref role="3pvUL9" node="mdFCvZW55n" resolve="positioncontrollerEEall" />
+              </node>
+            </node>
+            <node concept="2x3sx2" id="1JPxF0TT40" role="2OqNvi">
+              <node concept="2D$_L7" id="1JPxF0TT4t" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3keJr8m8xMp" resolve="setTranslationOnly" />
+                <node concept="2D$zpK" id="1JPxF0TT4v" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3keJr8m8xMt" resolve="translationOnly" />
+                  <node concept="2Dc6tP" id="1JPxF0TT56" role="2DB_1W">
+                    <ref role="2Dc6tO" node="mdFCvZWKmX" resolve="translationOnly" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0TTcQ" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3keJr8m8xM$" resolve="setDOFsize" />
+                <node concept="2D$zpK" id="1JPxF0TTcS" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3keJr8m8xME" resolve="dof" />
+                  <node concept="2Dc6tP" id="1JPxF0TTdU" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toDzBq" resolve="DOFsize" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2D$_L7" id="1JPxF0TTfg" role="2x3sxo">
+                <ref role="2D$zFo" to="73wf:3keJr8m8xN6" resolve="addTSgravitycompensation" />
+                <node concept="2D$zpK" id="1JPxF0TTfi" role="2DASKs">
+                  <ref role="2DB_1T" to="73wf:3keJr8m8xNm" resolve="active" />
+                  <node concept="2Dc6tP" id="1JPxF0TTgJ" role="2DB_1W">
+                    <ref role="2Dc6tO" node="5q0w9toDEz2" resolve="add_TSgravitycompensation" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -4517,6 +4891,18 @@
       </node>
       <node concept="FWJLR" id="4OphnvilypP" role="l9eUl">
         <ref role="FWJLQ" to="73wf:4td2CtEif5W" resolve="out_endeffectorstatus_port" />
+      </node>
+      <node concept="2WYd3i" id="1JPxF0Tmkg" role="2WYf99">
+        <ref role="2WYd3v" to="73wf:1JPxF0TgXz" resolve="numObjects" />
+      </node>
+      <node concept="2WYd3i" id="1JPxF0Tmkh" role="2WYf99">
+        <ref role="2WYd3v" to="73wf:1JPxF0Tjni" resolve="go" />
+      </node>
+      <node concept="2WYd3i" id="1JPxF0TCNn" role="2WYf99">
+        <ref role="2WYd3v" to="73wf:1JPxF0TyHd" resolve="initialDistance" />
+      </node>
+      <node concept="2WYd3i" id="1JPxF0TIcJ" role="2WYf99">
+        <ref role="2WYd3v" to="73wf:1JPxF0TGNG" resolve="updateCSTR_time" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW55n" role="3ttgI2">

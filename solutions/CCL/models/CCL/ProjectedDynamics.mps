@@ -1356,6 +1356,14 @@
   </node>
   <node concept="3tteAz" id="4td2CtEif5F">
     <property role="TrG5h" value="TrajectoryGeneratorQuadroKukaArm" />
+    <node concept="3tteAg" id="1JPxF0TgQY" role="3ttcQt">
+      <property role="TrG5h" value="setTrajectorytype" />
+      <node concept="2D$zpR" id="1JPxF0TgVw" role="3ttcQW">
+        <property role="TrG5h" value="type" />
+        <node concept="10Oyi0" id="1JPxF0TgVO" role="2D$z68" />
+      </node>
+      <node concept="3cqZAl" id="1JPxF0TgVm" role="3ttcQV" />
+    </node>
     <node concept="3tteAs" id="4td2CtEif5G" role="3ttcQl">
       <property role="1T6LxX" value="Output" />
       <property role="TrG5h" value="out_desiredTaskSpacePosition_port" />
@@ -1408,6 +1416,22 @@
     <node concept="3tteAj" id="4td2CtEif60" role="3ttcQu">
       <property role="TrG5h" value="timescale" />
       <node concept="10P55v" id="4td2CtEif61" role="3ttcR6" />
+    </node>
+    <node concept="3tteAj" id="1JPxF0TgXz" role="3ttcQu">
+      <property role="TrG5h" value="numObjects" />
+      <node concept="10Oyi0" id="1JPxF0TgYr" role="3ttcR6" />
+    </node>
+    <node concept="3tteAj" id="1JPxF0Tjni" role="3ttcQu">
+      <property role="TrG5h" value="go" />
+      <node concept="10P_77" id="1JPxF0Tjos" role="3ttcR6" />
+    </node>
+    <node concept="3tteAj" id="1JPxF0TyHd" role="3ttcQu">
+      <property role="TrG5h" value="initialDistance" />
+      <node concept="10P55v" id="1JPxF0TyID" role="3ttcR6" />
+    </node>
+    <node concept="3tteAj" id="1JPxF0TGNG" role="3ttcQu">
+      <property role="TrG5h" value="updateCSTR_time" />
+      <node concept="10P55v" id="1JPxF0TGPq" role="3ttcR6" />
     </node>
     <node concept="3tteAg" id="4td2CtEif62" role="3ttcQt">
       <property role="TrG5h" value="preparePorts" />
@@ -1472,6 +1496,10 @@
     <node concept="3tteAg" id="4td2CtEif6u" role="3ttcQt">
       <property role="TrG5h" value="start" />
       <node concept="10P_77" id="4td2CtEif6v" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="1JPxF0TgYA" role="3ttcQt">
+      <property role="TrG5h" value="init" />
+      <node concept="3cqZAl" id="1JPxF0Th3y" role="3ttcQV" />
     </node>
     <node concept="3tthn0" id="4td2CtEif6w" role="3ttZ$n">
       <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />
