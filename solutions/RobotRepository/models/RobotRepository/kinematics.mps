@@ -2003,5 +2003,2032 @@
       <property role="3hEESU" value="~/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus/model.srdf" />
     </node>
   </node>
+  <node concept="u5KEY" id="C_g3bnW$Ih">
+    <property role="TrG5h" value="kuka-lwr-4plus-sponge" />
+    <node concept="3XSvEU" id="C_g3bnW$Ii" role="3XSAsd">
+      <property role="TrG5h" value="DarkGrey" />
+      <node concept="3XVKdd" id="C_g3bnW$Ij" role="RFCRI">
+        <node concept="3b6qkQ" id="C_g3bnW$Ik" role="3XVKcZ">
+          <property role="$nhwW" value="0.3" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Il" role="3XVKcT">
+          <property role="$nhwW" value="0.3" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Im" role="3XVKc$">
+          <property role="$nhwW" value="0.3" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$In" role="3XVKcw">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3XSvEU" id="C_g3bnW$Io" role="3XSAsd">
+      <property role="TrG5h" value="Red" />
+      <node concept="3XVKdd" id="C_g3bnW$Ip" role="RFCRI">
+        <node concept="3b6qkQ" id="C_g3bnW$Iq" role="3XVKcZ">
+          <property role="$nhwW" value="0.3" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ir" role="3XVKcT">
+          <property role="$nhwW" value="0.3" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Is" role="3XVKc$">
+          <property role="$nhwW" value="0.3" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$It" role="3XVKcw">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3XSvEU" id="C_g3bnW$Iu" role="3XSAsd">
+      <property role="TrG5h" value="Black" />
+      <node concept="3XVKdd" id="C_g3bnW$Iv" role="RFCRI">
+        <node concept="3b6qkQ" id="C_g3bnW$Iw" role="3XVKcZ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ix" role="3XVKcT">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Iy" role="3XVKc$">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Iz" role="3XVKcw">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3XSvEU" id="C_g3bnW$I$" role="3XSAsd">
+      <property role="TrG5h" value="Orange" />
+      <node concept="3XVKdd" id="C_g3bnW$I_" role="RFCRI">
+        <node concept="3b6qkQ" id="C_g3bnW$IA" role="3XVKcZ">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IB" role="3XVKcT">
+          <property role="$nhwW" value="0.487" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IC" role="3XVKc$">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$ID" role="3XVKcw">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3XSvEU" id="C_g3bnW$IE" role="3XSAsd">
+      <property role="TrG5h" value="Silver" />
+      <node concept="3XVKdd" id="C_g3bnW$IF" role="RFCRI">
+        <node concept="3b6qkQ" id="C_g3bnW$IG" role="3XVKcZ">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IH" role="3XVKcT">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$II" role="3XVKc$">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IJ" role="3XVKcw">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3XSvEU" id="C_g3bnW$IK" role="3XSAsd">
+      <property role="TrG5h" value="Grey" />
+      <node concept="3XVKdd" id="C_g3bnW$IL" role="RFCRI">
+        <node concept="3b6qkQ" id="C_g3bnW$IM" role="3XVKcZ">
+          <property role="$nhwW" value="0.7" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IN" role="3XVKcT">
+          <property role="$nhwW" value="0.7" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IO" role="3XVKc$">
+          <property role="$nhwW" value="0.7" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IP" role="3XVKcw">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3XSvEU" id="C_g3bnW$IQ" role="3XSAsd">
+      <property role="TrG5h" value="Blue" />
+      <node concept="3XVKdd" id="C_g3bnW$IR" role="RFCRI">
+        <node concept="3b6qkQ" id="C_g3bnW$IS" role="3XVKcZ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IT" role="3XVKcT">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IU" role="3XVKc$">
+          <property role="$nhwW" value="0.8" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IV" role="3XVKcw">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3XSvEU" id="C_g3bnW$IW" role="3XSAsd">
+      <property role="TrG5h" value="HandGray" />
+      <node concept="3XVKdd" id="C_g3bnW$IX" role="RFCRI">
+        <node concept="3b6qkQ" id="C_g3bnW$IY" role="3XVKcZ">
+          <property role="$nhwW" value="0.953" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$IZ" role="3XVKcT">
+          <property role="$nhwW" value="0.996" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$J0" role="3XVKc$">
+          <property role="$nhwW" value="0.694" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$J1" role="3XVKcw">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3XSvEU" id="C_g3bnW$J2" role="3XSAsd">
+      <property role="TrG5h" value="SickBlue" />
+      <node concept="3XVKdd" id="C_g3bnW$J3" role="RFCRI">
+        <node concept="3b6qkQ" id="C_g3bnW$J4" role="3XVKcZ">
+          <property role="$nhwW" value="0.3058" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$J5" role="3XVKcT">
+          <property role="$nhwW" value="0.5921" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$J6" role="3XVKc$">
+          <property role="$nhwW" value="0.7294" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$J7" role="3XVKcw">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KF$" id="C_g3bnW$J8" role="u5Yqt">
+      <node concept="3b6qkQ" id="C_g3bnW$J9" role="3XVZ8y">
+        <property role="$nhwW" value="0.0" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$Ja" role="3XVZ8J">
+        <property role="$nhwW" value="0.0" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$Jb" role="3XVZ8l">
+        <property role="$nhwW" value="0.0" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$Jc" role="3XVZ8T">
+        <property role="$nhwW" value="0.0" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$Jd" role="3XVZ8V">
+        <property role="$nhwW" value="0.0" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$Je" role="3XVZ8A">
+        <property role="$nhwW" value="0.0" />
+      </node>
+    </node>
+    <node concept="u5KES" id="C_g3bnW$Jf" role="3XQLF5">
+      <property role="TrG5h" value="world" />
+    </node>
+    <node concept="u5KES" id="C_g3bnW$Jg" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_base_link" />
+      <node concept="u5YpI" id="C_g3bnW$Jh" role="u5Yqj">
+        <node concept="u5KF$" id="C_g3bnW$Ji" role="u5YpJ">
+          <node concept="3b6qkQ" id="C_g3bnW$Jj" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Jk" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Jl" role="3XVZ8l">
+            <property role="$nhwW" value="0.055" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Jm" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Jn" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Jo" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Jp" role="3XUmjV">
+          <property role="$nhwW" value="1.2" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Jq" role="3XUmjy">
+          <property role="$nhwW" value="0.00229" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Jr" role="3XUmjJ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Js" role="3XUmjl">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Jt" role="3XUmjs">
+          <property role="$nhwW" value="0.00216" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ju" role="3XUmj4">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Jv" role="3XUmjd">
+          <property role="$nhwW" value="0.00229" />
+        </node>
+      </node>
+      <node concept="3XVKd6" id="C_g3bnW$Jw" role="3XUqKd">
+        <node concept="u5KF$" id="C_g3bnW$Jx" role="3XVKd7">
+          <node concept="3b6qkQ" id="C_g3bnW$Jy" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Jz" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$J$" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$J_" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$JA" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$JB" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$JC" role="3XUqK6">
+          <node concept="3XUvcq" id="C_g3bnW$JD" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_base.dae" />
+            <node concept="3b6qkQ" id="C_g3bnW$JE" role="3XUvc5">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$JF" role="3XUvc7">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$JG" role="3XUvc2">
+              <property role="$nhwW" value="100.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XSmOE" id="C_g3bnW$JH" role="3XUqK1">
+          <ref role="3XSmOl" node="C_g3bnW$I$" resolve="Orange" />
+        </node>
+      </node>
+      <node concept="3XUqK8" id="C_g3bnW$JI" role="3XUqK9">
+        <node concept="u5KF$" id="C_g3bnW$JJ" role="3XUqNR">
+          <node concept="3b6qkQ" id="C_g3bnW$JK" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$JL" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$JM" role="3XVZ8l">
+            <property role="$nhwW" value="0.01" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$JN" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$JO" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$JP" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$JQ" role="3XUqNL">
+          <node concept="3XUvcq" id="C_g3bnW$JR" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/convex/arm_base_convex.stl" />
+            <node concept="3b6qkQ" id="C_g3bnW$JS" role="3XUvc5">
+              <property role="$nhwW" value="0.9" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$JT" role="3XUvc7">
+              <property role="$nhwW" value="0.9" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$JU" role="3XUvc2">
+              <property role="$nhwW" value="0.9" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="C_g3bnW$JV" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_1_link" />
+      <node concept="u5YpI" id="C_g3bnW$JW" role="u5Yqj">
+        <node concept="u5KF$" id="C_g3bnW$JX" role="u5YpJ">
+          <node concept="3b6qkQ" id="C_g3bnW$JY" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$JZ" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$K0" role="3XVZ8l">
+            <property role="$nhwW" value="0.130" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$K1" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$K2" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$K3" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$K4" role="3XUmjV">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$K5" role="3XUmjy">
+          <property role="$nhwW" value="0.0136666666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$K6" role="3XUmjJ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$K7" role="3XUmjl">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$K8" role="3XUmjs">
+          <property role="$nhwW" value="0.0118666666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$K9" role="3XUmj4">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ka" role="3XUmjd">
+          <property role="$nhwW" value="0.003" />
+        </node>
+      </node>
+      <node concept="3XVKd6" id="C_g3bnW$Kb" role="3XUqKd">
+        <node concept="u5KF$" id="C_g3bnW$Kc" role="3XVKd7">
+          <node concept="3b6qkQ" id="C_g3bnW$Kd" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ke" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Kf" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Kg" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Kh" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ki" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$Kj" role="3XUqK6">
+          <node concept="3XUvcq" id="C_g3bnW$Kk" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_a.dae" />
+            <node concept="3b6qkQ" id="C_g3bnW$Kl" role="3XUvc5">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Km" role="3XUvc7">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Kn" role="3XUvc2">
+              <property role="$nhwW" value="100.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XSmOE" id="C_g3bnW$Ko" role="3XUqK1">
+          <ref role="3XSmOl" node="C_g3bnW$I$" resolve="Orange" />
+        </node>
+      </node>
+      <node concept="3XUqK8" id="C_g3bnW$Kp" role="3XUqK9">
+        <node concept="u5KF$" id="C_g3bnW$Kq" role="3XUqNR">
+          <node concept="3b6qkQ" id="C_g3bnW$Kr" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ks" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Kt" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ku" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Kv" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Kw" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$Kx" role="3XUqNL">
+          <node concept="3XUvcq" id="C_g3bnW$Ky" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/convex/arm_segment_a_convex.stl" />
+            <node concept="3b6qkQ" id="C_g3bnW$Kz" role="3XUvc5">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$K$" role="3XUvc7">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$K_" role="3XUvc2">
+              <property role="$nhwW" value="1.0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="C_g3bnW$KA" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_2_link" />
+      <node concept="u5YpI" id="C_g3bnW$KB" role="u5Yqj">
+        <node concept="u5KF$" id="C_g3bnW$KC" role="u5YpJ">
+          <node concept="3b6qkQ" id="C_g3bnW$KD" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KE" role="3XVZ8J">
+            <property role="$nhwW" value="-0.06" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KF" role="3XVZ8l">
+            <property role="$nhwW" value="0.07" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KG" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KH" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KI" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$KJ" role="3XUmjV">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$KK" role="3XUmjy">
+          <property role="$nhwW" value="0.0136666666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$KL" role="3XUmjJ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$KM" role="3XUmjl">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$KN" role="3XUmjs">
+          <property role="$nhwW" value="0.0118666666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$KO" role="3XUmj4">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$KP" role="3XUmjd">
+          <property role="$nhwW" value="0.003" />
+        </node>
+      </node>
+      <node concept="3XVKd6" id="C_g3bnW$KQ" role="3XUqKd">
+        <node concept="u5KF$" id="C_g3bnW$KR" role="3XVKd7">
+          <node concept="3b6qkQ" id="C_g3bnW$KS" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KT" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KU" role="3XVZ8l">
+            <property role="$nhwW" value="0.2" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KV" role="3XVZ8T">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KW" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$KX" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$KY" role="3XUqK6">
+          <node concept="3XUvcq" id="C_g3bnW$KZ" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_b.dae" />
+            <node concept="3b6qkQ" id="C_g3bnW$L0" role="3XUvc5">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$L1" role="3XUvc7">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$L2" role="3XUvc2">
+              <property role="$nhwW" value="100.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XSmOE" id="C_g3bnW$L3" role="3XUqK1">
+          <ref role="3XSmOl" node="C_g3bnW$I$" resolve="Orange" />
+        </node>
+      </node>
+      <node concept="3XUqK8" id="C_g3bnW$L4" role="3XUqK9">
+        <node concept="u5KF$" id="C_g3bnW$L5" role="3XUqNR">
+          <node concept="3b6qkQ" id="C_g3bnW$L6" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$L7" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$L8" role="3XVZ8l">
+            <property role="$nhwW" value="0.2" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$L9" role="3XVZ8T">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$La" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Lb" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$Lc" role="3XUqNL">
+          <node concept="3XUvcq" id="C_g3bnW$Ld" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/convex/arm_segment_b_convex.stl" />
+            <node concept="3b6qkQ" id="C_g3bnW$Le" role="3XUvc5">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Lf" role="3XUvc7">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Lg" role="3XUvc2">
+              <property role="$nhwW" value="1.0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="C_g3bnW$Lh" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_3_link" />
+      <node concept="u5YpI" id="C_g3bnW$Li" role="u5Yqj">
+        <node concept="u5KF$" id="C_g3bnW$Lj" role="u5YpJ">
+          <node concept="3b6qkQ" id="C_g3bnW$Lk" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ll" role="3XVZ8J">
+            <property role="$nhwW" value="-0.06" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Lm" role="3XVZ8l">
+            <property role="$nhwW" value="0.130" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ln" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Lo" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Lp" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Lq" role="3XUmjV">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Lr" role="3XUmjy">
+          <property role="$nhwW" value="0.0136666666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ls" role="3XUmjJ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Lt" role="3XUmjl">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Lu" role="3XUmjs">
+          <property role="$nhwW" value="0.0118666666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Lv" role="3XUmj4">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Lw" role="3XUmjd">
+          <property role="$nhwW" value="0.003" />
+        </node>
+      </node>
+      <node concept="3XVKd6" id="C_g3bnW$Lx" role="3XUqKd">
+        <node concept="u5KF$" id="C_g3bnW$Ly" role="3XVKd7">
+          <node concept="3b6qkQ" id="C_g3bnW$Lz" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$L$" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$L_" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$LA" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$LB" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$LC" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$LD" role="3XUqK6">
+          <node concept="3XUvcq" id="C_g3bnW$LE" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_a.dae" />
+            <node concept="3b6qkQ" id="C_g3bnW$LF" role="3XUvc5">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$LG" role="3XUvc7">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$LH" role="3XUvc2">
+              <property role="$nhwW" value="100.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XSmOE" id="C_g3bnW$LI" role="3XUqK1">
+          <ref role="3XSmOl" node="C_g3bnW$I$" resolve="Orange" />
+        </node>
+      </node>
+      <node concept="3XUqK8" id="C_g3bnW$LJ" role="3XUqK9">
+        <node concept="u5KF$" id="C_g3bnW$LK" role="3XUqNR">
+          <node concept="3b6qkQ" id="C_g3bnW$LL" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$LM" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$LN" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$LO" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$LP" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$LQ" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$LR" role="3XUqNL">
+          <node concept="3XUvcq" id="C_g3bnW$LS" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/convex/arm_segment_a_convex.stl" />
+            <node concept="3b6qkQ" id="C_g3bnW$LT" role="3XUvc5">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$LU" role="3XUvc7">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$LV" role="3XUvc2">
+              <property role="$nhwW" value="1.0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="C_g3bnW$LW" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_4_link" />
+      <node concept="u5YpI" id="C_g3bnW$LX" role="u5Yqj">
+        <node concept="u5KF$" id="C_g3bnW$LY" role="u5YpJ">
+          <node concept="3b6qkQ" id="C_g3bnW$LZ" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$M0" role="3XVZ8J">
+            <property role="$nhwW" value="0.06" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$M1" role="3XVZ8l">
+            <property role="$nhwW" value="0.07" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$M2" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$M3" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$M4" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$M5" role="3XUmjV">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$M6" role="3XUmjy">
+          <property role="$nhwW" value="0.0136666666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$M7" role="3XUmjJ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$M8" role="3XUmjl">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$M9" role="3XUmjs">
+          <property role="$nhwW" value="0.0118666666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ma" role="3XUmj4">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Mb" role="3XUmjd">
+          <property role="$nhwW" value="0.003" />
+        </node>
+      </node>
+      <node concept="3XVKd6" id="C_g3bnW$Mc" role="3XUqKd">
+        <node concept="u5KF$" id="C_g3bnW$Md" role="3XVKd7">
+          <node concept="3b6qkQ" id="C_g3bnW$Me" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mf" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mg" role="3XVZ8l">
+            <property role="$nhwW" value="0.2" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mh" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mi" role="3XVZ8V">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mj" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$Mk" role="3XUqK6">
+          <node concept="3XUvcq" id="C_g3bnW$Ml" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_b.dae" />
+            <node concept="3b6qkQ" id="C_g3bnW$Mm" role="3XUvc5">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Mn" role="3XUvc7">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Mo" role="3XUvc2">
+              <property role="$nhwW" value="100.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XSmOE" id="C_g3bnW$Mp" role="3XUqK1">
+          <ref role="3XSmOl" node="C_g3bnW$I$" resolve="Orange" />
+        </node>
+      </node>
+      <node concept="3XUqK8" id="C_g3bnW$Mq" role="3XUqK9">
+        <node concept="u5KF$" id="C_g3bnW$Mr" role="3XUqNR">
+          <node concept="3b6qkQ" id="C_g3bnW$Ms" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mt" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mu" role="3XVZ8l">
+            <property role="$nhwW" value="0.2" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mv" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mw" role="3XVZ8V">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Mx" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$My" role="3XUqNL">
+          <node concept="3XUvcq" id="C_g3bnW$Mz" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/convex/arm_segment_b_convex.stl" />
+            <node concept="3b6qkQ" id="C_g3bnW$M$" role="3XUvc5">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$M_" role="3XUvc7">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$MA" role="3XUvc2">
+              <property role="$nhwW" value="1.0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="C_g3bnW$MB" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_5_link" />
+      <node concept="u5YpI" id="C_g3bnW$MC" role="u5Yqj">
+        <node concept="u5KF$" id="C_g3bnW$MD" role="u5YpJ">
+          <node concept="3b6qkQ" id="C_g3bnW$ME" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MF" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MG" role="3XVZ8l">
+            <property role="$nhwW" value="0.124" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MH" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MI" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MJ" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$MK" role="3XUmjV">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$ML" role="3XUmjy">
+          <property role="$nhwW" value="0.0126506666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$MM" role="3XUmjJ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$MN" role="3XUmjl">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$MO" role="3XUmjs">
+          <property role="$nhwW" value="0.0108506666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$MP" role="3XUmj4">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$MQ" role="3XUmjd">
+          <property role="$nhwW" value="0.003" />
+        </node>
+      </node>
+      <node concept="3XVKd6" id="C_g3bnW$MR" role="3XUqKd">
+        <node concept="u5KF$" id="C_g3bnW$MS" role="3XVKd7">
+          <node concept="3b6qkQ" id="C_g3bnW$MT" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MU" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MV" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MW" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MX" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$MY" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$MZ" role="3XUqK6">
+          <node concept="3XUvcq" id="C_g3bnW$N0" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_segment_last.dae" />
+            <node concept="3b6qkQ" id="C_g3bnW$N1" role="3XUvc5">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$N2" role="3XUvc7">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$N3" role="3XUvc2">
+              <property role="$nhwW" value="100.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XSmOE" id="C_g3bnW$N4" role="3XUqK1">
+          <ref role="3XSmOl" node="C_g3bnW$I$" resolve="Orange" />
+        </node>
+      </node>
+      <node concept="3XUqK8" id="C_g3bnW$N5" role="3XUqK9">
+        <node concept="u5KF$" id="C_g3bnW$N6" role="3XUqNR">
+          <node concept="3b6qkQ" id="C_g3bnW$N7" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$N8" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$N9" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Na" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Nb" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Nc" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$Nd" role="3XUqNL">
+          <node concept="3XUvcq" id="C_g3bnW$Ne" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/convex/arm_segment_last_convex.stl" />
+            <node concept="3b6qkQ" id="C_g3bnW$Nf" role="3XUvc5">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Ng" role="3XUvc7">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Nh" role="3XUvc2">
+              <property role="$nhwW" value="1.0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="C_g3bnW$Ni" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_6_link" />
+      <node concept="u5YpI" id="C_g3bnW$Nj" role="u5Yqj">
+        <node concept="u5KF$" id="C_g3bnW$Nk" role="u5YpJ">
+          <node concept="3b6qkQ" id="C_g3bnW$Nl" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Nm" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Nn" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$No" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Np" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Nq" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Nr" role="3XUmjV">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ns" role="3XUmjy">
+          <property role="$nhwW" value="0.00260416666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Nt" role="3XUmjJ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Nu" role="3XUmjl">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Nv" role="3XUmjs">
+          <property role="$nhwW" value="0.00260416666667" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Nw" role="3XUmj4">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Nx" role="3XUmjd">
+          <property role="$nhwW" value="0.00260416666667" />
+        </node>
+      </node>
+      <node concept="3XVKd6" id="C_g3bnW$Ny" role="3XUqKd">
+        <node concept="u5KF$" id="C_g3bnW$Nz" role="3XVKd7">
+          <node concept="3b6qkQ" id="C_g3bnW$N$" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$N_" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$NA" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$NB" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$NC" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$ND" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$NE" role="3XUqK6">
+          <node concept="3XUvcq" id="C_g3bnW$NF" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_wrist.dae" />
+            <node concept="3b6qkQ" id="C_g3bnW$NG" role="3XUvc5">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$NH" role="3XUvc7">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$NI" role="3XUvc2">
+              <property role="$nhwW" value="100.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XSmOE" id="C_g3bnW$NJ" role="3XUqK1">
+          <ref role="3XSmOl" node="C_g3bnW$IK" resolve="Grey" />
+        </node>
+      </node>
+      <node concept="3XUqK8" id="C_g3bnW$NK" role="3XUqK9">
+        <node concept="u5KF$" id="C_g3bnW$NL" role="3XUqNR">
+          <node concept="3b6qkQ" id="C_g3bnW$NM" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$NN" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$NO" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$NP" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$NQ" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$NR" role="3XVZ8A">
+            <property role="$nhwW" value="3.14159265359" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$NS" role="3XUqNL">
+          <node concept="3XUvcq" id="C_g3bnW$NT" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/convex/arm_wrist_convex.stl" />
+            <node concept="3b6qkQ" id="C_g3bnW$NU" role="3XUvc5">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$NV" role="3XUvc7">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$NW" role="3XUvc2">
+              <property role="$nhwW" value="1.0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="C_g3bnW$NX" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_7_link" />
+      <node concept="u5YpI" id="C_g3bnW$NY" role="u5Yqj">
+        <node concept="u5KF$" id="C_g3bnW$NZ" role="u5YpJ">
+          <node concept="3b6qkQ" id="C_g3bnW$O0" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$O1" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$O2" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$O3" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$O4" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$O5" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$O6" role="3XUmjV">
+          <property role="$nhwW" value="0.2" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$O7" role="3XUmjy">
+          <property role="$nhwW" value="6.66666666667e-05" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$O8" role="3XUmjJ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$O9" role="3XUmjl">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Oa" role="3XUmjs">
+          <property role="$nhwW" value="6.66666666667e-05" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ob" role="3XUmj4">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Oc" role="3XUmjd">
+          <property role="$nhwW" value="0.00012" />
+        </node>
+      </node>
+      <node concept="3XVKd6" id="C_g3bnW$Od" role="3XUqKd">
+        <node concept="u5KF$" id="C_g3bnW$Oe" role="3XVKd7">
+          <node concept="3b6qkQ" id="C_g3bnW$Of" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Og" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Oh" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Oi" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Oj" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ok" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$Ol" role="3XUqK6">
+          <node concept="3XUvcq" id="C_g3bnW$Om" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_flanche.dae" />
+            <node concept="3b6qkQ" id="C_g3bnW$On" role="3XUvc5">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Oo" role="3XUvc7">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$Op" role="3XUvc2">
+              <property role="$nhwW" value="100.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XSmOE" id="C_g3bnW$Oq" role="3XUqK1">
+          <ref role="3XSmOl" node="C_g3bnW$IK" resolve="Grey" />
+        </node>
+      </node>
+      <node concept="3XUqK8" id="C_g3bnW$Or" role="3XUqK9">
+        <node concept="u5KF$" id="C_g3bnW$Os" role="3XUqNR">
+          <node concept="3b6qkQ" id="C_g3bnW$Ot" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ou" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ov" role="3XVZ8l">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ow" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Ox" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnW$Oy" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+        <node concept="3XVKd2" id="C_g3bnW$Oz" role="3XUqNL">
+          <node concept="3XUvcq" id="C_g3bnW$O$" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus/meshes/arm_flanche.dae" />
+            <node concept="3b6qkQ" id="C_g3bnW$O_" role="3XUvc5">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$OA" role="3XUvc7">
+              <property role="$nhwW" value="100.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnW$OB" role="3XUvc2">
+              <property role="$nhwW" value="100.0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="C_g3bnWAzK" role="3XQLF5">
+      <property role="TrG5h" value="lwr_tool_link" />
+      <node concept="u5YpI" id="C_g3bnWB_U" role="u5Yqj">
+        <node concept="3b6qkQ" id="C_g3bnWBEe" role="3XUmjV">
+          <property role="$nhwW" value="0.691" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWBF1" role="3XUmjy">
+          <property role="$nhwW" value="0.000002" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWBFO" role="3XUmjJ">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWBGB" role="3XUmjl">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWBHq" role="3XUmjs">
+          <property role="$nhwW" value="0.000002" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWBId" role="3XUmj4">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWBJ0" role="3XUmjd">
+          <property role="$nhwW" value="0.000002" />
+        </node>
+        <node concept="u5KF$" id="C_g3bnWBBG" role="u5YpJ">
+          <node concept="3b6qkQ" id="C_g3bnWBBH" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBBI" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBBJ" role="3XVZ8l">
+            <property role="$nhwW" value="0.047635" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBBK" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBBL" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBBM" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XVKd6" id="C_g3bnWBJN" role="3XUqKd">
+        <node concept="3XVKd2" id="C_g3bnWBJO" role="3XUqK6">
+          <node concept="3XUvcq" id="C_g3bnWBM6" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus-sponge/NewKukaFoot.stl" />
+            <node concept="3b6qkQ" id="C_g3bnWC50" role="3XUvc5">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnWCaU" role="3XUvc7">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnWCgO" role="3XUvc2">
+              <property role="$nhwW" value="1.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="u5KF$" id="C_g3bnWBKe" role="3XVKd7">
+          <node concept="3b6qkQ" id="C_g3bnWBKf" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBKg" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBKh" role="3XVZ8l">
+            <property role="$nhwW" value="-0.075" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBKi" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBKj" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWBKk" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="3XUqK8" id="C_g3bnWChf" role="3XUqK9">
+        <node concept="3XVKd2" id="C_g3bnWChg" role="3XUqNL">
+          <node concept="3XUvcq" id="C_g3bnWCjy" role="3XUqNW">
+            <property role="3XUvce" value="model://kuka-lwr-4plus-sponge/NewKukaFoot.stl" />
+            <node concept="3b6qkQ" id="C_g3bnWCkR" role="3XUvc5">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnWClr" role="3XUvc7">
+              <property role="$nhwW" value="1.0" />
+            </node>
+            <node concept="3b6qkQ" id="C_g3bnWClZ" role="3XUvc2">
+              <property role="$nhwW" value="1.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="u5KF$" id="C_g3bnWChE" role="3XUqNR">
+          <node concept="3b6qkQ" id="C_g3bnWChF" role="3XVZ8y">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWChG" role="3XVZ8J">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWChH" role="3XVZ8l">
+            <property role="$nhwW" value="-0.075" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWChI" role="3XVZ8T">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWChJ" role="3XVZ8V">
+            <property role="$nhwW" value="0.0" />
+          </node>
+          <node concept="3b6qkQ" id="C_g3bnWChK" role="3XVZ8A">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u5KEZ" id="C_g3bnW$OC" role="3XQLF5">
+      <property role="TrG5h" value="arm_world_joint" />
+      <property role="u5KFq" value="fixed" />
+      <ref role="u5Yp_" node="C_g3bnW$Jg" resolve="lwr_arm_base_link" />
+      <ref role="u5Ypq" node="C_g3bnW$Jf" resolve="world" />
+      <node concept="u5KF$" id="C_g3bnW$OD" role="u5Yps">
+        <node concept="3b6qkQ" id="C_g3bnW$OE" role="3XVZ8y">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OF" role="3XVZ8J">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OG" role="3XVZ8l">
+          <property role="$nhwW" value="0.01" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OH" role="3XVZ8T">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OI" role="3XVZ8V">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OJ" role="3XVZ8A">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KEZ" id="C_g3bnW$OK" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_0_joint" />
+      <property role="u5KFq" value="revolute" />
+      <ref role="u5Yp_" node="C_g3bnW$JV" resolve="lwr_arm_1_link" />
+      <ref role="u5Ypq" node="C_g3bnW$Jg" resolve="lwr_arm_base_link" />
+      <node concept="u5KF$" id="C_g3bnW$OL" role="u5Yps">
+        <node concept="3b6qkQ" id="C_g3bnW$OM" role="3XVZ8y">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$ON" role="3XVZ8J">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OO" role="3XVZ8l">
+          <property role="$nhwW" value="0.11" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OP" role="3XVZ8T">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OQ" role="3XVZ8V">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OR" role="3XVZ8A">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUy9m" id="C_g3bnW$OS" role="3XUCWA">
+        <node concept="3b6qkQ" id="C_g3bnW$OT" role="3XUy9n">
+          <property role="$nhwW" value="204.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OU" role="3XUy9o">
+          <property role="$nhwW" value="1.91986217719" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OV" role="3XUy9h">
+          <property role="$nhwW" value="-2.96705972839" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OW" role="3XUy9s">
+          <property role="$nhwW" value="2.96705972839" />
+        </node>
+      </node>
+      <node concept="3XUA_L" id="C_g3bnW$OX" role="3XUCWO">
+        <node concept="3b6qkQ" id="C_g3bnW$OY" role="3XUA_M">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$OZ" role="3XUA_W">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$P0" role="3XUA_Z">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+      <node concept="3XUwiK" id="C_g3bnW$P1" role="3XUCWZ">
+        <node concept="3b6qkQ" id="C_g3bnW$P2" role="3XUwiN">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$P3" role="3XUwiL">
+          <property role="$nhwW" value="5.0" />
+        </node>
+      </node>
+      <node concept="3XUGig" id="C_g3bnW$P4" role="3XUCWI">
+        <node concept="3b6qkQ" id="C_g3bnW$P5" role="3XUGiq">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$P6" role="3XUGiu">
+          <property role="$nhwW" value="100.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$P7" role="3XUGih">
+          <property role="$nhwW" value="-2.93215314335" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$P8" role="3XUGij">
+          <property role="$nhwW" value="2.93215314335" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KEZ" id="C_g3bnW$P9" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_1_joint" />
+      <property role="u5KFq" value="revolute" />
+      <ref role="u5Ypq" node="C_g3bnW$JV" resolve="lwr_arm_1_link" />
+      <ref role="u5Yp_" node="C_g3bnW$KA" resolve="lwr_arm_2_link" />
+      <node concept="u5KF$" id="C_g3bnW$Pa" role="u5Yps">
+        <node concept="3b6qkQ" id="C_g3bnW$Pb" role="3XVZ8y">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pc" role="3XVZ8J">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pd" role="3XVZ8l">
+          <property role="$nhwW" value="0.20" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pe" role="3XVZ8T">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pf" role="3XVZ8V">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pg" role="3XVZ8A">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUy9m" id="C_g3bnW$Ph" role="3XUCWA">
+        <node concept="3b6qkQ" id="C_g3bnW$Pi" role="3XUy9n">
+          <property role="$nhwW" value="306.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pj" role="3XUy9o">
+          <property role="$nhwW" value="1.91986217719" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pk" role="3XUy9h">
+          <property role="$nhwW" value="-2.09439510239" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pl" role="3XUy9s">
+          <property role="$nhwW" value="2.09439510239" />
+        </node>
+      </node>
+      <node concept="3XUA_L" id="C_g3bnW$Pm" role="3XUCWO">
+        <node concept="3b6qkQ" id="C_g3bnW$Pn" role="3XUA_M">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Po" role="3XUA_W">
+          <property role="$nhwW" value="-1.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pp" role="3XUA_Z">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUwiK" id="C_g3bnW$Pq" role="3XUCWZ">
+        <node concept="3b6qkQ" id="C_g3bnW$Pr" role="3XUwiN">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ps" role="3XUwiL">
+          <property role="$nhwW" value="5.0" />
+        </node>
+      </node>
+      <node concept="3XUGig" id="C_g3bnW$Pt" role="3XUCWI">
+        <node concept="3b6qkQ" id="C_g3bnW$Pu" role="3XUGiq">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pv" role="3XUGiu">
+          <property role="$nhwW" value="100.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Pw" role="3XUGih">
+          <property role="$nhwW" value="-2.05948851735" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Px" role="3XUGij">
+          <property role="$nhwW" value="2.05948851735" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KEZ" id="C_g3bnW$Py" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_2_joint" />
+      <property role="u5KFq" value="revolute" />
+      <ref role="u5Ypq" node="C_g3bnW$KA" resolve="lwr_arm_2_link" />
+      <ref role="u5Yp_" node="C_g3bnW$Lh" resolve="lwr_arm_3_link" />
+      <node concept="u5KF$" id="C_g3bnW$Pz" role="u5Yps">
+        <node concept="3b6qkQ" id="C_g3bnW$P$" role="3XVZ8y">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$P_" role="3XVZ8J">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PA" role="3XVZ8l">
+          <property role="$nhwW" value="0.20" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PB" role="3XVZ8T">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PC" role="3XVZ8V">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PD" role="3XVZ8A">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUy9m" id="C_g3bnW$PE" role="3XUCWA">
+        <node concept="3b6qkQ" id="C_g3bnW$PF" role="3XUy9n">
+          <property role="$nhwW" value="204.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PG" role="3XUy9o">
+          <property role="$nhwW" value="2.26892802759" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PH" role="3XUy9h">
+          <property role="$nhwW" value="-2.96705972839" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PI" role="3XUy9s">
+          <property role="$nhwW" value="2.96705972839" />
+        </node>
+      </node>
+      <node concept="3XUA_L" id="C_g3bnW$PJ" role="3XUCWO">
+        <node concept="3b6qkQ" id="C_g3bnW$PK" role="3XUA_M">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PL" role="3XUA_W">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PM" role="3XUA_Z">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+      <node concept="3XUwiK" id="C_g3bnW$PN" role="3XUCWZ">
+        <node concept="3b6qkQ" id="C_g3bnW$PO" role="3XUwiN">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PP" role="3XUwiL">
+          <property role="$nhwW" value="3.0" />
+        </node>
+      </node>
+      <node concept="3XUGig" id="C_g3bnW$PQ" role="3XUCWI">
+        <node concept="3b6qkQ" id="C_g3bnW$PR" role="3XUGiq">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PS" role="3XUGiu">
+          <property role="$nhwW" value="100.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PT" role="3XUGih">
+          <property role="$nhwW" value="-2.93215314335" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PU" role="3XUGij">
+          <property role="$nhwW" value="2.93215314335" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KEZ" id="C_g3bnW$PV" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_3_joint" />
+      <property role="u5KFq" value="revolute" />
+      <ref role="u5Yp_" node="C_g3bnW$LW" resolve="lwr_arm_4_link" />
+      <ref role="u5Ypq" node="C_g3bnW$Lh" resolve="lwr_arm_3_link" />
+      <node concept="u5KF$" id="C_g3bnW$PW" role="u5Yps">
+        <node concept="3b6qkQ" id="C_g3bnW$PX" role="3XVZ8y">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PY" role="3XVZ8J">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$PZ" role="3XVZ8l">
+          <property role="$nhwW" value="0.20" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Q0" role="3XVZ8T">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Q1" role="3XVZ8V">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Q2" role="3XVZ8A">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUy9m" id="C_g3bnW$Q3" role="3XUCWA">
+        <node concept="3b6qkQ" id="C_g3bnW$Q4" role="3XUy9n">
+          <property role="$nhwW" value="306.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Q5" role="3XUy9o">
+          <property role="$nhwW" value="2.26892802759" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Q6" role="3XUy9h">
+          <property role="$nhwW" value="-2.09439510239" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Q7" role="3XUy9s">
+          <property role="$nhwW" value="2.09439510239" />
+        </node>
+      </node>
+      <node concept="3XUA_L" id="C_g3bnW$Q8" role="3XUCWO">
+        <node concept="3b6qkQ" id="C_g3bnW$Q9" role="3XUA_M">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qa" role="3XUA_W">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qb" role="3XUA_Z">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUwiK" id="C_g3bnW$Qc" role="3XUCWZ">
+        <node concept="3b6qkQ" id="C_g3bnW$Qd" role="3XUwiN">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qe" role="3XUwiL">
+          <property role="$nhwW" value="3.0" />
+        </node>
+      </node>
+      <node concept="3XUGig" id="C_g3bnW$Qf" role="3XUCWI">
+        <node concept="3b6qkQ" id="C_g3bnW$Qg" role="3XUGiq">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qh" role="3XUGiu">
+          <property role="$nhwW" value="100.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qi" role="3XUGih">
+          <property role="$nhwW" value="-2.05948851735" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qj" role="3XUGij">
+          <property role="$nhwW" value="2.05948851735" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KEZ" id="C_g3bnW$Qk" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_4_joint" />
+      <property role="u5KFq" value="revolute" />
+      <ref role="u5Yp_" node="C_g3bnW$MB" resolve="lwr_arm_5_link" />
+      <ref role="u5Ypq" node="C_g3bnW$LW" resolve="lwr_arm_4_link" />
+      <node concept="u5KF$" id="C_g3bnW$Ql" role="u5Yps">
+        <node concept="3b6qkQ" id="C_g3bnW$Qm" role="3XVZ8y">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qn" role="3XVZ8J">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qo" role="3XVZ8l">
+          <property role="$nhwW" value="0.20" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qp" role="3XVZ8T">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qq" role="3XVZ8V">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qr" role="3XVZ8A">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUy9m" id="C_g3bnW$Qs" role="3XUCWA">
+        <node concept="3b6qkQ" id="C_g3bnW$Qt" role="3XUy9n">
+          <property role="$nhwW" value="204.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qu" role="3XUy9o">
+          <property role="$nhwW" value="2.26892802759" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qv" role="3XUy9h">
+          <property role="$nhwW" value="-2.96705972839" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qw" role="3XUy9s">
+          <property role="$nhwW" value="2.96705972839" />
+        </node>
+      </node>
+      <node concept="3XUA_L" id="C_g3bnW$Qx" role="3XUCWO">
+        <node concept="3b6qkQ" id="C_g3bnW$Qy" role="3XUA_M">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Qz" role="3XUA_W">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Q$" role="3XUA_Z">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+      <node concept="3XUwiK" id="C_g3bnW$Q_" role="3XUCWZ">
+        <node concept="3b6qkQ" id="C_g3bnW$QA" role="3XUwiN">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QB" role="3XUwiL">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+      <node concept="3XUGig" id="C_g3bnW$QC" role="3XUCWI">
+        <node concept="3b6qkQ" id="C_g3bnW$QD" role="3XUGiq">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QE" role="3XUGiu">
+          <property role="$nhwW" value="100.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QF" role="3XUGih">
+          <property role="$nhwW" value="-2.93215314335" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QG" role="3XUGij">
+          <property role="$nhwW" value="2.93215314335" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KEZ" id="C_g3bnW$QH" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_5_joint" />
+      <property role="u5KFq" value="revolute" />
+      <ref role="u5Yp_" node="C_g3bnW$Ni" resolve="lwr_arm_6_link" />
+      <ref role="u5Ypq" node="C_g3bnW$MB" resolve="lwr_arm_5_link" />
+      <node concept="u5KF$" id="C_g3bnW$QI" role="u5Yps">
+        <node concept="3b6qkQ" id="C_g3bnW$QJ" role="3XVZ8y">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QK" role="3XVZ8J">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QL" role="3XVZ8l">
+          <property role="$nhwW" value="0.19" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QM" role="3XVZ8T">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QN" role="3XVZ8V">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QO" role="3XVZ8A">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUy9m" id="C_g3bnW$QP" role="3XUCWA">
+        <node concept="3b6qkQ" id="C_g3bnW$QQ" role="3XUy9n">
+          <property role="$nhwW" value="306.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QR" role="3XUy9o">
+          <property role="$nhwW" value="3.14159265359" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QS" role="3XUy9h">
+          <property role="$nhwW" value="-2.09439510239" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QT" role="3XUy9s">
+          <property role="$nhwW" value="2.09439510239" />
+        </node>
+      </node>
+      <node concept="3XUA_L" id="C_g3bnW$QU" role="3XUCWO">
+        <node concept="3b6qkQ" id="C_g3bnW$QV" role="3XUA_M">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QW" role="3XUA_W">
+          <property role="$nhwW" value="-1.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$QX" role="3XUA_Z">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUwiK" id="C_g3bnW$QY" role="3XUCWZ">
+        <node concept="3b6qkQ" id="C_g3bnW$QZ" role="3XUwiN">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$R0" role="3XUwiL">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+      <node concept="3XUGig" id="C_g3bnW$R1" role="3XUCWI">
+        <node concept="3b6qkQ" id="C_g3bnW$R2" role="3XUGiq">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$R3" role="3XUGiu">
+          <property role="$nhwW" value="100.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$R4" role="3XUGih">
+          <property role="$nhwW" value="-2.05948851735" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$R5" role="3XUGij">
+          <property role="$nhwW" value="2.05948851735" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KEZ" id="C_g3bnW$R6" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_6_joint" />
+      <property role="u5KFq" value="revolute" />
+      <ref role="u5Yp_" node="C_g3bnW$NX" resolve="lwr_arm_7_link" />
+      <ref role="u5Ypq" node="C_g3bnW$Ni" resolve="lwr_arm_6_link" />
+      <node concept="u5KF$" id="C_g3bnW$R7" role="u5Yps">
+        <node concept="3b6qkQ" id="C_g3bnW$R8" role="3XVZ8y">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$R9" role="3XVZ8J">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ra" role="3XVZ8l">
+          <property role="$nhwW" value="0.078" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rb" role="3XVZ8T">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rc" role="3XVZ8V">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rd" role="3XVZ8A">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUy9m" id="C_g3bnW$Re" role="3XUCWA">
+        <node concept="3b6qkQ" id="C_g3bnW$Rf" role="3XUy9n">
+          <property role="$nhwW" value="204.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rg" role="3XUy9o">
+          <property role="$nhwW" value="3.14159265359" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rh" role="3XUy9h">
+          <property role="$nhwW" value="-2.96705972839" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ri" role="3XUy9s">
+          <property role="$nhwW" value="2.96705972839" />
+        </node>
+      </node>
+      <node concept="3XUA_L" id="C_g3bnW$Rj" role="3XUCWO">
+        <node concept="3b6qkQ" id="C_g3bnW$Rk" role="3XUA_M">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rl" role="3XUA_W">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rm" role="3XUA_Z">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+      <node concept="3XUwiK" id="C_g3bnW$Rn" role="3XUCWZ">
+        <node concept="3b6qkQ" id="C_g3bnW$Ro" role="3XUwiN">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rp" role="3XUwiL">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+      <node concept="3XUGig" id="C_g3bnW$Rq" role="3XUCWI">
+        <node concept="3b6qkQ" id="C_g3bnW$Rr" role="3XUGiq">
+          <property role="$nhwW" value="2.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rs" role="3XUGiu">
+          <property role="$nhwW" value="100.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Rt" role="3XUGih">
+          <property role="$nhwW" value="-2.93215314335" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnW$Ru" role="3XUGij">
+          <property role="$nhwW" value="2.93215314335" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KEZ" id="C_g3bnWFGs" role="3XQLF5">
+      <property role="TrG5h" value="lwr_arm_7_tool_joint" />
+      <property role="u5KFq" value="fixed" />
+      <ref role="u5Yp_" node="C_g3bnWAzK" resolve="lwr_tool_link" />
+      <ref role="u5Ypq" node="C_g3bnW$NX" resolve="lwr_arm_7_link" />
+      <node concept="u5KF$" id="C_g3bnWGNQ" role="u5Yps">
+        <node concept="3b6qkQ" id="C_g3bnWGNR" role="3XVZ8y">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWGNS" role="3XVZ8J">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWGNT" role="3XVZ8l">
+          <property role="$nhwW" value="0.075" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWGNU" role="3XVZ8T">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWGNV" role="3XVZ8V">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWGNW" role="3XVZ8A">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+      <node concept="3XUy9m" id="C_g3bnWGPI" role="3XUCWA">
+        <node concept="3b6qkQ" id="C_g3bnWGPJ" role="3XUy9h">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWGPK" role="3XUy9s">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWHYB" role="3XUy9n">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="C_g3bnWHXW" role="3XUy9o">
+          <property role="$nhwW" value="0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3XTr_Z" id="C_g3bnW$Rv" role="QWIa_">
+      <ref role="3XTr_6" node="C_g3bnW$OC" resolve="arm_world_joint" />
+      <node concept="Xl_RD" id="C_g3bnW$Rw" role="3XRzb8">
+        <property role="Xl_RC" value="lwr_arm_0_trans" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$Rx" role="3XTr_r">
+        <property role="$nhwW" value="1.0" />
+      </node>
+      <node concept="3XTr_U" id="C_g3bnW$Ry" role="3XTr_p">
+        <property role="TrG5h" value="lwr_arm_0_motor" />
+      </node>
+    </node>
+    <node concept="3XTr_Z" id="C_g3bnW$Rz" role="QWIa_">
+      <ref role="3XTr_6" node="C_g3bnW$OC" resolve="arm_world_joint" />
+      <node concept="Xl_RD" id="C_g3bnW$R$" role="3XRzb8">
+        <property role="Xl_RC" value="lwr_arm_1_trans" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$R_" role="3XTr_r">
+        <property role="$nhwW" value="1.0" />
+      </node>
+      <node concept="3XTr_U" id="C_g3bnW$RA" role="3XTr_p">
+        <property role="TrG5h" value="lwr_arm_1_motor" />
+      </node>
+    </node>
+    <node concept="3XTr_Z" id="C_g3bnW$RB" role="QWIa_">
+      <ref role="3XTr_6" node="C_g3bnW$OC" resolve="arm_world_joint" />
+      <node concept="Xl_RD" id="C_g3bnW$RC" role="3XRzb8">
+        <property role="Xl_RC" value="lwr_arm_2_trans" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$RD" role="3XTr_r">
+        <property role="$nhwW" value="1.0" />
+      </node>
+      <node concept="3XTr_U" id="C_g3bnW$RE" role="3XTr_p">
+        <property role="TrG5h" value="lwr_arm_2_motor" />
+      </node>
+    </node>
+    <node concept="3XTr_Z" id="C_g3bnW$RF" role="QWIa_">
+      <ref role="3XTr_6" node="C_g3bnW$OC" resolve="arm_world_joint" />
+      <node concept="Xl_RD" id="C_g3bnW$RG" role="3XRzb8">
+        <property role="Xl_RC" value="lwr_arm_3_trans" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$RH" role="3XTr_r">
+        <property role="$nhwW" value="1.0" />
+      </node>
+      <node concept="3XTr_U" id="C_g3bnW$RI" role="3XTr_p">
+        <property role="TrG5h" value="lwr_arm_3_motor" />
+      </node>
+    </node>
+    <node concept="3XTr_Z" id="C_g3bnW$RJ" role="QWIa_">
+      <ref role="3XTr_6" node="C_g3bnW$OC" resolve="arm_world_joint" />
+      <node concept="Xl_RD" id="C_g3bnW$RK" role="3XRzb8">
+        <property role="Xl_RC" value="lwr_arm_4_trans" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$RL" role="3XTr_r">
+        <property role="$nhwW" value="1.0" />
+      </node>
+      <node concept="3XTr_U" id="C_g3bnW$RM" role="3XTr_p">
+        <property role="TrG5h" value="lwr_arm_4_motor" />
+      </node>
+    </node>
+    <node concept="3XTr_Z" id="C_g3bnW$RN" role="QWIa_">
+      <ref role="3XTr_6" node="C_g3bnW$OC" resolve="arm_world_joint" />
+      <node concept="Xl_RD" id="C_g3bnW$RO" role="3XRzb8">
+        <property role="Xl_RC" value="lwr_arm_5_trans" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$RP" role="3XTr_r">
+        <property role="$nhwW" value="1.0" />
+      </node>
+      <node concept="3XTr_U" id="C_g3bnW$RQ" role="3XTr_p">
+        <property role="TrG5h" value="lwr_arm_5_motor" />
+      </node>
+    </node>
+    <node concept="3XTr_Z" id="C_g3bnW$RR" role="QWIa_">
+      <ref role="3XTr_6" node="C_g3bnW$OC" resolve="arm_world_joint" />
+      <node concept="Xl_RD" id="C_g3bnW$RS" role="3XRzb8">
+        <property role="Xl_RC" value="lwr_arm_6_trans" />
+      </node>
+      <node concept="3b6qkQ" id="C_g3bnW$RT" role="3XTr_r">
+        <property role="$nhwW" value="1.0" />
+      </node>
+      <node concept="3XTr_U" id="C_g3bnW$RU" role="3XTr_p">
+        <property role="TrG5h" value="lwr_arm_6_motor" />
+      </node>
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$RV" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$Jg" resolve="lwr_arm_base_link" />
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$RW" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$OK" resolve="lwr_arm_0_joint" />
+      <node concept="3XTgP1" id="C_g3bnW$RX" role="3XTgO5">
+        <property role="3XTgP2" value="true" />
+      </node>
+      <node concept="3XTgO_" id="C_g3bnW$RY" role="3XTgO0">
+        <property role="3XTgOA" value="true" />
+      </node>
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$RZ" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$JV" resolve="lwr_arm_1_link" />
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$S0" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$P9" resolve="lwr_arm_1_joint" />
+      <node concept="3XTgP1" id="C_g3bnW$S1" role="3XTgO5">
+        <property role="3XTgP2" value="true" />
+      </node>
+      <node concept="3XTgO_" id="C_g3bnW$S2" role="3XTgO0">
+        <property role="3XTgOA" value="true" />
+      </node>
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$S3" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$KA" resolve="lwr_arm_2_link" />
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$S4" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$Py" resolve="lwr_arm_2_joint" />
+      <node concept="3XTgP1" id="C_g3bnW$S5" role="3XTgO5">
+        <property role="3XTgP2" value="true" />
+      </node>
+      <node concept="3XTgO_" id="C_g3bnW$S6" role="3XTgO0">
+        <property role="3XTgOA" value="true" />
+      </node>
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$S7" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$Lh" resolve="lwr_arm_3_link" />
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$S8" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$PV" resolve="lwr_arm_3_joint" />
+      <node concept="3XTgP1" id="C_g3bnW$S9" role="3XTgO5">
+        <property role="3XTgP2" value="true" />
+      </node>
+      <node concept="3XTgO_" id="C_g3bnW$Sa" role="3XTgO0">
+        <property role="3XTgOA" value="true" />
+      </node>
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$Sb" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$LW" resolve="lwr_arm_4_link" />
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$Sc" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$Qk" resolve="lwr_arm_4_joint" />
+      <node concept="3XTgP1" id="C_g3bnW$Sd" role="3XTgO5">
+        <property role="3XTgP2" value="true" />
+      </node>
+      <node concept="3XTgO_" id="C_g3bnW$Se" role="3XTgO0">
+        <property role="3XTgOA" value="true" />
+      </node>
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$Sf" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$MB" resolve="lwr_arm_5_link" />
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$Sg" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$QH" resolve="lwr_arm_5_joint" />
+      <node concept="3XTgP1" id="C_g3bnW$Sh" role="3XTgO5">
+        <property role="3XTgP2" value="true" />
+      </node>
+      <node concept="3XTgO_" id="C_g3bnW$Si" role="3XTgO0">
+        <property role="3XTgOA" value="true" />
+      </node>
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$Sj" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$Ni" resolve="lwr_arm_6_link" />
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$Sk" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$R6" resolve="lwr_arm_6_joint" />
+      <node concept="3XTgP1" id="C_g3bnW$Sl" role="3XTgO5">
+        <property role="3XTgP2" value="true" />
+      </node>
+      <node concept="3XTgO_" id="C_g3bnW$Sm" role="3XTgO0">
+        <property role="3XTgOA" value="true" />
+      </node>
+    </node>
+    <node concept="3XTgP4" id="C_g3bnW$Sn" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnW$NX" resolve="lwr_arm_7_link" />
+    </node>
+    <node concept="3XTgP4" id="C_g3bnWHZ8" role="QWIaI">
+      <ref role="3XTgP7" node="C_g3bnWFGs" resolve="lwr_arm_7_tool_joint" />
+      <node concept="3XTgP1" id="C_g3bnWI2T" role="3XTgO5">
+        <property role="3XTgP2" value="true" />
+      </node>
+    </node>
+    <node concept="3hEEi6" id="C_g3bnXwZA" role="lGtFl">
+      <property role="TrG5h" value="urdf" />
+      <property role="3hEESU" value="~/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus-sponge/model.urdf" />
+    </node>
+    <node concept="3hEEi6" id="C_g3bnXwZB" role="lGtFl">
+      <property role="TrG5h" value="srdf" />
+      <property role="3hEESU" value="~/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus-sponge/model.srdf" />
+    </node>
+  </node>
 </model>
 

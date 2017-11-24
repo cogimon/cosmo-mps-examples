@@ -87,5 +87,27 @@
       <ref role="2uixM5" to="lrob:6bIwLn$0JNr" />
     </node>
   </node>
+  <node concept="gnlnl" id="C_g3bnXz3b">
+    <property role="TrG5h" value="Kuka LWR 4+ (Sponge)" />
+    <ref role="gnvdb" to="oet6:C_g3bnW$Ih" resolve="kuka-lwr-4plus-sponge" />
+    <node concept="u53jr" id="C_g3bnXz3c" role="gntW4">
+      <property role="TrG5h" value="full_arm" />
+      <ref role="IJgHB" node="C_g3bnXz3e" />
+      <ref role="u53jH" to="oet6:C_g3bnWAzK" resolve="lwr_tool_link" />
+      <ref role="u53jA" to="oet6:C_g3bnW$Jf" resolve="world" />
+      <node concept="gntxp" id="C_g3bnXz3d" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionControl" />
+      </node>
+      <node concept="gntxp" id="C_g3bnXz3e" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueControl" />
+      </node>
+    </node>
+    <node concept="2uixRo" id="C_g3bnXz3f" role="2uixZN">
+      <ref role="2uixM5" to="lrob:6bIwLn$0JM8" />
+    </node>
+    <node concept="2uixRo" id="C_g3bnXz3g" role="2uixZN">
+      <ref role="2uixM5" to="lrob:6bIwLn$0JNr" />
+    </node>
+  </node>
 </model>
 
