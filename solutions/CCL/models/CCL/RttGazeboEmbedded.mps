@@ -118,6 +118,10 @@
       <property role="TrG5h" value="configure" />
       <node concept="10P_77" id="2NJBz9CzXTC" role="3ttcQV" />
     </node>
+    <node concept="3tteAg" id="42NqMk2NIPp" role="3ttcQt">
+      <property role="TrG5h" value="stop" />
+      <node concept="10P_77" id="42NqMk2NIVb" role="3ttcQV" />
+    </node>
     <node concept="3tteAg" id="2NJBz9CzXTO" role="3ttcQt">
       <property role="TrG5h" value="start" />
       <node concept="10P_77" id="2NJBz9CzXZ0" role="3ttcQV" />

@@ -400,6 +400,11 @@
       <property role="TrG5h" value="out_pose_port" />
       <node concept="10P55v" id="5dAl56bIRRh" role="17RAGi" />
     </node>
+    <node concept="3tteAs" id="42NqMk2NUgf" role="3ttcQl">
+      <property role="1T6LxX" value="Output" />
+      <property role="TrG5h" value="out_twist_port" />
+      <node concept="10P55v" id="42NqMk2NUhZ" role="17RAGi" />
+    </node>
     <node concept="3tteAs" id="3GmkSgQd2Cs" role="3ttcQl">
       <property role="1T6LxX" value="Output" />
       <property role="TrG5h" value="out_poseVel_port" />

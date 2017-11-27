@@ -54,13 +54,13 @@
     </language>
   </registry>
   <node concept="1EzEfe" id="6yo9VC28WUQ">
-    <property role="TrG5h" value="JointPositionControl" />
+    <property role="TrG5h" value="JointPositionCtrl" />
     <node concept="2KPMDc" id="4OphnvimvEE" role="17RAGi">
       <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
     </node>
   </node>
   <node concept="1EzEfe" id="6yo9VC28WYm">
-    <property role="TrG5h" value="JointTorqueControl" />
+    <property role="TrG5h" value="JointTorqueCtrl" />
     <node concept="2KPMDc" id="4OphnvimvEQ" role="17RAGi">
       <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
     </node>
@@ -74,10 +74,10 @@
       <ref role="u53jH" to="oet6:2jRhxvsk02Z" resolve="lwr_arm_7_link" />
       <ref role="IJgHB" node="6bIwLn$0JLF" />
       <node concept="gntxp" id="6bIwLn$0JLe" role="gntyC">
-        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionControl" />
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
       </node>
       <node concept="gntxp" id="6bIwLn$0JLF" role="gntyC">
-        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueControl" />
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
       </node>
     </node>
     <node concept="2uixRo" id="6bIwLn$2iP0" role="2uixZN">
@@ -96,10 +96,10 @@
       <ref role="u53jH" to="oet6:C_g3bnWAzK" resolve="lwr_tool_link" />
       <ref role="u53jA" to="oet6:C_g3bnW$Jf" resolve="world" />
       <node concept="gntxp" id="C_g3bnXz3d" role="gntyC">
-        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionControl" />
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
       </node>
       <node concept="gntxp" id="C_g3bnXz3e" role="gntyC">
-        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueControl" />
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
       </node>
     </node>
     <node concept="2uixRo" id="C_g3bnXz3f" role="2uixZN">
