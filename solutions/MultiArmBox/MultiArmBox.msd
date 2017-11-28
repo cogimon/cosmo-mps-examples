@@ -23,9 +23,14 @@
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
     <language slang="l:218e40b4-75d4-4de8-83e6-b31e4da8bcee:Component" version="0" />
     <language slang="l:dfed0f13-ca0e-4e6d-b469-ef760982a8ea:EigenTypekit" version="0" />
+    <language slang="l:d943373f-819f-4ebe-b0e0-94c5169d72a2:HardwarePlatforms" version="0" />
     <language slang="l:d6881f78-a85d-4c9e-931e-30879e67afdd:Kinematics" version="0" />
     <language slang="l:14d6bc92-051d-4467-84c8-9af7439a864f:Orocos" version="0" />
     <language slang="l:bddf7057-0151-4153-9658-d44eff0e1c02:OrocosComponent" version="0" />
+    <language slang="l:39e764cb-e4fa-4923-82f4-60e672350a27:OrocosProgramScript" version="0" />
+    <language slang="l:c283eb95-2e55-40f7-8817-bd284813e741:OrocosProgramScriptEigenTypekit" version="0" />
+    <language slang="l:b19d14b8-140d-46f9-8871-ed4f03a1bc9c:OrocosProgramScriptProto" version="0" />
+    <language slang="l:d270ce12-fc1e-4096-ab2d-4e2aa601ae76:OrocosRobotComponent" version="0" />
     <language slang="l:f851498a-fbd1-49e3-9bcf-42acc68a2d89:OrocosSystemsCoordination" version="0" />
     <language slang="l:d6d7f6e1-f407-48f8-a582-7b1489b7163f:ProtoBuf" version="0" />
     <language slang="l:76319903-f9ec-441b-870f-e2615fdff7f8:RobotComponent" version="0" />
@@ -49,9 +54,10 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="508bfef5-1766-41ca-a911-1831b229f1a7(MultiArmBox)" version="0" />
+    <module reference="28bd02b7-305d-4a64-bfb8-253223c1cdfe(Orocos.GenerationPlan)" version="0" />
     <module reference="07a9ca18-f71d-4cd8-b7b5-8abc9e03ec63(Orocos.RunConfiguration)" version="0" />
     <module reference="f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)" version="0" />
-    <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)" version="0" />
+    <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRTa)" version="0" />
     <module reference="99abc364-3965-4ead-ab2d-0b272a528a90(RobotPlatform)" version="0" />
     <module reference="87c26eb4-21f3-4fd4-b2e0-470c29675cae(RobotRepo)" version="0" />
     <module reference="864bc811-810b-4e2f-97d7-4ee5ae8cdcfe(RobotRepository)" version="0" />
