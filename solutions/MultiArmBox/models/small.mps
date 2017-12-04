@@ -74,6 +74,11 @@
       </concept>
     </language>
     <language id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component">
+      <concept id="7219656036492727267" name="Component.structure.IPortRefWithParentScope" flags="ng" index="2b_wOa" />
+      <concept id="7219656036492120488" name="Component.structure.ReportComponentInstAnnotation" flags="ng" index="2bFOX1">
+        <reference id="7219656036492120519" name="hidden_component" index="2bFOWI" />
+        <child id="7219656036492727084" name="reportedPorts" index="2b_wR5" />
+      </concept>
       <concept id="7649431283796460216" name="Component.structure.SourceOfDeployment" flags="ng" index="emJY1">
         <property id="7649431283796460564" name="source" index="emJ$H" />
       </concept>
@@ -254,119 +259,6 @@
   </registry>
   <node concept="3tteAy" id="3XuVWlUVKz0">
     <property role="TrG5h" value="Small_DualArm_System" />
-    <node concept="2WYcwU" id="4dO8lRQBlTu" role="3ttgI2">
-      <property role="TrG5h" value="gazebo" />
-      <ref role="2WYf9R" to="ty59:2NJBz9CzWGY" resolve="RTTGazeboEmbedded" />
-      <node concept="2R8en3" id="4dO8lRQBlTw" role="lGtFl">
-        <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Q0Er" id="4dO8lRQBlTx" role="12QldZ">
-          <node concept="1Qwkrw" id="4dO8lRQCsTo" role="12Q0EH">
-            <property role="TrG5h" value="act_no_run_gz" />
-            <property role="1QwnPq" value="ORO_SCHED_OTHER" />
-            <node concept="3cmrfG" id="4dO8lRQCsVM" role="1QwnPZ">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="3cmrfG" id="4dO8lRQCsW4" role="1QwnPN">
-              <property role="3cmrfH" value="10" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2WYd3i" id="4dO8lRQBmmE" role="2WYf99">
-        <ref role="2WYd3v" to="ty59:2NJBz9CzWI9" resolve="world_path" />
-      </node>
-      <node concept="2PRVZk" id="4dO8lRQFCxn" role="2PPHJF">
-        <node concept="2PRVZ5" id="4dO8lRQFCxu" role="2PRVZc">
-          <property role="TrG5h" value="metaConfigure" />
-          <node concept="2OqwBi" id="4dO8lRQGiWx" role="2PRVZX">
-            <node concept="2RT1ic" id="4dO8lRQGiWl" role="2Oq$k0" />
-            <node concept="2D$_L7" id="4dO8lRQJzgl" role="2OqNvi">
-              <ref role="2D$zFo" to="ty59:2NJBz9CzWHc" resolve="add_plugin" />
-              <node concept="2D$zpK" id="4dO8lRQJzgn" role="2DASKs">
-                <ref role="2DB_1T" to="ty59:2NJBz9CzWH$" resolve="pluginName" />
-                <node concept="Xl_RD" id="4dO8lRQJzgZ" role="2DB_1W">
-                  <property role="Xl_RC" value="libRTTGazeboClockPlugin.so" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1X3_iC" id="73NvqJSYb9y" role="lGtFl">
-            <property role="3V$3am" value="exps" />
-            <property role="3V$3ak" value="10b5a06d-1a49-4cbd-a111-d36c8106bb63/4860546585293725336/4860546585293725344" />
-            <node concept="37vLTI" id="4dO8lRQL3BU" role="8Wnug">
-              <node concept="2OqwBi" id="4dO8lRQKnCp" role="37vLTJ">
-                <node concept="2RT1ic" id="4dO8lRQKnBI" role="2Oq$k0" />
-                <node concept="CHOn8" id="4dO8lRQL3xm" role="2OqNvi">
-                  <ref role="CHOn7" to="ty59:2NJBz9CzWI9" resolve="world_path" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="4dO8lRQL3Dp" role="37vLTx">
-                <property role="Xl_RC" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/etc/cogimon-scenarios/scenario-projected-dynamics/scn-MultiKukaArm.world" />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="4dO8lRQL3FQ" role="2PRVZX">
-            <node concept="2RT1ic" id="4dO8lRQL3EK" role="2Oq$k0" />
-            <node concept="2D$_L7" id="4dO8lRQL3IY" role="2OqNvi">
-              <ref role="2D$zFo" to="ty59:2NJBz9CzXOY" resolve="configure" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="4dO8lRQL3LR" role="2PRVZX">
-            <node concept="2RT1ic" id="4dO8lRQL3Kv" role="2Oq$k0" />
-            <node concept="2D$_L7" id="4dO8lRQL3Ph" role="2OqNvi">
-              <ref role="2D$zFo" to="ty59:2NJBz9CzXTO" resolve="start" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="4dO8lRQQn1_" role="2PRVZX">
-            <node concept="2RT1ic" id="4dO8lRQQmZV" role="2Oq$k0" />
-            <node concept="2D$_L7" id="4dO8lRQQn5h" role="2OqNvi">
-              <ref role="2D$zFo" to="ty59:2NJBz9CzWII" resolve="toggleDynamicsSimulation" />
-              <node concept="2D$zpK" id="4dO8lRQQn5j" role="2DASKs">
-                <ref role="2DB_1T" to="ty59:2NJBz9CzWKn" resolve="active" />
-                <node concept="3clFbT" id="4dO8lRQQn5J" role="2DB_1W">
-                  <property role="3clFbU" value="false" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2D1jA2" id="4dO8lRQQnkY" role="2PRVZX">
-            <property role="TrG5h" value="a" />
-            <node concept="2KPMDc" id="4dO8lRQQnng" role="2D1jJ3">
-              <ref role="2KPMD3" to="sxll:1XLbW8" resolve="Forces" />
-            </node>
-            <node concept="2ShNRf" id="4dO8lRQQnnT" role="2D1jJT">
-              <node concept="qghkx" id="4dO8lRQQoq_" role="2ShVmc">
-                <ref role="qghDu" to="sxll:1XLbW8" resolve="Forces" />
-                <node concept="3sb0db" id="4dO8lRQQoqB" role="qghDs">
-                  <ref role="3sb0da" to="sxll:1cwKfY" resolve="z" />
-                  <node concept="3sb0ez" id="4dO8lRQQoqC" role="3sb6Ac">
-                    <node concept="3b6qkQ" id="4dO8lRQQoS3" role="3sb0ey">
-                      <property role="$nhwW" value="0.0" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3sb0db" id="4dO8lRQQoqD" role="qghDs">
-                  <ref role="3sb0da" to="sxll:1Y_G31" resolve="y" />
-                  <node concept="3sb0ez" id="4dO8lRQQoqE" role="3sb6Ac">
-                    <node concept="3b6qkQ" id="4dO8lRQQoSF" role="3sb0ey">
-                      <property role="$nhwW" value="1.0" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3sb0db" id="4dO8lRQQoqF" role="qghDs">
-                  <ref role="3sb0da" to="sxll:19G8m0" resolve="x" />
-                  <node concept="3sb0ez" id="4dO8lRQQoqG" role="3sb6Ac">
-                    <node concept="3b6qkQ" id="4dO8lRQQoTj" role="3sb0ey">
-                      <property role="$nhwW" value="2.0" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2WYcwU" id="mdFCvZW4yg" role="3ttgI2">
       <property role="TrG5h" value="combiner" />
       <ref role="2WYf9R" to="gw48:5dAl56bIRRw" resolve="FeedbackCombiner" />
@@ -406,6 +298,12 @@
       </node>
       <node concept="FWJLR" id="1suZ3qyFuYr" role="l9eUl">
         <ref role="FWJLQ" to="gw48:5dAl56bMO_E" resolve="out_robotstatus_port" />
+      </node>
+      <node concept="2bFOX1" id="2$foSuJ7wsY" role="lGtFl">
+        <ref role="2bFOWI" node="mdFCvZW4yg" resolve="combiner" />
+        <node concept="2b_wOa" id="2$foSuJ7wu7" role="2b_wR5">
+          <ref role="FWJLQ" to="gw48:5dAl56bMO_E" resolve="out_robotstatus_port" />
+        </node>
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4$7" role="3ttgI2">
@@ -680,6 +578,119 @@
         <ref role="FWJLQ" node="C_g3bnXzF8" resolve="full_arm_JointFeedback" />
       </node>
     </node>
+    <node concept="2WYcwU" id="4dO8lRQBlTu" role="3ttgI2">
+      <property role="TrG5h" value="gazebo" />
+      <ref role="2WYf9R" to="ty59:2NJBz9CzWGY" resolve="RTTGazeboEmbedded" />
+      <node concept="2R8en3" id="4dO8lRQBlTw" role="lGtFl">
+        <property role="TrG5h" value="Orocos (Software Platform)" />
+        <node concept="12Q0Er" id="4dO8lRQBlTx" role="12QldZ">
+          <node concept="1Qwkrw" id="4dO8lRQCsTo" role="12Q0EH">
+            <property role="TrG5h" value="act_no_run_gz" />
+            <property role="1QwnPq" value="ORO_SCHED_OTHER" />
+            <node concept="3cmrfG" id="4dO8lRQCsVM" role="1QwnPZ">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="3cmrfG" id="4dO8lRQCsW4" role="1QwnPN">
+              <property role="3cmrfH" value="10" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WYd3i" id="4dO8lRQBmmE" role="2WYf99">
+        <ref role="2WYd3v" to="ty59:2NJBz9CzWI9" resolve="world_path" />
+      </node>
+      <node concept="2PRVZk" id="4dO8lRQFCxn" role="2PPHJF">
+        <node concept="2PRVZ5" id="4dO8lRQFCxu" role="2PRVZc">
+          <property role="TrG5h" value="metaConfigure" />
+          <node concept="2OqwBi" id="4dO8lRQGiWx" role="2PRVZX">
+            <node concept="2RT1ic" id="4dO8lRQGiWl" role="2Oq$k0" />
+            <node concept="2D$_L7" id="4dO8lRQJzgl" role="2OqNvi">
+              <ref role="2D$zFo" to="ty59:2NJBz9CzWHc" resolve="add_plugin" />
+              <node concept="2D$zpK" id="4dO8lRQJzgn" role="2DASKs">
+                <ref role="2DB_1T" to="ty59:2NJBz9CzWH$" resolve="pluginName" />
+                <node concept="Xl_RD" id="4dO8lRQJzgZ" role="2DB_1W">
+                  <property role="Xl_RC" value="libRTTGazeboClockPlugin.so" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1X3_iC" id="73NvqJSYb9y" role="lGtFl">
+            <property role="3V$3am" value="exps" />
+            <property role="3V$3ak" value="10b5a06d-1a49-4cbd-a111-d36c8106bb63/4860546585293725336/4860546585293725344" />
+            <node concept="37vLTI" id="4dO8lRQL3BU" role="8Wnug">
+              <node concept="2OqwBi" id="4dO8lRQKnCp" role="37vLTJ">
+                <node concept="2RT1ic" id="4dO8lRQKnBI" role="2Oq$k0" />
+                <node concept="CHOn8" id="4dO8lRQL3xm" role="2OqNvi">
+                  <ref role="CHOn7" to="ty59:2NJBz9CzWI9" resolve="world_path" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="4dO8lRQL3Dp" role="37vLTx">
+                <property role="Xl_RC" value="/home/dwigand/citk/systems/cogimon-minimal-nightly/etc/cogimon-scenarios/scenario-projected-dynamics/scn-MultiKukaArm.world" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4dO8lRQL3FQ" role="2PRVZX">
+            <node concept="2RT1ic" id="4dO8lRQL3EK" role="2Oq$k0" />
+            <node concept="2D$_L7" id="4dO8lRQL3IY" role="2OqNvi">
+              <ref role="2D$zFo" to="ty59:2NJBz9CzXOY" resolve="configure" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4dO8lRQL3LR" role="2PRVZX">
+            <node concept="2RT1ic" id="4dO8lRQL3Kv" role="2Oq$k0" />
+            <node concept="2D$_L7" id="4dO8lRQL3Ph" role="2OqNvi">
+              <ref role="2D$zFo" to="ty59:2NJBz9CzXTO" resolve="start" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4dO8lRQQn1_" role="2PRVZX">
+            <node concept="2RT1ic" id="4dO8lRQQmZV" role="2Oq$k0" />
+            <node concept="2D$_L7" id="4dO8lRQQn5h" role="2OqNvi">
+              <ref role="2D$zFo" to="ty59:2NJBz9CzWII" resolve="toggleDynamicsSimulation" />
+              <node concept="2D$zpK" id="4dO8lRQQn5j" role="2DASKs">
+                <ref role="2DB_1T" to="ty59:2NJBz9CzWKn" resolve="active" />
+                <node concept="3clFbT" id="4dO8lRQQn5J" role="2DB_1W">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2D1jA2" id="4dO8lRQQnkY" role="2PRVZX">
+            <property role="TrG5h" value="a" />
+            <node concept="2KPMDc" id="4dO8lRQQnng" role="2D1jJ3">
+              <ref role="2KPMD3" to="sxll:1XLbW8" resolve="Forces" />
+            </node>
+            <node concept="2ShNRf" id="4dO8lRQQnnT" role="2D1jJT">
+              <node concept="qghkx" id="4dO8lRQQoq_" role="2ShVmc">
+                <ref role="qghDu" to="sxll:1XLbW8" resolve="Forces" />
+                <node concept="3sb0db" id="4dO8lRQQoqB" role="qghDs">
+                  <ref role="3sb0da" to="sxll:1cwKfY" resolve="z" />
+                  <node concept="3sb0ez" id="4dO8lRQQoqC" role="3sb6Ac">
+                    <node concept="3b6qkQ" id="4dO8lRQQoS3" role="3sb0ey">
+                      <property role="$nhwW" value="0.0" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3sb0db" id="4dO8lRQQoqD" role="qghDs">
+                  <ref role="3sb0da" to="sxll:1Y_G31" resolve="y" />
+                  <node concept="3sb0ez" id="4dO8lRQQoqE" role="3sb6Ac">
+                    <node concept="3b6qkQ" id="4dO8lRQQoSF" role="3sb0ey">
+                      <property role="$nhwW" value="1.0" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3sb0db" id="4dO8lRQQoqF" role="qghDs">
+                  <ref role="3sb0da" to="sxll:19G8m0" resolve="x" />
+                  <node concept="3sb0ez" id="4dO8lRQQoqG" role="3sb6Ac">
+                    <node concept="3b6qkQ" id="4dO8lRQQoTj" role="3sb0ey">
+                      <property role="$nhwW" value="2.0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="3pkOsz" id="mdFCvZWr0N">
     <ref role="3pqbaY" node="3XuVWlUVKz0" resolve="Small_DualArm_System" />
@@ -804,7 +815,7 @@
           </node>
         </node>
         <node concept="1f4lqS" id="4c0$OGce51d" role="A$mYV">
-          <property role="1f4lhh" value="This is a comment (Comment Action) that will be generated in to the OPS script!" />
+          <property role="1f4lhh" value="This is a comment (Comment Action) that will be generated into the OPS script!" />
         </node>
         <node concept="A$mVN" id="2MHX4No54jo" role="A$mYT">
           <ref role="A$mVY" node="2MHX4No53Z6" resolve="ConfigureOtherComponents" />
