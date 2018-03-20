@@ -2,6 +2,8 @@
 <model ref="r:402732d7-bc62-4375-874b-ca5f273f2f0b(MultiArmBox.small)">
   <persistence version="9" />
   <languages>
+    <use id="76319903-f9ec-441b-870f-e2615fdff7f8" name="RobotComponent" version="0" />
+    <use id="99abc364-3965-4ead-ab2d-0b272a528a90" name="RobotPlatform" version="0" />
     <devkit ref="e4b22943-9500-4f47-99eb-c2c67851158c(OrocosDevKit)" />
   </languages>
   <imports>
@@ -12,7 +14,7 @@
     <import index="d49h" ref="r:e838cc20-edef-4424-9d42-7bc017fd2211(RobotRepository.platforms)" />
     <import index="gw48" ref="r:6ee97e32-e690-4a1a-99b5-70d690ab3166(CCL.CosimaUtilities)" />
     <import index="lrob" ref="r:d01e7c48-4315-4a97-a560-4b91cd1fec15(RobotRepository.interfaces)" />
-    <import index="o5l" ref="r:99677988-a320-476b-8502-531d608695b7(RobotComponent.template)" implicit="true" />
+    <import index="d0yc" ref="r:e076efcc-3342-4d57-9a75-32a8af0f3527(RobotComponent.accessory.template)" />
     <import index="mxy7" ref="r:b1453cd2-b011-4f0b-81c1-c1dffcd87c59(MultiArmBox.system)" implicit="true" />
   </imports>
   <registry>
@@ -88,9 +90,18 @@
       <concept id="8922660669739446244" name="Component.structure.PositionPersistance" flags="ng" index="2GY8tY">
         <property id="8922660669739446504" name="x" index="2GY9xM" />
         <property id="8922660669739446510" name="y" index="2GY9xO" />
+        <property id="5599451186622567446" name="h" index="2IsyGT" />
+        <property id="5599451186622565392" name="w" index="2IszcZ" />
       </concept>
       <concept id="7370022581033050625" name="Component.structure.IAutomaticallyGeneratePorts" flags="ng" index="JkFpW">
         <child id="7370022581033050830" name="autoGenPorts" index="JkFqN" />
+      </concept>
+      <concept id="8597399538407969530" name="Component.structure.PositionPersistanceList" flags="ng" index="LIwII">
+        <child id="8597399538407971043" name="coordinates" index="LIw6R" />
+      </concept>
+      <concept id="8597399538407970773" name="Component.structure.Coordinates" flags="ng" index="LIwU1">
+        <property id="8597399538407971011" name="x" index="LIw6n" />
+        <property id="8597399538407971019" name="y" index="LIw6v" />
       </concept>
       <concept id="6055303931581434606" name="Component.structure.IComponentInst" flags="ng" index="2WYcwT">
         <reference id="6055303931581444256" name="componentDescription" index="2WYf9R" />
@@ -265,10 +276,6 @@
       <node concept="emJY1" id="mdFCvZW4yh" role="lGtFl">
         <property role="emJ$H" value="CosmoViz" />
       </node>
-      <node concept="2GY8tY" id="mdFCvZW7pV" role="lGtFl">
-        <property role="2GY9xM" value="1215.1849365234375" />
-        <property role="2GY9xO" value="379.88140869140625" />
-      </node>
       <node concept="2R8en3" id="mdFCvZWeOw" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
         <node concept="12Q0Er" id="mdFCvZWeO$" role="12QldZ">
@@ -305,16 +312,18 @@
           <ref role="FWJLQ" to="gw48:5dAl56bMO_E" resolve="out_robotstatus_port" />
         </node>
       </node>
+      <node concept="2GY8tY" id="244Jd6gVs$x" role="lGtFl">
+        <property role="2GY9xM" value="2166.334" />
+        <property role="2GY9xO" value="2525.602" />
+        <property role="2IszcZ" value="276.205" />
+        <property role="2IsyGT" value="216.568" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4$7" role="3ttgI2">
       <property role="TrG5h" value="separator" />
       <ref role="2WYf9R" to="gw48:5dAl56bJdJ4" resolve="TorqueCommandSeperator" />
       <node concept="emJY1" id="mdFCvZW4$8" role="lGtFl">
         <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="2GY8tY" id="mdFCvZW7u2" role="lGtFl">
-        <property role="2GY9xM" value="2347.6334228515625" />
-        <property role="2GY9xO" value="800.1817016601562" />
       </node>
       <node concept="2R8en3" id="mdFCvZWePQ" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -340,16 +349,18 @@
       <node concept="FWJLR" id="4OphnvitVQt" role="l9eUl">
         <ref role="FWJLQ" to="gw48:4td2CtEiANc" resolve="out_torques_port_3" />
       </node>
+      <node concept="2GY8tY" id="244Jd6gVs$F" role="lGtFl">
+        <property role="2GY9xM" value="1250.41" />
+        <property role="2GY9xO" value="2507.591" />
+        <property role="2IszcZ" value="353.766" />
+        <property role="2IsyGT" value="242.469" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4Ao" role="3ttgI2">
       <property role="TrG5h" value="fkin" />
       <ref role="2WYf9R" to="73wf:3GmkSgQd0xO" resolve="WrapperKDLMultiRobotarms" />
       <node concept="emJY1" id="mdFCvZW4Ap" role="lGtFl">
         <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="2GY8tY" id="mdFCvZW7lU" role="lGtFl">
-        <property role="2GY9xM" value="328.9983139038086" />
-        <property role="2GY9xO" value="978.0440902709961" />
       </node>
       <node concept="2R8en3" id="mdFCvZWeRc" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -396,16 +407,18 @@
       <node concept="FWJLR" id="42NqMk2NWh_" role="l9eUl">
         <ref role="FWJLQ" to="73wf:42NqMk2NWdY" resolve="out_inertiaInv_port" />
       </node>
+      <node concept="2GY8tY" id="244Jd6gVs$L" role="lGtFl">
+        <property role="2GY9xM" value="214.166" />
+        <property role="2GY9xO" value="2465.302" />
+        <property role="2IszcZ" value="374.575" />
+        <property role="2IsyGT" value="485.391" />
+      </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4Kt" role="3ttgI2">
       <property role="TrG5h" value="jointposcontroller" />
       <ref role="2WYf9R" to="73wf:3keJr8m8xI7" resolve="JointPositionCtrl" />
       <node concept="emJY1" id="mdFCvZW4Ku" role="lGtFl">
         <property role="emJ$H" value="CosmoViz" />
-      </node>
-      <node concept="2GY8tY" id="mdFCvZW4OK" role="lGtFl">
-        <property role="2GY9xM" value="1802.3491821289062" />
-        <property role="2GY9xO" value="710.8364906311035" />
       </node>
       <node concept="2R8en3" id="mdFCvZWeVe" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
@@ -431,6 +444,12 @@
       <node concept="2WYd3i" id="42NqMk2OoBm" role="2WYf99">
         <ref role="2WYd3v" to="73wf:42NqMk2OoAy" resolve="performVelocitySaturation" />
       </node>
+      <node concept="2GY8tY" id="244Jd6gVs$R" role="lGtFl">
+        <property role="2GY9xM" value="883.439" />
+        <property role="2GY9xO" value="2612.336" />
+        <property role="2IszcZ" value="234.55" />
+        <property role="2IsyGT" value="178.173" />
+      </node>
     </node>
     <node concept="3tteA_" id="mdFCvZW8nX" role="3ttgI7">
       <property role="TrG5h" value="conn_1" />
@@ -446,6 +465,24 @@
       <property role="TrG5h" value="conn_3" />
       <ref role="3ttcQ_" node="1suZ3qyFuYr" />
       <ref role="3ttcQw" node="1suZ3qyFuYU" />
+      <node concept="LIwII" id="6OoRQFE0plO" role="lGtFl">
+        <node concept="LIwU1" id="2KODprmWIRU" role="LIw6R">
+          <property role="LIw6n" value="38.40653913979938" />
+          <property role="LIw6v" value="2710.031191745834" />
+        </node>
+        <node concept="LIwU1" id="2KODprmWIRV" role="LIw6R">
+          <property role="LIw6n" value="31.7608211591878" />
+          <property role="LIw6v" value="2373.786300198542" />
+        </node>
+        <node concept="LIwU1" id="2KODprmWIRW" role="LIw6R">
+          <property role="LIw6n" value="2537.543320077136" />
+          <property role="LIw6v" value="2355.035748654967" />
+        </node>
+        <node concept="LIwU1" id="2KODprmWIRX" role="LIw6R">
+          <property role="LIw6n" value="2535.9225270446104" />
+          <property role="LIw6v" value="2632.191357216911" />
+        </node>
+      </node>
     </node>
     <node concept="3tteA_" id="mdFCvZWcIt" role="3ttgI7">
       <property role="TrG5h" value="conn_5" />
@@ -475,7 +512,7 @@
     <node concept="JkPXO" id="4OphnvishzC" role="3ttgI2">
       <property role="TrG5h" value="rKUKA1" />
       <ref role="Jt_hF" to="d49h:C_g3bnXz3b" resolve="Kuka LWR 4+ (Sponge)" />
-      <ref role="2WYf9R" to="o5l:5A_heWjxpzi" resolve="cogimon::robotSim" />
+      <ref role="2WYf9R" to="d0yc:5A_heWjxpzi" resolve="cogimon::robotSim" />
       <node concept="iLOr_" id="4OphnvisjtQ" role="3dgvYZ">
         <ref role="3dgoDb" to="lrob:6bIwLn$0JNr" />
       </node>
@@ -527,11 +564,17 @@
       <node concept="FWJLR" id="C_g3bnXzDc" role="l9eUl">
         <ref role="FWJLQ" node="C_g3bnXzD7" resolve="full_arm_JointFeedback" />
       </node>
+      <node concept="2GY8tY" id="244Jd6gVs$X" role="lGtFl">
+        <property role="2GY9xM" value="1739.239" />
+        <property role="2GY9xO" value="2391.72" />
+        <property role="2IszcZ" value="268.617" />
+        <property role="2IsyGT" value="176.261" />
+      </node>
     </node>
     <node concept="JkPXO" id="4Ophnvisj4j" role="3ttgI2">
       <property role="TrG5h" value="rKUKA2" />
       <ref role="Jt_hF" to="d49h:C_g3bnXz3b" resolve="Kuka LWR 4+ (Sponge)" />
-      <ref role="2WYf9R" to="o5l:5A_heWjxpzi" resolve="cogimon::robotSim" />
+      <ref role="2WYf9R" to="d0yc:5A_heWjxpzi" resolve="cogimon::robotSim" />
       <node concept="iLOr_" id="4OphnvisjtW" role="3dgvYZ">
         <ref role="3dgoDb" to="lrob:6bIwLn$0JNr" />
       </node>
@@ -576,6 +619,12 @@
       </node>
       <node concept="FWJLR" id="C_g3bnXzFd" role="l9eUl">
         <ref role="FWJLQ" node="C_g3bnXzF8" resolve="full_arm_JointFeedback" />
+      </node>
+      <node concept="2GY8tY" id="244Jd6gVs_4" role="lGtFl">
+        <property role="2GY9xM" value="1741.031" />
+        <property role="2GY9xO" value="2688.988" />
+        <property role="2IszcZ" value="268.756" />
+        <property role="2IsyGT" value="182.081" />
       </node>
     </node>
     <node concept="2WYcwU" id="4dO8lRQBlTu" role="3ttgI2">
@@ -690,6 +739,12 @@
           </node>
         </node>
       </node>
+      <node concept="2GY8tY" id="3z28vGtiuTz" role="lGtFl">
+        <property role="2GY9xM" value="1330.615" />
+        <property role="2GY9xO" value="2824.189" />
+        <property role="2IszcZ" value="175.0" />
+        <property role="2IsyGT" value="75.0" />
+      </node>
     </node>
   </node>
   <node concept="3pkOsz" id="mdFCvZWr0N">
@@ -784,7 +839,7 @@
               </node>
             </node>
             <node concept="2D$_L7" id="2MHX4No53mt" role="2OqNvi">
-              <ref role="2D$zFo" to="o5l:1cbL_VeRwUh" resolve="configure" />
+              <ref role="2D$zFo" to="d0yc:1cbL_VeRwUh" resolve="configure" />
             </node>
           </node>
         </node>
@@ -810,7 +865,7 @@
               </node>
             </node>
             <node concept="2D$_L7" id="4c0$OGc0OHd" role="2OqNvi">
-              <ref role="2D$zFo" to="o5l:1cbL_VeRwUh" resolve="configure" />
+              <ref role="2D$zFo" to="d0yc:1cbL_VeRwUh" resolve="configure" />
             </node>
           </node>
         </node>

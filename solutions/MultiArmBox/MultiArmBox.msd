@@ -21,6 +21,7 @@
   <languageVersions>
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
     <language slang="l:218e40b4-75d4-4de8-83e6-b31e4da8bcee:Component" version="0" />
+    <language slang="l:d8010739-aadc-4402-b3dc-6ec0ee51ba00:ComputationUnit" version="0" />
     <language slang="l:dfed0f13-ca0e-4e6d-b469-ef760982a8ea:EigenTypekit" version="0" />
     <language slang="l:d943373f-819f-4ebe-b0e0-94c5169d72a2:HardwarePlatforms" version="0" />
     <language slang="l:d6881f78-a85d-4c9e-931e-30879e67afdd:Kinematics" version="0" />
@@ -57,6 +58,7 @@
     <module reference="07a9ca18-f71d-4cd8-b7b5-8abc9e03ec63(Orocos.RunConfiguration)" version="0" />
     <module reference="f5c07924-ffd5-4c91-9132-e881e4e6b40d(PlanSolution)" version="0" />
     <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRTa)" version="0" />
+    <module reference="5da26423-8adc-4ccb-a59a-35cf8ada5587(RobotComponent.accessory)" version="0" />
     <module reference="99abc364-3965-4ead-ab2d-0b272a528a90(RobotPlatform)" version="0" />
     <module reference="87c26eb4-21f3-4fd4-b2e0-470c29675cae(RobotRepo)" version="0" />
     <module reference="864bc811-810b-4e2f-97d7-4ee5ae8cdcfe(RobotRepository)" version="0" />
