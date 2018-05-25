@@ -25,7 +25,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6d4f5997-0eeb-4a8a-86c2-d4b3ba19dd87(CCL)" version="0" />
-    <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRT)" version="0" />
+    <module reference="3385964e-5b3d-433b-a45e-c97c2abf2862(RSTRTa)" version="0" />
   </dependencyVersions>
 </solution>
 

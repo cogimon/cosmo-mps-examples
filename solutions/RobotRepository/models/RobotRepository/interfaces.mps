@@ -24,6 +24,7 @@
     <language id="99abc364-3965-4ead-ab2d-0b272a528a90" name="RobotPlatform">
       <concept id="7128779390217102126" name="RobotPlatform.structure.ControlMode_SmartChild_Wrapper" flags="ng" index="26UE0V" />
       <concept id="7890633836340350805" name="RobotPlatform.structure.IamInterface_Gazebo" flags="ng" index="2ufUrZ" />
+      <concept id="4786296711328399977" name="RobotPlatform.structure.IamInterface_Robolli" flags="ng" index="16dtnD" />
       <concept id="7536817656257893278" name="RobotPlatform.structure.IamInterface_FRI" flags="ng" index="1EJfg$" />
       <concept id="7536817656257892781" name="RobotPlatform.structure.InterfaceDescriptor" flags="ng" index="1EJfon">
         <child id="7890633836340409826" name="virtualControlModes" index="2uf_L8" />
@@ -50,21 +51,32 @@
     <node concept="1EzEfe" id="6bIwLn$0JMC" role="2uf_L8">
       <property role="TrG5h" value="JointTorqueMode +Gravity" />
       <property role="1EzE8W" value="true" />
-      <ref role="2ug6Yz" to="d49h:6yo9VC28WYm" resolve="JointTorqueControl" />
+      <ref role="2ug6Yz" to="d49h:6yo9VC28WYm" resolve="JointTorqueCtrl" />
       <node concept="2KPMDc" id="6bIwLn$0JN6" role="17RAGi">
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
       </node>
     </node>
     <node concept="26UE0V" id="6bIwLn$1k27" role="2ugs33">
-      <ref role="1EzE79" to="d49h:6yo9VC28WUQ" resolve="JointPositionControl" />
+      <ref role="1EzE79" to="d49h:6yo9VC28WUQ" resolve="JointPositionCtrl" />
     </node>
   </node>
   <node concept="2ufUrZ" id="6bIwLn$0JNr">
     <node concept="26UE0V" id="6bIwLn$1k1m" role="2ugs33">
-      <ref role="1EzE79" to="d49h:6yo9VC28WUQ" resolve="JointPositionControl" />
+      <ref role="1EzE79" to="d49h:6yo9VC28WUQ" resolve="JointPositionCtrl" />
     </node>
     <node concept="26UE0V" id="6bIwLn$1k1_" role="2ugs33">
-      <ref role="1EzE79" to="d49h:6yo9VC28WYm" resolve="JointTorqueControl" />
+      <ref role="1EzE79" to="d49h:6yo9VC28WYm" resolve="JointTorqueCtrl" />
+    </node>
+  </node>
+  <node concept="16dtnD" id="11rIyOQ4uwW">
+    <node concept="26UE0V" id="11rIyOQ4u$Z" role="2ugs33">
+      <ref role="1EzE79" to="d49h:6yo9VC28WUQ" resolve="JointPositionCtrl" />
+    </node>
+    <node concept="26UE0V" id="11rIyOQ4xWU" role="2ugs33">
+      <ref role="1EzE79" to="d49h:11rIyOQ4xSF" resolve="JointVoltageCtrl" />
+    </node>
+    <node concept="26UE0V" id="11rIyOQ4u_4" role="2ugs33">
+      <ref role="1EzE79" to="d49h:6yo9VC28WYm" resolve="JointTorqueCtrl" />
     </node>
   </node>
 </model>

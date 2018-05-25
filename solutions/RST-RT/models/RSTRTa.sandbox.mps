@@ -102,5 +102,9 @@
     </node>
     <node concept="2KOdB_" id="3xBfiZ$w$yI" role="2KO1oB" />
   </node>
+  <node concept="2KO6HW" id="3XZE$oGsRJu">
+    <property role="3GE5qa" value="rst.robot" />
+    <property role="TrG5h" value="IMU" />
+  </node>
 </model>
 

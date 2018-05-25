@@ -2418,9 +2418,6 @@
             </node>
           </node>
         </node>
-        <node concept="1f4lqS" id="42NqMk2OCJp" role="A$mYV">
-          <property role="1f4lhh" value="why no configure?????" />
-        </node>
         <node concept="A$mVN" id="42NqMk2NHQd" role="A$mYT">
           <ref role="A$mVY" node="7s1i36wyNcF" resolve="StartScenario" />
           <node concept="AhioZ" id="42NqMk2NHQn" role="mMxAl" />
@@ -3346,8 +3343,8 @@
         </node>
       </node>
       <node concept="2GY8tY" id="6OoRQFE0qwn" role="lGtFl">
-        <property role="2GY9xM" value="1312.333" />
-        <property role="2GY9xO" value="433.86" />
+        <property role="2GY9xM" value="779.888" />
+        <property role="2GY9xO" value="442.471" />
         <property role="2IszcZ" value="347.568" />
         <property role="2IsyGT" value="121.328" />
       </node>
@@ -3426,8 +3423,8 @@
         <ref role="FWJLQ" to="gw48:4td2CtEiANc" resolve="out_torques_port_3" />
       </node>
       <node concept="2GY8tY" id="6OoRQFE0qwA" role="lGtFl">
-        <property role="2GY9xM" value="1296.554" />
-        <property role="2GY9xO" value="128.862" />
+        <property role="2GY9xM" value="1341.925" />
+        <property role="2GY9xO" value="144.876" />
         <property role="2IszcZ" value="374.313" />
         <property role="2IsyGT" value="234.251" />
       </node>
@@ -4044,7 +4041,7 @@
         <property role="2GY9xM" value="421.784" />
         <property role="2GY9xO" value="796.103" />
         <property role="2IszcZ" value="200.584" />
-        <property role="2IsyGT" value="440" />
+        <property role="2IsyGT" value="582.122" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW6cY" role="3ttgI2">
@@ -5240,21 +5237,6 @@
         </node>
       </node>
     </node>
-    <node concept="3tteA_" id="mdFCvZWczS" role="3ttgI7">
-      <property role="TrG5h" value="conn_1497606194865" />
-      <ref role="3ttcQ_" node="1suZ3qyFv3k" />
-      <ref role="3ttcQw" node="1suZ3qyFv5G" />
-      <node concept="LIwII" id="68oUNWIHMQK" role="lGtFl">
-        <node concept="LIwU1" id="68oUNWIHP19" role="LIw6R">
-          <property role="LIw6n" value="189.2627987628293" />
-          <property role="LIw6v" value="232.66480882258185" />
-        </node>
-        <node concept="LIwU1" id="68oUNWIHP1a" role="LIw6R">
-          <property role="LIw6n" value="177.10726456036986" />
-          <property role="LIw6v" value="-589.0493032636791" />
-        </node>
-      </node>
-    </node>
     <node concept="3tteA_" id="mdFCvZWcIt" role="3ttgI7">
       <property role="TrG5h" value="conn_1497606210879" />
       <ref role="3ttcQ_" node="1suZ3qyFuYV" />
@@ -5660,6 +5642,11 @@
         <property role="2IszcZ" value="259.817" />
         <property role="2IsyGT" value="156.571" />
       </node>
+    </node>
+    <node concept="3tteA_" id="3W1TTKZz2Sm" role="3ttgI7">
+      <property role="TrG5h" value="74" />
+      <ref role="3ttcQ_" node="1suZ3qyFv3k" />
+      <ref role="3ttcQw" node="1suZ3qyFv5G" />
     </node>
   </node>
 </model>

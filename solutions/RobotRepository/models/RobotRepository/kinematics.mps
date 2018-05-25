@@ -4030,5 +4030,133 @@
       <property role="3hEESU" value="~/citk/systems/cogimon-minimal-nightly/share/gazebo/models/cogimon/kuka-lwr-4plus-sponge/model.srdf" />
     </node>
   </node>
+  <node concept="u5KEY" id="3XZE$oGsNW_">
+    <property role="TrG5h" value="iit-coman" />
+    <node concept="u5KES" id="3XZE$oGsP4E" role="3XQLF5">
+      <property role="TrG5h" value="laBase" />
+    </node>
+    <node concept="u5KES" id="3XZE$oGsP4M" role="3XQLF5">
+      <property role="TrG5h" value="laEnd" />
+    </node>
+    <node concept="u5KEZ" id="3XZE$oGsPM_" role="3XQLF5">
+      <property role="TrG5h" value="laBE" />
+      <ref role="u5Ypq" node="3XZE$oGsP4E" resolve="laBase" />
+      <ref role="u5Yp_" node="3XZE$oGsP4M" resolve="laEnd" />
+      <node concept="3XUy9m" id="3XZE$oGsPMX" role="3XUCWA">
+        <node concept="3b6qkQ" id="3XZE$oGsPMY" role="3XUy9h">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPMZ" role="3XUy9s">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPNB" role="3XUy9n">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPO5" role="3XUy9o">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="3XZE$oGsP4Z" role="3XQLF5">
+      <property role="TrG5h" value="raBase" />
+    </node>
+    <node concept="u5KES" id="3XZE$oGsP5g" role="3XQLF5">
+      <property role="TrG5h" value="raEnd" />
+    </node>
+    <node concept="u5KEZ" id="3XZE$oGsPQF" role="3XQLF5">
+      <property role="TrG5h" value="raBE" />
+      <ref role="u5Ypq" node="3XZE$oGsP4Z" resolve="raBase" />
+      <ref role="u5Yp_" node="3XZE$oGsP5g" resolve="raEnd" />
+      <node concept="3XUy9m" id="3XZE$oGsPQG" role="3XUCWA">
+        <node concept="3b6qkQ" id="3XZE$oGsPQH" role="3XUy9h">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPQI" role="3XUy9s">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPQJ" role="3XUy9n">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPQK" role="3XUy9o">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="3XZE$oGsP5_" role="3XQLF5">
+      <property role="TrG5h" value="llBase" />
+    </node>
+    <node concept="u5KES" id="3XZE$oGsP5Y" role="3XQLF5">
+      <property role="TrG5h" value="llEnd" />
+    </node>
+    <node concept="u5KEZ" id="3XZE$oGsPTi" role="3XQLF5">
+      <property role="TrG5h" value="llBE" />
+      <ref role="u5Yp_" node="3XZE$oGsP5Y" resolve="llEnd" />
+      <ref role="u5Ypq" node="3XZE$oGsP5_" resolve="llBase" />
+      <node concept="3XUy9m" id="3XZE$oGsPTj" role="3XUCWA">
+        <node concept="3b6qkQ" id="3XZE$oGsPTk" role="3XUy9h">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPTl" role="3XUy9s">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPTm" role="3XUy9n">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPTn" role="3XUy9o">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="3XZE$oGsP6r" role="3XQLF5">
+      <property role="TrG5h" value="rlBase" />
+    </node>
+    <node concept="u5KES" id="3XZE$oGsP6W" role="3XQLF5">
+      <property role="TrG5h" value="rlEnd" />
+    </node>
+    <node concept="u5KEZ" id="3XZE$oGsPWt" role="3XQLF5">
+      <property role="TrG5h" value="rlBE" />
+      <ref role="u5Yp_" node="3XZE$oGsP6W" resolve="rlEnd" />
+      <ref role="u5Ypq" node="3XZE$oGsP6r" resolve="rlBase" />
+      <node concept="3XUy9m" id="3XZE$oGsPWu" role="3XUCWA">
+        <node concept="3b6qkQ" id="3XZE$oGsPWv" role="3XUy9h">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPWw" role="3XUy9s">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPWx" role="3XUy9n">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsPWy" role="3XUy9o">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="u5KES" id="3XZE$oGsP7x" role="3XQLF5">
+      <property role="TrG5h" value="tBase" />
+    </node>
+    <node concept="u5KES" id="3XZE$oGsP8a" role="3XQLF5">
+      <property role="TrG5h" value="tEnd" />
+    </node>
+    <node concept="u5KEZ" id="3XZE$oGsQ0c" role="3XQLF5">
+      <property role="TrG5h" value="tBE" />
+      <ref role="u5Yp_" node="3XZE$oGsP8a" resolve="tEnd" />
+      <ref role="u5Ypq" node="3XZE$oGsP7x" resolve="tBase" />
+      <node concept="3XUy9m" id="3XZE$oGsQ0d" role="3XUCWA">
+        <node concept="3b6qkQ" id="3XZE$oGsQ0e" role="3XUy9h">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsQ0f" role="3XUy9s">
+          <property role="$nhwW" value="0.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsQ0g" role="3XUy9n">
+          <property role="$nhwW" value="1.0" />
+        </node>
+        <node concept="3b6qkQ" id="3XZE$oGsQ0h" role="3XUy9o">
+          <property role="$nhwW" value="1.0" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

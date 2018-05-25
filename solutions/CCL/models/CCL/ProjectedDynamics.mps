@@ -27,6 +27,15 @@
       <concept id="5685633502229650428" name="Component.structure.Parameter" flags="ng" index="2D$zpR">
         <child id="5685633502229650435" name="type" index="2D$z68" />
       </concept>
+      <concept id="7409071499858616521" name="Component.structure.ILineComment" flags="ng" index="1mmmYf">
+        <property id="7409071499858616577" name="line" index="1mmmT7" />
+      </concept>
+      <concept id="7409071499858934193" name="Component.structure.Author" flags="ng" index="1mnrrR" />
+      <concept id="7409071499857455693" name="Component.structure.ComponentComment" flags="ng" index="1mEMkb">
+        <child id="7409071499858934259" name="authors" index="1mnrqP" />
+        <child id="7409071499857457719" name="lines" index="1mENPL" />
+      </concept>
+      <concept id="7409071499857457637" name="Component.structure.SingleLineComment" flags="ng" index="1mENUz" />
       <concept id="1695646464731827433" name="Component.structure.Operation" flags="ng" index="3tteAg">
         <child id="1695646464731834562" name="returnType" index="3ttcQV" />
         <child id="1695646464731834565" name="inputParameters" index="3ttcQW" />
@@ -61,6 +70,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -298,6 +308,28 @@
     <node concept="3tteAg" id="1cbL_VeT95Z" role="3ttcQt">
       <property role="TrG5h" value="start" />
       <node concept="10P_77" id="1cbL_VeT99B" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="3W1TTKZz472" role="3ttcQt">
+      <property role="TrG5h" value="stop" />
+      <node concept="3cqZAl" id="3W1TTKZz4cq" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="3W1TTKZz4cy" role="3ttcQt">
+      <property role="TrG5h" value="cleanup" />
+      <node concept="3cqZAl" id="3W1TTKZz4i8" role="3ttcQV" />
+    </node>
+    <node concept="3tteAg" id="3W1TTKZz4P_" role="3ttcQt">
+      <property role="TrG5h" value="returnDesiredJointConfiguration" />
+      <node concept="2KPMDc" id="3W1TTKZz4Vp" role="3ttcQV">
+        <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+      </node>
+      <node concept="1mEMkb" id="3W1TTKZz4VA" role="lGtFl">
+        <node concept="1mnrrR" id="3W1TTKZz4VY" role="1mnrqP">
+          <property role="TrG5h" value="Dennis Leroy Wigand" />
+        </node>
+        <node concept="1mENUz" id="3W1TTKZz4VB" role="1mENPL">
+          <property role="1mmmT7" value="This function returns the current desired joint angles of the controller" />
+        </node>
+      </node>
     </node>
     <node concept="3tthn0" id="3GmkSgQd0_H" role="3ttZ$n">
       <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />

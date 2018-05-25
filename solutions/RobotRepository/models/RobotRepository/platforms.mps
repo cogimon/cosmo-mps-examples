@@ -109,5 +109,160 @@
       <ref role="2uixM5" to="lrob:6bIwLn$0JNr" />
     </node>
   </node>
+  <node concept="gnlnl" id="3XZE$oGsO0C">
+    <property role="TrG5h" value="Coman" />
+    <ref role="gnvdb" to="oet6:3XZE$oGsNW_" resolve="iit-coman" />
+    <node concept="u53jr" id="3XZE$oGsO4F" role="gntW4">
+      <property role="TrG5h" value="left_arm" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP4E" resolve="laBase" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP4M" resolve="laEnd" />
+      <ref role="IJgHB" node="3XZE$oGsO4G" />
+      <node concept="gntxp" id="3XZE$oGsO4G" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+      <node concept="gntxp" id="3XZE$oGsPM9" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+    </node>
+    <node concept="u53jr" id="3XZE$oGsQ3c" role="gntW4">
+      <property role="TrG5h" value="right_arm" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP4Z" resolve="raBase" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP5g" resolve="raEnd" />
+      <ref role="IJgHB" node="3XZE$oGsQ3C" />
+      <node concept="gntxp" id="3XZE$oGsQ3d" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="3XZE$oGsQ3C" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+    </node>
+    <node concept="u53jr" id="3XZE$oGsQ3o" role="gntW4">
+      <property role="TrG5h" value="left_leg" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP5_" resolve="llBase" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP5Y" resolve="llEnd" />
+      <ref role="IJgHB" node="3XZE$oGsQ3H" />
+      <node concept="gntxp" id="3XZE$oGsQ3p" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="3XZE$oGsQ3H" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+    </node>
+    <node concept="u53jr" id="3XZE$oGsQ3M" role="gntW4">
+      <property role="TrG5h" value="right_leg" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP6r" resolve="rlBase" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP6W" resolve="rlEnd" />
+      <ref role="IJgHB" node="3XZE$oGsQ4A" />
+      <node concept="gntxp" id="3XZE$oGsQ3N" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="3XZE$oGsQ4A" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+    </node>
+    <node concept="u53jr" id="3XZE$oGsQ4a" role="gntW4">
+      <property role="TrG5h" value="torso" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP7x" resolve="tBase" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP8a" resolve="tEnd" />
+      <ref role="IJgHB" node="3XZE$oGsQ4F" />
+      <node concept="gntxp" id="3XZE$oGsQ4b" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="3XZE$oGsQ4F" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+    </node>
+    <node concept="2uixRo" id="3XZE$oGt9Tb" role="2uixZN">
+      <ref role="2uixM5" to="lrob:6bIwLn$0JNr" />
+    </node>
+  </node>
+  <node concept="1EzEfe" id="11rIyOQ4xSF">
+    <property role="TrG5h" value="JointPositionCtrl_VoltageOffset" />
+    <node concept="2KPMDc" id="11rIyOQ4xWJ" role="17RAGi">
+      <ref role="2KPMD3" to="sxll:3xBfiZ$w$pA" resolve="JointAngles" />
+    </node>
+  </node>
+  <node concept="gnlnl" id="11rIyOQ4Heq">
+    <property role="TrG5h" value="Coman-Voltage" />
+    <ref role="gnvdb" to="oet6:3XZE$oGsNW_" resolve="iit-coman" />
+    <node concept="u53jr" id="11rIyOQ4Her" role="gntW4">
+      <property role="TrG5h" value="left_arm" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP4M" resolve="laEnd" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP4E" resolve="laBase" />
+      <ref role="IJgHB" node="11rIyOQ4HiJ" />
+      <node concept="gntxp" id="11rIyOQ4Hes" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4Het" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4HiJ" role="gntyC">
+        <ref role="1EzE79" node="11rIyOQ4xSF" resolve="JointPositionCtrl_VoltageOffset" />
+      </node>
+    </node>
+    <node concept="u53jr" id="11rIyOQ4Heu" role="gntW4">
+      <property role="TrG5h" value="right_arm" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP5g" resolve="raEnd" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP4Z" resolve="raBase" />
+      <ref role="IJgHB" node="11rIyOQ4HiW" />
+      <node concept="gntxp" id="11rIyOQ4Hev" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4Hew" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4HiW" role="gntyC">
+        <ref role="1EzE79" node="11rIyOQ4xSF" resolve="JointPositionCtrl_VoltageOffset" />
+      </node>
+    </node>
+    <node concept="u53jr" id="11rIyOQ4Hex" role="gntW4">
+      <property role="TrG5h" value="left_leg" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP5_" resolve="llBase" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP5Y" resolve="llEnd" />
+      <ref role="IJgHB" node="11rIyOQ4He$" />
+      <node concept="gntxp" id="11rIyOQ4Hey" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4Hez" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4He$" role="gntyC">
+        <ref role="1EzE79" node="11rIyOQ4xSF" resolve="JointPositionCtrl_VoltageOffset" />
+      </node>
+    </node>
+    <node concept="u53jr" id="11rIyOQ4He_" role="gntW4">
+      <property role="TrG5h" value="right_leg" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP6r" resolve="rlBase" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP6W" resolve="rlEnd" />
+      <ref role="IJgHB" node="11rIyOQ4Hj9" />
+      <node concept="gntxp" id="11rIyOQ4HeA" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4HeB" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4Hj9" role="gntyC">
+        <ref role="1EzE79" node="11rIyOQ4xSF" resolve="JointPositionCtrl_VoltageOffset" />
+      </node>
+    </node>
+    <node concept="u53jr" id="11rIyOQ4HeC" role="gntW4">
+      <property role="TrG5h" value="torso" />
+      <ref role="u53jH" to="oet6:3XZE$oGsP8a" resolve="tEnd" />
+      <ref role="u53jA" to="oet6:3XZE$oGsP7x" resolve="tBase" />
+      <ref role="IJgHB" node="11rIyOQ4Hjm" />
+      <node concept="gntxp" id="11rIyOQ4HeD" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4HeE" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+      <node concept="gntxp" id="11rIyOQ4Hjm" role="gntyC">
+        <ref role="1EzE79" node="11rIyOQ4xSF" resolve="JointPositionCtrl_VoltageOffset" />
+      </node>
+    </node>
+    <node concept="2uixRo" id="11rIyOQ4HeG" role="2uixZN">
+      <ref role="2uixM5" to="lrob:11rIyOQ4uwW" />
+    </node>
+  </node>
 </model>
 
