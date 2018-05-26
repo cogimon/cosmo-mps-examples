@@ -90,9 +90,7 @@
     <node concept="3tteA$" id="30iXvrTyrql" role="3ttcQl">
       <property role="1T6LxX" value="Input" />
       <property role="TrG5h" value="right_support_port" />
-      <node concept="5xOc9" id="30iXvrTytWN" role="17RAGi">
-        <node concept="10P55v" id="30iXvrTytX7" role="5$vw5" />
-      </node>
+      <node concept="10P_77" id="6KUYjHNfB1r" role="17RAGi" />
     </node>
     <node concept="3tteAg" id="30iXvrTyq8L" role="3ttcQt">
       <property role="TrG5h" value="loadURDFAndSRDF" />
