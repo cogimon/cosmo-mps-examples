@@ -5,6 +5,7 @@
     <use id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf" version="0" />
     <use id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component" version="0" />
     <use id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit" version="0" />
+    <use id="1ae26205-eef5-46b7-8d70-0a69cb907337" name="timing" version="0" />
   </languages>
   <imports>
     <import index="yzc3" ref="r:fb46aa12-7f49-4ac6-ac4c-bc9fd1f3fb28(RSTRTa.sandbox)" />
@@ -16,6 +17,9 @@
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf">
@@ -58,7 +62,15 @@
         <child id="400167841046484621" name="type" index="5$vw5" />
       </concept>
     </language>
+    <language id="1ae26205-eef5-46b7-8d70-0a69cb907337" name="timing">
+      <concept id="8624051893164943774" name="timing.structure.TimingInformationForComponents" flags="ng" index="173Q0v">
+        <child id="8624051893164943932" name="wcet" index="173QeX" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -139,6 +151,11 @@
     <node concept="3tthn0" id="30iXvrTypRW" role="3ttZ$n">
       <ref role="3tthn7" node="30iXvrTypPV" resolve="FloatingBasePose" />
     </node>
+    <node concept="173Q0v" id="7VmfJCygEIg" role="lGtFl">
+      <node concept="3b6qkQ" id="7VmfJCygEIh" role="173QeX">
+        <property role="$nhwW" value="0.15432" />
+      </node>
+    </node>
   </node>
   <node concept="3tthn1" id="30iXvrTypPV">
     <property role="TrG5h" value="FloatingBasePose" />
@@ -213,6 +230,13 @@
         <node concept="10P55v" id="30iXvrTyu1v" role="5$vw5" />
       </node>
     </node>
+    <node concept="3tteA$" id="741hh1Tpgr" role="3ttcQl">
+      <property role="1T6LxX" value="Input" />
+      <property role="TrG5h" value="current_torso_fb_in_port" />
+      <node concept="2KPMDc" id="741hh1TpjS" role="17RAGi">
+        <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+      </node>
+    </node>
     <node concept="3tteAg" id="30iXvrTyrdJ" role="3ttcQt">
       <property role="TrG5h" value="introspection.setCallTraceStorageSize" />
       <node concept="2D$zpR" id="30iXvrTyrex" role="3ttcQW">
@@ -247,6 +271,11 @@
     </node>
     <node concept="3tthn0" id="30iXvrTypW7" role="3ttZ$n">
       <ref role="3tthn7" node="30iXvrTypU6" resolve="CoMPrimitive" />
+    </node>
+    <node concept="173Q0v" id="7VmfJCygEGr" role="lGtFl">
+      <node concept="3b6qkQ" id="7VmfJCygEGs" role="173QeX">
+        <property role="$nhwW" value="0.10176" />
+      </node>
     </node>
   </node>
   <node concept="3tthn1" id="30iXvrTypU6">
@@ -473,6 +502,11 @@
     <node concept="3tthn0" id="30iXvrTyq0i" role="3ttZ$n">
       <ref role="3tthn7" node="30iXvrTypYh" resolve="ComanWholeBodyIK" />
     </node>
+    <node concept="173Q0v" id="7VmfJCygEHF" role="lGtFl">
+      <node concept="3b6qkQ" id="7VmfJCygEHG" role="173QeX">
+        <property role="$nhwW" value="0.7926" />
+      </node>
+    </node>
   </node>
   <node concept="3tthn1" id="30iXvrTypYh">
     <property role="TrG5h" value="ComanWholeBodyIK" />
@@ -634,6 +668,11 @@
     <node concept="3tthn0" id="30iXvrTyq4t" role="3ttZ$n">
       <ref role="3tthn7" node="30iXvrTyq2s" resolve="Homing" />
     </node>
+    <node concept="173Q0v" id="7VmfJCygEJq" role="lGtFl">
+      <node concept="3b6qkQ" id="7VmfJCygEJr" role="173QeX">
+        <property role="$nhwW" value="0.20122" />
+      </node>
+    </node>
   </node>
   <node concept="3tthn1" id="30iXvrTyq2s">
     <property role="TrG5h" value="Homing" />
@@ -661,6 +700,11 @@
     </node>
     <node concept="3tthn0" id="30iXvrTyq8C" role="3ttZ$n">
       <ref role="3tthn7" node="30iXvrTyq4A" resolve="rtt-core-extensions" />
+    </node>
+    <node concept="173Q0v" id="7VmfJCygEQ6" role="lGtFl">
+      <node concept="3b6qkQ" id="7VmfJCygEQ7" role="173QeX">
+        <property role="$nhwW" value="0.1" />
+      </node>
     </node>
   </node>
 </model>

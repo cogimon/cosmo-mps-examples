@@ -22,6 +22,7 @@
     <language slang="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
+    <language slang="l:1ae26205-eef5-46b7-8d70-0a69cb907337:timing" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="6d4f5997-0eeb-4a8a-86c2-d4b3ba19dd87(CCL)" version="0" />

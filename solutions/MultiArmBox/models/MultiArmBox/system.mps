@@ -3343,8 +3343,8 @@
         </node>
       </node>
       <node concept="2GY8tY" id="6OoRQFE0qwn" role="lGtFl">
-        <property role="2GY9xM" value="779.888" />
-        <property role="2GY9xO" value="442.471" />
+        <property role="2GY9xM" value="749.806" />
+        <property role="2GY9xO" value="382.307" />
         <property role="2IszcZ" value="347.568" />
         <property role="2IsyGT" value="121.328" />
       </node>
@@ -3423,8 +3423,8 @@
         <ref role="FWJLQ" to="gw48:4td2CtEiANc" resolve="out_torques_port_3" />
       </node>
       <node concept="2GY8tY" id="6OoRQFE0qwA" role="lGtFl">
-        <property role="2GY9xM" value="1341.925" />
-        <property role="2GY9xO" value="144.876" />
+        <property role="2GY9xM" value="1290.427" />
+        <property role="2GY9xO" value="128.894" />
         <property role="2IszcZ" value="374.313" />
         <property role="2IsyGT" value="234.251" />
       </node>
@@ -3624,10 +3624,10 @@
         <ref role="FWJLQ" to="73wf:42NqMk2NUOp" resolve="out_MCstrInv_port" />
       </node>
       <node concept="2GY8tY" id="6OoRQFE0qwS" role="lGtFl">
-        <property role="2GY9xM" value="-1457.025" />
-        <property role="2GY9xO" value="533.702" />
+        <property role="2GY9xM" value="-1461.868" />
+        <property role="2GY9xO" value="490.115" />
         <property role="2IszcZ" value="286.857" />
-        <property role="2IsyGT" value="280" />
+        <property role="2IsyGT" value="350" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW4Kt" role="3ttgI2">
@@ -4038,10 +4038,10 @@
         <ref role="FWJLQ" to="73wf:3GmkSgQd5hb" resolve="out_torquesForce_port" />
       </node>
       <node concept="2GY8tY" id="6OoRQFE0qx$" role="lGtFl">
-        <property role="2GY9xM" value="421.784" />
-        <property role="2GY9xO" value="796.103" />
+        <property role="2GY9xM" value="400.985" />
+        <property role="2GY9xO" value="686.906" />
         <property role="2IszcZ" value="200.584" />
-        <property role="2IsyGT" value="582.122" />
+        <property role="2IsyGT" value="679.642" />
       </node>
     </node>
     <node concept="2WYcwU" id="mdFCvZW6cY" role="3ttgI2">
