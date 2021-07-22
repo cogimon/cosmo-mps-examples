@@ -4,6 +4,7 @@
   <languages>
     <use id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf" version="0" />
     <use id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component" version="0" />
+    <use id="1ae26205-eef5-46b7-8d70-0a69cb907337" name="timing" version="0" />
   </languages>
   <imports>
     <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRTa.stable)" />
@@ -15,6 +16,9 @@
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf">
@@ -52,9 +56,15 @@
         <property id="3587304184607912539" name="ioType" index="1T6LxX" />
       </concept>
     </language>
+    <language id="1ae26205-eef5-46b7-8d70-0a69cb907337" name="timing">
+      <concept id="8624051893164943774" name="timing.structure.ComponentTimingAnnotation" flags="ng" index="173Q0v">
+        <child id="8624051893164943932" name="wcet" index="173QeX" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -139,6 +149,11 @@
       <property role="TrG5h" value="out_robotstatus_port" />
       <node concept="2KPMDc" id="5dAl56bMOBm" role="17RAGi">
         <ref role="2KPMD3" to="yzc3:3xBfiZ$w$_I" resolve="JointState" />
+      </node>
+    </node>
+    <node concept="173Q0v" id="3x5zQuf6EEp" role="lGtFl">
+      <node concept="3b6qkQ" id="3x5zQuf6EEq" role="173QeX">
+        <property role="$nhwW" value="0.032" />
       </node>
     </node>
   </node>
@@ -488,6 +503,11 @@
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
       </node>
     </node>
+    <node concept="173Q0v" id="3x5zQuf6EGh" role="lGtFl">
+      <node concept="3b6qkQ" id="3x5zQuf6EGi" role="173QeX">
+        <property role="$nhwW" value="0.03" />
+      </node>
+    </node>
   </node>
   <node concept="3tteAz" id="3keJr8m8xVE">
     <property role="3GE5qa" value="" />
@@ -538,6 +558,11 @@
       <property role="TrG5h" value="out_torques_port" />
       <node concept="2KPMDc" id="4SN5UBHm6Qw" role="17RAGi">
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+      </node>
+    </node>
+    <node concept="173Q0v" id="3x5zQuf6EFH" role="lGtFl">
+      <node concept="3b6qkQ" id="3x5zQuf6EFI" role="173QeX">
+        <property role="$nhwW" value="0.045" />
       </node>
     </node>
   </node>

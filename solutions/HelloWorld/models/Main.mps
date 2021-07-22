@@ -343,6 +343,12 @@
       <node concept="FWJLR" id="3XZE$oGsRuI" role="l9eUl">
         <ref role="FWJLQ" node="3XZE$oGsRut" resolve="torso_JointFeedback" />
       </node>
+      <node concept="2GY8tY" id="2ckx$Exe5GG" role="lGtFl">
+        <property role="2GY9xM" value="200.0" />
+        <property role="2GY9xO" value="200.0" />
+        <property role="2IszcZ" value="175.0" />
+        <property role="2IsyGT" value="75.0" />
+      </node>
     </node>
   </node>
   <node concept="3pkOsz" id="2Ohftj9jMYx">

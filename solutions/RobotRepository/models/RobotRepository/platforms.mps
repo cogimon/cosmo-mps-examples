@@ -264,5 +264,27 @@
       <ref role="2uixM5" to="lrob:11rIyOQ4uwW" />
     </node>
   </node>
+  <node concept="gnlnl" id="1w8$jIZtjuz">
+    <property role="TrG5h" value="COGIMON" />
+    <ref role="gnvdb" to="oet6:C_g3bnW$Ih" resolve="kuka-lwr-4plus-sponge" />
+    <node concept="u53jr" id="1w8$jIZtju$" role="gntW4">
+      <property role="TrG5h" value="full" />
+      <ref role="IJgHB" node="1w8$jIZtjuA" />
+      <ref role="u53jA" to="oet6:C_g3bnW$Jf" resolve="world" />
+      <ref role="u53jH" to="oet6:C_g3bnWAzK" resolve="lwr_tool_link" />
+      <node concept="gntxp" id="1w8$jIZtju_" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WUQ" resolve="JointPositionCtrl" />
+      </node>
+      <node concept="gntxp" id="1w8$jIZtjuA" role="gntyC">
+        <ref role="1EzE79" node="6yo9VC28WYm" resolve="JointTorqueCtrl" />
+      </node>
+    </node>
+    <node concept="2uixRo" id="1w8$jIZtjuB" role="2uixZN">
+      <ref role="2uixM5" to="lrob:6bIwLn$0JM8" />
+    </node>
+    <node concept="2uixRo" id="1w8$jIZtjuC" role="2uixZN">
+      <ref role="2uixM5" to="lrob:6bIwLn$0JNr" />
+    </node>
+  </node>
 </model>
 

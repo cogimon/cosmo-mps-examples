@@ -13,6 +13,7 @@
     <language slang="l:4cc07462-84b3-4d01-8adb-629ddd3cebd4:Capabilities" version="0" />
     <language slang="l:218e40b4-75d4-4de8-83e6-b31e4da8bcee:Component" version="0" />
     <language slang="l:dfed0f13-ca0e-4e6d-b469-ef760982a8ea:EigenTypekit" version="0" />
+    <language slang="l:701baaa4-f770-4602-a269-d069dc333eba:OrocosTiming" version="0" />
     <language slang="l:d6d7f6e1-f407-48f8-a582-7b1489b7163f:ProtoBuf" version="0" />
     <language slang="l:10b5a06d-1a49-4cbd-a111-d36c8106bb63:SystemsCoordination" version="0" />
     <language slang="l:05b3ce81-ad9b-4836-b473-d98f0216c2ac:coordination" version="0" />

@@ -5,6 +5,8 @@
     <use id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf" version="0" />
     <use id="218e40b4-75d4-4de8-83e6-b31e4da8bcee" name="Component" version="0" />
     <use id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit" version="0" />
+    <use id="701baaa4-f770-4602-a269-d069dc333eba" name="OrocosTiming" version="0" />
+    <use id="1ae26205-eef5-46b7-8d70-0a69cb907337" name="timing" version="0" />
   </languages>
   <imports>
     <import index="sxll" ref="r:b16aad8a-7e70-4535-bb6a-8f44c10f77e2(RSTRTa.stable)" />
@@ -16,6 +18,9 @@
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="d6d7f6e1-f407-48f8-a582-7b1489b7163f" name="ProtoBuf">
@@ -65,6 +70,11 @@
     <language id="dfed0f13-ca0e-4e6d-b469-ef760982a8ea" name="EigenTypekit">
       <concept id="400167841045343617" name="EigenTypekit.structure.EigenVector" flags="ig" index="5xOc9">
         <child id="400167841046484621" name="type" index="5$vw5" />
+      </concept>
+    </language>
+    <language id="1ae26205-eef5-46b7-8d70-0a69cb907337" name="timing">
+      <concept id="8624051893164943774" name="timing.structure.ComponentTimingAnnotation" flags="ng" index="173Q0v">
+        <child id="8624051893164943932" name="wcet" index="173QeX" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -188,6 +198,11 @@
       <property role="1T6LxX" value="Output" />
       <property role="TrG5h" value="out_MCstrInv_port" />
       <node concept="10P55v" id="42NqMk2NURz" role="17RAGi" />
+    </node>
+    <node concept="173Q0v" id="1ggQaFvLoO$" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoO_" role="173QeX">
+        <property role="$nhwW" value="0.12" />
+      </node>
     </node>
   </node>
   <node concept="3tteAz" id="3keJr8m8xI7">
@@ -351,6 +366,11 @@
       <property role="TrG5h" value="out_torques_port" />
       <node concept="2KPMDc" id="4SN5UBHm6Lt" role="17RAGi">
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+      </node>
+    </node>
+    <node concept="173Q0v" id="1ggQaFvLoN8" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoN9" role="173QeX">
+        <property role="$nhwW" value="0.043" />
       </node>
     </node>
   </node>
@@ -556,6 +576,11 @@
       <property role="TrG5h" value="out_force_port" />
       <node concept="10P55v" id="3GmkSgQd4Rx" role="17RAGi" />
     </node>
+    <node concept="173Q0v" id="1ggQaFvLoL4" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoL5" role="173QeX">
+        <property role="$nhwW" value="0.3" />
+      </node>
+    </node>
   </node>
   <node concept="3tteAz" id="3keJr8m8xTM">
     <property role="3GE5qa" value="" />
@@ -711,6 +736,11 @@
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
       </node>
     </node>
+    <node concept="173Q0v" id="1ggQaFvLoKs" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoKt" role="173QeX">
+        <property role="$nhwW" value="0.05" />
+      </node>
+    </node>
   </node>
   <node concept="3tteAz" id="3keJr8m8xQx">
     <property role="3GE5qa" value="" />
@@ -784,6 +814,11 @@
       <property role="1T6LxX" value="Output" />
       <property role="TrG5h" value="out_force_port" />
       <node concept="10P55v" id="3GmkSgQd5_l" role="17RAGi" />
+    </node>
+    <node concept="173Q0v" id="1ggQaFvLp15" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLp16" role="173QeX">
+        <property role="$nhwW" value="0.05" />
+      </node>
     </node>
   </node>
   <node concept="3tteAz" id="3GmkSgQd0nz">
@@ -992,6 +1027,11 @@
     <node concept="3tthn0" id="3GmkSgQd0Bm" role="3ttZ$n">
       <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />
     </node>
+    <node concept="173Q0v" id="1ggQaFvLoJe" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoJf" role="173QeX">
+        <property role="$nhwW" value="0.21" />
+      </node>
+    </node>
   </node>
   <node concept="3tteAz" id="3GmkSgQd0qY">
     <property role="TrG5h" value="TaskPrioritizationStrictSuccessive" />
@@ -1134,6 +1174,11 @@
       <property role="TrG5h" value="out_torques_port" />
       <node concept="2KPMDc" id="3XuVWlUVChP" role="17RAGi">
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+      </node>
+    </node>
+    <node concept="173Q0v" id="1ggQaFvLoIm" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoIn" role="173QeX">
+        <property role="$nhwW" value="0.12" />
       </node>
     </node>
   </node>
@@ -1286,6 +1331,11 @@
     </node>
     <node concept="3tthn0" id="3GmkSgQd0BO" role="3ttZ$n">
       <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />
+    </node>
+    <node concept="173Q0v" id="1ggQaFvLoHr" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoHs" role="173QeX">
+        <property role="$nhwW" value="0.02" />
+      </node>
     </node>
   </node>
   <node concept="3tteAz" id="3GmkSgQd0xO">
@@ -1441,6 +1491,11 @@
       <property role="TrG5h" value="out_jacobianDot_port" />
       <node concept="10P55v" id="3XuVWlUVEjl" role="17RAGi" />
     </node>
+    <node concept="173Q0v" id="1ggQaFvLoGH" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoGI" role="173QeX">
+        <property role="$nhwW" value="0.12" />
+      </node>
+    </node>
   </node>
   <node concept="3tteAz" id="5wO0nxMrT1O">
     <property role="3GE5qa" value="" />
@@ -1529,6 +1584,11 @@
       <property role="TrG5h" value="out_torques_port" />
       <node concept="2KPMDc" id="5wO0nxMrT2F" role="17RAGi">
         <ref role="2KPMD3" to="sxll:3xBfiZ$w$rI" resolve="JointTorques" />
+      </node>
+    </node>
+    <node concept="173Q0v" id="1ggQaFvLoO0" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoO1" role="173QeX">
+        <property role="$nhwW" value="0.085" />
       </node>
     </node>
   </node>
@@ -1778,6 +1838,19 @@
     </node>
     <node concept="3tthn0" id="42NqMk2O7lo" role="3ttZ$n">
       <ref role="3tthn7" node="3GmkSgQd03u" resolve="ProjectedDynamics" />
+    </node>
+    <node concept="173Q0v" id="1ggQaFvLoLR" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoLS" role="173QeX">
+        <property role="$nhwW" value="0.15" />
+      </node>
+    </node>
+  </node>
+  <node concept="3tteAz" id="4ZNThngmWu0">
+    <property role="TrG5h" value="robotcomptmp" />
+    <node concept="173Q0v" id="1ggQaFvLoFV" role="lGtFl">
+      <node concept="3b6qkQ" id="1ggQaFvLoFW" role="173QeX">
+        <property role="$nhwW" value="0.2" />
+      </node>
     </node>
   </node>
 </model>
