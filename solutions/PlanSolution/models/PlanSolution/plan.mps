@@ -53,6 +53,10 @@
         <property role="2V$B1T" value="39e764cb-e4fa-4923-82f4-60e672350a27" />
         <property role="2V$B1Q" value="OrocosProgramScript" />
       </node>
+      <node concept="2V$Bhx" id="7wWJqiaB3Li" role="1t_9vn">
+        <property role="2V$B1T" value="701baaa4-f770-4602-a269-d069dc333eba" />
+        <property role="2V$B1Q" value="OrocosTiming" />
+      </node>
     </node>
     <node concept="2VgMA1" id="1AsQWJG6gQ5" role="2VgMA7">
       <node concept="3ps74r" id="1hD3llt235B" role="3ps6aC">

@@ -119,9 +119,18 @@
       </concept>
     </language>
     <language id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination">
+      <concept id="6168113672289313863" name="coordination.structure.Transition" flags="ng" index="A$mVN">
+        <reference id="6168113672289313866" name="target" index="A$mVY" />
+        <child id="926862060402702775" name="actions" index="mMxAl" />
+      </concept>
       <concept id="6168113672288845302" name="coordination.structure.StateContainer" flags="ng" index="AA3t2">
         <reference id="6168113672289185112" name="initialstate" index="ABQvG" />
         <child id="6168113672288845303" name="states" index="AA3t3" />
+      </concept>
+      <concept id="6168113672288816999" name="coordination.structure.StateLike" flags="ng" index="AAcnj">
+        <property id="6168113672289985564" name="isfinalstate" index="AyEUC" />
+        <child id="6168113672289314061" name="transitions" index="A$mYT" />
+        <child id="6168113672289314063" name="onentry" index="A$mYV" />
       </concept>
       <concept id="6168113672288816540" name="coordination.structure.State" flags="ng" index="AAcsC" />
     </language>
@@ -147,6 +156,7 @@
       <concept id="3481832625097717111" name="SystemsCoordination.structure.ILifeCycleWrapper" flags="ng" index="20k4$">
         <child id="3481832625097717120" name="lifecycle" index="20k7j" />
       </concept>
+      <concept id="8866654410118891786" name="SystemsCoordination.structure.ConnectPortsAction" flags="ng" index="AhioZ" />
       <concept id="5685633502229591343" name="SystemsCoordination.structure.LifeCycle" flags="ng" index="2D$Ly$" />
       <concept id="1388645655552340734" name="SystemsCoordination.structure.LifeCycleWrapper" flags="ng" index="3pkOsz">
         <reference id="1388645655553886051" name="system" index="3pqbaY" />
@@ -163,6 +173,13 @@
       <concept id="3819631738061615576" name="timing.structure.SenseReactChain" flags="ng" index="yYBWc">
         <child id="3889127535667166537" name="wcetExp" index="1kmkAE" />
         <child id="3889127535665805200" name="entries" index="1kt0dN" />
+      </concept>
+      <concept id="9111736649198264430" name="timing.structure.ConfigureSystemTimingSpecificationAction" flags="ng" index="2Cbohq">
+        <reference id="9111736649198951369" name="timingspecs" index="2C6zZX" />
+      </concept>
+      <concept id="9111736649210701413" name="timing.structure.StartSystemTimingSpecificationAction" flags="ng" index="2DrW9h" />
+      <concept id="1233776197708065142" name="timing.structure.TimingSpecificationForSystem" flags="ng" index="HDYAs">
+        <reference id="1233776197708065432" name="timingconstraints" index="HDYDM" />
       </concept>
       <concept id="8624051893164943774" name="timing.structure.ComponentTimingAnnotation" flags="ng" index="173Q0v">
         <child id="8624051893164943932" name="wcet" index="173QeX" />
@@ -734,9 +751,9 @@
       </node>
       <node concept="2R8en3" id="mdFCvZWgBI" role="lGtFl">
         <property role="TrG5h" value="Orocos (Software Platform)" />
-        <node concept="12Q0Er" id="mdFCvZWgBM" role="12QldZ">
-          <node concept="1QwnVF" id="mdFCvZWgQM" role="12Q0EH">
-            <property role="TrG5h" value="act_global" />
+        <node concept="12Q0Er" id="7wWJqiaB1MT" role="12QldZ">
+          <node concept="1QwnVF" id="7wWJqiaB1N0" role="12Q0EH">
+            <property role="TrG5h" value="act_fast" />
             <ref role="1QwnVw" node="mdFCvZWgMe" resolve="act_fast" />
           </node>
         </node>
@@ -2096,6 +2113,9 @@
       <property role="TrG5h" value="63" />
       <ref role="3ttcQ_" node="4COLSsFMnga" />
       <ref role="3ttcQw" node="4COLSsFH6EV" />
+    </node>
+    <node concept="HDYAs" id="7wWJqiaB0e4" role="lGtFl">
+      <ref role="HDYDM" node="4COLSsFNaMC" resolve="Timing Constraints: CI_System" />
     </node>
   </node>
   <node concept="3tteAz" id="3GmkSgQd0nz">
@@ -3740,6 +3760,18 @@
       <ref role="ABQvG" node="4COLSsFNaMq" resolve="Initial" />
       <node concept="AAcsC" id="4COLSsFNaMq" role="AA3t3">
         <property role="TrG5h" value="Initial" />
+        <node concept="A$mVN" id="7wWJqiaATTe" role="A$mYT">
+          <ref role="A$mVY" node="7wWJqiaATTv" resolve="Configure" />
+          <node concept="AhioZ" id="7wWJqiaATTg" role="mMxAl" />
+        </node>
+        <node concept="2Cbohq" id="7wWJqiaB2o8" role="A$mYV">
+          <ref role="2C6zZX" node="4COLSsFNaMC" resolve="Timing Constraints: CI_System" />
+        </node>
+      </node>
+      <node concept="AAcsC" id="7wWJqiaATTv" role="AA3t3">
+        <property role="TrG5h" value="Configure" />
+        <property role="AyEUC" value="true" />
+        <node concept="2DrW9h" id="7wWJqiaB9mL" role="A$mYV" />
       </node>
     </node>
   </node>

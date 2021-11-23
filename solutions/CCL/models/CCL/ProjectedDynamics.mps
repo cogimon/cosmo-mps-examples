@@ -744,7 +744,7 @@
   </node>
   <node concept="3tteAz" id="3keJr8m8xQx">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="SimpleTaskController" />
+    <property role="TrG5h" value="direct force controller" />
     <node concept="3tteAg" id="3keJr8m8xQy" role="3ttcQt">
       <property role="TrG5h" value="setDOFsize" />
       <node concept="2D$zpR" id="3keJr8m8xQA" role="3ttcQW">
